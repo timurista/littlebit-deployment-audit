@@ -1,0 +1,92 @@
+LICENSING OF THIS REPOSITORY (scoped; there is no repository-wide license)
+
+This repository is under mixed terms. Read all three parts.
+
+Part 1. MIT License, ONLY for these seven files
+
+  src/quality_pilot.py
+  src/report_results.py
+  tests/test_quality_pilot.py
+  tests/test_public_release.py
+  tests/test_report_results.py
+  Dockerfile
+  requirements.txt
+
+In the MIT License text below, "the Software" means only the seven files listed
+above. It does not include any other file in this repository, and it does not
+include documentation, results, figures or evidence files as "associated
+documentation files". Some of the seven files import modules covered by Part 2
+or third-party packages at run time; the MIT grant does not extend to those
+modules or packages.
+
+MIT License
+
+Copyright (c) 2026 Tim Urista
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Part 2. CC BY-NC 4.0, conservatively, for files that adapt or quote upstream code
+
+  src/audit.py
+  src/bench.py
+  src/patched_regression.py
+  tests/test_audit.py
+  patches/binary_unpacker.patch
+
+These files adapt, re-express or quote code from The LittleBit Project
+(https://github.com/SamsungLabs/LittleBit, commit
+933857ed1443b53fc43a875c2cf64249e3c56f0c), which is licensed under the Creative
+Commons Attribution-NonCommercial 4.0 International Public License. Each whole
+file, including its original portions (Copyright (c) 2026 Tim Urista), is
+offered only under CC BY-NC 4.0: attribution required, NonCommercial use only.
+The changes made are described in each file's header. The license text, copied
+unchanged from the upstream repository, is in LICENSES/CC-BY-NC-4.0.txt
+(https://creativecommons.org/licenses/by-nc/4.0/legalcode). It is included to
+cover these adapted portions; the upstream source code itself is not
+redistributed here. This audit is not affiliated with or endorsed by the
+LittleBit authors (Banseok Lee, Dongkyu Kim, Youngcheon You, Youngmin Kim) or
+Samsung. The LittleBit authors and Samsung are not responsible for these
+changes.
+
+Part 3. Everything else: no license granted
+
+All other files, including README.md and every other Markdown document, docs/,
+results/, figures/, evidence/, patches other than the one listed in Part 2,
+CITATION.cff, RELEASE_NOTES.md and .github/, are Copyright (c) 2026 Tim
+Urista, all rights reserved, except where a file states other terms. No MIT or
+other license is granted for them by Part 1. Recorded results describe runs of
+NonCommercial upstream code on third-party model weights and data; see
+LICENSE_NOTES.md.
+
+Third-party material (terms unchanged, not relicensed, not redistributed)
+
+* Upstream LittleBit source code (CC BY-NC 4.0): not included; users need their
+  own checkout. Its file quantization/modules/attention.py carries an Apache-2.0
+  header (Copyright 2024 Microsoft and the HuggingFace Inc. team); it is not
+  copied here, and its notice must be kept verbatim if it is ever redistributed.
+* Runtime packages such as torch, transformers (Apache-2.0), safetensors,
+  tokenizers and numpy are installed separately; they are not included and not
+  relicensed.
+* Qwen/Qwen2.5-0.5B weights, config and tokenizer files (Apache-2.0): not
+  included and not relicensed. Anyone redistributing them, or the local pilot
+  checkpoints derived from them, must include the Apache-2.0 license text and
+  any NOTICE shipped with the model.
+* WikiText-2 (CC BY-SA): no dataset text is included.
+
+See LICENSE_NOTES.md for attribution details and obligations. Not legal advice.

@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2026 Tim Urista. MIT grant scoped to the files listed in LICENSE, Part 1.
 """Tests for src/report_results.py: metadata-only replay versus private checkpoint validation.
 
 Run from the project root:  python -m unittest tests.test_report_results -v
@@ -21,6 +23,7 @@ import contextlib
 import hashlib
 import io
 import json
+import math
 import os
 import shutil
 import struct
@@ -69,6 +72,43 @@ def run_report(argv):
 
 def without(d, *keys):
     return {k: v for k, v in d.items() if k not in keys}
+
+
+# Cross-platform tolerance for floats DERIVED by report_results.py (sums, means, exp, ratios of the
+# recorded values). Different Python versions or libm builds can differ in the last bit or two of
+# such results (observed: 13.059324022000347 vs 13.059324022000348 on Python 3.9 vs 3.12), a
+# relative change near 1e-16. 1e-12 allows a few thousand ulps of accumulated rounding, stays
+# 1000 times tighter than the 1e-9 record checks inside report_results.py, and far below the 4
+# decimal places any number is reported with. It does not apply to the recorded measurement JSON
+# or to any model-equivalence check; those stay exact or keep their own tolerances.
+DERIVED_FLOAT_REL_TOL = 1e-12
+DERIVED_FLOAT_ABS_TOL = 1e-12
+
+
+def json_differences(a, b, where="$"):
+    """Paths where two JSON values differ. Floats compare with math.isclose at the derived-float
+    tolerance; strings (hashes included), ints, booleans, None, key sets and list lengths compare
+    exactly, and a type change (for example int versus float, or bool versus int) is a difference."""
+    if isinstance(a, float) and isinstance(b, float) and type(a) is type(b):
+        ok = math.isclose(a, b, rel_tol=DERIVED_FLOAT_REL_TOL, abs_tol=DERIVED_FLOAT_ABS_TOL)
+        return [] if ok else ["%s: %r != %r" % (where, a, b)]
+    if type(a) is not type(b):
+        return ["%s: type %s != %s" % (where, type(a).__name__, type(b).__name__)]
+    if isinstance(a, dict):
+        if set(a) != set(b):
+            return ["%s: keys differ %s" % (where, sorted(set(a) ^ set(b)))]
+        out = []
+        for k in sorted(a):
+            out.extend(json_differences(a[k], b[k], "%s.%s" % (where, k)))
+        return out
+    if isinstance(a, list):
+        if len(a) != len(b):
+            return ["%s: length %d != %d" % (where, len(a), len(b))]
+        out = []
+        for i, (x, y) in enumerate(zip(a, b)):
+            out.extend(json_differences(x, y, "%s[%d]" % (where, i)))
+        return out
+    return [] if a == b else ["%s: %r != %r" % (where, a, b)]
 
 
 def write_safetensors(path, tensors):
@@ -221,8 +261,10 @@ class TestMetadataReplayCleanClone(CloneMixin, unittest.TestCase):
         for key, rec in tracked["inputs"].items():
             self.assertEqual((rec["bytes"], rec["sha256"]), (fresh["inputs"][key]["bytes"], fresh["inputs"][key]["sha256"]),
                              "%s (%s)" % (STALE, key))
-        self.assertEqual(without(tracked, "inputs", "figures", "replay"), without(fresh, "inputs", "figures", "replay"),
-                         STALE)
+        # Exact except for derived floats, which may differ in the last bits across Python versions.
+        diffs = json_differences(without(tracked, "inputs", "figures", "replay"),
+                                 without(fresh, "inputs", "figures", "replay"))
+        self.assertEqual(diffs, [], "%s; first differences: %s" % (STALE, diffs[:5]))
         self.assertEqual(qp.find_host_paths(tracked), [])
         for rec in tracked["figures"]:
             self.assertEqual(sha256(os.path.join(PROJECT_ROOT, rec["path"])), rec["sha256"], "%s (%s)" % (STALE, rec["path"]))
@@ -338,6 +380,53 @@ class TestRealPrivateValidation(unittest.TestCase):
         for key in ("model_config", "frozen_base_header", "trained_compressed_layers"):
             self.assertIn(key, verified)
         self.assertEqual(without(private, "replay"), without(replay, "replay"))
+
+
+class TestDerivedFloatComparison(unittest.TestCase):
+    """The summary comparison tolerates last-bit float variance and nothing else."""
+
+    BASE = {"inputs_sha256": "86833880f0c25fa89a9d24b2b193749104f15d2cd90cf345164be14fe86d98a1",
+            "scored_tokens": 1016, "held": True, "note": None,
+            "summary": {"mean": 13.059324022000348, "max_abs_dev": 0.0},
+            "per_window": [7.698936105137242, 8.714306935127393]}
+
+    def changed(self, path, value):
+        obj = json.loads(json.dumps(self.BASE))
+        node = obj
+        for key in path[:-1]:
+            node = node[key]
+        node[path[-1]] = value
+        return obj
+
+    def test_last_bit_variance_passes(self):
+        self.assertEqual(json_differences(self.BASE, self.BASE), [])
+        observed = self.changed(("summary", "mean"), 13.059324022000347)
+        self.assertEqual(json_differences(self.BASE, observed), [])
+        x = self.BASE["per_window"][1]
+        neighbor = struct.unpack("<d", struct.pack("<q", struct.unpack("<q", struct.pack("<d", x))[0] + 2))[0]
+        self.assertNotEqual(neighbor, x)
+        self.assertEqual(json_differences(self.BASE, self.changed(("per_window", 1), neighbor)), [])
+        self.assertEqual(json_differences(self.BASE, self.changed(("summary", "max_abs_dev"), 1e-15)), [])
+
+    def test_exact_fields_and_structure_fail(self):
+        cases = {
+            "hash": self.changed(("inputs_sha256",), "0" + self.BASE["inputs_sha256"][1:]),
+            "count": self.changed(("scored_tokens",), 1017),
+            "count as float": self.changed(("scored_tokens",), 1016.0),
+            "boolean": self.changed(("held",), False),
+            "boolean as int": self.changed(("held",), 1),
+            "null": self.changed(("note",), "x"),
+            "missing key": {k: v for k, v in self.BASE.items() if k != "note"},
+            "list length": self.changed(("per_window",), self.BASE["per_window"][:1]),
+        }
+        for name, obj in cases.items():
+            self.assertNotEqual(json_differences(self.BASE, obj), [], name)
+
+    def test_material_float_change_fails(self):
+        mean = self.BASE["summary"]["mean"]
+        for value in (13.0594, mean * (1 + 1e-9), mean * (1 + 1e-11)):
+            self.assertNotEqual(json_differences(self.BASE, self.changed(("summary", "mean"), value)), [], value)
+        self.assertNotEqual(json_differences(self.BASE, self.changed(("summary", "max_abs_dev"), 1e-9)), [])
 
 
 class TestReportModule(unittest.TestCase):

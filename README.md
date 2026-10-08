@@ -27,10 +27,15 @@ local pilot on a real pretrained model show (section 5)?
 * No novelty claim. The defect was first seen in an exploratory run
   (evidence/first-upstream-counterexample.json) before the preregistration, so H1 is an
   exploratory defect confirmation. No claim is made about the papers or their reported results.
-* **Rights: no license is granted.** The original code and text of this repository are copyright
-  the author, all rights reserved; publication on GitHub does not grant a license.
-  LICENSE_PROPOSAL.md proposes terms but has not been enacted. Portions that adapt or quote
-  upstream LittleBit code remain under CC BY-NC 4.0 (attribution, NonCommercial only).
+* **Rights: scoped, no repository-wide license.** See LICENSE.
+  * MIT (Copyright (c) 2026 Tim Urista) applies only to `src/quality_pilot.py`,
+    `src/report_results.py`, `tests/test_quality_pilot.py`, `tests/test_public_release.py`,
+    `tests/test_report_results.py`, `Dockerfile` and `requirements.txt`.
+  * `src/audit.py`, `src/bench.py`, `src/patched_regression.py`, `tests/test_audit.py` and
+    `patches/binary_unpacker.patch` adapt or quote upstream LittleBit code. They are CC BY-NC 4.0
+    (attribution, NonCommercial only; LICENSES/CC-BY-NC-4.0.txt).
+  * Everything else, including this README, the other documentation, results, figures and
+    evidence, is all rights reserved; publication on GitHub does not license it.
 * Upstream code is CC BY-NC 4.0, Qwen2.5-0.5B is Apache-2.0, WikiText-2 is CC BY-SA; model
   weights and dataset files are not redistributed. See LICENSE_NOTES.md.
 * AI assistance: the code, tests and drafts in this repository were written with an AI coding
@@ -127,29 +132,47 @@ block of audit_summary.json. Illustrative shapes, mirrored upstream formulas.
 
 ### 4. Unit tests
 
-[evidence/unit-tests.log](evidence/unit-tests.log): first run, 43 ran, 1 failed
-(`test_no_em_dashes` contained the literal character it scans for; fixed with `chr(0x2014)`, test
-kept). [evidence/unit-tests-final.log](evidence/unit-tests-final.log): independent rerun after
-the fix and the new regression tests, **56 ran, all passed**.
+Final release suite, 132 tests:
 
-Current suite (audit plus quality pilot tests):
-[evidence/unit-tests-quality.log](evidence/unit-tests-quality.log), host, **95 ran, OK**;
-[evidence/container-tests-quality.log](evidence/container-tests-quality.log), Docker image
-`sha256:e2001739838437f9e33226e856b2dc4caa47aae1269791455b3699773c818588` (arm64,
-[evidence/container-image.txt](evidence/container-image.txt)), **95 ran, OK**. These tests check
-functions and bookkeeping; they do not measure model quality.
+| Environment | Python | Result |
+|---|---|---|
+| Owner's host, torch and upstream checkout present | 3.12.14 | 132 run, 0 failures, 0 skipped |
+| Clean export, torch present, no upstream checkout or checkpoints | 3.12.14 | 132 run, 0 failures, 26 skipped |
+| Clean export, standard library only | 3.12.14 | 132 run, 0 failures, 32 skipped |
+| Clean export, standard library only, macOS | 3.9.6 | 132 run, 0 failures, 32 skipped |
+| Offline Docker image, torch 2.6.0 CPU, clean export | 3.11.15 | 132 run, 0 failures, 26 skipped |
 
-Release revision: the full local suite now has 129 tests. At the time of writing, private
-validation of `public_metadata.json` against the real checkpoints succeeded on the owner's host,
-and the 129-test suite and the metadata replay were being run independently; their logs are the
-record, not this sentence. New tests: `tests/test_public_release.py` (host path sanitization of stage
+Every skip states its reason (torch absent, upstream checkout not redistributed, or private
+checkpoints absent). These tests check functions and bookkeeping; they do not measure model
+quality. The release QA asset attached to the release records these runs.
+
+* Earlier, before a portability fix, the standard-library run on Python 3.9.6 had one failure. An
+  exact comparison of a derived float differed in the last bit between Python versions
+  (13.059324022000347 versus 13.059324022000348). That test now compares derived floats only at a
+  relative and absolute tolerance of 1e-12. Hashes, strings, integer counts, booleans and
+  structure still compare exactly, and no measured value changed.
+* Private validation of `public_metadata.json` against the real checkpoints succeeded on the
+  owner's host. The metadata-only replay also succeeded on Python 3.9 and preserved all recorded
+  values.
+* The CC BY-NC 4.0 text in `LICENSES/CC-BY-NC-4.0.txt` is byte-identical to the upstream LICENSE
+  (`cmp`). The licensed `patches/binary_unpacker.patch` passes `git apply --check` against the
+  pinned upstream checkout.
+* CI: an earlier GitHub Actions run passed at commit `8f53061`, which is not the final licensed
+  commit. The CI run for the final commit is identified in the release build manifest.
+
+History, for context: earlier suites of 43, 56 and 95 tests ran on the host, and 95 also ran in
+the Docker image `sha256:e2001739...c818588`. One early failure was the em-dash style test, which
+contained the character it scans for; it was fixed and kept. Those logs are private evidence and
+are not shipped; the 95-test container log is shipped
+([evidence/container-tests-quality.log](evidence/container-tests-quality.log),
+[evidence/container-image.txt](evidence/container-image.txt)).
+
+Release-revision tests: `tests/test_public_release.py` (host path sanitization of stage
 records and a scan of the public files) and `tests/test_report_results.py` (metadata-only replay
 from a clean-clone copy that must open only the public files and rebuild the recorded numbers;
 private validation on synthetic checkpoints, including tampering that only private validation
 catches; on the owner's host, private validation of the real checkpoints; and a check that the
-tracked `results/summary.json` equals a fresh replay). The 95 count above predates them. In a
-clean clone (and in CI) without torch, the upstream checkout or the checkpoints, the tests that
-need them skip with a stated reason.
+tracked `results/summary.json` equals a fresh replay).
 
 ### 5. Real-model quality pilot: negative result (UPSTREAM_IMPORT_REAL_MODEL_PILOT)
 
@@ -157,9 +180,8 @@ Raw: [results/quality-pilot/](results/quality-pilot/) (`manifest.json`, `baselin
 `feasibility.json`, `train.json`, `evaluate.json`, `train_steps.jsonl`, `public_metadata.json`),
 preregistration [QUALITY_PREREGISTRATION.md](QUALITY_PREREGISTRATION.md), derived summary
 [results/summary.json](results/summary.json) and figures in [figures/](figures/), both produced by
-`src/report_results.py` from the recorded JSON only (render log: evidence/report-render.log). The
-figures exist; see "Public release" below for how to regenerate them from a clean clone and what
-that replay does and does not check.
+`src/report_results.py` from the recorded JSON only. See "Public release" below for how to
+regenerate them from a clean clone and what that replay does and does not check.
 
 Setup. Qwen/Qwen2.5-0.5B (revision `060db649`, Apache-2.0), WikiText-2 raw (revision `b08601e0`),
 splits tokenized separately. Every `nn.Linear` in the 24 transformer blocks (168 modules,
@@ -261,12 +283,13 @@ registered in `sys.modules`):
 
 ## Containers
 
-* A standard-library audit ran in Docker (OrbStack), offline, 1 CPU, 1 GB, read-only
-  (evidence/container-audit.log, mirror tier only).
+* A standard-library audit ran in Docker (OrbStack), offline, 1 CPU, 1 GB, read-only (mirror
+  tier only; its log is private evidence and is not shipped).
 * `Dockerfile` (pinned CPU torch 2.6.0, numpy 2.2.4, non-root, no credentials, offline at run
-  time): built and tested; image `sha256:e2001739...c818588`, arm64; 95 tests ran, OK
-  (evidence/container-tests-quality.log). The quality pilot itself ran on the host, not in the
-  container. The tests added in the release revision have not been run in the container yet.
+  time): built and tested. Image `sha256:e2001739...c818588` (arm64) ran 95 tests OK
+  (evidence/container-tests-quality.log). The final 132-test suite passed offline in a Docker
+  image on Python 3.11.15 with torch 2.6.0 CPU: 132 run, 0 failures, 26 skipped; that run is recorded in
+  the release QA asset. The quality pilot itself ran on the host, not in a container.
 * `.devcontainer/devcontainer.json`: not present. The write was refused by the tool permission
   layer as a sensitive file, including one authorized retry, and was not retried or bypassed. It
   needs the owner to create the file or approve the write.
@@ -277,16 +300,17 @@ registered in `sys.modules`):
 |---|---|---|
 | 0 | Exploratory upstream counterexample | done, predates preregistration |
 | 1 | Preregistration | written; addendum 2026-10-08; quality pilot preregistration separate |
-| 2 | Audit code and tests | done; 95 of 95 tests passed on host and in the Docker image before the release revision; release suite of 129 tests run independently, see its log |
+| 2 | Audit code and tests | done; final suite of 132 passed in all five environments listed in section 4 |
 | 3 | Raw component results | done (sections 1 to 3) |
 | 4 | Patch regression | done, post hoc: 2,010 of 2,010 patched vs 296 of 2,010 original |
 | 5 | Real pretrained model pilot | done, negative result (section 5); no further training planned |
-| 6 | Report figures and summary | run (evidence/report-render.log); figures and summary.json exist; must be regenerated with `--metadata-only` after the path sanitization (see "Public release") |
+| 6 | Report figures and summary | regenerated from public files with `--metadata-only`; recorded values preserved (see "Public release") |
 
 Authorized by the owner: this repository as a public GitHub repository
 (timurista/littlebit-deployment-audit) with release v0.1.0 (RELEASE_NOTES.md). Not done and not
 planned here: accepting any license agreement, cloud spend, Medium publication, arXiv submission,
-enacting a license, or sending the patch upstream. Those need separate owner decisions.
+licensing documentation or data, or sending the patch upstream. Those need separate owner
+decisions. The scoped code license in LICENSE was approved by the owner on 2026-10-08.
 
 ## Running
 
@@ -319,8 +343,9 @@ Figures and summary (no model execution, network or subprocess; matplotlib 3.10.
 ```
 
 Both write `figures/paired_window_nll`, `figures/heldout_ppl_log`, `figures/weight_bytes` and
-`figures/train_ce_kl` as PNG and SVG, plus `results/summary.json`. The script was run once before
-the release revision (evidence/report-render.log); the figures in `figures/` come from that run.
+`figures/train_ce_kl` as PNG and SVG, plus `results/summary.json`. The tracked summary and figures
+come from the metadata-only replay. A test checks that the tracked summary equals a fresh replay,
+and that test passed in every environment in section 4.
 
 ## Public release
 
@@ -346,44 +371,37 @@ the release revision (evidence/report-render.log); the figures in `figures/` com
 `train.json` and `evaluate.json` held an absolute host path. It now reads `models/qwen2.5-0.5b`;
 no other field and no measured number changed (`manifest.json` was not edited, so every recorded
 `manifest_sha256` still holds). The pre-sanitization sha256 values are listed in
-`public_metadata.json` (`path_sanitization`) and in evidence/quality-artifact-hashes.json; the
-original files are kept in the owner's private local backup outside the public export. Future
+`public_metadata.json` (`path_sanitization`); the original files and a private hash list are kept
+in the owner's private local backup outside the public export. Future
 stage runs record arguments through `public_args` and write every record through
 `scrub_host_paths` (`src/quality_pilot.py`): path arguments become project relative or
 `<external>/<basename>`, and the project root and home directory in any other string (error
 tracebacks included) become `<project>` and `<home>`.
 
-Because the four stage files changed, the input hashes in `results/summary.json` must be
-regenerated. Order for the owner's host:
+After the sanitization, the owner's host ran the private validation (summary written outside the
+repository) and then the metadata-only replay, which rewrote the public `results/summary.json`
+and figures from public files only. Private evidence is not part of the public export. That
+covers host logs, earlier test logs, readiness notes, the render log, the container audit log and
+the model and dataset download logs, some of which contain absolute host paths. Where this README
+cites a result, the shipped record is a file under `results/`, the shipped files under
+`evidence/` linked above, or the release QA asset.
 
-```
-.venv/bin/python src/report_results.py --no-figures --summary /tmp/littlebit-private-summary.json
-.venv/bin/python src/report_results.py --metadata-only
-timeout 900 .venv/bin/python -m unittest discover -s tests -v
-```
-
-The first command is the private validation of `public_metadata.json` against the real
-checkpoints; it writes its summary outside the repository. The second rewrites the public
-`results/summary.json` and the figures from public files only, so a clean clone reproduces them.
-Until the second command runs, `TestMetadataReplayCleanClone.test_tracked_summary_matches_fresh_replay`
-fails by design. Host logs under `evidence/` that are not tracked (for example
-`evidence/model-download.log`, `evidence/report-render.log`, `evidence/docker-info.json`) still
-contain absolute host paths and are not part of the public export.
-
-License: none granted; see LICENSE_NOTES.md. A license for the original harness code is proposed,
-not adopted, in LICENSE_PROPOSAL.md.
+License: scoped, see LICENSE and LICENSE_NOTES.md. LICENSE_PROPOSAL.md records the reasoning
+and the 2026-10-08 adoption.
 
 **Release, CI and citation.**
 
-* Release v0.1.0: RELEASE_NOTES.md. Expected URL, to verify once it exists:
-  https://github.com/timurista/littlebit-deployment-audit/releases/tag/v0.1.0. The release commit
-  hash is filled in after the clean-root commit. No DOI.
+* Release v0.1.0: RELEASE_NOTES.md. Release URL, prospective until the tag and release are
+  created: https://github.com/timurista/littlebit-deployment-audit/releases/tag/v0.1.0. The
+  release commit is recorded in the build manifest attached to the release. No DOI.
 * CI: `.github/workflows/ci.yml`, one job on Python 3.12 with the standard library only. It runs
   the unit tests, where torch-dependent tests, tests that need the upstream checkout and tests that
   need the private checkpoints skip with a stated reason, and then the `--metadata-only
   --no-figures` replay. Read-only token, no secrets, no deployment, no downloads, no training.
   Actions are pinned to full commit SHAs (checkout v4, setup-python v5).
-* Citation: CITATION.cff (repository URL to verify; no DOI).
+* Citation: CITATION.cff (no DOI).
+* License: MIT only for the seven original harness files listed in LICENSE. The five adapted files
+  are CC BY-NC 4.0. Everything else is all rights reserved. There is no repository-wide license.
 
 Drafts: docs/medium-draft.md, docs/research-draft.tex (review-ready pilot write-up, not a
 submission).

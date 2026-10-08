@@ -11,7 +11,7 @@
       "statistical significance",
       "anything about longer training, other models or other bit widths"
     ],
-    "publication": "public GitHub repository with release v0.1.0 authorized by the owner; no Medium publication, no arXiv submission; no license granted (all rights reserved on original portions, CC BY-NC 4.0 on adapted portions)"
+    "publication": "public GitHub repository with release v0.1.0 authorized by the owner; no Medium publication, no arXiv submission; scoped licensing per LICENSE: MIT only for the listed original harness files, CC BY-NC 4.0 for adapted files, all rights reserved for everything else"
   },
   "figures": [
     {

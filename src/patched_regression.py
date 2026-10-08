@@ -1,3 +1,11 @@
+# SPDX-License-Identifier: CC-BY-NC-4.0
+# Adapted Material under CC BY-NC 4.0 (LICENSES/CC-BY-NC-4.0.txt; LICENSE, Part 2). Licensed
+# Material: The LittleBit Project, https://github.com/SamsungLabs/LittleBit, commit
+# 933857ed1443b53fc43a875c2cf64249e3c56f0c, CC BY-NC 4.0; methods by Banseok Lee, Dongkyu Kim,
+# Youngcheon You and Youngmin Kim. Changes, Copyright (c) 2026 Tim Urista: applies the one-line
+# change of patches/binary_unpacker.patch to the upstream source text in memory and tests the
+# result; the upstream file is never written and no upstream source is copied into this file.
+# NonCommercial use only. Not affiliated with or endorsed by the LittleBit authors or Samsung.
 """Regression evidence for the proposed one-line upstream unpack patch.
 
 Reads the unmodified upstream quantization/utils/binary_packer.py, applies ONLY the single hunk in

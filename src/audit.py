@@ -1,3 +1,13 @@
+# SPDX-License-Identifier: CC-BY-NC-4.0
+# Adapted Material under CC BY-NC 4.0 (LICENSES/CC-BY-NC-4.0.txt; LICENSE, Part 2). Licensed
+# Material: The LittleBit Project, https://github.com/SamsungLabs/LittleBit, commit
+# 933857ed1443b53fc43a875c2cf64249e3c56f0c, CC BY-NC 4.0; methods by Banseok Lee, Dongkyu Kim,
+# Youngcheon You and Youngmin Kim. Changes, Copyright (c) 2026 Tim Urista: the upstream packer,
+# unpacker, split-dim and eff-bit arithmetic is re-expressed in standard-library Python
+# (mirror_pack, mirror_unpack_upstream, upstream_estimate_split, upstream_finalize_split,
+# upstream_eff_bits, advertised_bits, storage_breakdown), short upstream lines are searched for and
+# quoted for identification (static_observations), and an audit harness is added around them.
+# NonCommercial use only. Not affiliated with or endorsed by the LittleBit authors or Samsung.
 """LittleBit packed-serialization deployment audit.
 
 Original audit code. It does not copy upstream source; it re-expresses the arithmetic of a few

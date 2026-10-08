@@ -1,3 +1,10 @@
+# SPDX-License-Identifier: CC-BY-NC-4.0
+# Adapted Material under CC BY-NC 4.0 (LICENSES/CC-BY-NC-4.0.txt; LICENSE, Part 2). Licensed
+# Material: The LittleBit Project, https://github.com/SamsungLabs/LittleBit, commit
+# 933857ed1443b53fc43a875c2cf64249e3c56f0c, CC BY-NC 4.0. The context lines below are upstream
+# text. Change, Copyright (c) 2026 Tim Urista: upstream line 88 of
+# quantization/utils/binary_packer.py, "<<" changed to ">>". NonCommercial use only. Not
+# affiliated with or endorsed by the LittleBit authors or Samsung.
 --- a/quantization/utils/binary_packer.py
 +++ b/quantization/utils/binary_packer.py
 @@ -85,7 +85,7 @@

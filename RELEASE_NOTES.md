@@ -3,9 +3,13 @@
 ## v0.1.0
 
 * Repository: https://github.com/timurista/littlebit-deployment-audit
-* Release: https://github.com/timurista/littlebit-deployment-audit/releases/tag/v0.1.0
+* Release: https://github.com/timurista/littlebit-deployment-audit/releases/tag/v0.1.0 (prospective:
+  this URL resolves only once the v0.1.0 tag and release are created)
 * Release commit: recorded in the build manifest attached to the release.
 * DOI: none assigned.
+* Execution: the code, tests and drafts were written with an AI coding assistant (Claude,
+  Anthropic). Experiments and test suites were executed by an automated AI coding workflow on the
+  author's Mac, not run by hand. The author's review of the outputs is pending.
 
 ### What this release is
 
@@ -66,26 +70,54 @@ accounting end to end on a real model.
 * CI (`.github/workflows/ci.yml`): Python 3.12, standard library only; torch-dependent,
   upstream-checkout and private-checkpoint tests skip; runs the metadata-only replay.
 
-Validation status at the time of writing:
+### Final release QA
+
+Final suite of 132 tests. Every skip states its reason.
+
+| Environment | Python | Result |
+|---|---|---|
+| Owner's host, torch and upstream checkout present | 3.12.14 | 132 run, 0 failures, 0 skipped |
+| Clean export, torch present, no upstream checkout or checkpoints | 3.12.14 | 132 run, 0 failures, 26 skipped |
+| Clean export, standard library only | 3.12.14 | 132 run, 0 failures, 32 skipped |
+| Clean export, standard library only, macOS | 3.9.6 | 132 run, 0 failures, 32 skipped |
+| Offline Docker image, torch 2.6.0 CPU, clean export | 3.11.15 | 132 run, 0 failures, 26 skipped |
 
 * Private validation of `public_metadata.json` against the real checkpoints succeeded on the
   owner's host.
-* The full local suite (129 tests, with torch and the upstream checkout present) passed earlier on
-  the host.
-* Final clean-export validation (tests and metadata replay from the exported tree, where the
-  upstream checkout and checkpoints are absent and the tests that need them skip) is pending. Its
-  outcome is recorded in the release QA asset attached to the release, not here.
+* The metadata-only replay succeeded on Python 3.9 and preserved all recorded values.
+* `LICENSES/CC-BY-NC-4.0.txt` is byte-identical to the upstream LICENSE (`cmp`). The licensed
+  `patches/binary_unpacker.patch` passes `git apply --check` against the pinned upstream checkout.
+* Portability, for the record: an earlier Python 3.9.6 run failed one exact comparison of a derived
+  float in the last bit (13.059324022000347 versus 13.059324022000348). That comparison now uses a
+  relative and absolute tolerance of 1e-12 for derived floats only. Hashes, strings, integer
+  counts, booleans and structure still compare exactly, and no measured value or scientific
+  tolerance changed.
+* CI: an earlier GitHub Actions run passed at commit `8f53061`, which is not the final licensed
+  commit. The final commit and its CI run are recorded in the release build manifest after the
+  next push.
+* The release QA asset attached to the release holds the logs of these runs. Logs from earlier
+  development runs are private and are not shipped.
 
 ### Licensing status
 
-* **The license proposal (LICENSE_PROPOSAL.md) is not enacted.** It is a proposal only.
-* **No license is granted by this release.** The original portions of this repository are
-  copyright the author, all rights reserved. `LICENSE_PROPOSAL.md` is a proposal only and has not
-  been enacted.
-* Portions that adapt, re-express or quote SamsungLabs/LittleBit code (see LICENSE_PROPOSAL.md)
-  remain under CC BY-NC 4.0: attribution required, NonCommercial use only, changes indicated.
-* Third-party terms are unchanged: upstream LittleBit code CC BY-NC 4.0; Qwen2.5-0.5B Apache-2.0
-  (not redistributed); WikiText-2 CC BY-SA (no text included). See LICENSE_NOTES.md.
+* **Scoped licensing, no repository-wide license** (top-level `LICENSE`, approved by the owner on
+  2026-10-08):
+  * **MIT**, Copyright (c) 2026 Tim Urista, only for `src/quality_pilot.py`,
+    `src/report_results.py`, `tests/test_quality_pilot.py`, `tests/test_public_release.py`,
+    `tests/test_report_results.py`, `Dockerfile` and `requirements.txt`.
+  * **CC BY-NC 4.0** (conservative, Adapted Material) for `src/audit.py`, `src/bench.py`,
+    `src/patched_regression.py`, `tests/test_audit.py` and `patches/binary_unpacker.patch`:
+    attribution required, NonCommercial use only, changes indicated in each file header. License
+    text in `LICENSES/CC-BY-NC-4.0.txt`. It covers the adapted portions; upstream source is not
+    redistributed.
+  * **All rights reserved** for everything else: documentation, results, figures, evidence,
+    `CITATION.cff`, this file and `.github/`. They are not licensed under MIT.
+  * Not affiliated with or endorsed by the LittleBit authors or Samsung.
+* Third-party terms are unchanged and nothing third-party is relicensed: upstream LittleBit code
+  CC BY-NC 4.0 (not redistributed); Apache-2.0 material keeps its notices and obligations and is
+  not redistributed. That covers Qwen2.5-0.5B weights, config and tokenizer, runtime packages such
+  as transformers, and the Apache-2.0 header of upstream `attention.py`. WikiText-2 is CC BY-SA
+  (no text included). See LICENSE_NOTES.md.
 
 ### Not in this release
 

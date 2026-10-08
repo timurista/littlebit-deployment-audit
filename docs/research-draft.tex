@@ -233,11 +233,14 @@ the author's host and are not redistributed. Model weights, derived checkpoints,
 the upstream checkout are not redistributed.
 
 \section*{Licensing}
-No license is granted for the original code of this audit: all rights are reserved by the author,
-and a license is proposed but not enacted (\texttt{LICENSE\_PROPOSAL.md}). Portions that adapt or
-quote upstream code remain under CC BY-NC 4.0, with attribution and NonCommercial obligations.
-Upstream code is CC BY-NC 4.0; Qwen2.5-0.5B is Apache-2.0; WikiText-2 is distributed under CC
-BY-SA terms. No license agreement was accepted and no cloud resources were used.
+Licensing is scoped per file; there is no repository-wide license (\texttt{LICENSE}). The original
+harness code (\texttt{quality\_pilot.py}, \texttt{report\_results.py}, their tests, the Dockerfile
+and the requirements file) is MIT. Files that adapt or quote upstream code (\texttt{audit.py},
+\texttt{bench.py}, \texttt{patched\_regression.py}, \texttt{test\_audit.py} and the patch) remain
+under CC BY-NC 4.0, with attribution and NonCommercial obligations. Documentation, results and
+figures, including this manuscript, are all rights reserved. Upstream code is CC BY-NC 4.0;
+Qwen2.5-0.5B is Apache-2.0 and is not redistributed or relicensed; WikiText-2 is distributed under
+CC BY-SA terms. No license agreement was accepted and no cloud resources were used.
 
 \section*{AI assistance}
 The code, tests and text of this draft were written with an AI coding assistant (Claude,

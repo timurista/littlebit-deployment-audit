@@ -1,3 +1,12 @@
+# SPDX-License-Identifier: CC-BY-NC-4.0
+# Adapted Material under CC BY-NC 4.0 (LICENSES/CC-BY-NC-4.0.txt; LICENSE, Part 2). Licensed
+# Material: The LittleBit Project, https://github.com/SamsungLabs/LittleBit, commit
+# 933857ed1443b53fc43a875c2cf64249e3c56f0c, CC BY-NC 4.0; methods by Banseok Lee, Dongkyu Kim,
+# Youngcheon You and Youngmin Kim. Changes, Copyright (c) 2026 Tim Urista: torch_reference_unpack
+# re-expresses the upstream unpack expression with the shift corrected (right shift instead of
+# left shift), and a benchmark and serialization-fidelity harness is added around the unmodified
+# upstream module, which is imported at run time and not copied.
+# NonCommercial use only. Not affiliated with or endorsed by the LittleBit authors or Samsung.
 """Matched microbenchmark and serialization-fidelity runner for actual upstream LittleBitLinear.
 
 UPSTREAM_IMPORT tier only: requires torch. Without torch it writes a record saying so and exits 0.

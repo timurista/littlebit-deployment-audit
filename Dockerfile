@@ -1,3 +1,6 @@
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2026 Tim Urista. MIT grant scoped to the files listed in LICENSE, Part 1.
+#
 # Reproducible CPU-only environment for the LittleBit deployment audit.
 #
 # Status: built and tested by the project owner. Image

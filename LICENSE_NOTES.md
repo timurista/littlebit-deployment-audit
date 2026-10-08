@@ -52,16 +52,16 @@ upstream material.
 
 ## What this audit contains
 
-* `src/audit.py`, `src/bench.py`, `src/patched_regression.py`, `src/quality_pilot.py`,
-  `src/report_results.py` and the tests are original code written for this audit with AI
-  assistance (Claude, Anthropic). They do not copy upstream source files.
-* The ALGORITHM_AUDIT tier re-expresses the arithmetic of a few upstream expressions (the
-  packer weighting, the unpack shift expression, and three split-dim and eff-bit formulas) in
-  plain Python so they can be tested without torch. Short expressions are quoted in comments,
-  docs, and test strings for the purpose of commentary and identification of the defect.
-  Whether re-expressing a formula is an Adapted Material question under CC BY-NC 4.0 has not
-  been resolved here. To stay on the safe side, treat this audit as NonCommercial research and
-  keep this attribution with it.
+* The scripts and tests were written for this audit with AI assistance (Claude, Anthropic). None
+  of them copies an upstream source file.
+* The ALGORITHM_AUDIT tier (`src/audit.py`) re-expresses the arithmetic of a few upstream
+  expressions (the packer weighting, the unpack shift expression, and three split-dim and eff-bit
+  formulas) in plain Python so they can be tested without torch. `src/bench.py` contains a
+  corrected re-expression of the unpack expression. `patches/binary_unpacker.patch` contains
+  upstream context lines. Short expressions are quoted in comments, docs and test strings for
+  commentary and identification of the defect. Whether re-expressing a formula is Adapted Material
+  under CC BY-NC 4.0 has not been resolved, so these files are treated conservatively as Adapted
+  Material (see "License" below).
 * The UPSTREAM_IMPORT tier loads unmodified upstream files at runtime from the local checkout.
   The upstream code is not redistributed by this audit; anyone running it needs their own copy.
 * `quantization/utils/quant_util.py`: the scripts in `src/` do not import it; `src/audit.py` reads
@@ -81,12 +81,28 @@ upstream material.
   (CC BY-NC 4.0 Section 2(a)(6)).
 * NonCommercial use only for anything that includes or adapts upstream material.
 
-## License of the original audit code
+## License
 
-Not yet chosen by the author. Until a license is chosen, all rights are reserved by the author
-for the original audit code, subject to the upstream terms above for any adapted portions.
-`LICENSE_PROPOSAL.md` is a proposal for the owner to decide on; it does not license or relicense
-anything. Publishing this repository on GitHub (release v0.1.0) does not grant a license either:
-apart from what GitHub's terms of service allow (viewing and forking on GitHub), no permission to
-copy, modify or redistribute the original portions is given until a license is enacted, and the
-CC BY-NC 4.0 obligations above continue to apply to every adapted portion.
+The owner approved the scoped terms on 2026-10-08. They are set out in the top-level `LICENSE`
+and in an SPDX header in each listed file. There is no repository-wide license.
+
+* **MIT, Copyright (c) 2026 Tim Urista, only for:** `src/quality_pilot.py`,
+  `src/report_results.py`, `tests/test_quality_pilot.py`, `tests/test_public_release.py`,
+  `tests/test_report_results.py`, `Dockerfile`, `requirements.txt`. The MIT grant does not extend
+  to modules these files import at run time.
+* **CC BY-NC 4.0 (conservative, Adapted Material):** `src/audit.py`, `src/bench.py`,
+  `src/patched_regression.py`, `tests/test_audit.py`, `patches/binary_unpacker.patch`. Each whole
+  file, including its original portions, is offered only under CC BY-NC 4.0. Each header carries
+  the attribution and the changes made. License text: `LICENSES/CC-BY-NC-4.0.txt`, copied
+  unchanged from the upstream repository. It is included for these adapted portions and does not
+  mean that upstream source is redistributed here.
+* **No license granted for everything else.** That covers README and other Markdown documents,
+  `docs/`, `results/`, `figures/`, `evidence/`, `CITATION.cff`, `RELEASE_NOTES.md` and `.github/`.
+  These are Copyright (c) 2026 Tim Urista, all rights reserved, beyond what GitHub's terms of
+  service allow. Documentation and data are not licensed under MIT.
+* **Third-party terms are unchanged.** Apache-2.0 notices and obligations stay with their
+  material, none of which is redistributed or relicensed here: the Apache-2.0 header of upstream
+  `attention.py`, the Qwen2.5-0.5B weights, config and tokenizer, and runtime packages such as
+  transformers.
+
+`LICENSE_PROPOSAL.md` records the reasoning for this split.

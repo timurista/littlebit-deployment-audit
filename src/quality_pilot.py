@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2026 Tim Urista. MIT grant scoped to the files listed in LICENSE, Part 1.
 """Bounded local quality pilot: actual upstream LittleBitLinear on a real pretrained model.
 
 This is a wiring and resource pilot on Qwen/Qwen2.5-0.5B with tiny frozen WikiText-2 windows. It is

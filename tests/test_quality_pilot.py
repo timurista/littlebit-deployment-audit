@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2026 Tim Urista. MIT grant scoped to the files listed in LICENSE, Part 1.
 """Unit tests for src/quality_pilot.py.
 
 Run from the project root:  python -m unittest tests.test_quality_pilot -v

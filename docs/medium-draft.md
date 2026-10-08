@@ -149,10 +149,15 @@ or hardware used in the papers.
 
 The audit code, recorded results and figures are in the public repository
 https://github.com/timurista/littlebit-deployment-audit, release v0.1.0
-(https://github.com/timurista/littlebit-deployment-audit/releases/tag/v0.1.0; both URLs to be
-verified once the release exists). No license is granted for the original code yet; portions
-derived from LittleBit remain CC BY-NC 4.0 (LICENSE_NOTES.md, LICENSE_PROPOSAL.md). The patch has
-not yet been sent to the maintainers. No license agreement was accepted and no cloud resources
+(https://github.com/timurista/littlebit-deployment-audit/releases/tag/v0.1.0; the release URL
+works once the tag is created; no DOI). Licensing is scoped per file, with no repository-wide
+license:
+* the original harness code (pilot, report and their tests, Dockerfile, requirements) is MIT;
+* files that adapt or quote LittleBit code (the audit, benchmark and patch regression scripts,
+  their tests and the patch) remain CC BY-NC 4.0, NonCommercial only;
+* the documentation, results and figures are all rights reserved.
+
+See LICENSE and LICENSE_NOTES.md. The patch has not yet been sent to the maintainers. No license agreement was accepted and no cloud resources
 were used.
 
 *Draft status: review draft; not published on Medium.*

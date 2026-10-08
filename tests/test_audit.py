@@ -1,3 +1,10 @@
+# SPDX-License-Identifier: CC-BY-NC-4.0
+# Adapted Material under CC BY-NC 4.0 (LICENSES/CC-BY-NC-4.0.txt; LICENSE, Part 2). Licensed
+# Material: The LittleBit Project, https://github.com/SamsungLabs/LittleBit, commit
+# 933857ed1443b53fc43a875c2cf64249e3c56f0c, CC BY-NC 4.0; methods by Banseok Lee, Dongkyu Kim,
+# Youngcheon You and Youngmin Kim. Changes, Copyright (c) 2026 Tim Urista: tests that mirror
+# upstream arithmetic and quote short upstream expressions in test data and assertions.
+# NonCommercial use only. Not affiliated with or endorsed by the LittleBit authors or Samsung.
 """Deterministic unit tests for the LittleBit deployment audit.
 
 Run from the project root:  python -m unittest discover -s tests -v

@@ -1,9 +1,13 @@
-# License proposal for the audit repository
+# License decision record for the audit repository
 
-Status: **proposal only, not enacted.** No LICENSE file, SPDX header or relicensing has been
-added. Until the owner decides, LICENSE_NOTES.md stays the governing statement: all rights are
-reserved for the original audit code, subject to the upstream terms for any adapted portions.
-Not legal advice; a qualified reviewer should confirm the classification before release.
+Status: **adopted on 2026-10-08, scoped as listed below.** The owner approved MIT only for the
+"Proposed MIT" file list, and kept the conservative CC BY-NC 4.0 list unchanged. The grant is in
+the top-level `LICENSE` (Parts 1 to 3) and in an SPDX header in each listed file. Upstream
+LittleBit code is not relicensed, and no derived portion is relicensed. Files on neither list
+(documentation, results, figures, evidence, release metadata, CI) remain all rights reserved.
+There is no repository-wide license. This file keeps the original proposal text below as the
+record of the reasoning, so "proposed" in the headings below now means "adopted". Not legal
+advice.
 
 ## Principle
 
@@ -27,7 +31,7 @@ Not legal advice; a qualified reviewer should confirm the classification before 
 | `tests/test_report_results.py` | Replay and private validation tests. |
 | `Dockerfile`, `requirements.txt` | Environment definition. |
 
-Reviewer check before enacting: confirm that none of these files contains a copied upstream line;
+Reviewer check (still recommended after adoption): confirm that none of these files contains a copied upstream line;
 the static scans that look for upstream expressions are in `src/audit.py`, not in these files.
 
 ## Conservatively CC BY-NC 4.0: derived or quoting portions
@@ -61,18 +65,24 @@ audit is not affiliated with or endorsed by Samsung or the authors.
 * Prose and documents (README.md, LICENSE_NOTES.md, PREREGISTRATION.md,
   QUALITY_PREREGISTRATION.md, MODEL_QUALITY_PLAN.md, `docs/`): they quote short upstream
   expressions for commentary and identification of the defect. A documentation license is a
-  separate owner decision; MIT is not proposed for them.
+  separate owner decision; MIT does not apply to them, and they remain all rights reserved.
 * Result data (`results/`, `figures/`, `evidence/`): numbers and logs produced by running
   NonCommercial upstream code on Apache-2.0 weights and CC BY-SA data. Whether these outputs carry
-  any of those terms is an open question; until the owner decides, share them with the attribution
-  and NonCommercial caution of LICENSE_NOTES.md.
+  any of those terms is an open question. They remain all rights reserved (LICENSE, Part 3), with
+  the attribution and NonCommercial caution of LICENSE_NOTES.md.
 
-## Steps if the owner adopts this (not done here)
+## Adoption (2026-10-08)
 
-1. Choose the copyright holder line and year for the MIT text.
-2. Add a top-level LICENSE that applies MIT only to the files listed as proposed MIT, and states
-   that the files listed as CC BY-NC 4.0 remain under CC BY-NC 4.0.
-3. Add SPDX headers (`MIT` or `CC-BY-NC-4.0`) to each source file to match.
-4. Keep LICENSE_NOTES.md and the attribution and non-endorsement statements.
-5. Optionally split the upstream mirror functions out of `src/audit.py` and `src/bench.py` so that
-   more of the harness can be offered under MIT.
+1. Copyright line: "Copyright (c) 2026 Tim Urista". Done.
+2. The top-level `LICENSE` applies MIT only to the seven files listed above (Part 1). It keeps the
+   CC BY-NC 4.0 files under CC BY-NC 4.0 (Part 2) and grants nothing for all other files
+   (Part 3). Done.
+3. SPDX headers: `MIT` on the seven files. `CC-BY-NC-4.0` on the five adapted files, with
+   attribution, non-endorsement and the changes made. Done.
+4. `LICENSES/CC-BY-NC-4.0.txt` holds the license text, copied unchanged from the upstream
+   repository. LICENSE_NOTES.md and the attribution and non-endorsement statements are kept. Done.
+5. Not done: the documentation and result data decision above stays open (all rights reserved),
+   and the optional split of mirror functions out of `src/audit.py` and `src/bench.py` was not
+   made.
+6. Before relying on it: confirm that `LICENSES/CC-BY-NC-4.0.txt` is byte-identical to the
+   upstream `LICENSE`, and have a qualified reviewer confirm the classification.

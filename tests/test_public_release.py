@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2026 Tim Urista. MIT grant scoped to the files listed in LICENSE, Part 1.
 """Release checks: no host absolute paths in recorded metrics or public files.
 
 Run from the project root:  python -m unittest tests.test_public_release -v

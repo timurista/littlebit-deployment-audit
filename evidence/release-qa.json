@@ -1,22 +1,25 @@
 {
   "schema": "littlebit-release-qa/1",
   "host": {
-    "tests": 129,
+    "tests": 132,
     "failures": 0,
     "errors": 0,
-    "skipped": 0
+    "skipped": 0,
+    "python": "3.12.14"
   },
   "clean_export_with_torch": {
-    "tests": 129,
+    "tests": 132,
     "failures": 0,
     "errors": 0,
-    "skipped": 26
+    "skipped": 26,
+    "python": "3.12.14"
   },
   "clean_export_stdlib_only": {
-    "tests": 129,
+    "tests": 132,
     "failures": 0,
     "errors": 0,
-    "skipped": 32
+    "skipped": 32,
+    "python": "3.12.14"
   },
   "metadata_replay": {
     "passed": true,
@@ -24,7 +27,7 @@
     "private_validation_on_owner_host": "passed before export"
   },
   "privacy_scan": {
-    "files": 55,
+    "files": 58,
     "findings": [],
     "rules": [
       "actual host home paths",
@@ -35,5 +38,29 @@
       "excluded weights dataset files window token ids and Claude transcripts"
     ]
   },
-  "scope": "Clean clone skips optional upstream and private checkpoint integration; full host suite passed. No quality rerun or training."
+  "scope": "Clean clone skips optional upstream and private checkpoint integration; full host suite passed. No quality rerun or training.",
+  "clean_export_python39": {
+    "tests": 132,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 32,
+    "python": "3.9.6"
+  },
+  "offline_container": {
+    "tests": 132,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 26,
+    "python": "3.11.15",
+    "torch": "2.6.0 CPU",
+    "network": "none",
+    "memory": "1 GiB"
+  },
+  "portability_fix": {
+    "derived_float_tolerance": "rtol=atol=1e-12, summary comparison test only",
+    "hashes_counts_types_structure": "exact",
+    "measured_results_changed": false
+  },
+  "license_copy_matches_upstream": true,
+  "git_apply_check": true
 }

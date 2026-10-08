@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2026 Tim Urista. MIT grant scoped to the files listed in LICENSE, Part 1.
 """Figures and a summary for the completed LittleBit quality pilot, from recorded JSON only.
 
 Writes:
@@ -989,8 +991,9 @@ def build_summary(records: Dict[str, Dict], files: Dict[str, object], meta: Dict
             "no_further_training_planned": True,
             "no_license_agreement_accepted_no_cloud_spend": True,
             "publication": ("public GitHub repository with release v0.1.0 authorized by the owner; no Medium "
-                            "publication, no arXiv submission; no license granted (all rights reserved on "
-                            "original portions, CC BY-NC 4.0 on adapted portions)"),
+                            "publication, no arXiv submission; scoped licensing per LICENSE: MIT only for the "
+                            "listed original harness files, CC BY-NC 4.0 for adapted files, all rights reserved "
+                            "for everything else"),
         },
         "reproduce": reproduce(records),
     }

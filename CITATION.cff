@@ -1,8 +1,9 @@
 # Citation metadata for release v0.1.0. No DOI has been assigned; none is listed. The release
 # commit is recorded in the release build manifest, not in this file.
-# No license field: no license has been granted for this repository (see LICENSE_NOTES.md and
-# LICENSE_PROPOSAL.md). Original portions: all rights reserved by the author. Portions adapted from
-# SamsungLabs/LittleBit remain under CC BY-NC 4.0.
+# No license field: there is no repository-wide license. Licensing is scoped per file (LICENSE):
+# MIT only for seven original harness files, CC BY-NC 4.0 for five files adapted from
+# SamsungLabs/LittleBit, all rights reserved for everything else (documentation, results, data).
+# A single SPDX value here would misstate that.
 cff-version: 1.2.0
 message: >-
   If you refer to this audit, please cite it as below, and cite the LittleBit papers for the
