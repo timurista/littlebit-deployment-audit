@@ -1,0 +1,416 @@
+{
+ "companion_release_status": "v0.2.0: presentation-only release over the immutable v0.1.0 data; scientific content and PDF cleared by independent review",
+ "companion_version": "0.2.0",
+ "measured_data": {
+  "commit": "97f075cd1f995e66b693b3c1657fcc2f1a43ed0c",
+  "note": "measured files are read unchanged from the v0.1.0 commit; this companion adds presentation only, no new experiment",
+  "release": "v0.1.0"
+ },
+ "pages_url": "https://timurista.github.io/littlebit-deployment-audit/",
+ "patch": {
+  "added": "bits = (word_data.unsqueeze(1) >> torch.arange(32, device=packed_tensor.device)) & 1",
+  "exhaustive_cases": 2010,
+  "official_loader_ran": false,
+  "patched_exact_cases": 2010,
+  "removed": "bits = (word_data.unsqueeze(1) << torch.arange(32, device=packed_tensor.device)) & 1",
+  "unpatched_exact_cases": 296
+ },
+ "pilot": {
+  "converted_modules": 168,
+  "converted_weight_count": 357826560,
+  "device": "cpu",
+  "dtype": "float32",
+  "eff_bit": 0.55,
+  "input_tokens": 2048,
+  "model": "Qwen/Qwen2.5-0.5B",
+  "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+  "residual": true,
+  "scored_tokens": 1016,
+  "seed": 42,
+  "steps": 16,
+  "test_windows": 8,
+  "use_itq": false
+ },
+ "quality": {
+  "conditions": [
+   {
+    "key": "original",
+    "label": "Original model",
+    "log10_ppl": 1.460621,
+    "mean_nll": 3.363204506791365,
+    "note": "reference, FP32",
+    "per_window_mean_nll": [
+     2.7316177854514736,
+     3.4621851382771136,
+     3.2179003713498338,
+     3.271608940894405,
+     3.2407588537468017,
+     3.690787293895153,
+     3.523172296228448,
+     3.7676053744876907
+    ],
+    "ppl": 28.881594011091973,
+    "scored_tokens": 1016,
+    "tier": "UPSTREAM_IMPORT_REAL_MODEL_PILOT",
+    "windows_worse_than_original": null
+   },
+   {
+    "key": "initialized_no_qat",
+    "label": "LittleBit, initialized",
+    "log10_ppl": 4.916066,
+    "mean_nll": 11.31966029110504,
+    "note": "converted, no QAT",
+    "per_window_mean_nll": [
+     10.430553890588715,
+     12.176492073404507,
+     11.571916707857387,
+     10.498697189364846,
+     10.720141204792684,
+     12.01805610567566,
+     11.960442995461891,
+     11.180982161694624
+    ],
+    "ppl": 82426.33720523083,
+    "scored_tokens": 1016,
+    "tier": "UPSTREAM_IMPORT_REAL_MODEL_PILOT",
+    "windows_worse_than_original": 8
+   },
+   {
+    "key": "qat_trained",
+    "label": "LittleBit, 16 QAT steps",
+    "log10_ppl": 3.988364,
+    "mean_nll": 9.183548143060188,
+    "note": "converted, then trained",
+    "per_window_mean_nll": [
+     8.48476060544412,
+     9.653853855733797,
+     9.333036137378121,
+     8.689506947524904,
+     8.768526743716142,
+     9.609656371469573,
+     10.035950981725858,
+     8.893093501488993
+    ],
+    "ppl": 9735.634988555017,
+    "scored_tokens": 1016,
+    "tier": "UPSTREAM_IMPORT_REAL_MODEL_PILOT",
+    "windows_worse_than_original": 8
+   },
+   {
+    "key": "qat_trained_upstream_decoder",
+    "label": "Same QAT weights, defective decoder",
+    "log10_ppl": 7.132214,
+    "mean_nll": 16.422528528791712,
+    "note": "decoder defect condition, not a quality result",
+    "per_window_mean_nll": [
+     16.13798832330178,
+     16.860129514078455,
+     16.33290621239369,
+     15.656111048901176,
+     16.282903506061224,
+     16.687466230918105,
+     16.980045686556597,
+     16.442677708122673
+    ],
+    "ppl": 13558558.490179988,
+    "scored_tokens": 1016,
+    "tier": "UPSTREAM_DECODER_DEFECT_VARIANT",
+    "windows_worse_than_original": 8
+   }
+  ],
+  "qat_minus_original": [
+   5.753142819992646,
+   6.1916687174566825,
+   6.1151357660282875,
+   5.4178980066305,
+   5.527767889969341,
+   5.91886907757442,
+   6.512778685497409,
+   5.125488127001303
+  ],
+  "statistics": "descriptive only: 8 contiguous windows from one test-split prefix are not independent samples; no confidence intervals or hypothesis tests are reported",
+  "tier": "UPSTREAM_IMPORT_REAL_MODEL_PILOT",
+  "window_sha256": [
+   "91ae344eda8b4bba453109fec235e315a879e02fab1d08c47d5f5e61445203f3",
+   "01c8de1731633ffeffdc8e9fe920181d4f0fe4fe4eb9df5b97eb24cd92ed2ab8",
+   "2b0436717df85eaa0008fa98507a946a91f9958795fcfbf9da17425902bc23e2",
+   "bbd097814ee8276fc1f0e9032937e8a569bd74c0283438c8a7ce51f277f1dfc3",
+   "afcc2eeadf26eed0adf9be4a953220d0e3366bd3390ca84c9db3084e6873a0ad",
+   "d6be8ab73f07b38d7496320761d0d6a37ae52016294bcf46a2f03f886da1504c",
+   "6a390d16b3a01547146bbbb2e67996987de1529c851bee90d4aed43fe56d1ab8",
+   "3fd6e1241a95a907bfd8062a9336a84edd5c8ca0e46c8f725257e976cc33360a"
+  ]
+ },
+ "repository": "https://github.com/timurista/littlebit-deployment-audit",
+ "resources": {
+  "note": "guards sample RSS at checkpoints (per layer, per step, per window); they are not hard memory caps, so the OS peak can exceed the threshold between checks without stopping a run",
+  "rss": [
+   {
+    "guard_peak_rss_seen_at_checks_bytes": 2204696576,
+    "guard_threshold_bytes": 6442450944,
+    "os_peak_exceeded_guard_threshold": false,
+    "peak_rss_os_bytes": 2307260416,
+    "peak_rss_os_gib": 2.1488037109375,
+    "stage": "baseline"
+   },
+   {
+    "guard_peak_rss_seen_at_checks_bytes": 4201070592,
+    "guard_threshold_bytes": 6442450944,
+    "os_peak_exceeded_guard_threshold": false,
+    "peak_rss_os_bytes": 4205740032,
+    "peak_rss_os_gib": 3.916900634765625,
+    "stage": "feasibility"
+   },
+   {
+    "guard_peak_rss_seen_at_checks_bytes": 5734875136,
+    "guard_threshold_bytes": 6442450944,
+    "os_peak_exceeded_guard_threshold": true,
+    "peak_rss_os_bytes": 7011155968,
+    "peak_rss_os_gib": 6.5296478271484375,
+    "stage": "train"
+   },
+   {
+    "guard_peak_rss_seen_at_checks_bytes": 2926346240,
+    "guard_threshold_bytes": 6442450944,
+    "os_peak_exceeded_guard_threshold": false,
+    "peak_rss_os_bytes": 3328245760,
+    "peak_rss_os_gib": 3.09967041015625,
+    "stage": "evaluate"
+   }
+  ]
+ },
+ "schema": "littlebit-companion/1",
+ "sources": [
+  {
+   "bytes": 31629,
+   "path": "results/summary.json",
+   "role": "held-out NLL, storage, BPW, KV cache, OS RSS",
+   "sha256": "5fc22a1619b66662938ada47ba1197a806b9e4376f69fa40c3d2b7fcbbc25473"
+  },
+  {
+   "bytes": 211612,
+   "path": "results/unpack_cases_upstream_import.csv",
+   "role": "recorded unpack cases",
+   "sha256": "43b44b008e82ad5df1a633fe05e51f344fc1f70fc690dbd0eb1d81545d4d3476"
+  },
+  {
+   "bytes": 14411,
+   "path": "results/patched_regression.json",
+   "role": "patch regression counts",
+   "sha256": "948286f18c9aa58185c89d1d3e7ee2f643c38831de1033d8153a055b97b1518a"
+  },
+  {
+   "bytes": 81613,
+   "path": "results/quality-pilot/train.json",
+   "role": "converted module count",
+   "sha256": "b1c942c3d8727b7895b9590b40990f9e610ba6a5a10041138d6db51c8164017b"
+  }
+ ],
+ "storage": {
+  "bpw_converted_block_linears": {
+   "actual_checkpoint_file_fp32_scales": 0.6093964629120879,
+   "advertised_upstream_formula": 0.5295501172542572,
+   "converted_weight_count": 357826560,
+   "packed_signs_only": 0.4967032967032967
+  },
+  "disk": {
+   "original_bytes": 988097824,
+   "original_dtype": "BF16",
+   "original_segments": [
+    {
+     "bytes": 272269312,
+     "key": "embedding",
+     "label": "Embedding table (frozen, tied head)"
+    },
+    {
+     "bytes": 715828512,
+     "key": "other",
+     "label": "Other original weights"
+    }
+   ],
+   "student_bytes": 299683600,
+   "student_segments": [
+    {
+     "bytes": 272269312,
+     "key": "embedding",
+     "label": "Embedding table (frozen, tied head)"
+    },
+    {
+     "bytes": 157008,
+     "key": "norms",
+     "label": "Norms, biases and header of the frozen base"
+    },
+    {
+     "bytes": 27257280,
+     "key": "compressed",
+     "label": "Compressed LittleBit layers (packed signs, FP32 scales)"
+    }
+   ]
+  },
+  "excluded_tokenizer_and_config_bytes": 15879995,
+  "kv_cache": {
+   "original_bytes": 3145728,
+   "student_bytes": 3145728,
+   "tokens": 128,
+   "unchanged": true
+  },
+  "resident_fp32": {
+   "original_bytes": 1976131200,
+   "original_segments": [
+    {
+     "bytes": 544538624,
+     "key": "embedding",
+     "label": "Embedding table, FP32 (derived from shape)"
+    },
+    {
+     "bytes": 1431592576,
+     "key": "other",
+     "label": "Other original weights, FP32"
+    }
+   ],
+   "student_bytes": 1234703616,
+   "student_segments": [
+    {
+     "bytes": 544538624,
+     "key": "embedding",
+     "label": "Embedding table, FP32 (derived from shape)"
+    },
+    {
+     "bytes": 689878656,
+     "key": "factors",
+     "label": "LittleBit factors, scales and buffers held as FP32"
+    },
+    {
+     "bytes": 286336,
+     "key": "other",
+     "label": "Other student tensors"
+    }
+   ]
+  },
+  "rule": "disk bytes and resident bytes are reported separately and never summed or compared across"
+ },
+ "three_js_version": "0.186.1",
+ "unpack": {
+  "cases": 2010,
+  "corrected_decoder_exact_cases": 2010,
+  "exact_cases": 296,
+  "family_counts": {
+   "byte_tiled": 1792,
+   "one_hot": 176,
+   "sign_example": 42
+  },
+  "histogram": [
+   {
+    "count": 296,
+    "hi": 0,
+    "label": "0",
+    "lo": 0
+   },
+   {
+    "count": 207,
+    "hi": 1,
+    "label": "1",
+    "lo": 1
+   },
+   {
+    "count": 260,
+    "hi": 3,
+    "label": "2 to 3",
+    "lo": 2
+   },
+   {
+    "count": 267,
+    "hi": 7,
+    "label": "4 to 7",
+    "lo": 4
+   },
+   {
+    "count": 368,
+    "hi": 15,
+    "label": "8 to 15",
+    "lo": 8
+   },
+   {
+    "count": 482,
+    "hi": 31,
+    "label": "16 to 31",
+    "lo": 16
+   },
+   {
+    "count": 130,
+    "hi": 63,
+    "label": "32 to 63",
+    "lo": 32
+   }
+  ],
+  "minus_to_plus_flips": 21881,
+  "packer_matches_mirror_cases": 2010,
+  "plus_to_minus_flips": 0,
+  "sign_errors": 21881,
+  "tier": "UPSTREAM_IMPORT",
+  "unpacker_matches_mirror_cases": 2010,
+  "widths": [
+   {
+    "byte_rows": 256,
+    "byte_rows_exact": 256,
+    "cases": 263,
+    "exact_cases": 263,
+    "sign_errors": 0,
+    "width": 1
+   },
+   {
+    "byte_rows": 256,
+    "byte_rows_exact": 4,
+    "cases": 269,
+    "exact_cases": 8,
+    "sign_errors": 786,
+    "width": 7
+   },
+   {
+    "byte_rows": 256,
+    "byte_rows_exact": 2,
+    "cases": 270,
+    "exact_cases": 6,
+    "sign_errors": 917,
+    "width": 8
+   },
+   {
+    "byte_rows": 256,
+    "byte_rows_exact": 1,
+    "cases": 293,
+    "exact_cases": 5,
+    "sign_errors": 3930,
+    "width": 31
+   },
+   {
+    "byte_rows": 256,
+    "byte_rows_exact": 1,
+    "cases": 294,
+    "exact_cases": 4,
+    "sign_errors": 4062,
+    "width": 32
+   },
+   {
+    "byte_rows": 256,
+    "byte_rows_exact": 1,
+    "cases": 295,
+    "exact_cases": 5,
+    "sign_errors": 4062,
+    "width": 33
+   },
+   {
+    "byte_rows": 256,
+    "byte_rows_exact": 1,
+    "cases": 326,
+    "exact_cases": 5,
+    "sign_errors": 8124,
+    "width": 64
+   }
+  ]
+ },
+ "upstream": {
+  "commit": "933857ed1443b53fc43a875c2cf64249e3c56f0c",
+  "license": "CC BY-NC 4.0",
+  "url": "https://github.com/SamsungLabs/LittleBit"
+ }
+}

@@ -8,6 +8,13 @@ __pycache__/
 cache/
 models/
 data/
+# Narrow exception: the companion's two generated JSON files (derived numbers only, no dataset
+# text) must be tracked so GitHub Pages and CI see them. Re-include the directory, ignore
+# everything else in it, then re-include exactly these two files.
+!/docs/site/data/
+/docs/site/data/*
+!/docs/site/data/companion.json
+!/docs/site/data/unpack_cases.json
 *.safetensors
 *.bin
 *.pt
