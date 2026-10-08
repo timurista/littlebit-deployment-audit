@@ -43,8 +43,8 @@ nothing about the methods at their published training budgets.
 \end{abstract}
 
 \section{Scope}
-The audited code is \url{https://github.com/SamsungLabs/LittleBit} at commit
-\texttt{933857ed1443b53fc43a875c2cf64249e3c56f0c}, licensed CC BY-NC 4.0. The methods are due to
+The audited code is \url{https://github.com/SamsungLabs/LittleBit} at commit\\
+\texttt{933857ed1443b53fc43a8}\allowbreak\texttt{75c2cf64249e3c56f0c}, licensed CC BY-NC 4.0. The methods are due to
 Lee, Kim, You and Kim (NeurIPS 2025) and Lee and Kim (ICML 2026). The defect was first observed in
 an exploratory run before preregistration; the sweep and layer tests followed a written
 preregistration, and the real-model pilot followed a separate preregistration with fixed inputs,
@@ -116,6 +116,7 @@ perplexity and per-window mean negative log-likelihood (NLL) on the same 1{,}016
 
 \begin{table}[h]
 \centering
+\small
 \begin{tabular}{lrrr}
 \hline
 condition & perplexity & mean NLL & windows worse than original \\
@@ -123,7 +124,7 @@ condition & perplexity & mean NLL & windows worse than original \\
 original & 28.8816 & 3.3632 & reference \\
 initialized, no QAT & 82{,}426.3372 & 11.3197 & 8 of 8 \\
 16-step QAT & 9{,}735.6350 & 9.1835 & 8 of 8 \\
-same QAT weights, defective decoder & 13{,}558{,}558.4902 & 16.4225 & 8 of 8 \\
+QAT, defective decoder & 13{,}558{,}558.4902 & 16.4225 & 8 of 8 \\
 \hline
 \end{tabular}
 \caption{Held-out perplexity on 8 WikiText-2 test windows (1{,}016 scored tokens). The last row is
@@ -226,7 +227,7 @@ Code, raw stage outputs, preregistrations, figures and a summary are released as
 at \url{https://github.com/timurista/littlebit-deployment-audit/releases/tag/v0.1.0}. The release
 carries a build manifest recording the exact commit and SHA-256 checksums of its files. No DOI has
 been assigned. Figures and summary are regenerated from
-tracked public files with \texttt{python src/report_results.py --metadata-only}, without running
+tracked public files with \texttt{python src/report\_results.py --metadata-only}, without running
 a model; that replay does not validate the pilot checkpoints, which were validated privately on
 the author's host and are not redistributed. Model weights, derived checkpoints, dataset files and
 the upstream checkout are not redistributed.
