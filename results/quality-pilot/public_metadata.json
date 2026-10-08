@@ -1,0 +1,107 @@
+{
+  "frozen_base_header": {
+    "embed_tokens": {
+      "bytes": 272269312,
+      "dtype": "BF16",
+      "shape": [
+        151936,
+        896
+      ]
+    },
+    "file_bytes": 272426320,
+    "source": "results/quality-pilot/checkpoints/frozen_base.safetensors",
+    "source_sha256": "777b11a1d5d85f14a4768c0869216aabd7680f71478f6a15971613c5f6e9d28b"
+  },
+  "model_config": {
+    "hidden_size": 896,
+    "source": "results/quality-pilot/checkpoints/config_and_tokenizer/config.json",
+    "source_sha256": "d14aea5dd83d2e8ddbd1717be9a914d7aa7f8657ec0a61dd91fec32f1a4d65d4",
+    "tie_word_embeddings": true,
+    "torch_dtype": "bfloat16",
+    "vocab_size": 151936
+  },
+  "official_state_dict_loader": {
+    "corrected_output_bitwise_equal": true,
+    "corrected_sign_agreement": {
+      "U": 1.0,
+      "U_R": 1.0,
+      "V": 1.0,
+      "V_R": 1.0
+    },
+    "original_sign_agreement": {
+      "U": 0.5520833134651184,
+      "U_R": 0.5859375,
+      "V": 0.55078125,
+      "V_R": 0.53125
+    },
+    "packed_detected": true,
+    "scope": "actual official state-dict loader on synthetic layer file, not full model loader",
+    "source": "evidence/official-loader-integration.json",
+    "source_sha256": "be11f9a98a2dcf1feb801982345851a25e5fc58defa4032a4b1877cfa3d6fb88"
+  },
+  "original_weights_header": {
+    "embed_tokens": {
+      "bytes": 272269312,
+      "dtype": "BF16",
+      "shape": [
+        151936,
+        896
+      ]
+    },
+    "file_bytes": 988097824,
+    "source": "models/qwen2.5-0.5b/model.safetensors"
+  },
+  "path_sanitization": {
+    "fields": [
+      "args.model_dir"
+    ],
+    "files": {
+      "results/quality-pilot/baseline.json": {
+        "pre_sanitization_sha256": "86833880f0c25fa89a9d24b2b193749104f15d2cd90cf345164be14fe86d98a1"
+      },
+      "results/quality-pilot/evaluate.json": {
+        "pre_sanitization_sha256": "e69dc921385d5cadf592a18e1138e82e5d4f6e99b0aa0e04c8c250797d9f334d"
+      },
+      "results/quality-pilot/feasibility.json": {
+        "pre_sanitization_sha256": "4758d769dddcfcfbf75b2e9c60ffe697c56c835982e032801a62e55b9b935d59"
+      },
+      "results/quality-pilot/train.json": {
+        "pre_sanitization_sha256": "40a2d5b8c9ffe73e1c9b4917bef91a343a722b7b967b53f9225286fe3d8a8e93"
+      }
+    },
+    "note": "the absolute host path recorded in args.model_dir was replaced by the project-relative path models/qwen2.5-0.5b; no other field and no measured number was changed. The original files are kept in the owner's private local backup outside the public export; their hashes are listed here and in evidence/quality-artifact-hashes.json. Stage runs after this change record public-safe arguments directly (src/quality_pilot.py public_args).",
+    "replacement": "models/qwen2.5-0.5b"
+  },
+  "purpose": "aggregate header metadata copied from private files (checkpoints, checkpoint config, original weights header, host test logs) so that src/report_results.py --metadata-only can rebuild results/summary.json and the figures from a clean clone. It contains no weights, no tokenizer files and no dataset text.",
+  "replay_scope": "a metadata replay recomputes every derived number from the public stage JSON and checks internal consistency; it does not re-validate the private checkpoints. Only a private validation run (src/report_results.py without --metadata-only, on the owner's host) hashes the checkpoints against train.json and re-derives each section of this file from the private sources.",
+  "schema": "littlebit-public-metadata/1",
+  "test_logs": {
+    "container": {
+      "failed_summary": null,
+      "ok": true,
+      "ran": 95,
+      "seconds": 2.908,
+      "source": "evidence/container-tests-quality.log",
+      "source_sha256": "146b4140dd16020d00e4db2a8fbfc0a8f6e42a562f3ca2a7210941cbc00eac32"
+    },
+    "container_image": {
+      "arch": "arm64",
+      "id": "sha256:e2001739838437f9e33226e856b2dc4caa47aae1269791455b3699773c818588",
+      "source": "evidence/container-image.txt",
+      "source_sha256": "19736494861032a6bde10889892d2201ad50a488da622d40054804177567077a"
+    },
+    "host": {
+      "failed_summary": null,
+      "ok": true,
+      "ran": 95,
+      "seconds": 2.338,
+      "source": "evidence/unit-tests-quality.log",
+      "source_sha256": "803adc75795a539942637b40b00e108bfe15de179f72e7eea69c375fd1a3ef94"
+    }
+  },
+  "trained_compressed_layers": {
+    "file_bytes": 27257280,
+    "source": "results/quality-pilot/checkpoints/trained/compressed_layers.safetensors",
+    "source_sha256": "df09d0478ae685983032b452336a1de7522312de45ff7fbf38efc44296b8739a"
+  }
+}

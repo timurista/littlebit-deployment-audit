@@ -1,0 +1,416 @@
+{
+  "created_unix": 1791470584.9407842,
+  "dataset": {
+    "config": "wikitext-2-raw-v1",
+    "license_note": "card metadata cc-by-sa-3.0 and gfdl; card text says CC BY-SA 4.0",
+    "repo": "Salesforce/wikitext",
+    "revision_evidence": [
+      "b08601e04326c79dfdd32d625aee71d232d685c3"
+    ],
+    "revision_pinned": "b08601e04326c79dfdd32d625aee71d232d685c3",
+    "revision_status": "verified_from_hf_cache_snapshot_path",
+    "source": "local parquet files only, read with pyarrow; no network"
+  },
+  "frozen": true,
+  "model": {
+    "files": {
+      "LICENSE": {
+        "bytes": 11343,
+        "path": "models/qwen2.5-0.5b/LICENSE",
+        "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e"
+      },
+      "config.json": {
+        "bytes": 681,
+        "path": "models/qwen2.5-0.5b/config.json",
+        "sha256": "479dcf0c5286339e41ad3992cd08ae88a467c4187587936248e2b7c96283484b"
+      },
+      "generation_config.json": {
+        "bytes": 138,
+        "path": "models/qwen2.5-0.5b/generation_config.json",
+        "sha256": "8c970692323e3ea0e9b8b0a4dca79388d31226e41f83c9fd6014804280ebf6e8"
+      },
+      "merges.txt": {
+        "bytes": 1671839,
+        "path": "models/qwen2.5-0.5b/merges.txt",
+        "sha256": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3"
+      },
+      "tokenizer.json": {
+        "bytes": 7031645,
+        "path": "models/qwen2.5-0.5b/tokenizer.json",
+        "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"
+      },
+      "tokenizer_config.json": {
+        "bytes": 7228,
+        "path": "models/qwen2.5-0.5b/tokenizer_config.json",
+        "sha256": "c91efca15ceff6e9ee9424db58a6f59cd41294e550a86cbd07e3c1fb500b34f9"
+      },
+      "vocab.json": {
+        "bytes": 2776833,
+        "path": "models/qwen2.5-0.5b/vocab.json",
+        "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+      }
+    },
+    "license": "Apache-2.0, ungated (verified by the project owner before this pilot)",
+    "model_dir": "models/qwen2.5-0.5b",
+    "repo": "Qwen/Qwen2.5-0.5B",
+    "revision": {
+      "consistent": true,
+      "etags": {
+        "LICENSE": "6634c8cc3133b3848ec74b9f275acaaa1ea618ab",
+        "README.md": "2d22b523f8968e42fc6b805e656133fa83f771ab",
+        "config.json": "141506237b9022c4ab3e01734cfafb9310b57d2d",
+        "generation_config.json": "cbbb3133034e192527e5321b4c679154e4819ab8",
+        "merges.txt": "20024bfe7c83998e9aeaf98a0cd6a2ce6306c2f0",
+        "model.safetensors": "88c142557820ccad55bb59756bfcfcf891de9cc6202816bd346445188a0ed342",
+        "tokenizer.json": "443909a61d429dff23010e5bddd28ff530edda00",
+        "tokenizer_config.json": "ba7e4c5637b9732dadcd66286ce48334e8b31e9e",
+        "vocab.json": "4783fe10ac3adce15ac8f358ef5462739852c569"
+      },
+      "matches_pinned": true,
+      "per_file": {
+        "LICENSE": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+        "README.md": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+        "config.json": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+        "generation_config.json": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+        "merges.txt": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+        "model.safetensors": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+        "tokenizer.json": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+        "tokenizer_config.json": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+        "vocab.json": "060db6499f32faf8b98477b0a26969ef7d8b9987"
+      },
+      "pinned": "060db6499f32faf8b98477b0a26969ef7d8b9987"
+    }
+  },
+  "purpose": "wiring and resource pilot windows; not a statistical benchmark",
+  "schema": "littlebit-quality-pilot/1",
+  "split_policy": {
+    "test": "frozen held-out, evaluated in the evaluate stage",
+    "train": "QAT training only",
+    "validation": "development only"
+  },
+  "splits": {
+    "test": {
+      "first_token_is_bos": false,
+      "margin_tokens": 64,
+      "n_windows": 8,
+      "parquet_files": [
+        {
+          "bytes": 732610,
+          "path": "cache/huggingface/hub/datasets--Salesforce--wikitext/snapshots/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext-2-raw-v1/test-00000-of-00001.parquet",
+          "sha256": "5f1bea067869d04849c0f975a2b29c4ff47d867f484f5010ea5e861eab246d91"
+        }
+      ],
+      "prefix_text_sha256": "a2c33e2f348440ede980e97ee7140cfea3ea8b4c93fbdf048842d0893e532603",
+      "prefix_token_count": 3511,
+      "role": "frozen_heldout",
+      "row_end": 64,
+      "row_start": 0,
+      "rows_total": 4358,
+      "seq_len": 128,
+      "special_tokens_in_windows": 0,
+      "stream_sha256": "0e32f81f492e624a4012ec536e109ec91e856b74334976fdb8c7a5920fc1f423",
+      "tokens_used": 1024,
+      "windows": [
+        {
+          "end": 128,
+          "index": 0,
+          "n_tokens": 128,
+          "scored_tokens": 127,
+          "sha256": "91ae344eda8b4bba453109fec235e315a879e02fab1d08c47d5f5e61445203f3",
+          "start": 0
+        },
+        {
+          "end": 256,
+          "index": 1,
+          "n_tokens": 128,
+          "scored_tokens": 127,
+          "sha256": "01c8de1731633ffeffdc8e9fe920181d4f0fe4fe4eb9df5b97eb24cd92ed2ab8",
+          "start": 128
+        },
+        {
+          "end": 384,
+          "index": 2,
+          "n_tokens": 128,
+          "scored_tokens": 127,
+          "sha256": "2b0436717df85eaa0008fa98507a946a91f9958795fcfbf9da17425902bc23e2",
+          "start": 256
+        },
+        {
+          "end": 512,
+          "index": 3,
+          "n_tokens": 128,
+          "scored_tokens": 127,
+          "sha256": "bbd097814ee8276fc1f0e9032937e8a569bd74c0283438c8a7ce51f277f1dfc3",
+          "start": 384
+        },
+        {
+          "end": 640,
+          "index": 4,
+          "n_tokens": 128,
+          "scored_tokens": 127,
+          "sha256": "afcc2eeadf26eed0adf9be4a953220d0e3366bd3390ca84c9db3084e6873a0ad",
+          "start": 512
+        },
+        {
+          "end": 768,
+          "index": 5,
+          "n_tokens": 128,
+          "scored_tokens": 127,
+          "sha256": "d6be8ab73f07b38d7496320761d0d6a37ae52016294bcf46a2f03f886da1504c",
+          "start": 640
+        },
+        {
+          "end": 896,
+          "index": 6,
+          "n_tokens": 128,
+          "scored_tokens": 127,
+          "sha256": "6a390d16b3a01547146bbbb2e67996987de1529c851bee90d4aed43fe56d1ab8",
+          "start": 768
+        },
+        {
+          "end": 1024,
+          "index": 7,
+          "n_tokens": 128,
+          "scored_tokens": 127,
+          "sha256": "3fd6e1241a95a907bfd8062a9336a84edd5c8ca0e46c8f725257e976cc33360a",
+          "start": 896
+        }
+      ]
+    },
+    "train": {
+      "first_token_is_bos": false,
+      "margin_tokens": 64,
+      "n_windows": 16,
+      "parquet_files": [
+        {
+          "bytes": 6357543,
+          "path": "cache/huggingface/hub/datasets--Salesforce--wikitext/snapshots/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext-2-raw-v1/train-00000-of-00001.parquet",
+          "sha256": "e83889baabc497075506f91975be5fac0d45c5290b6b20582c8cd1e853d0c9f7"
+        }
+      ],
+      "prefix_text_sha256": "2676e3a980cfb6ffa2c6305c3baec4680d0c2f6e7749af2e82320d13d2523aee",
+      "prefix_token_count": 5424,
+      "role": "qat_training_only",
+      "row_end": 64,
+      "row_start": 0,
+      "rows_total": 36718,
+      "seq_len": 128,
+      "special_tokens_in_windows": 0,
+      "stream_sha256": "4a1b214745c4f7a16da3b36d75c0c9caf08c4614d0449cefa470e87f91c2e6f0",
+      "tokens_used": 2048,
+      "windows": [
+        {
+          "end": 128,
+          "index": 0,
+          "n_tokens": 128,
+          "scored_tokens": 127,
+          "sha256": "b6d48e1a1e318d3f1f3ee8fef0110d172e1c2bd1782eb6ffd37b02ded232f321",
+          "start": 0
+        },
+        {
+          "end": 256,
+          "index": 1,
+          "n_tokens": 128,
+          "scored_tokens": 127,
+          "sha256": "31cf8da739df090b6f5851cf9d1f382227c707dcd82604d277fd2bbf644314bc",
+          "start": 128
+        },
+        {
+          "end": 384,
+          "index": 2,
+          "n_tokens": 128,
+          "scored_tokens": 127,
+          "sha256": "e26b619bc9aacf3e4ec7083d9eeae963ff94b8478fa7245a15377997eea74ec4",
+          "start": 256
+        },
+        {
+          "end": 512,
+          "index": 3,
+          "n_tokens": 128,
+          "scored_tokens": 127,
+          "sha256": "80b5552e56a20b506a11a01917223ef94e558925b27cda67b32bb2d6d44c65ee",
+          "start": 384
+        },
+        {
+          "end": 640,
+          "index": 4,
+          "n_tokens": 128,
+          "scored_tokens": 127,
+          "sha256": "8bda0284b2febb048e63355b56fd10a59a37979b8e2ca88c7cc0dee0d104a496",
+          "start": 512
+        },
+        {
+          "end": 768,
+          "index": 5,
+          "n_tokens": 128,
+          "scored_tokens": 127,
+          "sha256": "7605a49392b85546f4cae687fa00f0ef81586bd37dd4a2db1b11878863adec6e",
+          "start": 640
+        },
+        {
+          "end": 896,
+          "index": 6,
+          "n_tokens": 128,
+          "scored_tokens": 127,
+          "sha256": "6e1ab64f3c75e148f4dc3615cd7ccf731a019390e8ad6061d9edac9f16bb6cf2",
+          "start": 768
+        },
+        {
+          "end": 1024,
+          "index": 7,
+          "n_tokens": 128,
+          "scored_tokens": 127,
+          "sha256": "99e256a4a75e719aa9ba882caf551265c1f54d737b52690013f823fc38c85891",
+          "start": 896
+        },
+        {
+          "end": 1152,
+          "index": 8,
+          "n_tokens": 128,
+          "scored_tokens": 127,
+          "sha256": "d9054fe755473096a30addaaa32193f82c4a7a435969e8bc0d89ff53102bf47a",
+          "start": 1024
+        },
+        {
+          "end": 1280,
+          "index": 9,
+          "n_tokens": 128,
+          "scored_tokens": 127,
+          "sha256": "0024cc4e65fc1934dec89782f740776cfb115572816399323e1c9a4186dc26af",
+          "start": 1152
+        },
+        {
+          "end": 1408,
+          "index": 10,
+          "n_tokens": 128,
+          "scored_tokens": 127,
+          "sha256": "607e2808c7ac110dcac067ff37d9e559953a4a49619d517b21d329db8b400379",
+          "start": 1280
+        },
+        {
+          "end": 1536,
+          "index": 11,
+          "n_tokens": 128,
+          "scored_tokens": 127,
+          "sha256": "61c3c432bdb85bc193c4bfabd3b4fbb4f1aa2910402c7607f45b96bde4c9dcd3",
+          "start": 1408
+        },
+        {
+          "end": 1664,
+          "index": 12,
+          "n_tokens": 128,
+          "scored_tokens": 127,
+          "sha256": "9ac826489d00ee871ce0c7ea1dde38b3329a537240a60c1227cbfd3b694c1ff0",
+          "start": 1536
+        },
+        {
+          "end": 1792,
+          "index": 13,
+          "n_tokens": 128,
+          "scored_tokens": 127,
+          "sha256": "a4ae02c94d52b1839d50491565657ea7cb797d74ea62bba269dd6f83aeeb997e",
+          "start": 1664
+        },
+        {
+          "end": 1920,
+          "index": 14,
+          "n_tokens": 128,
+          "scored_tokens": 127,
+          "sha256": "c399acde94ab27d3982f8adc9b2c6154e85ced6679b7550de4977fb82f262417",
+          "start": 1792
+        },
+        {
+          "end": 2048,
+          "index": 15,
+          "n_tokens": 128,
+          "scored_tokens": 127,
+          "sha256": "78e5b7ca566e41ca01e5177554973eda828f7988f7079c7ad0248fff6d5325b7",
+          "start": 1920
+        }
+      ]
+    },
+    "validation": {
+      "first_token_is_bos": false,
+      "margin_tokens": 64,
+      "n_windows": 4,
+      "parquet_files": [
+        {
+          "bytes": 657209,
+          "path": "cache/huggingface/hub/datasets--Salesforce--wikitext/snapshots/b08601e04326c79dfdd32d625aee71d232d685c3/wikitext-2-raw-v1/validation-00000-of-00001.parquet",
+          "sha256": "204929b7ff9d6184953f867dedb860e40aa69c078fc1e54b3baaa8fb28511c4c"
+        }
+      ],
+      "prefix_text_sha256": "d87dd4452e6fdd1b279795dd716c72ad4a6c9ed9743406cb005a94465169f07c",
+      "prefix_token_count": 4005,
+      "role": "development_only",
+      "row_end": 64,
+      "row_start": 0,
+      "rows_total": 3760,
+      "seq_len": 128,
+      "special_tokens_in_windows": 0,
+      "stream_sha256": "15e223114f52f9d96998d34c0d127abbcc436374f66fbc8161cda4cc6107ce1e",
+      "tokens_used": 512,
+      "windows": [
+        {
+          "end": 128,
+          "index": 0,
+          "n_tokens": 128,
+          "scored_tokens": 127,
+          "sha256": "dec1fb801b0464a2ef0b27e83a46646eb9a2a9b83b96a658f3e1fd90a7e1b4d9",
+          "start": 0
+        },
+        {
+          "end": 256,
+          "index": 1,
+          "n_tokens": 128,
+          "scored_tokens": 127,
+          "sha256": "34a12ba21d0b3559033ce5cb8fca3049f8bc3c3187ac5fd3b644f84650a7f339",
+          "start": 128
+        },
+        {
+          "end": 384,
+          "index": 2,
+          "n_tokens": 128,
+          "scored_tokens": 127,
+          "sha256": "b7d3c04e0c085d7824dae8ec4e199939f9aabb5eb7db46727a2d610bdbbddd23",
+          "start": 256
+        },
+        {
+          "end": 512,
+          "index": 3,
+          "n_tokens": 128,
+          "scored_tokens": 127,
+          "sha256": "ba545a870319509b52b898fb793ef5c9ba463ad3cdd53802657f42c33a02e734",
+          "start": 384
+        }
+      ]
+    }
+  },
+  "stage": "prepare",
+  "tokenizer": {
+    "add_bos_token": null,
+    "add_eos_token": null,
+    "add_special_tokens_argument": "default (True)",
+    "bos_eos_override": "none",
+    "bos_token_id": null,
+    "class": "Qwen2TokenizerFast",
+    "eos_token_id": 151643,
+    "pad_token_id": 151643,
+    "vocab_size": 151665
+  },
+  "window_policy": {
+    "counts": {
+      "test": 8,
+      "train": 16,
+      "validation": 4
+    },
+    "join_rule": "'\\n\\n'",
+    "scoring": "first token of each window is not scored",
+    "seed": 42,
+    "seed_use": "window selection is deterministic; seed drives SVD init and train order",
+    "selection": "contiguous non-overlapping windows from token 0 of each split's own row prefix; splits are tokenized separately, so no window crosses splits",
+    "seq_len": 128,
+    "tokenize_margin_tokens": 64
+  },
+  "windows_json_sha256": "45c13c6af5f415f4388640ce7152b628a2480908b5c8197b1ac40bb1c16b447f"
+}

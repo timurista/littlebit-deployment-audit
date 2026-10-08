@@ -1,0 +1,13 @@
+{
+  "scope": "real pretrained base resource check only; input is not a quality benchmark",
+  "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+  "dtype": "float32",
+  "device": "cpu",
+  "threads": 2,
+  "tokens": 128,
+  "load_seconds": 5.569577540969476,
+  "forward_seconds": 0.6570841670036316,
+  "rss_bytes": 2250293248,
+  "available_bytes": 3489382400,
+  "logits_finite": true
+}

@@ -1,0 +1,39 @@
+{
+  "schema": "littlebit-release-qa/1",
+  "host": {
+    "tests": 129,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "clean_export_with_torch": {
+    "tests": 129,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 26
+  },
+  "clean_export_stdlib_only": {
+    "tests": 129,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 32
+  },
+  "metadata_replay": {
+    "passed": true,
+    "checkpoint_validation": false,
+    "private_validation_on_owner_host": "passed before export"
+  },
+  "privacy_scan": {
+    "files": 55,
+    "findings": [],
+    "rules": [
+      "actual host home paths",
+      "private email",
+      "private keys",
+      "GitHub token patterns",
+      "AWS key pattern",
+      "excluded weights dataset files window token ids and Claude transcripts"
+    ]
+  },
+  "scope": "Clean clone skips optional upstream and private checkpoint integration; full host suite passed. No quality rerun or training."
+}

@@ -1,0 +1,2011 @@
+tier,case_id,family,width,param,n_minus,packed_words_hex,upstream_exact,sign_errors,minus_to_plus_flips,first_error_col,reference_shift_exact,reference_bytes_exact,predicted_upstream_exact,prediction_matches
+ALGORITHM_AUDIT,byte_w1_b000,byte_tiled,1,0,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b001,byte_tiled,1,1,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b002,byte_tiled,1,2,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b003,byte_tiled,1,3,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b004,byte_tiled,1,4,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b005,byte_tiled,1,5,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b006,byte_tiled,1,6,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b007,byte_tiled,1,7,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b008,byte_tiled,1,8,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b009,byte_tiled,1,9,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b010,byte_tiled,1,10,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b011,byte_tiled,1,11,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b012,byte_tiled,1,12,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b013,byte_tiled,1,13,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b014,byte_tiled,1,14,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b015,byte_tiled,1,15,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b016,byte_tiled,1,16,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b017,byte_tiled,1,17,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b018,byte_tiled,1,18,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b019,byte_tiled,1,19,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b020,byte_tiled,1,20,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b021,byte_tiled,1,21,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b022,byte_tiled,1,22,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b023,byte_tiled,1,23,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b024,byte_tiled,1,24,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b025,byte_tiled,1,25,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b026,byte_tiled,1,26,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b027,byte_tiled,1,27,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b028,byte_tiled,1,28,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b029,byte_tiled,1,29,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b030,byte_tiled,1,30,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b031,byte_tiled,1,31,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b032,byte_tiled,1,32,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b033,byte_tiled,1,33,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b034,byte_tiled,1,34,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b035,byte_tiled,1,35,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b036,byte_tiled,1,36,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b037,byte_tiled,1,37,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b038,byte_tiled,1,38,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b039,byte_tiled,1,39,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b040,byte_tiled,1,40,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b041,byte_tiled,1,41,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b042,byte_tiled,1,42,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b043,byte_tiled,1,43,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b044,byte_tiled,1,44,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b045,byte_tiled,1,45,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b046,byte_tiled,1,46,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b047,byte_tiled,1,47,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b048,byte_tiled,1,48,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b049,byte_tiled,1,49,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b050,byte_tiled,1,50,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b051,byte_tiled,1,51,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b052,byte_tiled,1,52,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b053,byte_tiled,1,53,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b054,byte_tiled,1,54,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b055,byte_tiled,1,55,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b056,byte_tiled,1,56,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b057,byte_tiled,1,57,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b058,byte_tiled,1,58,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b059,byte_tiled,1,59,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b060,byte_tiled,1,60,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b061,byte_tiled,1,61,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b062,byte_tiled,1,62,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b063,byte_tiled,1,63,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b064,byte_tiled,1,64,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b065,byte_tiled,1,65,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b066,byte_tiled,1,66,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b067,byte_tiled,1,67,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b068,byte_tiled,1,68,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b069,byte_tiled,1,69,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b070,byte_tiled,1,70,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b071,byte_tiled,1,71,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b072,byte_tiled,1,72,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b073,byte_tiled,1,73,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b074,byte_tiled,1,74,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b075,byte_tiled,1,75,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b076,byte_tiled,1,76,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b077,byte_tiled,1,77,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b078,byte_tiled,1,78,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b079,byte_tiled,1,79,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b080,byte_tiled,1,80,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b081,byte_tiled,1,81,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b082,byte_tiled,1,82,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b083,byte_tiled,1,83,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b084,byte_tiled,1,84,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b085,byte_tiled,1,85,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b086,byte_tiled,1,86,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b087,byte_tiled,1,87,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b088,byte_tiled,1,88,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b089,byte_tiled,1,89,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b090,byte_tiled,1,90,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b091,byte_tiled,1,91,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b092,byte_tiled,1,92,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b093,byte_tiled,1,93,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b094,byte_tiled,1,94,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b095,byte_tiled,1,95,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b096,byte_tiled,1,96,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b097,byte_tiled,1,97,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b098,byte_tiled,1,98,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b099,byte_tiled,1,99,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b100,byte_tiled,1,100,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b101,byte_tiled,1,101,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b102,byte_tiled,1,102,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b103,byte_tiled,1,103,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b104,byte_tiled,1,104,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b105,byte_tiled,1,105,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b106,byte_tiled,1,106,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b107,byte_tiled,1,107,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b108,byte_tiled,1,108,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b109,byte_tiled,1,109,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b110,byte_tiled,1,110,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b111,byte_tiled,1,111,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b112,byte_tiled,1,112,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b113,byte_tiled,1,113,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b114,byte_tiled,1,114,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b115,byte_tiled,1,115,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b116,byte_tiled,1,116,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b117,byte_tiled,1,117,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b118,byte_tiled,1,118,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b119,byte_tiled,1,119,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b120,byte_tiled,1,120,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b121,byte_tiled,1,121,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b122,byte_tiled,1,122,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b123,byte_tiled,1,123,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b124,byte_tiled,1,124,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b125,byte_tiled,1,125,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b126,byte_tiled,1,126,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b127,byte_tiled,1,127,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b128,byte_tiled,1,128,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b129,byte_tiled,1,129,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b130,byte_tiled,1,130,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b131,byte_tiled,1,131,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b132,byte_tiled,1,132,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b133,byte_tiled,1,133,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b134,byte_tiled,1,134,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b135,byte_tiled,1,135,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b136,byte_tiled,1,136,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b137,byte_tiled,1,137,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b138,byte_tiled,1,138,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b139,byte_tiled,1,139,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b140,byte_tiled,1,140,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b141,byte_tiled,1,141,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b142,byte_tiled,1,142,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b143,byte_tiled,1,143,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b144,byte_tiled,1,144,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b145,byte_tiled,1,145,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b146,byte_tiled,1,146,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b147,byte_tiled,1,147,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b148,byte_tiled,1,148,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b149,byte_tiled,1,149,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b150,byte_tiled,1,150,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b151,byte_tiled,1,151,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b152,byte_tiled,1,152,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b153,byte_tiled,1,153,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b154,byte_tiled,1,154,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b155,byte_tiled,1,155,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b156,byte_tiled,1,156,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b157,byte_tiled,1,157,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b158,byte_tiled,1,158,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b159,byte_tiled,1,159,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b160,byte_tiled,1,160,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b161,byte_tiled,1,161,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b162,byte_tiled,1,162,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b163,byte_tiled,1,163,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b164,byte_tiled,1,164,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b165,byte_tiled,1,165,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b166,byte_tiled,1,166,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b167,byte_tiled,1,167,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b168,byte_tiled,1,168,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b169,byte_tiled,1,169,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b170,byte_tiled,1,170,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b171,byte_tiled,1,171,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b172,byte_tiled,1,172,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b173,byte_tiled,1,173,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b174,byte_tiled,1,174,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b175,byte_tiled,1,175,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b176,byte_tiled,1,176,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b177,byte_tiled,1,177,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b178,byte_tiled,1,178,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b179,byte_tiled,1,179,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b180,byte_tiled,1,180,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b181,byte_tiled,1,181,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b182,byte_tiled,1,182,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b183,byte_tiled,1,183,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b184,byte_tiled,1,184,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b185,byte_tiled,1,185,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b186,byte_tiled,1,186,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b187,byte_tiled,1,187,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b188,byte_tiled,1,188,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b189,byte_tiled,1,189,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b190,byte_tiled,1,190,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b191,byte_tiled,1,191,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b192,byte_tiled,1,192,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b193,byte_tiled,1,193,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b194,byte_tiled,1,194,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b195,byte_tiled,1,195,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b196,byte_tiled,1,196,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b197,byte_tiled,1,197,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b198,byte_tiled,1,198,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b199,byte_tiled,1,199,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b200,byte_tiled,1,200,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b201,byte_tiled,1,201,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b202,byte_tiled,1,202,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b203,byte_tiled,1,203,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b204,byte_tiled,1,204,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b205,byte_tiled,1,205,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b206,byte_tiled,1,206,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b207,byte_tiled,1,207,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b208,byte_tiled,1,208,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b209,byte_tiled,1,209,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b210,byte_tiled,1,210,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b211,byte_tiled,1,211,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b212,byte_tiled,1,212,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b213,byte_tiled,1,213,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b214,byte_tiled,1,214,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b215,byte_tiled,1,215,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b216,byte_tiled,1,216,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b217,byte_tiled,1,217,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b218,byte_tiled,1,218,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b219,byte_tiled,1,219,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b220,byte_tiled,1,220,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b221,byte_tiled,1,221,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b222,byte_tiled,1,222,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b223,byte_tiled,1,223,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b224,byte_tiled,1,224,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b225,byte_tiled,1,225,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b226,byte_tiled,1,226,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b227,byte_tiled,1,227,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b228,byte_tiled,1,228,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b229,byte_tiled,1,229,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b230,byte_tiled,1,230,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b231,byte_tiled,1,231,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b232,byte_tiled,1,232,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b233,byte_tiled,1,233,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b234,byte_tiled,1,234,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b235,byte_tiled,1,235,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b236,byte_tiled,1,236,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b237,byte_tiled,1,237,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b238,byte_tiled,1,238,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b239,byte_tiled,1,239,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b240,byte_tiled,1,240,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b241,byte_tiled,1,241,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b242,byte_tiled,1,242,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b243,byte_tiled,1,243,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b244,byte_tiled,1,244,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b245,byte_tiled,1,245,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b246,byte_tiled,1,246,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b247,byte_tiled,1,247,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b248,byte_tiled,1,248,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b249,byte_tiled,1,249,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b250,byte_tiled,1,250,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b251,byte_tiled,1,251,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b252,byte_tiled,1,252,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b253,byte_tiled,1,253,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b254,byte_tiled,1,254,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w1_b255,byte_tiled,1,255,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,onehot_w1_c0,one_hot,1,0,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,sign_w1_all_plus,sign_example,1,all_plus,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,sign_w1_all_minus,sign_example,1,all_minus,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,sign_w1_alternating_minus_first,sign_example,1,alternating_minus_first,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,sign_w1_alternating_plus_first,sign_example,1,alternating_plus_first,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,sign_w1_minus_at_word_starts,sign_example,1,minus_at_word_starts,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,sign_w1_minus_at_word_ends,sign_example,1,minus_at_word_ends,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w7_b000,byte_tiled,7,0,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w7_b001,byte_tiled,7,1,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w7_b002,byte_tiled,7,2,1,00000002,False,1,1,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b003,byte_tiled,7,3,2,00000003,False,1,1,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b004,byte_tiled,7,4,1,00000004,False,1,1,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b005,byte_tiled,7,5,2,00000005,False,1,1,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b006,byte_tiled,7,6,2,00000006,False,2,2,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b007,byte_tiled,7,7,3,00000007,False,2,2,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b008,byte_tiled,7,8,1,00000008,False,1,1,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b009,byte_tiled,7,9,2,00000009,False,1,1,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b010,byte_tiled,7,10,2,0000000a,False,2,2,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b011,byte_tiled,7,11,3,0000000b,False,2,2,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b012,byte_tiled,7,12,2,0000000c,False,2,2,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b013,byte_tiled,7,13,3,0000000d,False,2,2,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b014,byte_tiled,7,14,3,0000000e,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b015,byte_tiled,7,15,4,0000000f,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b016,byte_tiled,7,16,1,00000010,False,1,1,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b017,byte_tiled,7,17,2,00000011,False,1,1,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b018,byte_tiled,7,18,2,00000012,False,2,2,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b019,byte_tiled,7,19,3,00000013,False,2,2,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b020,byte_tiled,7,20,2,00000014,False,2,2,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b021,byte_tiled,7,21,3,00000015,False,2,2,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b022,byte_tiled,7,22,3,00000016,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b023,byte_tiled,7,23,4,00000017,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b024,byte_tiled,7,24,2,00000018,False,2,2,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b025,byte_tiled,7,25,3,00000019,False,2,2,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b026,byte_tiled,7,26,3,0000001a,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b027,byte_tiled,7,27,4,0000001b,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b028,byte_tiled,7,28,3,0000001c,False,3,3,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b029,byte_tiled,7,29,4,0000001d,False,3,3,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b030,byte_tiled,7,30,4,0000001e,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b031,byte_tiled,7,31,5,0000001f,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b032,byte_tiled,7,32,1,00000020,False,1,1,5,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b033,byte_tiled,7,33,2,00000021,False,1,1,5,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b034,byte_tiled,7,34,2,00000022,False,2,2,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b035,byte_tiled,7,35,3,00000023,False,2,2,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b036,byte_tiled,7,36,2,00000024,False,2,2,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b037,byte_tiled,7,37,3,00000025,False,2,2,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b038,byte_tiled,7,38,3,00000026,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b039,byte_tiled,7,39,4,00000027,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b040,byte_tiled,7,40,2,00000028,False,2,2,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b041,byte_tiled,7,41,3,00000029,False,2,2,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b042,byte_tiled,7,42,3,0000002a,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b043,byte_tiled,7,43,4,0000002b,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b044,byte_tiled,7,44,3,0000002c,False,3,3,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b045,byte_tiled,7,45,4,0000002d,False,3,3,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b046,byte_tiled,7,46,4,0000002e,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b047,byte_tiled,7,47,5,0000002f,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b048,byte_tiled,7,48,2,00000030,False,2,2,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b049,byte_tiled,7,49,3,00000031,False,2,2,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b050,byte_tiled,7,50,3,00000032,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b051,byte_tiled,7,51,4,00000033,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b052,byte_tiled,7,52,3,00000034,False,3,3,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b053,byte_tiled,7,53,4,00000035,False,3,3,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b054,byte_tiled,7,54,4,00000036,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b055,byte_tiled,7,55,5,00000037,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b056,byte_tiled,7,56,3,00000038,False,3,3,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b057,byte_tiled,7,57,4,00000039,False,3,3,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b058,byte_tiled,7,58,4,0000003a,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b059,byte_tiled,7,59,5,0000003b,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b060,byte_tiled,7,60,4,0000003c,False,4,4,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b061,byte_tiled,7,61,5,0000003d,False,4,4,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b062,byte_tiled,7,62,5,0000003e,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b063,byte_tiled,7,63,6,0000003f,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b064,byte_tiled,7,64,1,00000040,False,1,1,6,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b065,byte_tiled,7,65,2,00000041,False,1,1,6,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b066,byte_tiled,7,66,2,00000042,False,2,2,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b067,byte_tiled,7,67,3,00000043,False,2,2,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b068,byte_tiled,7,68,2,00000044,False,2,2,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b069,byte_tiled,7,69,3,00000045,False,2,2,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b070,byte_tiled,7,70,3,00000046,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b071,byte_tiled,7,71,4,00000047,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b072,byte_tiled,7,72,2,00000048,False,2,2,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b073,byte_tiled,7,73,3,00000049,False,2,2,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b074,byte_tiled,7,74,3,0000004a,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b075,byte_tiled,7,75,4,0000004b,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b076,byte_tiled,7,76,3,0000004c,False,3,3,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b077,byte_tiled,7,77,4,0000004d,False,3,3,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b078,byte_tiled,7,78,4,0000004e,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b079,byte_tiled,7,79,5,0000004f,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b080,byte_tiled,7,80,2,00000050,False,2,2,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b081,byte_tiled,7,81,3,00000051,False,2,2,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b082,byte_tiled,7,82,3,00000052,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b083,byte_tiled,7,83,4,00000053,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b084,byte_tiled,7,84,3,00000054,False,3,3,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b085,byte_tiled,7,85,4,00000055,False,3,3,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b086,byte_tiled,7,86,4,00000056,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b087,byte_tiled,7,87,5,00000057,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b088,byte_tiled,7,88,3,00000058,False,3,3,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b089,byte_tiled,7,89,4,00000059,False,3,3,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b090,byte_tiled,7,90,4,0000005a,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b091,byte_tiled,7,91,5,0000005b,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b092,byte_tiled,7,92,4,0000005c,False,4,4,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b093,byte_tiled,7,93,5,0000005d,False,4,4,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b094,byte_tiled,7,94,5,0000005e,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b095,byte_tiled,7,95,6,0000005f,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b096,byte_tiled,7,96,2,00000060,False,2,2,5,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b097,byte_tiled,7,97,3,00000061,False,2,2,5,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b098,byte_tiled,7,98,3,00000062,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b099,byte_tiled,7,99,4,00000063,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b100,byte_tiled,7,100,3,00000064,False,3,3,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b101,byte_tiled,7,101,4,00000065,False,3,3,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b102,byte_tiled,7,102,4,00000066,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b103,byte_tiled,7,103,5,00000067,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b104,byte_tiled,7,104,3,00000068,False,3,3,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b105,byte_tiled,7,105,4,00000069,False,3,3,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b106,byte_tiled,7,106,4,0000006a,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b107,byte_tiled,7,107,5,0000006b,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b108,byte_tiled,7,108,4,0000006c,False,4,4,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b109,byte_tiled,7,109,5,0000006d,False,4,4,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b110,byte_tiled,7,110,5,0000006e,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b111,byte_tiled,7,111,6,0000006f,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b112,byte_tiled,7,112,3,00000070,False,3,3,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b113,byte_tiled,7,113,4,00000071,False,3,3,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b114,byte_tiled,7,114,4,00000072,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b115,byte_tiled,7,115,5,00000073,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b116,byte_tiled,7,116,4,00000074,False,4,4,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b117,byte_tiled,7,117,5,00000075,False,4,4,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b118,byte_tiled,7,118,5,00000076,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b119,byte_tiled,7,119,6,00000077,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b120,byte_tiled,7,120,4,00000078,False,4,4,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b121,byte_tiled,7,121,5,00000079,False,4,4,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b122,byte_tiled,7,122,5,0000007a,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b123,byte_tiled,7,123,6,0000007b,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b124,byte_tiled,7,124,5,0000007c,False,5,5,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b125,byte_tiled,7,125,6,0000007d,False,5,5,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b126,byte_tiled,7,126,6,0000007e,False,6,6,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b127,byte_tiled,7,127,7,0000007f,False,6,6,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b128,byte_tiled,7,128,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w7_b129,byte_tiled,7,129,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w7_b130,byte_tiled,7,130,1,00000002,False,1,1,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b131,byte_tiled,7,131,2,00000003,False,1,1,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b132,byte_tiled,7,132,1,00000004,False,1,1,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b133,byte_tiled,7,133,2,00000005,False,1,1,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b134,byte_tiled,7,134,2,00000006,False,2,2,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b135,byte_tiled,7,135,3,00000007,False,2,2,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b136,byte_tiled,7,136,1,00000008,False,1,1,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b137,byte_tiled,7,137,2,00000009,False,1,1,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b138,byte_tiled,7,138,2,0000000a,False,2,2,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b139,byte_tiled,7,139,3,0000000b,False,2,2,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b140,byte_tiled,7,140,2,0000000c,False,2,2,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b141,byte_tiled,7,141,3,0000000d,False,2,2,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b142,byte_tiled,7,142,3,0000000e,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b143,byte_tiled,7,143,4,0000000f,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b144,byte_tiled,7,144,1,00000010,False,1,1,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b145,byte_tiled,7,145,2,00000011,False,1,1,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b146,byte_tiled,7,146,2,00000012,False,2,2,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b147,byte_tiled,7,147,3,00000013,False,2,2,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b148,byte_tiled,7,148,2,00000014,False,2,2,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b149,byte_tiled,7,149,3,00000015,False,2,2,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b150,byte_tiled,7,150,3,00000016,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b151,byte_tiled,7,151,4,00000017,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b152,byte_tiled,7,152,2,00000018,False,2,2,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b153,byte_tiled,7,153,3,00000019,False,2,2,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b154,byte_tiled,7,154,3,0000001a,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b155,byte_tiled,7,155,4,0000001b,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b156,byte_tiled,7,156,3,0000001c,False,3,3,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b157,byte_tiled,7,157,4,0000001d,False,3,3,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b158,byte_tiled,7,158,4,0000001e,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b159,byte_tiled,7,159,5,0000001f,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b160,byte_tiled,7,160,1,00000020,False,1,1,5,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b161,byte_tiled,7,161,2,00000021,False,1,1,5,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b162,byte_tiled,7,162,2,00000022,False,2,2,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b163,byte_tiled,7,163,3,00000023,False,2,2,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b164,byte_tiled,7,164,2,00000024,False,2,2,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b165,byte_tiled,7,165,3,00000025,False,2,2,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b166,byte_tiled,7,166,3,00000026,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b167,byte_tiled,7,167,4,00000027,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b168,byte_tiled,7,168,2,00000028,False,2,2,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b169,byte_tiled,7,169,3,00000029,False,2,2,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b170,byte_tiled,7,170,3,0000002a,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b171,byte_tiled,7,171,4,0000002b,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b172,byte_tiled,7,172,3,0000002c,False,3,3,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b173,byte_tiled,7,173,4,0000002d,False,3,3,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b174,byte_tiled,7,174,4,0000002e,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b175,byte_tiled,7,175,5,0000002f,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b176,byte_tiled,7,176,2,00000030,False,2,2,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b177,byte_tiled,7,177,3,00000031,False,2,2,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b178,byte_tiled,7,178,3,00000032,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b179,byte_tiled,7,179,4,00000033,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b180,byte_tiled,7,180,3,00000034,False,3,3,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b181,byte_tiled,7,181,4,00000035,False,3,3,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b182,byte_tiled,7,182,4,00000036,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b183,byte_tiled,7,183,5,00000037,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b184,byte_tiled,7,184,3,00000038,False,3,3,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b185,byte_tiled,7,185,4,00000039,False,3,3,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b186,byte_tiled,7,186,4,0000003a,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b187,byte_tiled,7,187,5,0000003b,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b188,byte_tiled,7,188,4,0000003c,False,4,4,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b189,byte_tiled,7,189,5,0000003d,False,4,4,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b190,byte_tiled,7,190,5,0000003e,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b191,byte_tiled,7,191,6,0000003f,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b192,byte_tiled,7,192,1,00000040,False,1,1,6,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b193,byte_tiled,7,193,2,00000041,False,1,1,6,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b194,byte_tiled,7,194,2,00000042,False,2,2,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b195,byte_tiled,7,195,3,00000043,False,2,2,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b196,byte_tiled,7,196,2,00000044,False,2,2,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b197,byte_tiled,7,197,3,00000045,False,2,2,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b198,byte_tiled,7,198,3,00000046,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b199,byte_tiled,7,199,4,00000047,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b200,byte_tiled,7,200,2,00000048,False,2,2,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b201,byte_tiled,7,201,3,00000049,False,2,2,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b202,byte_tiled,7,202,3,0000004a,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b203,byte_tiled,7,203,4,0000004b,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b204,byte_tiled,7,204,3,0000004c,False,3,3,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b205,byte_tiled,7,205,4,0000004d,False,3,3,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b206,byte_tiled,7,206,4,0000004e,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b207,byte_tiled,7,207,5,0000004f,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b208,byte_tiled,7,208,2,00000050,False,2,2,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b209,byte_tiled,7,209,3,00000051,False,2,2,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b210,byte_tiled,7,210,3,00000052,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b211,byte_tiled,7,211,4,00000053,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b212,byte_tiled,7,212,3,00000054,False,3,3,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b213,byte_tiled,7,213,4,00000055,False,3,3,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b214,byte_tiled,7,214,4,00000056,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b215,byte_tiled,7,215,5,00000057,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b216,byte_tiled,7,216,3,00000058,False,3,3,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b217,byte_tiled,7,217,4,00000059,False,3,3,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b218,byte_tiled,7,218,4,0000005a,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b219,byte_tiled,7,219,5,0000005b,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b220,byte_tiled,7,220,4,0000005c,False,4,4,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b221,byte_tiled,7,221,5,0000005d,False,4,4,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b222,byte_tiled,7,222,5,0000005e,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b223,byte_tiled,7,223,6,0000005f,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b224,byte_tiled,7,224,2,00000060,False,2,2,5,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b225,byte_tiled,7,225,3,00000061,False,2,2,5,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b226,byte_tiled,7,226,3,00000062,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b227,byte_tiled,7,227,4,00000063,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b228,byte_tiled,7,228,3,00000064,False,3,3,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b229,byte_tiled,7,229,4,00000065,False,3,3,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b230,byte_tiled,7,230,4,00000066,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b231,byte_tiled,7,231,5,00000067,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b232,byte_tiled,7,232,3,00000068,False,3,3,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b233,byte_tiled,7,233,4,00000069,False,3,3,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b234,byte_tiled,7,234,4,0000006a,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b235,byte_tiled,7,235,5,0000006b,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b236,byte_tiled,7,236,4,0000006c,False,4,4,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b237,byte_tiled,7,237,5,0000006d,False,4,4,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b238,byte_tiled,7,238,5,0000006e,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b239,byte_tiled,7,239,6,0000006f,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b240,byte_tiled,7,240,3,00000070,False,3,3,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b241,byte_tiled,7,241,4,00000071,False,3,3,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b242,byte_tiled,7,242,4,00000072,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b243,byte_tiled,7,243,5,00000073,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b244,byte_tiled,7,244,4,00000074,False,4,4,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b245,byte_tiled,7,245,5,00000075,False,4,4,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b246,byte_tiled,7,246,5,00000076,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b247,byte_tiled,7,247,6,00000077,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b248,byte_tiled,7,248,4,00000078,False,4,4,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b249,byte_tiled,7,249,5,00000079,False,4,4,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b250,byte_tiled,7,250,5,0000007a,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b251,byte_tiled,7,251,6,0000007b,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b252,byte_tiled,7,252,5,0000007c,False,5,5,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b253,byte_tiled,7,253,6,0000007d,False,5,5,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b254,byte_tiled,7,254,6,0000007e,False,6,6,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w7_b255,byte_tiled,7,255,7,0000007f,False,6,6,1,True,True,False,True
+ALGORITHM_AUDIT,onehot_w7_c0,one_hot,7,0,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,onehot_w7_c1,one_hot,7,1,1,00000002,False,1,1,1,True,True,False,True
+ALGORITHM_AUDIT,onehot_w7_c2,one_hot,7,2,1,00000004,False,1,1,2,True,True,False,True
+ALGORITHM_AUDIT,onehot_w7_c3,one_hot,7,3,1,00000008,False,1,1,3,True,True,False,True
+ALGORITHM_AUDIT,onehot_w7_c4,one_hot,7,4,1,00000010,False,1,1,4,True,True,False,True
+ALGORITHM_AUDIT,onehot_w7_c5,one_hot,7,5,1,00000020,False,1,1,5,True,True,False,True
+ALGORITHM_AUDIT,onehot_w7_c6,one_hot,7,6,1,00000040,False,1,1,6,True,True,False,True
+ALGORITHM_AUDIT,sign_w7_all_plus,sign_example,7,all_plus,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,sign_w7_all_minus,sign_example,7,all_minus,7,0000007f,False,6,6,1,True,True,False,True
+ALGORITHM_AUDIT,sign_w7_alternating_minus_first,sign_example,7,alternating_minus_first,4,00000055,False,3,3,2,True,True,False,True
+ALGORITHM_AUDIT,sign_w7_alternating_plus_first,sign_example,7,alternating_plus_first,3,0000002a,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,sign_w7_minus_at_word_starts,sign_example,7,minus_at_word_starts,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,sign_w7_minus_at_word_ends,sign_example,7,minus_at_word_ends,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w8_b000,byte_tiled,8,0,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w8_b001,byte_tiled,8,1,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w8_b002,byte_tiled,8,2,1,00000002,False,1,1,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b003,byte_tiled,8,3,2,00000003,False,1,1,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b004,byte_tiled,8,4,1,00000004,False,1,1,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b005,byte_tiled,8,5,2,00000005,False,1,1,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b006,byte_tiled,8,6,2,00000006,False,2,2,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b007,byte_tiled,8,7,3,00000007,False,2,2,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b008,byte_tiled,8,8,1,00000008,False,1,1,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b009,byte_tiled,8,9,2,00000009,False,1,1,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b010,byte_tiled,8,10,2,0000000a,False,2,2,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b011,byte_tiled,8,11,3,0000000b,False,2,2,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b012,byte_tiled,8,12,2,0000000c,False,2,2,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b013,byte_tiled,8,13,3,0000000d,False,2,2,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b014,byte_tiled,8,14,3,0000000e,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b015,byte_tiled,8,15,4,0000000f,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b016,byte_tiled,8,16,1,00000010,False,1,1,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b017,byte_tiled,8,17,2,00000011,False,1,1,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b018,byte_tiled,8,18,2,00000012,False,2,2,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b019,byte_tiled,8,19,3,00000013,False,2,2,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b020,byte_tiled,8,20,2,00000014,False,2,2,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b021,byte_tiled,8,21,3,00000015,False,2,2,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b022,byte_tiled,8,22,3,00000016,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b023,byte_tiled,8,23,4,00000017,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b024,byte_tiled,8,24,2,00000018,False,2,2,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b025,byte_tiled,8,25,3,00000019,False,2,2,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b026,byte_tiled,8,26,3,0000001a,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b027,byte_tiled,8,27,4,0000001b,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b028,byte_tiled,8,28,3,0000001c,False,3,3,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b029,byte_tiled,8,29,4,0000001d,False,3,3,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b030,byte_tiled,8,30,4,0000001e,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b031,byte_tiled,8,31,5,0000001f,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b032,byte_tiled,8,32,1,00000020,False,1,1,5,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b033,byte_tiled,8,33,2,00000021,False,1,1,5,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b034,byte_tiled,8,34,2,00000022,False,2,2,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b035,byte_tiled,8,35,3,00000023,False,2,2,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b036,byte_tiled,8,36,2,00000024,False,2,2,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b037,byte_tiled,8,37,3,00000025,False,2,2,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b038,byte_tiled,8,38,3,00000026,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b039,byte_tiled,8,39,4,00000027,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b040,byte_tiled,8,40,2,00000028,False,2,2,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b041,byte_tiled,8,41,3,00000029,False,2,2,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b042,byte_tiled,8,42,3,0000002a,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b043,byte_tiled,8,43,4,0000002b,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b044,byte_tiled,8,44,3,0000002c,False,3,3,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b045,byte_tiled,8,45,4,0000002d,False,3,3,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b046,byte_tiled,8,46,4,0000002e,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b047,byte_tiled,8,47,5,0000002f,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b048,byte_tiled,8,48,2,00000030,False,2,2,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b049,byte_tiled,8,49,3,00000031,False,2,2,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b050,byte_tiled,8,50,3,00000032,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b051,byte_tiled,8,51,4,00000033,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b052,byte_tiled,8,52,3,00000034,False,3,3,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b053,byte_tiled,8,53,4,00000035,False,3,3,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b054,byte_tiled,8,54,4,00000036,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b055,byte_tiled,8,55,5,00000037,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b056,byte_tiled,8,56,3,00000038,False,3,3,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b057,byte_tiled,8,57,4,00000039,False,3,3,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b058,byte_tiled,8,58,4,0000003a,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b059,byte_tiled,8,59,5,0000003b,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b060,byte_tiled,8,60,4,0000003c,False,4,4,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b061,byte_tiled,8,61,5,0000003d,False,4,4,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b062,byte_tiled,8,62,5,0000003e,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b063,byte_tiled,8,63,6,0000003f,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b064,byte_tiled,8,64,1,00000040,False,1,1,6,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b065,byte_tiled,8,65,2,00000041,False,1,1,6,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b066,byte_tiled,8,66,2,00000042,False,2,2,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b067,byte_tiled,8,67,3,00000043,False,2,2,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b068,byte_tiled,8,68,2,00000044,False,2,2,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b069,byte_tiled,8,69,3,00000045,False,2,2,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b070,byte_tiled,8,70,3,00000046,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b071,byte_tiled,8,71,4,00000047,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b072,byte_tiled,8,72,2,00000048,False,2,2,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b073,byte_tiled,8,73,3,00000049,False,2,2,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b074,byte_tiled,8,74,3,0000004a,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b075,byte_tiled,8,75,4,0000004b,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b076,byte_tiled,8,76,3,0000004c,False,3,3,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b077,byte_tiled,8,77,4,0000004d,False,3,3,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b078,byte_tiled,8,78,4,0000004e,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b079,byte_tiled,8,79,5,0000004f,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b080,byte_tiled,8,80,2,00000050,False,2,2,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b081,byte_tiled,8,81,3,00000051,False,2,2,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b082,byte_tiled,8,82,3,00000052,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b083,byte_tiled,8,83,4,00000053,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b084,byte_tiled,8,84,3,00000054,False,3,3,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b085,byte_tiled,8,85,4,00000055,False,3,3,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b086,byte_tiled,8,86,4,00000056,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b087,byte_tiled,8,87,5,00000057,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b088,byte_tiled,8,88,3,00000058,False,3,3,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b089,byte_tiled,8,89,4,00000059,False,3,3,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b090,byte_tiled,8,90,4,0000005a,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b091,byte_tiled,8,91,5,0000005b,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b092,byte_tiled,8,92,4,0000005c,False,4,4,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b093,byte_tiled,8,93,5,0000005d,False,4,4,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b094,byte_tiled,8,94,5,0000005e,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b095,byte_tiled,8,95,6,0000005f,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b096,byte_tiled,8,96,2,00000060,False,2,2,5,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b097,byte_tiled,8,97,3,00000061,False,2,2,5,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b098,byte_tiled,8,98,3,00000062,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b099,byte_tiled,8,99,4,00000063,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b100,byte_tiled,8,100,3,00000064,False,3,3,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b101,byte_tiled,8,101,4,00000065,False,3,3,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b102,byte_tiled,8,102,4,00000066,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b103,byte_tiled,8,103,5,00000067,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b104,byte_tiled,8,104,3,00000068,False,3,3,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b105,byte_tiled,8,105,4,00000069,False,3,3,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b106,byte_tiled,8,106,4,0000006a,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b107,byte_tiled,8,107,5,0000006b,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b108,byte_tiled,8,108,4,0000006c,False,4,4,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b109,byte_tiled,8,109,5,0000006d,False,4,4,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b110,byte_tiled,8,110,5,0000006e,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b111,byte_tiled,8,111,6,0000006f,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b112,byte_tiled,8,112,3,00000070,False,3,3,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b113,byte_tiled,8,113,4,00000071,False,3,3,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b114,byte_tiled,8,114,4,00000072,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b115,byte_tiled,8,115,5,00000073,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b116,byte_tiled,8,116,4,00000074,False,4,4,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b117,byte_tiled,8,117,5,00000075,False,4,4,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b118,byte_tiled,8,118,5,00000076,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b119,byte_tiled,8,119,6,00000077,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b120,byte_tiled,8,120,4,00000078,False,4,4,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b121,byte_tiled,8,121,5,00000079,False,4,4,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b122,byte_tiled,8,122,5,0000007a,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b123,byte_tiled,8,123,6,0000007b,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b124,byte_tiled,8,124,5,0000007c,False,5,5,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b125,byte_tiled,8,125,6,0000007d,False,5,5,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b126,byte_tiled,8,126,6,0000007e,False,6,6,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b127,byte_tiled,8,127,7,0000007f,False,6,6,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b128,byte_tiled,8,128,1,00000080,False,1,1,7,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b129,byte_tiled,8,129,2,00000081,False,1,1,7,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b130,byte_tiled,8,130,2,00000082,False,2,2,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b131,byte_tiled,8,131,3,00000083,False,2,2,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b132,byte_tiled,8,132,2,00000084,False,2,2,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b133,byte_tiled,8,133,3,00000085,False,2,2,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b134,byte_tiled,8,134,3,00000086,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b135,byte_tiled,8,135,4,00000087,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b136,byte_tiled,8,136,2,00000088,False,2,2,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b137,byte_tiled,8,137,3,00000089,False,2,2,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b138,byte_tiled,8,138,3,0000008a,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b139,byte_tiled,8,139,4,0000008b,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b140,byte_tiled,8,140,3,0000008c,False,3,3,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b141,byte_tiled,8,141,4,0000008d,False,3,3,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b142,byte_tiled,8,142,4,0000008e,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b143,byte_tiled,8,143,5,0000008f,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b144,byte_tiled,8,144,2,00000090,False,2,2,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b145,byte_tiled,8,145,3,00000091,False,2,2,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b146,byte_tiled,8,146,3,00000092,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b147,byte_tiled,8,147,4,00000093,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b148,byte_tiled,8,148,3,00000094,False,3,3,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b149,byte_tiled,8,149,4,00000095,False,3,3,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b150,byte_tiled,8,150,4,00000096,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b151,byte_tiled,8,151,5,00000097,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b152,byte_tiled,8,152,3,00000098,False,3,3,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b153,byte_tiled,8,153,4,00000099,False,3,3,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b154,byte_tiled,8,154,4,0000009a,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b155,byte_tiled,8,155,5,0000009b,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b156,byte_tiled,8,156,4,0000009c,False,4,4,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b157,byte_tiled,8,157,5,0000009d,False,4,4,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b158,byte_tiled,8,158,5,0000009e,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b159,byte_tiled,8,159,6,0000009f,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b160,byte_tiled,8,160,2,000000a0,False,2,2,5,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b161,byte_tiled,8,161,3,000000a1,False,2,2,5,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b162,byte_tiled,8,162,3,000000a2,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b163,byte_tiled,8,163,4,000000a3,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b164,byte_tiled,8,164,3,000000a4,False,3,3,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b165,byte_tiled,8,165,4,000000a5,False,3,3,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b166,byte_tiled,8,166,4,000000a6,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b167,byte_tiled,8,167,5,000000a7,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b168,byte_tiled,8,168,3,000000a8,False,3,3,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b169,byte_tiled,8,169,4,000000a9,False,3,3,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b170,byte_tiled,8,170,4,000000aa,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b171,byte_tiled,8,171,5,000000ab,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b172,byte_tiled,8,172,4,000000ac,False,4,4,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b173,byte_tiled,8,173,5,000000ad,False,4,4,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b174,byte_tiled,8,174,5,000000ae,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b175,byte_tiled,8,175,6,000000af,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b176,byte_tiled,8,176,3,000000b0,False,3,3,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b177,byte_tiled,8,177,4,000000b1,False,3,3,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b178,byte_tiled,8,178,4,000000b2,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b179,byte_tiled,8,179,5,000000b3,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b180,byte_tiled,8,180,4,000000b4,False,4,4,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b181,byte_tiled,8,181,5,000000b5,False,4,4,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b182,byte_tiled,8,182,5,000000b6,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b183,byte_tiled,8,183,6,000000b7,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b184,byte_tiled,8,184,4,000000b8,False,4,4,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b185,byte_tiled,8,185,5,000000b9,False,4,4,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b186,byte_tiled,8,186,5,000000ba,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b187,byte_tiled,8,187,6,000000bb,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b188,byte_tiled,8,188,5,000000bc,False,5,5,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b189,byte_tiled,8,189,6,000000bd,False,5,5,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b190,byte_tiled,8,190,6,000000be,False,6,6,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b191,byte_tiled,8,191,7,000000bf,False,6,6,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b192,byte_tiled,8,192,2,000000c0,False,2,2,6,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b193,byte_tiled,8,193,3,000000c1,False,2,2,6,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b194,byte_tiled,8,194,3,000000c2,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b195,byte_tiled,8,195,4,000000c3,False,3,3,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b196,byte_tiled,8,196,3,000000c4,False,3,3,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b197,byte_tiled,8,197,4,000000c5,False,3,3,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b198,byte_tiled,8,198,4,000000c6,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b199,byte_tiled,8,199,5,000000c7,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b200,byte_tiled,8,200,3,000000c8,False,3,3,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b201,byte_tiled,8,201,4,000000c9,False,3,3,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b202,byte_tiled,8,202,4,000000ca,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b203,byte_tiled,8,203,5,000000cb,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b204,byte_tiled,8,204,4,000000cc,False,4,4,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b205,byte_tiled,8,205,5,000000cd,False,4,4,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b206,byte_tiled,8,206,5,000000ce,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b207,byte_tiled,8,207,6,000000cf,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b208,byte_tiled,8,208,3,000000d0,False,3,3,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b209,byte_tiled,8,209,4,000000d1,False,3,3,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b210,byte_tiled,8,210,4,000000d2,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b211,byte_tiled,8,211,5,000000d3,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b212,byte_tiled,8,212,4,000000d4,False,4,4,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b213,byte_tiled,8,213,5,000000d5,False,4,4,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b214,byte_tiled,8,214,5,000000d6,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b215,byte_tiled,8,215,6,000000d7,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b216,byte_tiled,8,216,4,000000d8,False,4,4,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b217,byte_tiled,8,217,5,000000d9,False,4,4,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b218,byte_tiled,8,218,5,000000da,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b219,byte_tiled,8,219,6,000000db,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b220,byte_tiled,8,220,5,000000dc,False,5,5,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b221,byte_tiled,8,221,6,000000dd,False,5,5,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b222,byte_tiled,8,222,6,000000de,False,6,6,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b223,byte_tiled,8,223,7,000000df,False,6,6,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b224,byte_tiled,8,224,3,000000e0,False,3,3,5,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b225,byte_tiled,8,225,4,000000e1,False,3,3,5,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b226,byte_tiled,8,226,4,000000e2,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b227,byte_tiled,8,227,5,000000e3,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b228,byte_tiled,8,228,4,000000e4,False,4,4,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b229,byte_tiled,8,229,5,000000e5,False,4,4,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b230,byte_tiled,8,230,5,000000e6,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b231,byte_tiled,8,231,6,000000e7,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b232,byte_tiled,8,232,4,000000e8,False,4,4,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b233,byte_tiled,8,233,5,000000e9,False,4,4,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b234,byte_tiled,8,234,5,000000ea,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b235,byte_tiled,8,235,6,000000eb,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b236,byte_tiled,8,236,5,000000ec,False,5,5,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b237,byte_tiled,8,237,6,000000ed,False,5,5,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b238,byte_tiled,8,238,6,000000ee,False,6,6,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b239,byte_tiled,8,239,7,000000ef,False,6,6,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b240,byte_tiled,8,240,4,000000f0,False,4,4,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b241,byte_tiled,8,241,5,000000f1,False,4,4,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b242,byte_tiled,8,242,5,000000f2,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b243,byte_tiled,8,243,6,000000f3,False,5,5,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b244,byte_tiled,8,244,5,000000f4,False,5,5,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b245,byte_tiled,8,245,6,000000f5,False,5,5,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b246,byte_tiled,8,246,6,000000f6,False,6,6,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b247,byte_tiled,8,247,7,000000f7,False,6,6,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b248,byte_tiled,8,248,5,000000f8,False,5,5,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b249,byte_tiled,8,249,6,000000f9,False,5,5,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b250,byte_tiled,8,250,6,000000fa,False,6,6,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b251,byte_tiled,8,251,7,000000fb,False,6,6,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b252,byte_tiled,8,252,6,000000fc,False,6,6,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b253,byte_tiled,8,253,7,000000fd,False,6,6,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b254,byte_tiled,8,254,7,000000fe,False,7,7,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w8_b255,byte_tiled,8,255,8,000000ff,False,7,7,1,True,True,False,True
+ALGORITHM_AUDIT,onehot_w8_c0,one_hot,8,0,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,onehot_w8_c1,one_hot,8,1,1,00000002,False,1,1,1,True,True,False,True
+ALGORITHM_AUDIT,onehot_w8_c2,one_hot,8,2,1,00000004,False,1,1,2,True,True,False,True
+ALGORITHM_AUDIT,onehot_w8_c3,one_hot,8,3,1,00000008,False,1,1,3,True,True,False,True
+ALGORITHM_AUDIT,onehot_w8_c4,one_hot,8,4,1,00000010,False,1,1,4,True,True,False,True
+ALGORITHM_AUDIT,onehot_w8_c5,one_hot,8,5,1,00000020,False,1,1,5,True,True,False,True
+ALGORITHM_AUDIT,onehot_w8_c6,one_hot,8,6,1,00000040,False,1,1,6,True,True,False,True
+ALGORITHM_AUDIT,onehot_w8_c7,one_hot,8,7,1,00000080,False,1,1,7,True,True,False,True
+ALGORITHM_AUDIT,sign_w8_all_plus,sign_example,8,all_plus,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,sign_w8_all_minus,sign_example,8,all_minus,8,000000ff,False,7,7,1,True,True,False,True
+ALGORITHM_AUDIT,sign_w8_alternating_minus_first,sign_example,8,alternating_minus_first,4,00000055,False,3,3,2,True,True,False,True
+ALGORITHM_AUDIT,sign_w8_alternating_plus_first,sign_example,8,alternating_plus_first,4,000000aa,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,sign_w8_minus_at_word_starts,sign_example,8,minus_at_word_starts,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,sign_w8_minus_at_word_ends,sign_example,8,minus_at_word_ends,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w31_b000,byte_tiled,31,0,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w31_b001,byte_tiled,31,1,4,01010101,False,3,3,8,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b002,byte_tiled,31,2,4,02020202,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b003,byte_tiled,31,3,8,03030303,False,7,7,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b004,byte_tiled,31,4,4,04040404,False,4,4,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b005,byte_tiled,31,5,8,05050505,False,7,7,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b006,byte_tiled,31,6,8,06060606,False,8,8,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b007,byte_tiled,31,7,12,07070707,False,11,11,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b008,byte_tiled,31,8,4,08080808,False,4,4,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b009,byte_tiled,31,9,8,09090909,False,7,7,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b010,byte_tiled,31,10,8,0a0a0a0a,False,8,8,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b011,byte_tiled,31,11,12,0b0b0b0b,False,11,11,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b012,byte_tiled,31,12,8,0c0c0c0c,False,8,8,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b013,byte_tiled,31,13,12,0d0d0d0d,False,11,11,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b014,byte_tiled,31,14,12,0e0e0e0e,False,12,12,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b015,byte_tiled,31,15,16,0f0f0f0f,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b016,byte_tiled,31,16,4,10101010,False,4,4,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b017,byte_tiled,31,17,8,11111111,False,7,7,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b018,byte_tiled,31,18,8,12121212,False,8,8,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b019,byte_tiled,31,19,12,13131313,False,11,11,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b020,byte_tiled,31,20,8,14141414,False,8,8,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b021,byte_tiled,31,21,12,15151515,False,11,11,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b022,byte_tiled,31,22,12,16161616,False,12,12,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b023,byte_tiled,31,23,16,17171717,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b024,byte_tiled,31,24,8,18181818,False,8,8,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b025,byte_tiled,31,25,12,19191919,False,11,11,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b026,byte_tiled,31,26,12,1a1a1a1a,False,12,12,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b027,byte_tiled,31,27,16,1b1b1b1b,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b028,byte_tiled,31,28,12,1c1c1c1c,False,12,12,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b029,byte_tiled,31,29,16,1d1d1d1d,False,15,15,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b030,byte_tiled,31,30,16,1e1e1e1e,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b031,byte_tiled,31,31,20,1f1f1f1f,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b032,byte_tiled,31,32,4,20202020,False,4,4,5,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b033,byte_tiled,31,33,8,21212121,False,7,7,5,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b034,byte_tiled,31,34,8,22222222,False,8,8,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b035,byte_tiled,31,35,12,23232323,False,11,11,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b036,byte_tiled,31,36,8,24242424,False,8,8,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b037,byte_tiled,31,37,12,25252525,False,11,11,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b038,byte_tiled,31,38,12,26262626,False,12,12,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b039,byte_tiled,31,39,16,27272727,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b040,byte_tiled,31,40,8,28282828,False,8,8,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b041,byte_tiled,31,41,12,29292929,False,11,11,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b042,byte_tiled,31,42,12,2a2a2a2a,False,12,12,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b043,byte_tiled,31,43,16,2b2b2b2b,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b044,byte_tiled,31,44,12,2c2c2c2c,False,12,12,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b045,byte_tiled,31,45,16,2d2d2d2d,False,15,15,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b046,byte_tiled,31,46,16,2e2e2e2e,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b047,byte_tiled,31,47,20,2f2f2f2f,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b048,byte_tiled,31,48,8,30303030,False,8,8,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b049,byte_tiled,31,49,12,31313131,False,11,11,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b050,byte_tiled,31,50,12,32323232,False,12,12,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b051,byte_tiled,31,51,16,33333333,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b052,byte_tiled,31,52,12,34343434,False,12,12,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b053,byte_tiled,31,53,16,35353535,False,15,15,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b054,byte_tiled,31,54,16,36363636,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b055,byte_tiled,31,55,20,37373737,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b056,byte_tiled,31,56,12,38383838,False,12,12,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b057,byte_tiled,31,57,16,39393939,False,15,15,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b058,byte_tiled,31,58,16,3a3a3a3a,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b059,byte_tiled,31,59,20,3b3b3b3b,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b060,byte_tiled,31,60,16,3c3c3c3c,False,16,16,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b061,byte_tiled,31,61,20,3d3d3d3d,False,19,19,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b062,byte_tiled,31,62,20,3e3e3e3e,False,20,20,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b063,byte_tiled,31,63,24,3f3f3f3f,False,23,23,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b064,byte_tiled,31,64,4,40404040,False,4,4,6,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b065,byte_tiled,31,65,8,41414141,False,7,7,6,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b066,byte_tiled,31,66,8,42424242,False,8,8,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b067,byte_tiled,31,67,12,43434343,False,11,11,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b068,byte_tiled,31,68,8,44444444,False,8,8,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b069,byte_tiled,31,69,12,45454545,False,11,11,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b070,byte_tiled,31,70,12,46464646,False,12,12,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b071,byte_tiled,31,71,16,47474747,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b072,byte_tiled,31,72,8,48484848,False,8,8,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b073,byte_tiled,31,73,12,49494949,False,11,11,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b074,byte_tiled,31,74,12,4a4a4a4a,False,12,12,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b075,byte_tiled,31,75,16,4b4b4b4b,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b076,byte_tiled,31,76,12,4c4c4c4c,False,12,12,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b077,byte_tiled,31,77,16,4d4d4d4d,False,15,15,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b078,byte_tiled,31,78,16,4e4e4e4e,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b079,byte_tiled,31,79,20,4f4f4f4f,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b080,byte_tiled,31,80,8,50505050,False,8,8,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b081,byte_tiled,31,81,12,51515151,False,11,11,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b082,byte_tiled,31,82,12,52525252,False,12,12,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b083,byte_tiled,31,83,16,53535353,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b084,byte_tiled,31,84,12,54545454,False,12,12,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b085,byte_tiled,31,85,16,55555555,False,15,15,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b086,byte_tiled,31,86,16,56565656,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b087,byte_tiled,31,87,20,57575757,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b088,byte_tiled,31,88,12,58585858,False,12,12,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b089,byte_tiled,31,89,16,59595959,False,15,15,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b090,byte_tiled,31,90,16,5a5a5a5a,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b091,byte_tiled,31,91,20,5b5b5b5b,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b092,byte_tiled,31,92,16,5c5c5c5c,False,16,16,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b093,byte_tiled,31,93,20,5d5d5d5d,False,19,19,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b094,byte_tiled,31,94,20,5e5e5e5e,False,20,20,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b095,byte_tiled,31,95,24,5f5f5f5f,False,23,23,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b096,byte_tiled,31,96,8,60606060,False,8,8,5,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b097,byte_tiled,31,97,12,61616161,False,11,11,5,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b098,byte_tiled,31,98,12,62626262,False,12,12,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b099,byte_tiled,31,99,16,63636363,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b100,byte_tiled,31,100,12,64646464,False,12,12,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b101,byte_tiled,31,101,16,65656565,False,15,15,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b102,byte_tiled,31,102,16,66666666,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b103,byte_tiled,31,103,20,67676767,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b104,byte_tiled,31,104,12,68686868,False,12,12,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b105,byte_tiled,31,105,16,69696969,False,15,15,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b106,byte_tiled,31,106,16,6a6a6a6a,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b107,byte_tiled,31,107,20,6b6b6b6b,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b108,byte_tiled,31,108,16,6c6c6c6c,False,16,16,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b109,byte_tiled,31,109,20,6d6d6d6d,False,19,19,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b110,byte_tiled,31,110,20,6e6e6e6e,False,20,20,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b111,byte_tiled,31,111,24,6f6f6f6f,False,23,23,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b112,byte_tiled,31,112,12,70707070,False,12,12,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b113,byte_tiled,31,113,16,71717171,False,15,15,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b114,byte_tiled,31,114,16,72727272,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b115,byte_tiled,31,115,20,73737373,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b116,byte_tiled,31,116,16,74747474,False,16,16,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b117,byte_tiled,31,117,20,75757575,False,19,19,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b118,byte_tiled,31,118,20,76767676,False,20,20,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b119,byte_tiled,31,119,24,77777777,False,23,23,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b120,byte_tiled,31,120,16,78787878,False,16,16,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b121,byte_tiled,31,121,20,79797979,False,19,19,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b122,byte_tiled,31,122,20,7a7a7a7a,False,20,20,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b123,byte_tiled,31,123,24,7b7b7b7b,False,23,23,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b124,byte_tiled,31,124,20,7c7c7c7c,False,20,20,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b125,byte_tiled,31,125,24,7d7d7d7d,False,23,23,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b126,byte_tiled,31,126,24,7e7e7e7e,False,24,24,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b127,byte_tiled,31,127,28,7f7f7f7f,False,27,27,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b128,byte_tiled,31,128,3,00808080,False,3,3,7,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b129,byte_tiled,31,129,7,01818181,False,6,6,7,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b130,byte_tiled,31,130,7,02828282,False,7,7,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b131,byte_tiled,31,131,11,03838383,False,10,10,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b132,byte_tiled,31,132,7,04848484,False,7,7,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b133,byte_tiled,31,133,11,05858585,False,10,10,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b134,byte_tiled,31,134,11,06868686,False,11,11,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b135,byte_tiled,31,135,15,07878787,False,14,14,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b136,byte_tiled,31,136,7,08888888,False,7,7,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b137,byte_tiled,31,137,11,09898989,False,10,10,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b138,byte_tiled,31,138,11,0a8a8a8a,False,11,11,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b139,byte_tiled,31,139,15,0b8b8b8b,False,14,14,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b140,byte_tiled,31,140,11,0c8c8c8c,False,11,11,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b141,byte_tiled,31,141,15,0d8d8d8d,False,14,14,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b142,byte_tiled,31,142,15,0e8e8e8e,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b143,byte_tiled,31,143,19,0f8f8f8f,False,18,18,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b144,byte_tiled,31,144,7,10909090,False,7,7,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b145,byte_tiled,31,145,11,11919191,False,10,10,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b146,byte_tiled,31,146,11,12929292,False,11,11,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b147,byte_tiled,31,147,15,13939393,False,14,14,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b148,byte_tiled,31,148,11,14949494,False,11,11,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b149,byte_tiled,31,149,15,15959595,False,14,14,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b150,byte_tiled,31,150,15,16969696,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b151,byte_tiled,31,151,19,17979797,False,18,18,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b152,byte_tiled,31,152,11,18989898,False,11,11,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b153,byte_tiled,31,153,15,19999999,False,14,14,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b154,byte_tiled,31,154,15,1a9a9a9a,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b155,byte_tiled,31,155,19,1b9b9b9b,False,18,18,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b156,byte_tiled,31,156,15,1c9c9c9c,False,15,15,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b157,byte_tiled,31,157,19,1d9d9d9d,False,18,18,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b158,byte_tiled,31,158,19,1e9e9e9e,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b159,byte_tiled,31,159,23,1f9f9f9f,False,22,22,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b160,byte_tiled,31,160,7,20a0a0a0,False,7,7,5,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b161,byte_tiled,31,161,11,21a1a1a1,False,10,10,5,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b162,byte_tiled,31,162,11,22a2a2a2,False,11,11,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b163,byte_tiled,31,163,15,23a3a3a3,False,14,14,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b164,byte_tiled,31,164,11,24a4a4a4,False,11,11,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b165,byte_tiled,31,165,15,25a5a5a5,False,14,14,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b166,byte_tiled,31,166,15,26a6a6a6,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b167,byte_tiled,31,167,19,27a7a7a7,False,18,18,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b168,byte_tiled,31,168,11,28a8a8a8,False,11,11,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b169,byte_tiled,31,169,15,29a9a9a9,False,14,14,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b170,byte_tiled,31,170,15,2aaaaaaa,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b171,byte_tiled,31,171,19,2bababab,False,18,18,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b172,byte_tiled,31,172,15,2cacacac,False,15,15,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b173,byte_tiled,31,173,19,2dadadad,False,18,18,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b174,byte_tiled,31,174,19,2eaeaeae,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b175,byte_tiled,31,175,23,2fafafaf,False,22,22,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b176,byte_tiled,31,176,11,30b0b0b0,False,11,11,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b177,byte_tiled,31,177,15,31b1b1b1,False,14,14,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b178,byte_tiled,31,178,15,32b2b2b2,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b179,byte_tiled,31,179,19,33b3b3b3,False,18,18,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b180,byte_tiled,31,180,15,34b4b4b4,False,15,15,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b181,byte_tiled,31,181,19,35b5b5b5,False,18,18,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b182,byte_tiled,31,182,19,36b6b6b6,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b183,byte_tiled,31,183,23,37b7b7b7,False,22,22,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b184,byte_tiled,31,184,15,38b8b8b8,False,15,15,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b185,byte_tiled,31,185,19,39b9b9b9,False,18,18,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b186,byte_tiled,31,186,19,3abababa,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b187,byte_tiled,31,187,23,3bbbbbbb,False,22,22,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b188,byte_tiled,31,188,19,3cbcbcbc,False,19,19,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b189,byte_tiled,31,189,23,3dbdbdbd,False,22,22,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b190,byte_tiled,31,190,23,3ebebebe,False,23,23,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b191,byte_tiled,31,191,27,3fbfbfbf,False,26,26,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b192,byte_tiled,31,192,7,40c0c0c0,False,7,7,6,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b193,byte_tiled,31,193,11,41c1c1c1,False,10,10,6,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b194,byte_tiled,31,194,11,42c2c2c2,False,11,11,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b195,byte_tiled,31,195,15,43c3c3c3,False,14,14,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b196,byte_tiled,31,196,11,44c4c4c4,False,11,11,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b197,byte_tiled,31,197,15,45c5c5c5,False,14,14,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b198,byte_tiled,31,198,15,46c6c6c6,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b199,byte_tiled,31,199,19,47c7c7c7,False,18,18,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b200,byte_tiled,31,200,11,48c8c8c8,False,11,11,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b201,byte_tiled,31,201,15,49c9c9c9,False,14,14,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b202,byte_tiled,31,202,15,4acacaca,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b203,byte_tiled,31,203,19,4bcbcbcb,False,18,18,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b204,byte_tiled,31,204,15,4ccccccc,False,15,15,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b205,byte_tiled,31,205,19,4dcdcdcd,False,18,18,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b206,byte_tiled,31,206,19,4ececece,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b207,byte_tiled,31,207,23,4fcfcfcf,False,22,22,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b208,byte_tiled,31,208,11,50d0d0d0,False,11,11,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b209,byte_tiled,31,209,15,51d1d1d1,False,14,14,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b210,byte_tiled,31,210,15,52d2d2d2,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b211,byte_tiled,31,211,19,53d3d3d3,False,18,18,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b212,byte_tiled,31,212,15,54d4d4d4,False,15,15,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b213,byte_tiled,31,213,19,55d5d5d5,False,18,18,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b214,byte_tiled,31,214,19,56d6d6d6,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b215,byte_tiled,31,215,23,57d7d7d7,False,22,22,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b216,byte_tiled,31,216,15,58d8d8d8,False,15,15,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b217,byte_tiled,31,217,19,59d9d9d9,False,18,18,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b218,byte_tiled,31,218,19,5adadada,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b219,byte_tiled,31,219,23,5bdbdbdb,False,22,22,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b220,byte_tiled,31,220,19,5cdcdcdc,False,19,19,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b221,byte_tiled,31,221,23,5ddddddd,False,22,22,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b222,byte_tiled,31,222,23,5ededede,False,23,23,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b223,byte_tiled,31,223,27,5fdfdfdf,False,26,26,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b224,byte_tiled,31,224,11,60e0e0e0,False,11,11,5,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b225,byte_tiled,31,225,15,61e1e1e1,False,14,14,5,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b226,byte_tiled,31,226,15,62e2e2e2,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b227,byte_tiled,31,227,19,63e3e3e3,False,18,18,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b228,byte_tiled,31,228,15,64e4e4e4,False,15,15,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b229,byte_tiled,31,229,19,65e5e5e5,False,18,18,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b230,byte_tiled,31,230,19,66e6e6e6,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b231,byte_tiled,31,231,23,67e7e7e7,False,22,22,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b232,byte_tiled,31,232,15,68e8e8e8,False,15,15,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b233,byte_tiled,31,233,19,69e9e9e9,False,18,18,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b234,byte_tiled,31,234,19,6aeaeaea,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b235,byte_tiled,31,235,23,6bebebeb,False,22,22,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b236,byte_tiled,31,236,19,6cececec,False,19,19,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b237,byte_tiled,31,237,23,6dededed,False,22,22,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b238,byte_tiled,31,238,23,6eeeeeee,False,23,23,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b239,byte_tiled,31,239,27,6fefefef,False,26,26,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b240,byte_tiled,31,240,15,70f0f0f0,False,15,15,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b241,byte_tiled,31,241,19,71f1f1f1,False,18,18,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b242,byte_tiled,31,242,19,72f2f2f2,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b243,byte_tiled,31,243,23,73f3f3f3,False,22,22,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b244,byte_tiled,31,244,19,74f4f4f4,False,19,19,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b245,byte_tiled,31,245,23,75f5f5f5,False,22,22,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b246,byte_tiled,31,246,23,76f6f6f6,False,23,23,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b247,byte_tiled,31,247,27,77f7f7f7,False,26,26,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b248,byte_tiled,31,248,19,78f8f8f8,False,19,19,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b249,byte_tiled,31,249,23,79f9f9f9,False,22,22,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b250,byte_tiled,31,250,23,7afafafa,False,23,23,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b251,byte_tiled,31,251,27,7bfbfbfb,False,26,26,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b252,byte_tiled,31,252,23,7cfcfcfc,False,23,23,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b253,byte_tiled,31,253,27,7dfdfdfd,False,26,26,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b254,byte_tiled,31,254,27,7efefefe,False,27,27,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w31_b255,byte_tiled,31,255,31,7fffffff,False,30,30,1,True,True,False,True
+ALGORITHM_AUDIT,onehot_w31_c0,one_hot,31,0,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,onehot_w31_c1,one_hot,31,1,1,00000002,False,1,1,1,True,True,False,True
+ALGORITHM_AUDIT,onehot_w31_c2,one_hot,31,2,1,00000004,False,1,1,2,True,True,False,True
+ALGORITHM_AUDIT,onehot_w31_c3,one_hot,31,3,1,00000008,False,1,1,3,True,True,False,True
+ALGORITHM_AUDIT,onehot_w31_c4,one_hot,31,4,1,00000010,False,1,1,4,True,True,False,True
+ALGORITHM_AUDIT,onehot_w31_c5,one_hot,31,5,1,00000020,False,1,1,5,True,True,False,True
+ALGORITHM_AUDIT,onehot_w31_c6,one_hot,31,6,1,00000040,False,1,1,6,True,True,False,True
+ALGORITHM_AUDIT,onehot_w31_c7,one_hot,31,7,1,00000080,False,1,1,7,True,True,False,True
+ALGORITHM_AUDIT,onehot_w31_c8,one_hot,31,8,1,00000100,False,1,1,8,True,True,False,True
+ALGORITHM_AUDIT,onehot_w31_c9,one_hot,31,9,1,00000200,False,1,1,9,True,True,False,True
+ALGORITHM_AUDIT,onehot_w31_c10,one_hot,31,10,1,00000400,False,1,1,10,True,True,False,True
+ALGORITHM_AUDIT,onehot_w31_c11,one_hot,31,11,1,00000800,False,1,1,11,True,True,False,True
+ALGORITHM_AUDIT,onehot_w31_c12,one_hot,31,12,1,00001000,False,1,1,12,True,True,False,True
+ALGORITHM_AUDIT,onehot_w31_c13,one_hot,31,13,1,00002000,False,1,1,13,True,True,False,True
+ALGORITHM_AUDIT,onehot_w31_c14,one_hot,31,14,1,00004000,False,1,1,14,True,True,False,True
+ALGORITHM_AUDIT,onehot_w31_c15,one_hot,31,15,1,00008000,False,1,1,15,True,True,False,True
+ALGORITHM_AUDIT,onehot_w31_c16,one_hot,31,16,1,00010000,False,1,1,16,True,True,False,True
+ALGORITHM_AUDIT,onehot_w31_c17,one_hot,31,17,1,00020000,False,1,1,17,True,True,False,True
+ALGORITHM_AUDIT,onehot_w31_c18,one_hot,31,18,1,00040000,False,1,1,18,True,True,False,True
+ALGORITHM_AUDIT,onehot_w31_c19,one_hot,31,19,1,00080000,False,1,1,19,True,True,False,True
+ALGORITHM_AUDIT,onehot_w31_c20,one_hot,31,20,1,00100000,False,1,1,20,True,True,False,True
+ALGORITHM_AUDIT,onehot_w31_c21,one_hot,31,21,1,00200000,False,1,1,21,True,True,False,True
+ALGORITHM_AUDIT,onehot_w31_c22,one_hot,31,22,1,00400000,False,1,1,22,True,True,False,True
+ALGORITHM_AUDIT,onehot_w31_c23,one_hot,31,23,1,00800000,False,1,1,23,True,True,False,True
+ALGORITHM_AUDIT,onehot_w31_c24,one_hot,31,24,1,01000000,False,1,1,24,True,True,False,True
+ALGORITHM_AUDIT,onehot_w31_c25,one_hot,31,25,1,02000000,False,1,1,25,True,True,False,True
+ALGORITHM_AUDIT,onehot_w31_c26,one_hot,31,26,1,04000000,False,1,1,26,True,True,False,True
+ALGORITHM_AUDIT,onehot_w31_c27,one_hot,31,27,1,08000000,False,1,1,27,True,True,False,True
+ALGORITHM_AUDIT,onehot_w31_c28,one_hot,31,28,1,10000000,False,1,1,28,True,True,False,True
+ALGORITHM_AUDIT,onehot_w31_c29,one_hot,31,29,1,20000000,False,1,1,29,True,True,False,True
+ALGORITHM_AUDIT,onehot_w31_c30,one_hot,31,30,1,40000000,False,1,1,30,True,True,False,True
+ALGORITHM_AUDIT,sign_w31_all_plus,sign_example,31,all_plus,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,sign_w31_all_minus,sign_example,31,all_minus,31,7fffffff,False,30,30,1,True,True,False,True
+ALGORITHM_AUDIT,sign_w31_alternating_minus_first,sign_example,31,alternating_minus_first,16,55555555,False,15,15,2,True,True,False,True
+ALGORITHM_AUDIT,sign_w31_alternating_plus_first,sign_example,31,alternating_plus_first,15,2aaaaaaa,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,sign_w31_minus_at_word_starts,sign_example,31,minus_at_word_starts,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,sign_w31_minus_at_word_ends,sign_example,31,minus_at_word_ends,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w32_b000,byte_tiled,32,0,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w32_b001,byte_tiled,32,1,4,01010101,False,3,3,8,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b002,byte_tiled,32,2,4,02020202,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b003,byte_tiled,32,3,8,03030303,False,7,7,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b004,byte_tiled,32,4,4,04040404,False,4,4,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b005,byte_tiled,32,5,8,05050505,False,7,7,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b006,byte_tiled,32,6,8,06060606,False,8,8,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b007,byte_tiled,32,7,12,07070707,False,11,11,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b008,byte_tiled,32,8,4,08080808,False,4,4,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b009,byte_tiled,32,9,8,09090909,False,7,7,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b010,byte_tiled,32,10,8,0a0a0a0a,False,8,8,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b011,byte_tiled,32,11,12,0b0b0b0b,False,11,11,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b012,byte_tiled,32,12,8,0c0c0c0c,False,8,8,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b013,byte_tiled,32,13,12,0d0d0d0d,False,11,11,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b014,byte_tiled,32,14,12,0e0e0e0e,False,12,12,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b015,byte_tiled,32,15,16,0f0f0f0f,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b016,byte_tiled,32,16,4,10101010,False,4,4,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b017,byte_tiled,32,17,8,11111111,False,7,7,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b018,byte_tiled,32,18,8,12121212,False,8,8,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b019,byte_tiled,32,19,12,13131313,False,11,11,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b020,byte_tiled,32,20,8,14141414,False,8,8,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b021,byte_tiled,32,21,12,15151515,False,11,11,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b022,byte_tiled,32,22,12,16161616,False,12,12,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b023,byte_tiled,32,23,16,17171717,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b024,byte_tiled,32,24,8,18181818,False,8,8,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b025,byte_tiled,32,25,12,19191919,False,11,11,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b026,byte_tiled,32,26,12,1a1a1a1a,False,12,12,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b027,byte_tiled,32,27,16,1b1b1b1b,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b028,byte_tiled,32,28,12,1c1c1c1c,False,12,12,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b029,byte_tiled,32,29,16,1d1d1d1d,False,15,15,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b030,byte_tiled,32,30,16,1e1e1e1e,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b031,byte_tiled,32,31,20,1f1f1f1f,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b032,byte_tiled,32,32,4,20202020,False,4,4,5,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b033,byte_tiled,32,33,8,21212121,False,7,7,5,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b034,byte_tiled,32,34,8,22222222,False,8,8,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b035,byte_tiled,32,35,12,23232323,False,11,11,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b036,byte_tiled,32,36,8,24242424,False,8,8,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b037,byte_tiled,32,37,12,25252525,False,11,11,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b038,byte_tiled,32,38,12,26262626,False,12,12,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b039,byte_tiled,32,39,16,27272727,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b040,byte_tiled,32,40,8,28282828,False,8,8,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b041,byte_tiled,32,41,12,29292929,False,11,11,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b042,byte_tiled,32,42,12,2a2a2a2a,False,12,12,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b043,byte_tiled,32,43,16,2b2b2b2b,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b044,byte_tiled,32,44,12,2c2c2c2c,False,12,12,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b045,byte_tiled,32,45,16,2d2d2d2d,False,15,15,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b046,byte_tiled,32,46,16,2e2e2e2e,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b047,byte_tiled,32,47,20,2f2f2f2f,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b048,byte_tiled,32,48,8,30303030,False,8,8,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b049,byte_tiled,32,49,12,31313131,False,11,11,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b050,byte_tiled,32,50,12,32323232,False,12,12,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b051,byte_tiled,32,51,16,33333333,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b052,byte_tiled,32,52,12,34343434,False,12,12,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b053,byte_tiled,32,53,16,35353535,False,15,15,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b054,byte_tiled,32,54,16,36363636,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b055,byte_tiled,32,55,20,37373737,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b056,byte_tiled,32,56,12,38383838,False,12,12,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b057,byte_tiled,32,57,16,39393939,False,15,15,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b058,byte_tiled,32,58,16,3a3a3a3a,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b059,byte_tiled,32,59,20,3b3b3b3b,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b060,byte_tiled,32,60,16,3c3c3c3c,False,16,16,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b061,byte_tiled,32,61,20,3d3d3d3d,False,19,19,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b062,byte_tiled,32,62,20,3e3e3e3e,False,20,20,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b063,byte_tiled,32,63,24,3f3f3f3f,False,23,23,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b064,byte_tiled,32,64,4,40404040,False,4,4,6,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b065,byte_tiled,32,65,8,41414141,False,7,7,6,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b066,byte_tiled,32,66,8,42424242,False,8,8,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b067,byte_tiled,32,67,12,43434343,False,11,11,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b068,byte_tiled,32,68,8,44444444,False,8,8,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b069,byte_tiled,32,69,12,45454545,False,11,11,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b070,byte_tiled,32,70,12,46464646,False,12,12,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b071,byte_tiled,32,71,16,47474747,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b072,byte_tiled,32,72,8,48484848,False,8,8,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b073,byte_tiled,32,73,12,49494949,False,11,11,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b074,byte_tiled,32,74,12,4a4a4a4a,False,12,12,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b075,byte_tiled,32,75,16,4b4b4b4b,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b076,byte_tiled,32,76,12,4c4c4c4c,False,12,12,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b077,byte_tiled,32,77,16,4d4d4d4d,False,15,15,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b078,byte_tiled,32,78,16,4e4e4e4e,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b079,byte_tiled,32,79,20,4f4f4f4f,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b080,byte_tiled,32,80,8,50505050,False,8,8,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b081,byte_tiled,32,81,12,51515151,False,11,11,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b082,byte_tiled,32,82,12,52525252,False,12,12,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b083,byte_tiled,32,83,16,53535353,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b084,byte_tiled,32,84,12,54545454,False,12,12,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b085,byte_tiled,32,85,16,55555555,False,15,15,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b086,byte_tiled,32,86,16,56565656,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b087,byte_tiled,32,87,20,57575757,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b088,byte_tiled,32,88,12,58585858,False,12,12,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b089,byte_tiled,32,89,16,59595959,False,15,15,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b090,byte_tiled,32,90,16,5a5a5a5a,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b091,byte_tiled,32,91,20,5b5b5b5b,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b092,byte_tiled,32,92,16,5c5c5c5c,False,16,16,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b093,byte_tiled,32,93,20,5d5d5d5d,False,19,19,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b094,byte_tiled,32,94,20,5e5e5e5e,False,20,20,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b095,byte_tiled,32,95,24,5f5f5f5f,False,23,23,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b096,byte_tiled,32,96,8,60606060,False,8,8,5,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b097,byte_tiled,32,97,12,61616161,False,11,11,5,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b098,byte_tiled,32,98,12,62626262,False,12,12,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b099,byte_tiled,32,99,16,63636363,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b100,byte_tiled,32,100,12,64646464,False,12,12,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b101,byte_tiled,32,101,16,65656565,False,15,15,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b102,byte_tiled,32,102,16,66666666,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b103,byte_tiled,32,103,20,67676767,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b104,byte_tiled,32,104,12,68686868,False,12,12,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b105,byte_tiled,32,105,16,69696969,False,15,15,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b106,byte_tiled,32,106,16,6a6a6a6a,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b107,byte_tiled,32,107,20,6b6b6b6b,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b108,byte_tiled,32,108,16,6c6c6c6c,False,16,16,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b109,byte_tiled,32,109,20,6d6d6d6d,False,19,19,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b110,byte_tiled,32,110,20,6e6e6e6e,False,20,20,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b111,byte_tiled,32,111,24,6f6f6f6f,False,23,23,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b112,byte_tiled,32,112,12,70707070,False,12,12,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b113,byte_tiled,32,113,16,71717171,False,15,15,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b114,byte_tiled,32,114,16,72727272,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b115,byte_tiled,32,115,20,73737373,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b116,byte_tiled,32,116,16,74747474,False,16,16,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b117,byte_tiled,32,117,20,75757575,False,19,19,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b118,byte_tiled,32,118,20,76767676,False,20,20,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b119,byte_tiled,32,119,24,77777777,False,23,23,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b120,byte_tiled,32,120,16,78787878,False,16,16,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b121,byte_tiled,32,121,20,79797979,False,19,19,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b122,byte_tiled,32,122,20,7a7a7a7a,False,20,20,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b123,byte_tiled,32,123,24,7b7b7b7b,False,23,23,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b124,byte_tiled,32,124,20,7c7c7c7c,False,20,20,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b125,byte_tiled,32,125,24,7d7d7d7d,False,23,23,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b126,byte_tiled,32,126,24,7e7e7e7e,False,24,24,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b127,byte_tiled,32,127,28,7f7f7f7f,False,27,27,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b128,byte_tiled,32,128,4,80808080,False,4,4,7,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b129,byte_tiled,32,129,8,81818181,False,7,7,7,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b130,byte_tiled,32,130,8,82828282,False,8,8,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b131,byte_tiled,32,131,12,83838383,False,11,11,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b132,byte_tiled,32,132,8,84848484,False,8,8,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b133,byte_tiled,32,133,12,85858585,False,11,11,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b134,byte_tiled,32,134,12,86868686,False,12,12,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b135,byte_tiled,32,135,16,87878787,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b136,byte_tiled,32,136,8,88888888,False,8,8,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b137,byte_tiled,32,137,12,89898989,False,11,11,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b138,byte_tiled,32,138,12,8a8a8a8a,False,12,12,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b139,byte_tiled,32,139,16,8b8b8b8b,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b140,byte_tiled,32,140,12,8c8c8c8c,False,12,12,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b141,byte_tiled,32,141,16,8d8d8d8d,False,15,15,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b142,byte_tiled,32,142,16,8e8e8e8e,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b143,byte_tiled,32,143,20,8f8f8f8f,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b144,byte_tiled,32,144,8,90909090,False,8,8,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b145,byte_tiled,32,145,12,91919191,False,11,11,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b146,byte_tiled,32,146,12,92929292,False,12,12,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b147,byte_tiled,32,147,16,93939393,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b148,byte_tiled,32,148,12,94949494,False,12,12,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b149,byte_tiled,32,149,16,95959595,False,15,15,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b150,byte_tiled,32,150,16,96969696,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b151,byte_tiled,32,151,20,97979797,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b152,byte_tiled,32,152,12,98989898,False,12,12,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b153,byte_tiled,32,153,16,99999999,False,15,15,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b154,byte_tiled,32,154,16,9a9a9a9a,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b155,byte_tiled,32,155,20,9b9b9b9b,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b156,byte_tiled,32,156,16,9c9c9c9c,False,16,16,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b157,byte_tiled,32,157,20,9d9d9d9d,False,19,19,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b158,byte_tiled,32,158,20,9e9e9e9e,False,20,20,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b159,byte_tiled,32,159,24,9f9f9f9f,False,23,23,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b160,byte_tiled,32,160,8,a0a0a0a0,False,8,8,5,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b161,byte_tiled,32,161,12,a1a1a1a1,False,11,11,5,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b162,byte_tiled,32,162,12,a2a2a2a2,False,12,12,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b163,byte_tiled,32,163,16,a3a3a3a3,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b164,byte_tiled,32,164,12,a4a4a4a4,False,12,12,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b165,byte_tiled,32,165,16,a5a5a5a5,False,15,15,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b166,byte_tiled,32,166,16,a6a6a6a6,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b167,byte_tiled,32,167,20,a7a7a7a7,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b168,byte_tiled,32,168,12,a8a8a8a8,False,12,12,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b169,byte_tiled,32,169,16,a9a9a9a9,False,15,15,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b170,byte_tiled,32,170,16,aaaaaaaa,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b171,byte_tiled,32,171,20,abababab,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b172,byte_tiled,32,172,16,acacacac,False,16,16,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b173,byte_tiled,32,173,20,adadadad,False,19,19,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b174,byte_tiled,32,174,20,aeaeaeae,False,20,20,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b175,byte_tiled,32,175,24,afafafaf,False,23,23,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b176,byte_tiled,32,176,12,b0b0b0b0,False,12,12,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b177,byte_tiled,32,177,16,b1b1b1b1,False,15,15,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b178,byte_tiled,32,178,16,b2b2b2b2,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b179,byte_tiled,32,179,20,b3b3b3b3,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b180,byte_tiled,32,180,16,b4b4b4b4,False,16,16,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b181,byte_tiled,32,181,20,b5b5b5b5,False,19,19,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b182,byte_tiled,32,182,20,b6b6b6b6,False,20,20,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b183,byte_tiled,32,183,24,b7b7b7b7,False,23,23,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b184,byte_tiled,32,184,16,b8b8b8b8,False,16,16,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b185,byte_tiled,32,185,20,b9b9b9b9,False,19,19,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b186,byte_tiled,32,186,20,babababa,False,20,20,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b187,byte_tiled,32,187,24,bbbbbbbb,False,23,23,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b188,byte_tiled,32,188,20,bcbcbcbc,False,20,20,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b189,byte_tiled,32,189,24,bdbdbdbd,False,23,23,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b190,byte_tiled,32,190,24,bebebebe,False,24,24,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b191,byte_tiled,32,191,28,bfbfbfbf,False,27,27,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b192,byte_tiled,32,192,8,c0c0c0c0,False,8,8,6,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b193,byte_tiled,32,193,12,c1c1c1c1,False,11,11,6,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b194,byte_tiled,32,194,12,c2c2c2c2,False,12,12,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b195,byte_tiled,32,195,16,c3c3c3c3,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b196,byte_tiled,32,196,12,c4c4c4c4,False,12,12,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b197,byte_tiled,32,197,16,c5c5c5c5,False,15,15,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b198,byte_tiled,32,198,16,c6c6c6c6,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b199,byte_tiled,32,199,20,c7c7c7c7,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b200,byte_tiled,32,200,12,c8c8c8c8,False,12,12,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b201,byte_tiled,32,201,16,c9c9c9c9,False,15,15,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b202,byte_tiled,32,202,16,cacacaca,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b203,byte_tiled,32,203,20,cbcbcbcb,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b204,byte_tiled,32,204,16,cccccccc,False,16,16,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b205,byte_tiled,32,205,20,cdcdcdcd,False,19,19,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b206,byte_tiled,32,206,20,cececece,False,20,20,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b207,byte_tiled,32,207,24,cfcfcfcf,False,23,23,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b208,byte_tiled,32,208,12,d0d0d0d0,False,12,12,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b209,byte_tiled,32,209,16,d1d1d1d1,False,15,15,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b210,byte_tiled,32,210,16,d2d2d2d2,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b211,byte_tiled,32,211,20,d3d3d3d3,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b212,byte_tiled,32,212,16,d4d4d4d4,False,16,16,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b213,byte_tiled,32,213,20,d5d5d5d5,False,19,19,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b214,byte_tiled,32,214,20,d6d6d6d6,False,20,20,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b215,byte_tiled,32,215,24,d7d7d7d7,False,23,23,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b216,byte_tiled,32,216,16,d8d8d8d8,False,16,16,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b217,byte_tiled,32,217,20,d9d9d9d9,False,19,19,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b218,byte_tiled,32,218,20,dadadada,False,20,20,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b219,byte_tiled,32,219,24,dbdbdbdb,False,23,23,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b220,byte_tiled,32,220,20,dcdcdcdc,False,20,20,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b221,byte_tiled,32,221,24,dddddddd,False,23,23,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b222,byte_tiled,32,222,24,dededede,False,24,24,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b223,byte_tiled,32,223,28,dfdfdfdf,False,27,27,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b224,byte_tiled,32,224,12,e0e0e0e0,False,12,12,5,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b225,byte_tiled,32,225,16,e1e1e1e1,False,15,15,5,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b226,byte_tiled,32,226,16,e2e2e2e2,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b227,byte_tiled,32,227,20,e3e3e3e3,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b228,byte_tiled,32,228,16,e4e4e4e4,False,16,16,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b229,byte_tiled,32,229,20,e5e5e5e5,False,19,19,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b230,byte_tiled,32,230,20,e6e6e6e6,False,20,20,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b231,byte_tiled,32,231,24,e7e7e7e7,False,23,23,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b232,byte_tiled,32,232,16,e8e8e8e8,False,16,16,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b233,byte_tiled,32,233,20,e9e9e9e9,False,19,19,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b234,byte_tiled,32,234,20,eaeaeaea,False,20,20,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b235,byte_tiled,32,235,24,ebebebeb,False,23,23,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b236,byte_tiled,32,236,20,ecececec,False,20,20,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b237,byte_tiled,32,237,24,edededed,False,23,23,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b238,byte_tiled,32,238,24,eeeeeeee,False,24,24,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b239,byte_tiled,32,239,28,efefefef,False,27,27,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b240,byte_tiled,32,240,16,f0f0f0f0,False,16,16,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b241,byte_tiled,32,241,20,f1f1f1f1,False,19,19,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b242,byte_tiled,32,242,20,f2f2f2f2,False,20,20,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b243,byte_tiled,32,243,24,f3f3f3f3,False,23,23,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b244,byte_tiled,32,244,20,f4f4f4f4,False,20,20,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b245,byte_tiled,32,245,24,f5f5f5f5,False,23,23,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b246,byte_tiled,32,246,24,f6f6f6f6,False,24,24,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b247,byte_tiled,32,247,28,f7f7f7f7,False,27,27,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b248,byte_tiled,32,248,20,f8f8f8f8,False,20,20,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b249,byte_tiled,32,249,24,f9f9f9f9,False,23,23,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b250,byte_tiled,32,250,24,fafafafa,False,24,24,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b251,byte_tiled,32,251,28,fbfbfbfb,False,27,27,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b252,byte_tiled,32,252,24,fcfcfcfc,False,24,24,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b253,byte_tiled,32,253,28,fdfdfdfd,False,27,27,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b254,byte_tiled,32,254,28,fefefefe,False,28,28,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w32_b255,byte_tiled,32,255,32,ffffffff,False,31,31,1,True,True,False,True
+ALGORITHM_AUDIT,onehot_w32_c0,one_hot,32,0,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,onehot_w32_c1,one_hot,32,1,1,00000002,False,1,1,1,True,True,False,True
+ALGORITHM_AUDIT,onehot_w32_c2,one_hot,32,2,1,00000004,False,1,1,2,True,True,False,True
+ALGORITHM_AUDIT,onehot_w32_c3,one_hot,32,3,1,00000008,False,1,1,3,True,True,False,True
+ALGORITHM_AUDIT,onehot_w32_c4,one_hot,32,4,1,00000010,False,1,1,4,True,True,False,True
+ALGORITHM_AUDIT,onehot_w32_c5,one_hot,32,5,1,00000020,False,1,1,5,True,True,False,True
+ALGORITHM_AUDIT,onehot_w32_c6,one_hot,32,6,1,00000040,False,1,1,6,True,True,False,True
+ALGORITHM_AUDIT,onehot_w32_c7,one_hot,32,7,1,00000080,False,1,1,7,True,True,False,True
+ALGORITHM_AUDIT,onehot_w32_c8,one_hot,32,8,1,00000100,False,1,1,8,True,True,False,True
+ALGORITHM_AUDIT,onehot_w32_c9,one_hot,32,9,1,00000200,False,1,1,9,True,True,False,True
+ALGORITHM_AUDIT,onehot_w32_c10,one_hot,32,10,1,00000400,False,1,1,10,True,True,False,True
+ALGORITHM_AUDIT,onehot_w32_c11,one_hot,32,11,1,00000800,False,1,1,11,True,True,False,True
+ALGORITHM_AUDIT,onehot_w32_c12,one_hot,32,12,1,00001000,False,1,1,12,True,True,False,True
+ALGORITHM_AUDIT,onehot_w32_c13,one_hot,32,13,1,00002000,False,1,1,13,True,True,False,True
+ALGORITHM_AUDIT,onehot_w32_c14,one_hot,32,14,1,00004000,False,1,1,14,True,True,False,True
+ALGORITHM_AUDIT,onehot_w32_c15,one_hot,32,15,1,00008000,False,1,1,15,True,True,False,True
+ALGORITHM_AUDIT,onehot_w32_c16,one_hot,32,16,1,00010000,False,1,1,16,True,True,False,True
+ALGORITHM_AUDIT,onehot_w32_c17,one_hot,32,17,1,00020000,False,1,1,17,True,True,False,True
+ALGORITHM_AUDIT,onehot_w32_c18,one_hot,32,18,1,00040000,False,1,1,18,True,True,False,True
+ALGORITHM_AUDIT,onehot_w32_c19,one_hot,32,19,1,00080000,False,1,1,19,True,True,False,True
+ALGORITHM_AUDIT,onehot_w32_c20,one_hot,32,20,1,00100000,False,1,1,20,True,True,False,True
+ALGORITHM_AUDIT,onehot_w32_c21,one_hot,32,21,1,00200000,False,1,1,21,True,True,False,True
+ALGORITHM_AUDIT,onehot_w32_c22,one_hot,32,22,1,00400000,False,1,1,22,True,True,False,True
+ALGORITHM_AUDIT,onehot_w32_c23,one_hot,32,23,1,00800000,False,1,1,23,True,True,False,True
+ALGORITHM_AUDIT,onehot_w32_c24,one_hot,32,24,1,01000000,False,1,1,24,True,True,False,True
+ALGORITHM_AUDIT,onehot_w32_c25,one_hot,32,25,1,02000000,False,1,1,25,True,True,False,True
+ALGORITHM_AUDIT,onehot_w32_c26,one_hot,32,26,1,04000000,False,1,1,26,True,True,False,True
+ALGORITHM_AUDIT,onehot_w32_c27,one_hot,32,27,1,08000000,False,1,1,27,True,True,False,True
+ALGORITHM_AUDIT,onehot_w32_c28,one_hot,32,28,1,10000000,False,1,1,28,True,True,False,True
+ALGORITHM_AUDIT,onehot_w32_c29,one_hot,32,29,1,20000000,False,1,1,29,True,True,False,True
+ALGORITHM_AUDIT,onehot_w32_c30,one_hot,32,30,1,40000000,False,1,1,30,True,True,False,True
+ALGORITHM_AUDIT,onehot_w32_c31,one_hot,32,31,1,80000000,False,1,1,31,True,True,False,True
+ALGORITHM_AUDIT,sign_w32_all_plus,sign_example,32,all_plus,0,00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,sign_w32_all_minus,sign_example,32,all_minus,32,ffffffff,False,31,31,1,True,True,False,True
+ALGORITHM_AUDIT,sign_w32_alternating_minus_first,sign_example,32,alternating_minus_first,16,55555555,False,15,15,2,True,True,False,True
+ALGORITHM_AUDIT,sign_w32_alternating_plus_first,sign_example,32,alternating_plus_first,16,aaaaaaaa,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,sign_w32_minus_at_word_starts,sign_example,32,minus_at_word_starts,1,00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,sign_w32_minus_at_word_ends,sign_example,32,minus_at_word_ends,1,80000000,False,1,1,31,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b000,byte_tiled,33,0,0,00000000 00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w33_b001,byte_tiled,33,1,5,01010101 00000001,False,3,3,8,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b002,byte_tiled,33,2,4,02020202 00000000,False,4,4,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b003,byte_tiled,33,3,9,03030303 00000001,False,7,7,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b004,byte_tiled,33,4,4,04040404 00000000,False,4,4,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b005,byte_tiled,33,5,9,05050505 00000001,False,7,7,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b006,byte_tiled,33,6,8,06060606 00000000,False,8,8,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b007,byte_tiled,33,7,13,07070707 00000001,False,11,11,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b008,byte_tiled,33,8,4,08080808 00000000,False,4,4,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b009,byte_tiled,33,9,9,09090909 00000001,False,7,7,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b010,byte_tiled,33,10,8,0a0a0a0a 00000000,False,8,8,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b011,byte_tiled,33,11,13,0b0b0b0b 00000001,False,11,11,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b012,byte_tiled,33,12,8,0c0c0c0c 00000000,False,8,8,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b013,byte_tiled,33,13,13,0d0d0d0d 00000001,False,11,11,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b014,byte_tiled,33,14,12,0e0e0e0e 00000000,False,12,12,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b015,byte_tiled,33,15,17,0f0f0f0f 00000001,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b016,byte_tiled,33,16,4,10101010 00000000,False,4,4,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b017,byte_tiled,33,17,9,11111111 00000001,False,7,7,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b018,byte_tiled,33,18,8,12121212 00000000,False,8,8,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b019,byte_tiled,33,19,13,13131313 00000001,False,11,11,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b020,byte_tiled,33,20,8,14141414 00000000,False,8,8,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b021,byte_tiled,33,21,13,15151515 00000001,False,11,11,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b022,byte_tiled,33,22,12,16161616 00000000,False,12,12,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b023,byte_tiled,33,23,17,17171717 00000001,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b024,byte_tiled,33,24,8,18181818 00000000,False,8,8,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b025,byte_tiled,33,25,13,19191919 00000001,False,11,11,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b026,byte_tiled,33,26,12,1a1a1a1a 00000000,False,12,12,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b027,byte_tiled,33,27,17,1b1b1b1b 00000001,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b028,byte_tiled,33,28,12,1c1c1c1c 00000000,False,12,12,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b029,byte_tiled,33,29,17,1d1d1d1d 00000001,False,15,15,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b030,byte_tiled,33,30,16,1e1e1e1e 00000000,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b031,byte_tiled,33,31,21,1f1f1f1f 00000001,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b032,byte_tiled,33,32,4,20202020 00000000,False,4,4,5,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b033,byte_tiled,33,33,9,21212121 00000001,False,7,7,5,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b034,byte_tiled,33,34,8,22222222 00000000,False,8,8,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b035,byte_tiled,33,35,13,23232323 00000001,False,11,11,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b036,byte_tiled,33,36,8,24242424 00000000,False,8,8,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b037,byte_tiled,33,37,13,25252525 00000001,False,11,11,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b038,byte_tiled,33,38,12,26262626 00000000,False,12,12,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b039,byte_tiled,33,39,17,27272727 00000001,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b040,byte_tiled,33,40,8,28282828 00000000,False,8,8,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b041,byte_tiled,33,41,13,29292929 00000001,False,11,11,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b042,byte_tiled,33,42,12,2a2a2a2a 00000000,False,12,12,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b043,byte_tiled,33,43,17,2b2b2b2b 00000001,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b044,byte_tiled,33,44,12,2c2c2c2c 00000000,False,12,12,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b045,byte_tiled,33,45,17,2d2d2d2d 00000001,False,15,15,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b046,byte_tiled,33,46,16,2e2e2e2e 00000000,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b047,byte_tiled,33,47,21,2f2f2f2f 00000001,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b048,byte_tiled,33,48,8,30303030 00000000,False,8,8,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b049,byte_tiled,33,49,13,31313131 00000001,False,11,11,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b050,byte_tiled,33,50,12,32323232 00000000,False,12,12,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b051,byte_tiled,33,51,17,33333333 00000001,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b052,byte_tiled,33,52,12,34343434 00000000,False,12,12,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b053,byte_tiled,33,53,17,35353535 00000001,False,15,15,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b054,byte_tiled,33,54,16,36363636 00000000,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b055,byte_tiled,33,55,21,37373737 00000001,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b056,byte_tiled,33,56,12,38383838 00000000,False,12,12,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b057,byte_tiled,33,57,17,39393939 00000001,False,15,15,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b058,byte_tiled,33,58,16,3a3a3a3a 00000000,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b059,byte_tiled,33,59,21,3b3b3b3b 00000001,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b060,byte_tiled,33,60,16,3c3c3c3c 00000000,False,16,16,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b061,byte_tiled,33,61,21,3d3d3d3d 00000001,False,19,19,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b062,byte_tiled,33,62,20,3e3e3e3e 00000000,False,20,20,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b063,byte_tiled,33,63,25,3f3f3f3f 00000001,False,23,23,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b064,byte_tiled,33,64,4,40404040 00000000,False,4,4,6,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b065,byte_tiled,33,65,9,41414141 00000001,False,7,7,6,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b066,byte_tiled,33,66,8,42424242 00000000,False,8,8,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b067,byte_tiled,33,67,13,43434343 00000001,False,11,11,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b068,byte_tiled,33,68,8,44444444 00000000,False,8,8,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b069,byte_tiled,33,69,13,45454545 00000001,False,11,11,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b070,byte_tiled,33,70,12,46464646 00000000,False,12,12,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b071,byte_tiled,33,71,17,47474747 00000001,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b072,byte_tiled,33,72,8,48484848 00000000,False,8,8,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b073,byte_tiled,33,73,13,49494949 00000001,False,11,11,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b074,byte_tiled,33,74,12,4a4a4a4a 00000000,False,12,12,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b075,byte_tiled,33,75,17,4b4b4b4b 00000001,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b076,byte_tiled,33,76,12,4c4c4c4c 00000000,False,12,12,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b077,byte_tiled,33,77,17,4d4d4d4d 00000001,False,15,15,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b078,byte_tiled,33,78,16,4e4e4e4e 00000000,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b079,byte_tiled,33,79,21,4f4f4f4f 00000001,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b080,byte_tiled,33,80,8,50505050 00000000,False,8,8,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b081,byte_tiled,33,81,13,51515151 00000001,False,11,11,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b082,byte_tiled,33,82,12,52525252 00000000,False,12,12,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b083,byte_tiled,33,83,17,53535353 00000001,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b084,byte_tiled,33,84,12,54545454 00000000,False,12,12,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b085,byte_tiled,33,85,17,55555555 00000001,False,15,15,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b086,byte_tiled,33,86,16,56565656 00000000,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b087,byte_tiled,33,87,21,57575757 00000001,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b088,byte_tiled,33,88,12,58585858 00000000,False,12,12,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b089,byte_tiled,33,89,17,59595959 00000001,False,15,15,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b090,byte_tiled,33,90,16,5a5a5a5a 00000000,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b091,byte_tiled,33,91,21,5b5b5b5b 00000001,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b092,byte_tiled,33,92,16,5c5c5c5c 00000000,False,16,16,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b093,byte_tiled,33,93,21,5d5d5d5d 00000001,False,19,19,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b094,byte_tiled,33,94,20,5e5e5e5e 00000000,False,20,20,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b095,byte_tiled,33,95,25,5f5f5f5f 00000001,False,23,23,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b096,byte_tiled,33,96,8,60606060 00000000,False,8,8,5,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b097,byte_tiled,33,97,13,61616161 00000001,False,11,11,5,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b098,byte_tiled,33,98,12,62626262 00000000,False,12,12,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b099,byte_tiled,33,99,17,63636363 00000001,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b100,byte_tiled,33,100,12,64646464 00000000,False,12,12,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b101,byte_tiled,33,101,17,65656565 00000001,False,15,15,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b102,byte_tiled,33,102,16,66666666 00000000,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b103,byte_tiled,33,103,21,67676767 00000001,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b104,byte_tiled,33,104,12,68686868 00000000,False,12,12,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b105,byte_tiled,33,105,17,69696969 00000001,False,15,15,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b106,byte_tiled,33,106,16,6a6a6a6a 00000000,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b107,byte_tiled,33,107,21,6b6b6b6b 00000001,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b108,byte_tiled,33,108,16,6c6c6c6c 00000000,False,16,16,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b109,byte_tiled,33,109,21,6d6d6d6d 00000001,False,19,19,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b110,byte_tiled,33,110,20,6e6e6e6e 00000000,False,20,20,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b111,byte_tiled,33,111,25,6f6f6f6f 00000001,False,23,23,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b112,byte_tiled,33,112,12,70707070 00000000,False,12,12,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b113,byte_tiled,33,113,17,71717171 00000001,False,15,15,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b114,byte_tiled,33,114,16,72727272 00000000,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b115,byte_tiled,33,115,21,73737373 00000001,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b116,byte_tiled,33,116,16,74747474 00000000,False,16,16,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b117,byte_tiled,33,117,21,75757575 00000001,False,19,19,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b118,byte_tiled,33,118,20,76767676 00000000,False,20,20,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b119,byte_tiled,33,119,25,77777777 00000001,False,23,23,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b120,byte_tiled,33,120,16,78787878 00000000,False,16,16,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b121,byte_tiled,33,121,21,79797979 00000001,False,19,19,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b122,byte_tiled,33,122,20,7a7a7a7a 00000000,False,20,20,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b123,byte_tiled,33,123,25,7b7b7b7b 00000001,False,23,23,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b124,byte_tiled,33,124,20,7c7c7c7c 00000000,False,20,20,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b125,byte_tiled,33,125,25,7d7d7d7d 00000001,False,23,23,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b126,byte_tiled,33,126,24,7e7e7e7e 00000000,False,24,24,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b127,byte_tiled,33,127,29,7f7f7f7f 00000001,False,27,27,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b128,byte_tiled,33,128,4,80808080 00000000,False,4,4,7,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b129,byte_tiled,33,129,9,81818181 00000001,False,7,7,7,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b130,byte_tiled,33,130,8,82828282 00000000,False,8,8,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b131,byte_tiled,33,131,13,83838383 00000001,False,11,11,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b132,byte_tiled,33,132,8,84848484 00000000,False,8,8,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b133,byte_tiled,33,133,13,85858585 00000001,False,11,11,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b134,byte_tiled,33,134,12,86868686 00000000,False,12,12,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b135,byte_tiled,33,135,17,87878787 00000001,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b136,byte_tiled,33,136,8,88888888 00000000,False,8,8,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b137,byte_tiled,33,137,13,89898989 00000001,False,11,11,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b138,byte_tiled,33,138,12,8a8a8a8a 00000000,False,12,12,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b139,byte_tiled,33,139,17,8b8b8b8b 00000001,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b140,byte_tiled,33,140,12,8c8c8c8c 00000000,False,12,12,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b141,byte_tiled,33,141,17,8d8d8d8d 00000001,False,15,15,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b142,byte_tiled,33,142,16,8e8e8e8e 00000000,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b143,byte_tiled,33,143,21,8f8f8f8f 00000001,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b144,byte_tiled,33,144,8,90909090 00000000,False,8,8,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b145,byte_tiled,33,145,13,91919191 00000001,False,11,11,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b146,byte_tiled,33,146,12,92929292 00000000,False,12,12,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b147,byte_tiled,33,147,17,93939393 00000001,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b148,byte_tiled,33,148,12,94949494 00000000,False,12,12,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b149,byte_tiled,33,149,17,95959595 00000001,False,15,15,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b150,byte_tiled,33,150,16,96969696 00000000,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b151,byte_tiled,33,151,21,97979797 00000001,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b152,byte_tiled,33,152,12,98989898 00000000,False,12,12,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b153,byte_tiled,33,153,17,99999999 00000001,False,15,15,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b154,byte_tiled,33,154,16,9a9a9a9a 00000000,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b155,byte_tiled,33,155,21,9b9b9b9b 00000001,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b156,byte_tiled,33,156,16,9c9c9c9c 00000000,False,16,16,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b157,byte_tiled,33,157,21,9d9d9d9d 00000001,False,19,19,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b158,byte_tiled,33,158,20,9e9e9e9e 00000000,False,20,20,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b159,byte_tiled,33,159,25,9f9f9f9f 00000001,False,23,23,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b160,byte_tiled,33,160,8,a0a0a0a0 00000000,False,8,8,5,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b161,byte_tiled,33,161,13,a1a1a1a1 00000001,False,11,11,5,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b162,byte_tiled,33,162,12,a2a2a2a2 00000000,False,12,12,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b163,byte_tiled,33,163,17,a3a3a3a3 00000001,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b164,byte_tiled,33,164,12,a4a4a4a4 00000000,False,12,12,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b165,byte_tiled,33,165,17,a5a5a5a5 00000001,False,15,15,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b166,byte_tiled,33,166,16,a6a6a6a6 00000000,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b167,byte_tiled,33,167,21,a7a7a7a7 00000001,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b168,byte_tiled,33,168,12,a8a8a8a8 00000000,False,12,12,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b169,byte_tiled,33,169,17,a9a9a9a9 00000001,False,15,15,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b170,byte_tiled,33,170,16,aaaaaaaa 00000000,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b171,byte_tiled,33,171,21,abababab 00000001,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b172,byte_tiled,33,172,16,acacacac 00000000,False,16,16,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b173,byte_tiled,33,173,21,adadadad 00000001,False,19,19,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b174,byte_tiled,33,174,20,aeaeaeae 00000000,False,20,20,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b175,byte_tiled,33,175,25,afafafaf 00000001,False,23,23,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b176,byte_tiled,33,176,12,b0b0b0b0 00000000,False,12,12,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b177,byte_tiled,33,177,17,b1b1b1b1 00000001,False,15,15,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b178,byte_tiled,33,178,16,b2b2b2b2 00000000,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b179,byte_tiled,33,179,21,b3b3b3b3 00000001,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b180,byte_tiled,33,180,16,b4b4b4b4 00000000,False,16,16,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b181,byte_tiled,33,181,21,b5b5b5b5 00000001,False,19,19,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b182,byte_tiled,33,182,20,b6b6b6b6 00000000,False,20,20,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b183,byte_tiled,33,183,25,b7b7b7b7 00000001,False,23,23,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b184,byte_tiled,33,184,16,b8b8b8b8 00000000,False,16,16,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b185,byte_tiled,33,185,21,b9b9b9b9 00000001,False,19,19,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b186,byte_tiled,33,186,20,babababa 00000000,False,20,20,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b187,byte_tiled,33,187,25,bbbbbbbb 00000001,False,23,23,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b188,byte_tiled,33,188,20,bcbcbcbc 00000000,False,20,20,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b189,byte_tiled,33,189,25,bdbdbdbd 00000001,False,23,23,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b190,byte_tiled,33,190,24,bebebebe 00000000,False,24,24,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b191,byte_tiled,33,191,29,bfbfbfbf 00000001,False,27,27,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b192,byte_tiled,33,192,8,c0c0c0c0 00000000,False,8,8,6,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b193,byte_tiled,33,193,13,c1c1c1c1 00000001,False,11,11,6,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b194,byte_tiled,33,194,12,c2c2c2c2 00000000,False,12,12,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b195,byte_tiled,33,195,17,c3c3c3c3 00000001,False,15,15,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b196,byte_tiled,33,196,12,c4c4c4c4 00000000,False,12,12,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b197,byte_tiled,33,197,17,c5c5c5c5 00000001,False,15,15,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b198,byte_tiled,33,198,16,c6c6c6c6 00000000,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b199,byte_tiled,33,199,21,c7c7c7c7 00000001,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b200,byte_tiled,33,200,12,c8c8c8c8 00000000,False,12,12,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b201,byte_tiled,33,201,17,c9c9c9c9 00000001,False,15,15,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b202,byte_tiled,33,202,16,cacacaca 00000000,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b203,byte_tiled,33,203,21,cbcbcbcb 00000001,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b204,byte_tiled,33,204,16,cccccccc 00000000,False,16,16,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b205,byte_tiled,33,205,21,cdcdcdcd 00000001,False,19,19,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b206,byte_tiled,33,206,20,cececece 00000000,False,20,20,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b207,byte_tiled,33,207,25,cfcfcfcf 00000001,False,23,23,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b208,byte_tiled,33,208,12,d0d0d0d0 00000000,False,12,12,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b209,byte_tiled,33,209,17,d1d1d1d1 00000001,False,15,15,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b210,byte_tiled,33,210,16,d2d2d2d2 00000000,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b211,byte_tiled,33,211,21,d3d3d3d3 00000001,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b212,byte_tiled,33,212,16,d4d4d4d4 00000000,False,16,16,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b213,byte_tiled,33,213,21,d5d5d5d5 00000001,False,19,19,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b214,byte_tiled,33,214,20,d6d6d6d6 00000000,False,20,20,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b215,byte_tiled,33,215,25,d7d7d7d7 00000001,False,23,23,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b216,byte_tiled,33,216,16,d8d8d8d8 00000000,False,16,16,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b217,byte_tiled,33,217,21,d9d9d9d9 00000001,False,19,19,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b218,byte_tiled,33,218,20,dadadada 00000000,False,20,20,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b219,byte_tiled,33,219,25,dbdbdbdb 00000001,False,23,23,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b220,byte_tiled,33,220,20,dcdcdcdc 00000000,False,20,20,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b221,byte_tiled,33,221,25,dddddddd 00000001,False,23,23,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b222,byte_tiled,33,222,24,dededede 00000000,False,24,24,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b223,byte_tiled,33,223,29,dfdfdfdf 00000001,False,27,27,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b224,byte_tiled,33,224,12,e0e0e0e0 00000000,False,12,12,5,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b225,byte_tiled,33,225,17,e1e1e1e1 00000001,False,15,15,5,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b226,byte_tiled,33,226,16,e2e2e2e2 00000000,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b227,byte_tiled,33,227,21,e3e3e3e3 00000001,False,19,19,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b228,byte_tiled,33,228,16,e4e4e4e4 00000000,False,16,16,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b229,byte_tiled,33,229,21,e5e5e5e5 00000001,False,19,19,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b230,byte_tiled,33,230,20,e6e6e6e6 00000000,False,20,20,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b231,byte_tiled,33,231,25,e7e7e7e7 00000001,False,23,23,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b232,byte_tiled,33,232,16,e8e8e8e8 00000000,False,16,16,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b233,byte_tiled,33,233,21,e9e9e9e9 00000001,False,19,19,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b234,byte_tiled,33,234,20,eaeaeaea 00000000,False,20,20,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b235,byte_tiled,33,235,25,ebebebeb 00000001,False,23,23,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b236,byte_tiled,33,236,20,ecececec 00000000,False,20,20,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b237,byte_tiled,33,237,25,edededed 00000001,False,23,23,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b238,byte_tiled,33,238,24,eeeeeeee 00000000,False,24,24,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b239,byte_tiled,33,239,29,efefefef 00000001,False,27,27,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b240,byte_tiled,33,240,16,f0f0f0f0 00000000,False,16,16,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b241,byte_tiled,33,241,21,f1f1f1f1 00000001,False,19,19,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b242,byte_tiled,33,242,20,f2f2f2f2 00000000,False,20,20,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b243,byte_tiled,33,243,25,f3f3f3f3 00000001,False,23,23,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b244,byte_tiled,33,244,20,f4f4f4f4 00000000,False,20,20,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b245,byte_tiled,33,245,25,f5f5f5f5 00000001,False,23,23,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b246,byte_tiled,33,246,24,f6f6f6f6 00000000,False,24,24,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b247,byte_tiled,33,247,29,f7f7f7f7 00000001,False,27,27,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b248,byte_tiled,33,248,20,f8f8f8f8 00000000,False,20,20,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b249,byte_tiled,33,249,25,f9f9f9f9 00000001,False,23,23,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b250,byte_tiled,33,250,24,fafafafa 00000000,False,24,24,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b251,byte_tiled,33,251,29,fbfbfbfb 00000001,False,27,27,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b252,byte_tiled,33,252,24,fcfcfcfc 00000000,False,24,24,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b253,byte_tiled,33,253,29,fdfdfdfd 00000001,False,27,27,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b254,byte_tiled,33,254,28,fefefefe 00000000,False,28,28,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w33_b255,byte_tiled,33,255,33,ffffffff 00000001,False,31,31,1,True,True,False,True
+ALGORITHM_AUDIT,onehot_w33_c0,one_hot,33,0,1,00000001 00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,onehot_w33_c1,one_hot,33,1,1,00000002 00000000,False,1,1,1,True,True,False,True
+ALGORITHM_AUDIT,onehot_w33_c2,one_hot,33,2,1,00000004 00000000,False,1,1,2,True,True,False,True
+ALGORITHM_AUDIT,onehot_w33_c3,one_hot,33,3,1,00000008 00000000,False,1,1,3,True,True,False,True
+ALGORITHM_AUDIT,onehot_w33_c4,one_hot,33,4,1,00000010 00000000,False,1,1,4,True,True,False,True
+ALGORITHM_AUDIT,onehot_w33_c5,one_hot,33,5,1,00000020 00000000,False,1,1,5,True,True,False,True
+ALGORITHM_AUDIT,onehot_w33_c6,one_hot,33,6,1,00000040 00000000,False,1,1,6,True,True,False,True
+ALGORITHM_AUDIT,onehot_w33_c7,one_hot,33,7,1,00000080 00000000,False,1,1,7,True,True,False,True
+ALGORITHM_AUDIT,onehot_w33_c8,one_hot,33,8,1,00000100 00000000,False,1,1,8,True,True,False,True
+ALGORITHM_AUDIT,onehot_w33_c9,one_hot,33,9,1,00000200 00000000,False,1,1,9,True,True,False,True
+ALGORITHM_AUDIT,onehot_w33_c10,one_hot,33,10,1,00000400 00000000,False,1,1,10,True,True,False,True
+ALGORITHM_AUDIT,onehot_w33_c11,one_hot,33,11,1,00000800 00000000,False,1,1,11,True,True,False,True
+ALGORITHM_AUDIT,onehot_w33_c12,one_hot,33,12,1,00001000 00000000,False,1,1,12,True,True,False,True
+ALGORITHM_AUDIT,onehot_w33_c13,one_hot,33,13,1,00002000 00000000,False,1,1,13,True,True,False,True
+ALGORITHM_AUDIT,onehot_w33_c14,one_hot,33,14,1,00004000 00000000,False,1,1,14,True,True,False,True
+ALGORITHM_AUDIT,onehot_w33_c15,one_hot,33,15,1,00008000 00000000,False,1,1,15,True,True,False,True
+ALGORITHM_AUDIT,onehot_w33_c16,one_hot,33,16,1,00010000 00000000,False,1,1,16,True,True,False,True
+ALGORITHM_AUDIT,onehot_w33_c17,one_hot,33,17,1,00020000 00000000,False,1,1,17,True,True,False,True
+ALGORITHM_AUDIT,onehot_w33_c18,one_hot,33,18,1,00040000 00000000,False,1,1,18,True,True,False,True
+ALGORITHM_AUDIT,onehot_w33_c19,one_hot,33,19,1,00080000 00000000,False,1,1,19,True,True,False,True
+ALGORITHM_AUDIT,onehot_w33_c20,one_hot,33,20,1,00100000 00000000,False,1,1,20,True,True,False,True
+ALGORITHM_AUDIT,onehot_w33_c21,one_hot,33,21,1,00200000 00000000,False,1,1,21,True,True,False,True
+ALGORITHM_AUDIT,onehot_w33_c22,one_hot,33,22,1,00400000 00000000,False,1,1,22,True,True,False,True
+ALGORITHM_AUDIT,onehot_w33_c23,one_hot,33,23,1,00800000 00000000,False,1,1,23,True,True,False,True
+ALGORITHM_AUDIT,onehot_w33_c24,one_hot,33,24,1,01000000 00000000,False,1,1,24,True,True,False,True
+ALGORITHM_AUDIT,onehot_w33_c25,one_hot,33,25,1,02000000 00000000,False,1,1,25,True,True,False,True
+ALGORITHM_AUDIT,onehot_w33_c26,one_hot,33,26,1,04000000 00000000,False,1,1,26,True,True,False,True
+ALGORITHM_AUDIT,onehot_w33_c27,one_hot,33,27,1,08000000 00000000,False,1,1,27,True,True,False,True
+ALGORITHM_AUDIT,onehot_w33_c28,one_hot,33,28,1,10000000 00000000,False,1,1,28,True,True,False,True
+ALGORITHM_AUDIT,onehot_w33_c29,one_hot,33,29,1,20000000 00000000,False,1,1,29,True,True,False,True
+ALGORITHM_AUDIT,onehot_w33_c30,one_hot,33,30,1,40000000 00000000,False,1,1,30,True,True,False,True
+ALGORITHM_AUDIT,onehot_w33_c31,one_hot,33,31,1,80000000 00000000,False,1,1,31,True,True,False,True
+ALGORITHM_AUDIT,onehot_w33_c32,one_hot,33,32,1,00000000 00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,sign_w33_all_plus,sign_example,33,all_plus,0,00000000 00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,sign_w33_all_minus,sign_example,33,all_minus,33,ffffffff 00000001,False,31,31,1,True,True,False,True
+ALGORITHM_AUDIT,sign_w33_alternating_minus_first,sign_example,33,alternating_minus_first,17,55555555 00000001,False,15,15,2,True,True,False,True
+ALGORITHM_AUDIT,sign_w33_alternating_plus_first,sign_example,33,alternating_plus_first,16,aaaaaaaa 00000000,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,sign_w33_minus_at_word_starts,sign_example,33,minus_at_word_starts,2,00000001 00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,sign_w33_minus_at_word_ends,sign_example,33,minus_at_word_ends,1,80000000 00000000,False,1,1,31,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b000,byte_tiled,64,0,0,00000000 00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,byte_w64_b001,byte_tiled,64,1,8,01010101 01010101,False,6,6,8,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b002,byte_tiled,64,2,8,02020202 02020202,False,8,8,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b003,byte_tiled,64,3,16,03030303 03030303,False,14,14,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b004,byte_tiled,64,4,8,04040404 04040404,False,8,8,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b005,byte_tiled,64,5,16,05050505 05050505,False,14,14,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b006,byte_tiled,64,6,16,06060606 06060606,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b007,byte_tiled,64,7,24,07070707 07070707,False,22,22,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b008,byte_tiled,64,8,8,08080808 08080808,False,8,8,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b009,byte_tiled,64,9,16,09090909 09090909,False,14,14,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b010,byte_tiled,64,10,16,0a0a0a0a 0a0a0a0a,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b011,byte_tiled,64,11,24,0b0b0b0b 0b0b0b0b,False,22,22,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b012,byte_tiled,64,12,16,0c0c0c0c 0c0c0c0c,False,16,16,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b013,byte_tiled,64,13,24,0d0d0d0d 0d0d0d0d,False,22,22,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b014,byte_tiled,64,14,24,0e0e0e0e 0e0e0e0e,False,24,24,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b015,byte_tiled,64,15,32,0f0f0f0f 0f0f0f0f,False,30,30,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b016,byte_tiled,64,16,8,10101010 10101010,False,8,8,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b017,byte_tiled,64,17,16,11111111 11111111,False,14,14,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b018,byte_tiled,64,18,16,12121212 12121212,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b019,byte_tiled,64,19,24,13131313 13131313,False,22,22,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b020,byte_tiled,64,20,16,14141414 14141414,False,16,16,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b021,byte_tiled,64,21,24,15151515 15151515,False,22,22,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b022,byte_tiled,64,22,24,16161616 16161616,False,24,24,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b023,byte_tiled,64,23,32,17171717 17171717,False,30,30,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b024,byte_tiled,64,24,16,18181818 18181818,False,16,16,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b025,byte_tiled,64,25,24,19191919 19191919,False,22,22,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b026,byte_tiled,64,26,24,1a1a1a1a 1a1a1a1a,False,24,24,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b027,byte_tiled,64,27,32,1b1b1b1b 1b1b1b1b,False,30,30,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b028,byte_tiled,64,28,24,1c1c1c1c 1c1c1c1c,False,24,24,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b029,byte_tiled,64,29,32,1d1d1d1d 1d1d1d1d,False,30,30,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b030,byte_tiled,64,30,32,1e1e1e1e 1e1e1e1e,False,32,32,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b031,byte_tiled,64,31,40,1f1f1f1f 1f1f1f1f,False,38,38,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b032,byte_tiled,64,32,8,20202020 20202020,False,8,8,5,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b033,byte_tiled,64,33,16,21212121 21212121,False,14,14,5,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b034,byte_tiled,64,34,16,22222222 22222222,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b035,byte_tiled,64,35,24,23232323 23232323,False,22,22,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b036,byte_tiled,64,36,16,24242424 24242424,False,16,16,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b037,byte_tiled,64,37,24,25252525 25252525,False,22,22,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b038,byte_tiled,64,38,24,26262626 26262626,False,24,24,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b039,byte_tiled,64,39,32,27272727 27272727,False,30,30,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b040,byte_tiled,64,40,16,28282828 28282828,False,16,16,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b041,byte_tiled,64,41,24,29292929 29292929,False,22,22,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b042,byte_tiled,64,42,24,2a2a2a2a 2a2a2a2a,False,24,24,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b043,byte_tiled,64,43,32,2b2b2b2b 2b2b2b2b,False,30,30,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b044,byte_tiled,64,44,24,2c2c2c2c 2c2c2c2c,False,24,24,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b045,byte_tiled,64,45,32,2d2d2d2d 2d2d2d2d,False,30,30,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b046,byte_tiled,64,46,32,2e2e2e2e 2e2e2e2e,False,32,32,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b047,byte_tiled,64,47,40,2f2f2f2f 2f2f2f2f,False,38,38,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b048,byte_tiled,64,48,16,30303030 30303030,False,16,16,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b049,byte_tiled,64,49,24,31313131 31313131,False,22,22,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b050,byte_tiled,64,50,24,32323232 32323232,False,24,24,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b051,byte_tiled,64,51,32,33333333 33333333,False,30,30,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b052,byte_tiled,64,52,24,34343434 34343434,False,24,24,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b053,byte_tiled,64,53,32,35353535 35353535,False,30,30,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b054,byte_tiled,64,54,32,36363636 36363636,False,32,32,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b055,byte_tiled,64,55,40,37373737 37373737,False,38,38,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b056,byte_tiled,64,56,24,38383838 38383838,False,24,24,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b057,byte_tiled,64,57,32,39393939 39393939,False,30,30,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b058,byte_tiled,64,58,32,3a3a3a3a 3a3a3a3a,False,32,32,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b059,byte_tiled,64,59,40,3b3b3b3b 3b3b3b3b,False,38,38,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b060,byte_tiled,64,60,32,3c3c3c3c 3c3c3c3c,False,32,32,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b061,byte_tiled,64,61,40,3d3d3d3d 3d3d3d3d,False,38,38,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b062,byte_tiled,64,62,40,3e3e3e3e 3e3e3e3e,False,40,40,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b063,byte_tiled,64,63,48,3f3f3f3f 3f3f3f3f,False,46,46,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b064,byte_tiled,64,64,8,40404040 40404040,False,8,8,6,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b065,byte_tiled,64,65,16,41414141 41414141,False,14,14,6,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b066,byte_tiled,64,66,16,42424242 42424242,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b067,byte_tiled,64,67,24,43434343 43434343,False,22,22,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b068,byte_tiled,64,68,16,44444444 44444444,False,16,16,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b069,byte_tiled,64,69,24,45454545 45454545,False,22,22,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b070,byte_tiled,64,70,24,46464646 46464646,False,24,24,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b071,byte_tiled,64,71,32,47474747 47474747,False,30,30,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b072,byte_tiled,64,72,16,48484848 48484848,False,16,16,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b073,byte_tiled,64,73,24,49494949 49494949,False,22,22,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b074,byte_tiled,64,74,24,4a4a4a4a 4a4a4a4a,False,24,24,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b075,byte_tiled,64,75,32,4b4b4b4b 4b4b4b4b,False,30,30,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b076,byte_tiled,64,76,24,4c4c4c4c 4c4c4c4c,False,24,24,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b077,byte_tiled,64,77,32,4d4d4d4d 4d4d4d4d,False,30,30,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b078,byte_tiled,64,78,32,4e4e4e4e 4e4e4e4e,False,32,32,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b079,byte_tiled,64,79,40,4f4f4f4f 4f4f4f4f,False,38,38,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b080,byte_tiled,64,80,16,50505050 50505050,False,16,16,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b081,byte_tiled,64,81,24,51515151 51515151,False,22,22,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b082,byte_tiled,64,82,24,52525252 52525252,False,24,24,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b083,byte_tiled,64,83,32,53535353 53535353,False,30,30,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b084,byte_tiled,64,84,24,54545454 54545454,False,24,24,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b085,byte_tiled,64,85,32,55555555 55555555,False,30,30,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b086,byte_tiled,64,86,32,56565656 56565656,False,32,32,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b087,byte_tiled,64,87,40,57575757 57575757,False,38,38,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b088,byte_tiled,64,88,24,58585858 58585858,False,24,24,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b089,byte_tiled,64,89,32,59595959 59595959,False,30,30,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b090,byte_tiled,64,90,32,5a5a5a5a 5a5a5a5a,False,32,32,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b091,byte_tiled,64,91,40,5b5b5b5b 5b5b5b5b,False,38,38,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b092,byte_tiled,64,92,32,5c5c5c5c 5c5c5c5c,False,32,32,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b093,byte_tiled,64,93,40,5d5d5d5d 5d5d5d5d,False,38,38,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b094,byte_tiled,64,94,40,5e5e5e5e 5e5e5e5e,False,40,40,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b095,byte_tiled,64,95,48,5f5f5f5f 5f5f5f5f,False,46,46,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b096,byte_tiled,64,96,16,60606060 60606060,False,16,16,5,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b097,byte_tiled,64,97,24,61616161 61616161,False,22,22,5,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b098,byte_tiled,64,98,24,62626262 62626262,False,24,24,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b099,byte_tiled,64,99,32,63636363 63636363,False,30,30,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b100,byte_tiled,64,100,24,64646464 64646464,False,24,24,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b101,byte_tiled,64,101,32,65656565 65656565,False,30,30,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b102,byte_tiled,64,102,32,66666666 66666666,False,32,32,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b103,byte_tiled,64,103,40,67676767 67676767,False,38,38,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b104,byte_tiled,64,104,24,68686868 68686868,False,24,24,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b105,byte_tiled,64,105,32,69696969 69696969,False,30,30,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b106,byte_tiled,64,106,32,6a6a6a6a 6a6a6a6a,False,32,32,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b107,byte_tiled,64,107,40,6b6b6b6b 6b6b6b6b,False,38,38,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b108,byte_tiled,64,108,32,6c6c6c6c 6c6c6c6c,False,32,32,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b109,byte_tiled,64,109,40,6d6d6d6d 6d6d6d6d,False,38,38,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b110,byte_tiled,64,110,40,6e6e6e6e 6e6e6e6e,False,40,40,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b111,byte_tiled,64,111,48,6f6f6f6f 6f6f6f6f,False,46,46,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b112,byte_tiled,64,112,24,70707070 70707070,False,24,24,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b113,byte_tiled,64,113,32,71717171 71717171,False,30,30,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b114,byte_tiled,64,114,32,72727272 72727272,False,32,32,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b115,byte_tiled,64,115,40,73737373 73737373,False,38,38,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b116,byte_tiled,64,116,32,74747474 74747474,False,32,32,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b117,byte_tiled,64,117,40,75757575 75757575,False,38,38,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b118,byte_tiled,64,118,40,76767676 76767676,False,40,40,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b119,byte_tiled,64,119,48,77777777 77777777,False,46,46,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b120,byte_tiled,64,120,32,78787878 78787878,False,32,32,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b121,byte_tiled,64,121,40,79797979 79797979,False,38,38,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b122,byte_tiled,64,122,40,7a7a7a7a 7a7a7a7a,False,40,40,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b123,byte_tiled,64,123,48,7b7b7b7b 7b7b7b7b,False,46,46,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b124,byte_tiled,64,124,40,7c7c7c7c 7c7c7c7c,False,40,40,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b125,byte_tiled,64,125,48,7d7d7d7d 7d7d7d7d,False,46,46,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b126,byte_tiled,64,126,48,7e7e7e7e 7e7e7e7e,False,48,48,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b127,byte_tiled,64,127,56,7f7f7f7f 7f7f7f7f,False,54,54,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b128,byte_tiled,64,128,8,80808080 80808080,False,8,8,7,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b129,byte_tiled,64,129,16,81818181 81818181,False,14,14,7,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b130,byte_tiled,64,130,16,82828282 82828282,False,16,16,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b131,byte_tiled,64,131,24,83838383 83838383,False,22,22,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b132,byte_tiled,64,132,16,84848484 84848484,False,16,16,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b133,byte_tiled,64,133,24,85858585 85858585,False,22,22,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b134,byte_tiled,64,134,24,86868686 86868686,False,24,24,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b135,byte_tiled,64,135,32,87878787 87878787,False,30,30,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b136,byte_tiled,64,136,16,88888888 88888888,False,16,16,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b137,byte_tiled,64,137,24,89898989 89898989,False,22,22,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b138,byte_tiled,64,138,24,8a8a8a8a 8a8a8a8a,False,24,24,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b139,byte_tiled,64,139,32,8b8b8b8b 8b8b8b8b,False,30,30,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b140,byte_tiled,64,140,24,8c8c8c8c 8c8c8c8c,False,24,24,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b141,byte_tiled,64,141,32,8d8d8d8d 8d8d8d8d,False,30,30,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b142,byte_tiled,64,142,32,8e8e8e8e 8e8e8e8e,False,32,32,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b143,byte_tiled,64,143,40,8f8f8f8f 8f8f8f8f,False,38,38,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b144,byte_tiled,64,144,16,90909090 90909090,False,16,16,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b145,byte_tiled,64,145,24,91919191 91919191,False,22,22,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b146,byte_tiled,64,146,24,92929292 92929292,False,24,24,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b147,byte_tiled,64,147,32,93939393 93939393,False,30,30,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b148,byte_tiled,64,148,24,94949494 94949494,False,24,24,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b149,byte_tiled,64,149,32,95959595 95959595,False,30,30,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b150,byte_tiled,64,150,32,96969696 96969696,False,32,32,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b151,byte_tiled,64,151,40,97979797 97979797,False,38,38,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b152,byte_tiled,64,152,24,98989898 98989898,False,24,24,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b153,byte_tiled,64,153,32,99999999 99999999,False,30,30,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b154,byte_tiled,64,154,32,9a9a9a9a 9a9a9a9a,False,32,32,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b155,byte_tiled,64,155,40,9b9b9b9b 9b9b9b9b,False,38,38,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b156,byte_tiled,64,156,32,9c9c9c9c 9c9c9c9c,False,32,32,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b157,byte_tiled,64,157,40,9d9d9d9d 9d9d9d9d,False,38,38,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b158,byte_tiled,64,158,40,9e9e9e9e 9e9e9e9e,False,40,40,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b159,byte_tiled,64,159,48,9f9f9f9f 9f9f9f9f,False,46,46,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b160,byte_tiled,64,160,16,a0a0a0a0 a0a0a0a0,False,16,16,5,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b161,byte_tiled,64,161,24,a1a1a1a1 a1a1a1a1,False,22,22,5,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b162,byte_tiled,64,162,24,a2a2a2a2 a2a2a2a2,False,24,24,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b163,byte_tiled,64,163,32,a3a3a3a3 a3a3a3a3,False,30,30,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b164,byte_tiled,64,164,24,a4a4a4a4 a4a4a4a4,False,24,24,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b165,byte_tiled,64,165,32,a5a5a5a5 a5a5a5a5,False,30,30,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b166,byte_tiled,64,166,32,a6a6a6a6 a6a6a6a6,False,32,32,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b167,byte_tiled,64,167,40,a7a7a7a7 a7a7a7a7,False,38,38,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b168,byte_tiled,64,168,24,a8a8a8a8 a8a8a8a8,False,24,24,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b169,byte_tiled,64,169,32,a9a9a9a9 a9a9a9a9,False,30,30,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b170,byte_tiled,64,170,32,aaaaaaaa aaaaaaaa,False,32,32,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b171,byte_tiled,64,171,40,abababab abababab,False,38,38,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b172,byte_tiled,64,172,32,acacacac acacacac,False,32,32,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b173,byte_tiled,64,173,40,adadadad adadadad,False,38,38,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b174,byte_tiled,64,174,40,aeaeaeae aeaeaeae,False,40,40,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b175,byte_tiled,64,175,48,afafafaf afafafaf,False,46,46,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b176,byte_tiled,64,176,24,b0b0b0b0 b0b0b0b0,False,24,24,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b177,byte_tiled,64,177,32,b1b1b1b1 b1b1b1b1,False,30,30,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b178,byte_tiled,64,178,32,b2b2b2b2 b2b2b2b2,False,32,32,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b179,byte_tiled,64,179,40,b3b3b3b3 b3b3b3b3,False,38,38,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b180,byte_tiled,64,180,32,b4b4b4b4 b4b4b4b4,False,32,32,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b181,byte_tiled,64,181,40,b5b5b5b5 b5b5b5b5,False,38,38,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b182,byte_tiled,64,182,40,b6b6b6b6 b6b6b6b6,False,40,40,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b183,byte_tiled,64,183,48,b7b7b7b7 b7b7b7b7,False,46,46,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b184,byte_tiled,64,184,32,b8b8b8b8 b8b8b8b8,False,32,32,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b185,byte_tiled,64,185,40,b9b9b9b9 b9b9b9b9,False,38,38,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b186,byte_tiled,64,186,40,babababa babababa,False,40,40,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b187,byte_tiled,64,187,48,bbbbbbbb bbbbbbbb,False,46,46,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b188,byte_tiled,64,188,40,bcbcbcbc bcbcbcbc,False,40,40,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b189,byte_tiled,64,189,48,bdbdbdbd bdbdbdbd,False,46,46,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b190,byte_tiled,64,190,48,bebebebe bebebebe,False,48,48,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b191,byte_tiled,64,191,56,bfbfbfbf bfbfbfbf,False,54,54,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b192,byte_tiled,64,192,16,c0c0c0c0 c0c0c0c0,False,16,16,6,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b193,byte_tiled,64,193,24,c1c1c1c1 c1c1c1c1,False,22,22,6,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b194,byte_tiled,64,194,24,c2c2c2c2 c2c2c2c2,False,24,24,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b195,byte_tiled,64,195,32,c3c3c3c3 c3c3c3c3,False,30,30,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b196,byte_tiled,64,196,24,c4c4c4c4 c4c4c4c4,False,24,24,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b197,byte_tiled,64,197,32,c5c5c5c5 c5c5c5c5,False,30,30,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b198,byte_tiled,64,198,32,c6c6c6c6 c6c6c6c6,False,32,32,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b199,byte_tiled,64,199,40,c7c7c7c7 c7c7c7c7,False,38,38,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b200,byte_tiled,64,200,24,c8c8c8c8 c8c8c8c8,False,24,24,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b201,byte_tiled,64,201,32,c9c9c9c9 c9c9c9c9,False,30,30,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b202,byte_tiled,64,202,32,cacacaca cacacaca,False,32,32,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b203,byte_tiled,64,203,40,cbcbcbcb cbcbcbcb,False,38,38,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b204,byte_tiled,64,204,32,cccccccc cccccccc,False,32,32,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b205,byte_tiled,64,205,40,cdcdcdcd cdcdcdcd,False,38,38,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b206,byte_tiled,64,206,40,cececece cececece,False,40,40,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b207,byte_tiled,64,207,48,cfcfcfcf cfcfcfcf,False,46,46,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b208,byte_tiled,64,208,24,d0d0d0d0 d0d0d0d0,False,24,24,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b209,byte_tiled,64,209,32,d1d1d1d1 d1d1d1d1,False,30,30,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b210,byte_tiled,64,210,32,d2d2d2d2 d2d2d2d2,False,32,32,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b211,byte_tiled,64,211,40,d3d3d3d3 d3d3d3d3,False,38,38,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b212,byte_tiled,64,212,32,d4d4d4d4 d4d4d4d4,False,32,32,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b213,byte_tiled,64,213,40,d5d5d5d5 d5d5d5d5,False,38,38,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b214,byte_tiled,64,214,40,d6d6d6d6 d6d6d6d6,False,40,40,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b215,byte_tiled,64,215,48,d7d7d7d7 d7d7d7d7,False,46,46,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b216,byte_tiled,64,216,32,d8d8d8d8 d8d8d8d8,False,32,32,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b217,byte_tiled,64,217,40,d9d9d9d9 d9d9d9d9,False,38,38,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b218,byte_tiled,64,218,40,dadadada dadadada,False,40,40,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b219,byte_tiled,64,219,48,dbdbdbdb dbdbdbdb,False,46,46,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b220,byte_tiled,64,220,40,dcdcdcdc dcdcdcdc,False,40,40,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b221,byte_tiled,64,221,48,dddddddd dddddddd,False,46,46,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b222,byte_tiled,64,222,48,dededede dededede,False,48,48,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b223,byte_tiled,64,223,56,dfdfdfdf dfdfdfdf,False,54,54,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b224,byte_tiled,64,224,24,e0e0e0e0 e0e0e0e0,False,24,24,5,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b225,byte_tiled,64,225,32,e1e1e1e1 e1e1e1e1,False,30,30,5,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b226,byte_tiled,64,226,32,e2e2e2e2 e2e2e2e2,False,32,32,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b227,byte_tiled,64,227,40,e3e3e3e3 e3e3e3e3,False,38,38,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b228,byte_tiled,64,228,32,e4e4e4e4 e4e4e4e4,False,32,32,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b229,byte_tiled,64,229,40,e5e5e5e5 e5e5e5e5,False,38,38,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b230,byte_tiled,64,230,40,e6e6e6e6 e6e6e6e6,False,40,40,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b231,byte_tiled,64,231,48,e7e7e7e7 e7e7e7e7,False,46,46,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b232,byte_tiled,64,232,32,e8e8e8e8 e8e8e8e8,False,32,32,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b233,byte_tiled,64,233,40,e9e9e9e9 e9e9e9e9,False,38,38,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b234,byte_tiled,64,234,40,eaeaeaea eaeaeaea,False,40,40,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b235,byte_tiled,64,235,48,ebebebeb ebebebeb,False,46,46,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b236,byte_tiled,64,236,40,ecececec ecececec,False,40,40,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b237,byte_tiled,64,237,48,edededed edededed,False,46,46,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b238,byte_tiled,64,238,48,eeeeeeee eeeeeeee,False,48,48,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b239,byte_tiled,64,239,56,efefefef efefefef,False,54,54,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b240,byte_tiled,64,240,32,f0f0f0f0 f0f0f0f0,False,32,32,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b241,byte_tiled,64,241,40,f1f1f1f1 f1f1f1f1,False,38,38,4,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b242,byte_tiled,64,242,40,f2f2f2f2 f2f2f2f2,False,40,40,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b243,byte_tiled,64,243,48,f3f3f3f3 f3f3f3f3,False,46,46,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b244,byte_tiled,64,244,40,f4f4f4f4 f4f4f4f4,False,40,40,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b245,byte_tiled,64,245,48,f5f5f5f5 f5f5f5f5,False,46,46,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b246,byte_tiled,64,246,48,f6f6f6f6 f6f6f6f6,False,48,48,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b247,byte_tiled,64,247,56,f7f7f7f7 f7f7f7f7,False,54,54,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b248,byte_tiled,64,248,40,f8f8f8f8 f8f8f8f8,False,40,40,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b249,byte_tiled,64,249,48,f9f9f9f9 f9f9f9f9,False,46,46,3,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b250,byte_tiled,64,250,48,fafafafa fafafafa,False,48,48,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b251,byte_tiled,64,251,56,fbfbfbfb fbfbfbfb,False,54,54,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b252,byte_tiled,64,252,48,fcfcfcfc fcfcfcfc,False,48,48,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b253,byte_tiled,64,253,56,fdfdfdfd fdfdfdfd,False,54,54,2,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b254,byte_tiled,64,254,56,fefefefe fefefefe,False,56,56,1,True,True,False,True
+ALGORITHM_AUDIT,byte_w64_b255,byte_tiled,64,255,64,ffffffff ffffffff,False,62,62,1,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c0,one_hot,64,0,1,00000001 00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,onehot_w64_c1,one_hot,64,1,1,00000002 00000000,False,1,1,1,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c2,one_hot,64,2,1,00000004 00000000,False,1,1,2,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c3,one_hot,64,3,1,00000008 00000000,False,1,1,3,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c4,one_hot,64,4,1,00000010 00000000,False,1,1,4,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c5,one_hot,64,5,1,00000020 00000000,False,1,1,5,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c6,one_hot,64,6,1,00000040 00000000,False,1,1,6,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c7,one_hot,64,7,1,00000080 00000000,False,1,1,7,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c8,one_hot,64,8,1,00000100 00000000,False,1,1,8,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c9,one_hot,64,9,1,00000200 00000000,False,1,1,9,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c10,one_hot,64,10,1,00000400 00000000,False,1,1,10,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c11,one_hot,64,11,1,00000800 00000000,False,1,1,11,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c12,one_hot,64,12,1,00001000 00000000,False,1,1,12,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c13,one_hot,64,13,1,00002000 00000000,False,1,1,13,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c14,one_hot,64,14,1,00004000 00000000,False,1,1,14,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c15,one_hot,64,15,1,00008000 00000000,False,1,1,15,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c16,one_hot,64,16,1,00010000 00000000,False,1,1,16,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c17,one_hot,64,17,1,00020000 00000000,False,1,1,17,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c18,one_hot,64,18,1,00040000 00000000,False,1,1,18,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c19,one_hot,64,19,1,00080000 00000000,False,1,1,19,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c20,one_hot,64,20,1,00100000 00000000,False,1,1,20,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c21,one_hot,64,21,1,00200000 00000000,False,1,1,21,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c22,one_hot,64,22,1,00400000 00000000,False,1,1,22,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c23,one_hot,64,23,1,00800000 00000000,False,1,1,23,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c24,one_hot,64,24,1,01000000 00000000,False,1,1,24,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c25,one_hot,64,25,1,02000000 00000000,False,1,1,25,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c26,one_hot,64,26,1,04000000 00000000,False,1,1,26,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c27,one_hot,64,27,1,08000000 00000000,False,1,1,27,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c28,one_hot,64,28,1,10000000 00000000,False,1,1,28,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c29,one_hot,64,29,1,20000000 00000000,False,1,1,29,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c30,one_hot,64,30,1,40000000 00000000,False,1,1,30,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c31,one_hot,64,31,1,80000000 00000000,False,1,1,31,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c32,one_hot,64,32,1,00000000 00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,onehot_w64_c33,one_hot,64,33,1,00000000 00000002,False,1,1,33,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c34,one_hot,64,34,1,00000000 00000004,False,1,1,34,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c35,one_hot,64,35,1,00000000 00000008,False,1,1,35,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c36,one_hot,64,36,1,00000000 00000010,False,1,1,36,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c37,one_hot,64,37,1,00000000 00000020,False,1,1,37,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c38,one_hot,64,38,1,00000000 00000040,False,1,1,38,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c39,one_hot,64,39,1,00000000 00000080,False,1,1,39,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c40,one_hot,64,40,1,00000000 00000100,False,1,1,40,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c41,one_hot,64,41,1,00000000 00000200,False,1,1,41,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c42,one_hot,64,42,1,00000000 00000400,False,1,1,42,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c43,one_hot,64,43,1,00000000 00000800,False,1,1,43,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c44,one_hot,64,44,1,00000000 00001000,False,1,1,44,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c45,one_hot,64,45,1,00000000 00002000,False,1,1,45,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c46,one_hot,64,46,1,00000000 00004000,False,1,1,46,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c47,one_hot,64,47,1,00000000 00008000,False,1,1,47,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c48,one_hot,64,48,1,00000000 00010000,False,1,1,48,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c49,one_hot,64,49,1,00000000 00020000,False,1,1,49,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c50,one_hot,64,50,1,00000000 00040000,False,1,1,50,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c51,one_hot,64,51,1,00000000 00080000,False,1,1,51,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c52,one_hot,64,52,1,00000000 00100000,False,1,1,52,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c53,one_hot,64,53,1,00000000 00200000,False,1,1,53,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c54,one_hot,64,54,1,00000000 00400000,False,1,1,54,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c55,one_hot,64,55,1,00000000 00800000,False,1,1,55,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c56,one_hot,64,56,1,00000000 01000000,False,1,1,56,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c57,one_hot,64,57,1,00000000 02000000,False,1,1,57,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c58,one_hot,64,58,1,00000000 04000000,False,1,1,58,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c59,one_hot,64,59,1,00000000 08000000,False,1,1,59,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c60,one_hot,64,60,1,00000000 10000000,False,1,1,60,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c61,one_hot,64,61,1,00000000 20000000,False,1,1,61,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c62,one_hot,64,62,1,00000000 40000000,False,1,1,62,True,True,False,True
+ALGORITHM_AUDIT,onehot_w64_c63,one_hot,64,63,1,00000000 80000000,False,1,1,63,True,True,False,True
+ALGORITHM_AUDIT,sign_w64_all_plus,sign_example,64,all_plus,0,00000000 00000000,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,sign_w64_all_minus,sign_example,64,all_minus,64,ffffffff ffffffff,False,62,62,1,True,True,False,True
+ALGORITHM_AUDIT,sign_w64_alternating_minus_first,sign_example,64,alternating_minus_first,32,55555555 55555555,False,30,30,2,True,True,False,True
+ALGORITHM_AUDIT,sign_w64_alternating_plus_first,sign_example,64,alternating_plus_first,32,aaaaaaaa aaaaaaaa,False,32,32,1,True,True,False,True
+ALGORITHM_AUDIT,sign_w64_minus_at_word_starts,sign_example,64,minus_at_word_starts,2,00000001 00000001,True,0,0,-1,True,True,True,True
+ALGORITHM_AUDIT,sign_w64_minus_at_word_ends,sign_example,64,minus_at_word_ends,2,80000000 80000000,False,2,2,31,True,True,False,True

@@ -1,0 +1,17 @@
+{
+  "scope": "actual official state-dict loader on synthetic layer file, not full model loader",
+  "packed_detected": true,
+  "original_sign_agreement": {
+    "U": 0.5520833134651184,
+    "V": 0.55078125,
+    "U_R": 0.5859375,
+    "V_R": 0.53125
+  },
+  "corrected_sign_agreement": {
+    "U": 1.0,
+    "V": 1.0,
+    "U_R": 1.0,
+    "V_R": 1.0
+  },
+  "corrected_output_bitwise_equal": true
+}

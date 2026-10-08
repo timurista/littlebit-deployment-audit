@@ -1,0 +1,36 @@
+{
+  "claim_scope": "actual upstream component test, not trained-model replication",
+  "upstream_commit": "933857ed1443b53fc43a875c2cf64249e3c56f0c",
+  "python": "3.11.15",
+  "torch": "2.6.0",
+  "input": [
+    [
+      1,
+      -1,
+      1,
+      -1,
+      -1,
+      1,
+      1,
+      -1
+    ]
+  ],
+  "packed": [
+    [
+      154
+    ]
+  ],
+  "upstream_unpacked": [
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  ],
+  "mismatches": 4
+}

@@ -1,0 +1,35 @@
+# Local environments
+.venv*/
+__pycache__/
+*.py[cod]
+
+# Hugging Face and other caches, model weights, datasets (not redistributed; see LICENSE_NOTES.md)
+.cache/
+cache/
+models/
+data/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.gguf
+
+# Pilot checkpoints: derivatives of the model weights, local only
+results/quality-pilot/checkpoints/
+
+# Frozen window token ids decode to WikiText text; only their hashes are published (manifest.json)
+results/quality-pilot/windows.json
+
+# Upstream checkout (CC BY-NC 4.0); anyone reproducing needs their own copy
+upstream/
+
+# Private handoff evidence: assistant session transcripts and prompts
+evidence/claude-*.json
+evidence/report-prompt.txt
+
+# Container output scratch
+results-container/
+
+# OS noise
+.DS_Store

@@ -1,0 +1,6 @@
+# Both packages are OPTIONAL. The ALGORITHM_AUDIT tier (src/audit.py core and most tests)
+# needs only the Python standard library (3.9+; upstream littlebit.py import needs 3.10+).
+# torch enables the UPSTREAM_IMPORT tier and src/bench.py. Versions match the execution
+# environment recorded in evidence/READINESS.md (upstream README recommends torch 2.8.0).
+torch==2.6.0
+numpy==2.2.4

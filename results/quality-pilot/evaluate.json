@@ -1,0 +1,1058 @@
+{
+  "args": {
+    "batch_size": 1,
+    "ce_weight": 1.0,
+    "device": "cpu",
+    "eff_bit": 0.55,
+    "grad_clip": 1.0,
+    "kd_weight": 1.0,
+    "l2l_scale": 0.0,
+    "lr": 4e-05,
+    "max_new_tokens": 8,
+    "max_rss_gib": 6.0,
+    "max_seconds": 180.0,
+    "min_available_gib": 2.0,
+    "model_dir": "models/qwen2.5-0.5b",
+    "out": "results/quality-pilot",
+    "residual": true,
+    "seed": 42,
+    "stage": "evaluate",
+    "steps": 16,
+    "threads": 2,
+    "upstream_decoder_variant": true
+  },
+  "checkpoint_files": {
+    "frozen_base": {
+      "bytes": 272426320,
+      "matches_train_record": true,
+      "sha256": "777b11a1d5d85f14a4768c0869216aabd7680f71478f6a15971613c5f6e9d28b"
+    },
+    "init": {
+      "bytes": 27257288,
+      "matches_train_record": true,
+      "sha256": "54713aff15a71bd70e3a5865cc21da216dc01981af9cd83c10830b6fb9d77e7d"
+    },
+    "trained": {
+      "bytes": 27257280,
+      "matches_train_record": true,
+      "sha256": "df09d0478ae685983032b452336a1de7522312de45ff7fbf38efc44296b8739a"
+    }
+  },
+  "claims": {
+    "baselines": {
+      "practical_4bit": "MISSING: no validated 4-bit backend in this project yet",
+      "smaller_same_family_model": "MISSING: not part of this pilot"
+    },
+    "initialization_quality_is_separate_from_training": true,
+    "model_trained": true,
+    "model_trained_basis": "trained claim inherited from train.json step log and checkpoint sha256",
+    "non_claims": [
+      "wiring and resource pilot only, not a statistical benchmark",
+      "not a replication of any published LittleBit result",
+      "no end-to-end throughput claim; operator microbenchmarks are not end-to-end",
+      "task accuracy not measured; generation outputs are shown, never judged",
+      "no validated 4-bit baseline exists in this project yet (MISSING)",
+      "a model is called trained only when a completed step log and a checkpoint with sha256 exist"
+    ],
+    "statistical_significance": "not assessed; pilot sizes are fixed and tiny",
+    "task_accuracy": "not measured",
+    "throughput": "not measured"
+  },
+  "environment": {
+    "attn_implementation": "sdpa",
+    "conversion_device": "cpu",
+    "cpu_count": 10,
+    "cuda_available": false,
+    "device": "cpu",
+    "dtype": "float32",
+    "machine": "arm64",
+    "mps_available": false,
+    "offline_env": {
+      "HF_DATASETS_OFFLINE": "1",
+      "HF_HUB_OFFLINE": "1",
+      "TRANSFORMERS_OFFLINE": "1"
+    },
+    "packages": {
+      "datasets": "3.4.1",
+      "huggingface_hub": "0.36.2",
+      "numpy": "2.2.4",
+      "psutil": "7.0.0",
+      "pyarrow": "25.0.1",
+      "safetensors": "0.6.2",
+      "tokenizers": "0.21.4",
+      "torch": "2.6.0",
+      "transformers": "4.51.3"
+    },
+    "platform": "macOS-26.0.1-arm64-arm-64bit",
+    "python": "3.12.14",
+    "requested_threads": 2,
+    "torch_num_interop_threads": 1,
+    "torch_num_threads": 2
+  },
+  "finished_unix": 1791470907.934384,
+  "guard": {
+    "checks": 36,
+    "elapsed_s": 15.551485584001057,
+    "max_rss_bytes": 6442450944,
+    "max_seconds": 180.0,
+    "min_available_bytes": 2147483648,
+    "min_available_seen_at_checks": 4707172352,
+    "peak_rss_seen_at_checks": 2926346240
+  },
+  "heldout_split": "test",
+  "initialized_no_qat": {
+    "checkpoint": {
+      "bytes": 27257288,
+      "matches_train_record": true,
+      "sha256": "54713aff15a71bd70e3a5865cc21da216dc01981af9cd83c10830b6fb9d77e7d"
+    },
+    "checkpoint_accounting": {
+      "achieved_bpw_from_file_bytes": 0.6093966417696887,
+      "achieved_bpw_packed_signs_only": 0.4967032967032967,
+      "advertised_bpw_upstream_formula": 0.5295501172542572,
+      "bpw_note": "converted block linears only; biases are in the frozen base file; scales are fp32 here, upstream main.py would cast them to bf16",
+      "bytes": 27257288,
+      "converted_weight_count": 357826560,
+      "fp32_scale_tensor_bytes": 4697088,
+      "packed_sign_tensor_bytes": 22216704,
+      "sha256": "54713aff15a71bd70e3a5865cc21da216dc01981af9cd83c10830b6fb9d77e7d",
+      "shape_and_buffer_tensor_bytes": 13440,
+      "sign_count": 171294720,
+      "tensors": 3192
+    },
+    "generation": [
+      {
+        "continuation": "        ",
+        "decoding": "greedy",
+        "judged": false,
+        "max_new_tokens": 8,
+        "output_token_ids": [
+          220,
+          220,
+          220,
+          220,
+          220,
+          220,
+          220,
+          220
+        ],
+        "prompt": "The capital of France is",
+        "prompt_token_ids": [
+          785,
+          6722,
+          315,
+          9625,
+          374
+        ]
+      },
+      {
+        "continuation": "        ",
+        "decoding": "greedy",
+        "judged": false,
+        "max_new_tokens": 8,
+        "output_token_ids": [
+          220,
+          220,
+          220,
+          220,
+          220,
+          220,
+          220,
+          220
+        ],
+        "prompt": "In 1990 , the population of the city was",
+        "prompt_token_ids": [
+          641,
+          220,
+          16,
+          24,
+          24,
+          15,
+          1154,
+          279,
+          7042,
+          315,
+          279,
+          3283,
+          572
+        ]
+      },
+      {
+        "continuation": "        ",
+        "decoding": "greedy",
+        "judged": false,
+        "max_new_tokens": 8,
+        "output_token_ids": [
+          220,
+          220,
+          220,
+          220,
+          220,
+          220,
+          220,
+          220
+        ],
+        "prompt": "Water boils at a temperature of",
+        "prompt_token_ids": [
+          28253,
+          88955,
+          518,
+          264,
+          9315,
+          315
+        ]
+      }
+    ],
+    "kv_cache": {
+      "batch": 1,
+      "formula_bytes_fp32": 3145728,
+      "measured_bytes": 3145728,
+      "note": "KV cache is separate from weights; LittleBit does not compress it",
+      "tokens": 128
+    },
+    "paired_vs_original": [
+      {
+        "index": 0,
+        "mean_nll_diff": 7.698936105137242,
+        "sha256": "91ae344eda8b4bba453109fec235e315a879e02fab1d08c47d5f5e61445203f3"
+      },
+      {
+        "index": 1,
+        "mean_nll_diff": 8.714306935127393,
+        "sha256": "01c8de1731633ffeffdc8e9fe920181d4f0fe4fe4eb9df5b97eb24cd92ed2ab8"
+      },
+      {
+        "index": 2,
+        "mean_nll_diff": 8.354016336507552,
+        "sha256": "2b0436717df85eaa0008fa98507a946a91f9958795fcfbf9da17425902bc23e2"
+      },
+      {
+        "index": 3,
+        "mean_nll_diff": 7.227088248470441,
+        "sha256": "bbd097814ee8276fc1f0e9032937e8a569bd74c0283438c8a7ce51f277f1dfc3"
+      },
+      {
+        "index": 4,
+        "mean_nll_diff": 7.479382351045882,
+        "sha256": "afcc2eeadf26eed0adf9be4a953220d0e3366bd3390ca84c9db3084e6873a0ad"
+      },
+      {
+        "index": 5,
+        "mean_nll_diff": 8.327268811780506,
+        "sha256": "d6be8ab73f07b38d7496320761d0d6a37ae52016294bcf46a2f03f886da1504c"
+      },
+      {
+        "index": 6,
+        "mean_nll_diff": 8.437270699233443,
+        "sha256": "6a390d16b3a01547146bbbb2e67996987de1529c851bee90d4aed43fe56d1ab8"
+      },
+      {
+        "index": 7,
+        "mean_nll_diff": 7.413376787206934,
+        "sha256": "3fd6e1241a95a907bfd8062a9336a84edd5c8ca0e46c8f725257e976cc33360a"
+      }
+    ],
+    "reload": {
+      "decoder": "corrected_reference_decoder",
+      "load_path": "safetensors load_file, decode packed signs, cast fp32, load_state_dict(assign=True), tie_weights, _binarized=True",
+      "missing_keys": [
+        "lm_head.weight"
+      ],
+      "official_loader_ran": false,
+      "rotary_inv_freq_equals_original": true,
+      "unexpected_keys": []
+    },
+    "resident_storage": {
+      "littlebit_factor_scale_buffer_bytes": 689878656,
+      "note": "resident tensors only; excludes KV cache, activations, allocator slack",
+      "other_bytes": 544824960,
+      "total_unique_bytes": 1234703616
+    },
+    "test": {
+      "label": "test_initialized_no_qat",
+      "mean_nll": 11.31966029110504,
+      "ppl": 82426.33720523083,
+      "scored_tokens": 1016,
+      "total_nll": 11500.77485576272,
+      "wall_s_note": "descriptive pilot wall clock, not throughput",
+      "windows": [
+        {
+          "index": 0,
+          "mean_nll": 10.430553890588715,
+          "nll_sum": 1324.6803441047668,
+          "scored_tokens": 127,
+          "sha256": "91ae344eda8b4bba453109fec235e315a879e02fab1d08c47d5f5e61445203f3",
+          "wall_s": 0.23304654203820974
+        },
+        {
+          "index": 1,
+          "mean_nll": 12.176492073404507,
+          "nll_sum": 1546.4144933223724,
+          "scored_tokens": 127,
+          "sha256": "01c8de1731633ffeffdc8e9fe920181d4f0fe4fe4eb9df5b97eb24cd92ed2ab8",
+          "wall_s": 0.2181276249466464
+        },
+        {
+          "index": 2,
+          "mean_nll": 11.571916707857387,
+          "nll_sum": 1469.6334218978882,
+          "scored_tokens": 127,
+          "sha256": "2b0436717df85eaa0008fa98507a946a91f9958795fcfbf9da17425902bc23e2",
+          "wall_s": 0.19968279195018113
+        },
+        {
+          "index": 3,
+          "mean_nll": 10.498697189364846,
+          "nll_sum": 1333.3345430493355,
+          "scored_tokens": 127,
+          "sha256": "bbd097814ee8276fc1f0e9032937e8a569bd74c0283438c8a7ce51f277f1dfc3",
+          "wall_s": 0.19904787500854582
+        },
+        {
+          "index": 4,
+          "mean_nll": 10.720141204792684,
+          "nll_sum": 1361.4579330086708,
+          "scored_tokens": 127,
+          "sha256": "afcc2eeadf26eed0adf9be4a953220d0e3366bd3390ca84c9db3084e6873a0ad",
+          "wall_s": 0.19465241604484618
+        },
+        {
+          "index": 5,
+          "mean_nll": 12.01805610567566,
+          "nll_sum": 1526.2931254208088,
+          "scored_tokens": 127,
+          "sha256": "d6be8ab73f07b38d7496320761d0d6a37ae52016294bcf46a2f03f886da1504c",
+          "wall_s": 0.1806828749831766
+        },
+        {
+          "index": 6,
+          "mean_nll": 11.960442995461891,
+          "nll_sum": 1518.9762604236603,
+          "scored_tokens": 127,
+          "sha256": "6a390d16b3a01547146bbbb2e67996987de1529c851bee90d4aed43fe56d1ab8",
+          "wall_s": 0.16359508293680847
+        },
+        {
+          "index": 7,
+          "mean_nll": 11.180982161694624,
+          "nll_sum": 1419.9847345352173,
+          "scored_tokens": 127,
+          "sha256": "3fd6e1241a95a907bfd8062a9336a84edd5c8ca0e46c8f725257e976cc33360a",
+          "wall_s": 0.16616916691418737
+        }
+      ]
+    },
+    "tier": "UPSTREAM_IMPORT_REAL_MODEL_PILOT"
+  },
+  "manifest_sha256": "6d3c4ddc1e38ed82055f38d6e84ddb9ca145136998e13248191913086502d73b",
+  "model": {
+    "files": {
+      "LICENSE": {
+        "bytes": 11343,
+        "path": "models/qwen2.5-0.5b/LICENSE",
+        "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e"
+      },
+      "config.json": {
+        "bytes": 681,
+        "path": "models/qwen2.5-0.5b/config.json",
+        "sha256": "479dcf0c5286339e41ad3992cd08ae88a467c4187587936248e2b7c96283484b"
+      },
+      "generation_config.json": {
+        "bytes": 138,
+        "path": "models/qwen2.5-0.5b/generation_config.json",
+        "sha256": "8c970692323e3ea0e9b8b0a4dca79388d31226e41f83c9fd6014804280ebf6e8"
+      },
+      "merges.txt": {
+        "bytes": 1671839,
+        "path": "models/qwen2.5-0.5b/merges.txt",
+        "sha256": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3"
+      },
+      "model.safetensors": {
+        "bytes": 988097824,
+        "hub_lfs_sha256": "88c142557820ccad55bb59756bfcfcf891de9cc6202816bd346445188a0ed342",
+        "matches_hub_lfs_sha256": true,
+        "path": "models/qwen2.5-0.5b/model.safetensors",
+        "sha256": "88c142557820ccad55bb59756bfcfcf891de9cc6202816bd346445188a0ed342"
+      },
+      "tokenizer.json": {
+        "bytes": 7031645,
+        "path": "models/qwen2.5-0.5b/tokenizer.json",
+        "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"
+      },
+      "tokenizer_config.json": {
+        "bytes": 7228,
+        "path": "models/qwen2.5-0.5b/tokenizer_config.json",
+        "sha256": "c91efca15ceff6e9ee9424db58a6f59cd41294e550a86cbd07e3c1fb500b34f9"
+      },
+      "vocab.json": {
+        "bytes": 2776833,
+        "path": "models/qwen2.5-0.5b/vocab.json",
+        "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+      }
+    },
+    "license": "Apache-2.0, ungated (verified by the project owner before this pilot)",
+    "model_dir": "models/qwen2.5-0.5b",
+    "repo": "Qwen/Qwen2.5-0.5B",
+    "revision": {
+      "consistent": true,
+      "etags": {
+        "LICENSE": "6634c8cc3133b3848ec74b9f275acaaa1ea618ab",
+        "README.md": "2d22b523f8968e42fc6b805e656133fa83f771ab",
+        "config.json": "141506237b9022c4ab3e01734cfafb9310b57d2d",
+        "generation_config.json": "cbbb3133034e192527e5321b4c679154e4819ab8",
+        "merges.txt": "20024bfe7c83998e9aeaf98a0cd6a2ce6306c2f0",
+        "model.safetensors": "88c142557820ccad55bb59756bfcfcf891de9cc6202816bd346445188a0ed342",
+        "tokenizer.json": "443909a61d429dff23010e5bddd28ff530edda00",
+        "tokenizer_config.json": "ba7e4c5637b9732dadcd66286ce48334e8b31e9e",
+        "vocab.json": "4783fe10ac3adce15ac8f358ef5462739852c569"
+      },
+      "matches_pinned": true,
+      "per_file": {
+        "LICENSE": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+        "README.md": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+        "config.json": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+        "generation_config.json": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+        "merges.txt": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+        "model.safetensors": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+        "tokenizer.json": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+        "tokenizer_config.json": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+        "vocab.json": "060db6499f32faf8b98477b0a26969ef7d8b9987"
+      },
+      "pinned": "060db6499f32faf8b98477b0a26969ef7d8b9987"
+    }
+  },
+  "original": {
+    "generation": [
+      {
+        "continuation": " Paris. It is the largest city in",
+        "decoding": "greedy",
+        "judged": false,
+        "max_new_tokens": 8,
+        "output_token_ids": [
+          12095,
+          13,
+          1084,
+          374,
+          279,
+          7772,
+          3283,
+          304
+        ],
+        "prompt": "The capital of France is",
+        "prompt_token_ids": [
+          785,
+          6722,
+          315,
+          9625,
+          374
+        ]
+      },
+      {
+        "continuation": " 1,000,0",
+        "decoding": "greedy",
+        "judged": false,
+        "max_new_tokens": 8,
+        "output_token_ids": [
+          220,
+          16,
+          11,
+          15,
+          15,
+          15,
+          11,
+          15
+        ],
+        "prompt": "In 1990 , the population of the city was",
+        "prompt_token_ids": [
+          641,
+          220,
+          16,
+          24,
+          24,
+          15,
+          1154,
+          279,
+          7042,
+          315,
+          279,
+          3283,
+          572
+        ]
+      },
+      {
+        "continuation": " 212 \u00b0F or ",
+        "decoding": "greedy",
+        "judged": false,
+        "max_new_tokens": 8,
+        "output_token_ids": [
+          220,
+          17,
+          16,
+          17,
+          36286,
+          37,
+          476,
+          220
+        ],
+        "prompt": "Water boils at a temperature of",
+        "prompt_token_ids": [
+          28253,
+          88955,
+          518,
+          264,
+          9315,
+          315
+        ]
+      }
+    ],
+    "kv_cache": {
+      "batch": 1,
+      "formula_bytes_fp32": 3145728,
+      "measured_bytes": 3145728,
+      "note": "KV cache is separate from weights; LittleBit does not compress it",
+      "tokens": 128
+    },
+    "matches_baseline_stage": true,
+    "resident_storage": {
+      "total_unique_bytes": 1976131200
+    },
+    "test": {
+      "label": "test_original",
+      "mean_nll": 3.363204506791365,
+      "ppl": 28.881594011091973,
+      "scored_tokens": 1016,
+      "total_nll": 3417.015778900027,
+      "wall_s_note": "descriptive pilot wall clock, not throughput",
+      "windows": [
+        {
+          "index": 0,
+          "mean_nll": 2.7316177854514736,
+          "nll_sum": 346.91545875233714,
+          "scored_tokens": 127,
+          "sha256": "91ae344eda8b4bba453109fec235e315a879e02fab1d08c47d5f5e61445203f3",
+          "wall_s": 0.36414483305998147
+        },
+        {
+          "index": 1,
+          "mean_nll": 3.4621851382771136,
+          "nll_sum": 439.69751256119343,
+          "scored_tokens": 127,
+          "sha256": "01c8de1731633ffeffdc8e9fe920181d4f0fe4fe4eb9df5b97eb24cd92ed2ab8",
+          "wall_s": 0.1993844589451328
+        },
+        {
+          "index": 2,
+          "mean_nll": 3.2179003713498338,
+          "nll_sum": 408.67334716142886,
+          "scored_tokens": 127,
+          "sha256": "2b0436717df85eaa0008fa98507a946a91f9958795fcfbf9da17425902bc23e2",
+          "wall_s": 0.18735883303452283
+        },
+        {
+          "index": 3,
+          "mean_nll": 3.271608940894405,
+          "nll_sum": 415.49433549358946,
+          "scored_tokens": 127,
+          "sha256": "bbd097814ee8276fc1f0e9032937e8a569bd74c0283438c8a7ce51f277f1dfc3",
+          "wall_s": 0.18913062498904765
+        },
+        {
+          "index": 4,
+          "mean_nll": 3.2407588537468017,
+          "nll_sum": 411.5763744258438,
+          "scored_tokens": 127,
+          "sha256": "afcc2eeadf26eed0adf9be4a953220d0e3366bd3390ca84c9db3084e6873a0ad",
+          "wall_s": 0.18633208295796067
+        },
+        {
+          "index": 5,
+          "mean_nll": 3.690787293895153,
+          "nll_sum": 468.72998632468443,
+          "scored_tokens": 127,
+          "sha256": "d6be8ab73f07b38d7496320761d0d6a37ae52016294bcf46a2f03f886da1504c",
+          "wall_s": 0.19923891604412347
+        },
+        {
+          "index": 6,
+          "mean_nll": 3.523172296228448,
+          "nll_sum": 447.44288162101293,
+          "scored_tokens": 127,
+          "sha256": "6a390d16b3a01547146bbbb2e67996987de1529c851bee90d4aed43fe56d1ab8",
+          "wall_s": 0.18771366600412875
+        },
+        {
+          "index": 7,
+          "mean_nll": 3.7676053744876907,
+          "nll_sum": 478.4858825599367,
+          "scored_tokens": 127,
+          "sha256": "3fd6e1241a95a907bfd8062a9336a84edd5c8ca0e46c8f725257e976cc33360a",
+          "wall_s": 0.19737745798192918
+        }
+      ]
+    }
+  },
+  "peak_rss_os": {
+    "bytes": 3328245760,
+    "ru_maxrss_raw": 3328245760,
+    "unit": "bytes"
+  },
+  "qat_trained": {
+    "checkpoint": {
+      "bytes": 27257280,
+      "matches_train_record": true,
+      "sha256": "df09d0478ae685983032b452336a1de7522312de45ff7fbf38efc44296b8739a"
+    },
+    "checkpoint_accounting": {
+      "achieved_bpw_from_file_bytes": 0.6093964629120879,
+      "achieved_bpw_packed_signs_only": 0.4967032967032967,
+      "advertised_bpw_upstream_formula": 0.5295501172542572,
+      "bpw_note": "converted block linears only; biases are in the frozen base file; scales are fp32 here, upstream main.py would cast them to bf16",
+      "bytes": 27257280,
+      "converted_weight_count": 357826560,
+      "fp32_scale_tensor_bytes": 4697088,
+      "packed_sign_tensor_bytes": 22216704,
+      "sha256": "df09d0478ae685983032b452336a1de7522312de45ff7fbf38efc44296b8739a",
+      "shape_and_buffer_tensor_bytes": 13440,
+      "sign_count": 171294720,
+      "tensors": 3192
+    },
+    "generation": [
+      {
+        "continuation": " the the the the the the the the",
+        "decoding": "greedy",
+        "judged": false,
+        "max_new_tokens": 8,
+        "output_token_ids": [
+          279,
+          279,
+          279,
+          279,
+          279,
+          279,
+          279,
+          279
+        ],
+        "prompt": "The capital of France is",
+        "prompt_token_ids": [
+          785,
+          6722,
+          315,
+          9625,
+          374
+        ]
+      },
+      {
+        "continuation": " the the the the the the the the",
+        "decoding": "greedy",
+        "judged": false,
+        "max_new_tokens": 8,
+        "output_token_ids": [
+          279,
+          279,
+          279,
+          279,
+          279,
+          279,
+          279,
+          279
+        ],
+        "prompt": "In 1990 , the population of the city was",
+        "prompt_token_ids": [
+          641,
+          220,
+          16,
+          24,
+          24,
+          15,
+          1154,
+          279,
+          7042,
+          315,
+          279,
+          3283,
+          572
+        ]
+      },
+      {
+        "continuation": " the the the the the the the the",
+        "decoding": "greedy",
+        "judged": false,
+        "max_new_tokens": 8,
+        "output_token_ids": [
+          279,
+          279,
+          279,
+          279,
+          279,
+          279,
+          279,
+          279
+        ],
+        "prompt": "Water boils at a temperature of",
+        "prompt_token_ids": [
+          28253,
+          88955,
+          518,
+          264,
+          9315,
+          315
+        ]
+      }
+    ],
+    "kv_cache": {
+      "batch": 1,
+      "formula_bytes_fp32": 3145728,
+      "measured_bytes": 3145728,
+      "note": "KV cache is separate from weights; LittleBit does not compress it",
+      "tokens": 128
+    },
+    "paired_vs_original": [
+      {
+        "index": 0,
+        "mean_nll_diff": 5.753142819992646,
+        "sha256": "91ae344eda8b4bba453109fec235e315a879e02fab1d08c47d5f5e61445203f3"
+      },
+      {
+        "index": 1,
+        "mean_nll_diff": 6.1916687174566825,
+        "sha256": "01c8de1731633ffeffdc8e9fe920181d4f0fe4fe4eb9df5b97eb24cd92ed2ab8"
+      },
+      {
+        "index": 2,
+        "mean_nll_diff": 6.1151357660282875,
+        "sha256": "2b0436717df85eaa0008fa98507a946a91f9958795fcfbf9da17425902bc23e2"
+      },
+      {
+        "index": 3,
+        "mean_nll_diff": 5.4178980066305,
+        "sha256": "bbd097814ee8276fc1f0e9032937e8a569bd74c0283438c8a7ce51f277f1dfc3"
+      },
+      {
+        "index": 4,
+        "mean_nll_diff": 5.527767889969341,
+        "sha256": "afcc2eeadf26eed0adf9be4a953220d0e3366bd3390ca84c9db3084e6873a0ad"
+      },
+      {
+        "index": 5,
+        "mean_nll_diff": 5.91886907757442,
+        "sha256": "d6be8ab73f07b38d7496320761d0d6a37ae52016294bcf46a2f03f886da1504c"
+      },
+      {
+        "index": 6,
+        "mean_nll_diff": 6.512778685497409,
+        "sha256": "6a390d16b3a01547146bbbb2e67996987de1529c851bee90d4aed43fe56d1ab8"
+      },
+      {
+        "index": 7,
+        "mean_nll_diff": 5.125488127001303,
+        "sha256": "3fd6e1241a95a907bfd8062a9336a84edd5c8ca0e46c8f725257e976cc33360a"
+      }
+    ],
+    "reload": {
+      "decoder": "corrected_reference_decoder",
+      "load_path": "safetensors load_file, decode packed signs, cast fp32, load_state_dict(assign=True), tie_weights, _binarized=True",
+      "missing_keys": [
+        "lm_head.weight"
+      ],
+      "official_loader_ran": false,
+      "rotary_inv_freq_equals_original": true,
+      "unexpected_keys": []
+    },
+    "resident_storage": {
+      "littlebit_factor_scale_buffer_bytes": 689878656,
+      "note": "resident tensors only; excludes KV cache, activations, allocator slack",
+      "other_bytes": 544824960,
+      "total_unique_bytes": 1234703616
+    },
+    "test": {
+      "label": "test_qat_trained",
+      "mean_nll": 9.183548143060188,
+      "ppl": 9735.634988555017,
+      "scored_tokens": 1016,
+      "total_nll": 9330.484913349152,
+      "wall_s_note": "descriptive pilot wall clock, not throughput",
+      "windows": [
+        {
+          "index": 0,
+          "mean_nll": 8.48476060544412,
+          "nll_sum": 1077.5645968914032,
+          "scored_tokens": 127,
+          "sha256": "91ae344eda8b4bba453109fec235e315a879e02fab1d08c47d5f5e61445203f3",
+          "wall_s": 0.21788174996618181
+        },
+        {
+          "index": 1,
+          "mean_nll": 9.653853855733797,
+          "nll_sum": 1226.0394396781921,
+          "scored_tokens": 127,
+          "sha256": "01c8de1731633ffeffdc8e9fe920181d4f0fe4fe4eb9df5b97eb24cd92ed2ab8",
+          "wall_s": 0.24111774994526058
+        },
+        {
+          "index": 2,
+          "mean_nll": 9.333036137378121,
+          "nll_sum": 1185.2955894470215,
+          "scored_tokens": 127,
+          "sha256": "2b0436717df85eaa0008fa98507a946a91f9958795fcfbf9da17425902bc23e2",
+          "wall_s": 0.2684435830451548
+        },
+        {
+          "index": 3,
+          "mean_nll": 8.689506947524904,
+          "nll_sum": 1103.5673823356628,
+          "scored_tokens": 127,
+          "sha256": "bbd097814ee8276fc1f0e9032937e8a569bd74c0283438c8a7ce51f277f1dfc3",
+          "wall_s": 0.17164529208093882
+        },
+        {
+          "index": 4,
+          "mean_nll": 8.768526743716142,
+          "nll_sum": 1113.60289645195,
+          "scored_tokens": 127,
+          "sha256": "afcc2eeadf26eed0adf9be4a953220d0e3366bd3390ca84c9db3084e6873a0ad",
+          "wall_s": 0.17099191597662866
+        },
+        {
+          "index": 5,
+          "mean_nll": 9.609656371469573,
+          "nll_sum": 1220.4263591766357,
+          "scored_tokens": 127,
+          "sha256": "d6be8ab73f07b38d7496320761d0d6a37ae52016294bcf46a2f03f886da1504c",
+          "wall_s": 0.16658708301838487
+        },
+        {
+          "index": 6,
+          "mean_nll": 10.035950981725858,
+          "nll_sum": 1274.565774679184,
+          "scored_tokens": 127,
+          "sha256": "6a390d16b3a01547146bbbb2e67996987de1529c851bee90d4aed43fe56d1ab8",
+          "wall_s": 0.16646904090885073
+        },
+        {
+          "index": 7,
+          "mean_nll": 8.893093501488993,
+          "nll_sum": 1129.4228746891022,
+          "scored_tokens": 127,
+          "sha256": "3fd6e1241a95a907bfd8062a9336a84edd5c8ca0e46c8f725257e976cc33360a",
+          "wall_s": 0.16773508302867413
+        }
+      ]
+    },
+    "tier": "UPSTREAM_IMPORT_REAL_MODEL_PILOT"
+  },
+  "qat_trained_upstream_decoder": {
+    "checkpoint": {
+      "bytes": 27257280,
+      "matches_train_record": true,
+      "sha256": "df09d0478ae685983032b452336a1de7522312de45ff7fbf38efc44296b8739a"
+    },
+    "checkpoint_accounting": {
+      "achieved_bpw_from_file_bytes": 0.6093964629120879,
+      "achieved_bpw_packed_signs_only": 0.4967032967032967,
+      "advertised_bpw_upstream_formula": 0.5295501172542572,
+      "bpw_note": "converted block linears only; biases are in the frozen base file; scales are fp32 here, upstream main.py would cast them to bf16",
+      "bytes": 27257280,
+      "converted_weight_count": 357826560,
+      "fp32_scale_tensor_bytes": 4697088,
+      "packed_sign_tensor_bytes": 22216704,
+      "sha256": "df09d0478ae685983032b452336a1de7522312de45ff7fbf38efc44296b8739a",
+      "shape_and_buffer_tensor_bytes": 13440,
+      "sign_count": 171294720,
+      "tensors": 3192
+    },
+    "note": "decoder defect variant, in memory only, never saved; not a quality result",
+    "paired_vs_original": [
+      {
+        "index": 0,
+        "mean_nll_diff": 13.406370537850307,
+        "sha256": "91ae344eda8b4bba453109fec235e315a879e02fab1d08c47d5f5e61445203f3"
+      },
+      {
+        "index": 1,
+        "mean_nll_diff": 13.397944375801341,
+        "sha256": "01c8de1731633ffeffdc8e9fe920181d4f0fe4fe4eb9df5b97eb24cd92ed2ab8"
+      },
+      {
+        "index": 2,
+        "mean_nll_diff": 13.115005841043857,
+        "sha256": "2b0436717df85eaa0008fa98507a946a91f9958795fcfbf9da17425902bc23e2"
+      },
+      {
+        "index": 3,
+        "mean_nll_diff": 12.384502108006771,
+        "sha256": "bbd097814ee8276fc1f0e9032937e8a569bd74c0283438c8a7ce51f277f1dfc3"
+      },
+      {
+        "index": 4,
+        "mean_nll_diff": 13.042144652314423,
+        "sha256": "afcc2eeadf26eed0adf9be4a953220d0e3366bd3390ca84c9db3084e6873a0ad"
+      },
+      {
+        "index": 5,
+        "mean_nll_diff": 12.996678937022953,
+        "sha256": "d6be8ab73f07b38d7496320761d0d6a37ae52016294bcf46a2f03f886da1504c"
+      },
+      {
+        "index": 6,
+        "mean_nll_diff": 13.456873390328148,
+        "sha256": "6a390d16b3a01547146bbbb2e67996987de1529c851bee90d4aed43fe56d1ab8"
+      },
+      {
+        "index": 7,
+        "mean_nll_diff": 12.675072333634983,
+        "sha256": "3fd6e1241a95a907bfd8062a9336a84edd5c8ca0e46c8f725257e976cc33360a"
+      }
+    ],
+    "reload": {
+      "decoder": "upstream_binary_unpacker",
+      "load_path": "safetensors load_file, decode packed signs, cast fp32, load_state_dict(assign=True), tie_weights, _binarized=True",
+      "missing_keys": [
+        "lm_head.weight"
+      ],
+      "official_loader_ran": false,
+      "rotary_inv_freq_equals_original": true,
+      "unexpected_keys": []
+    },
+    "resident_storage": {
+      "littlebit_factor_scale_buffer_bytes": 689878656,
+      "note": "resident tensors only; excludes KV cache, activations, allocator slack",
+      "other_bytes": 544824960,
+      "total_unique_bytes": 1234703616
+    },
+    "test": {
+      "label": "test_qat_trained_upstream_decoder",
+      "mean_nll": 16.422528528791712,
+      "ppl": 13558558.490179988,
+      "scored_tokens": 1016,
+      "total_nll": 16685.28898525238,
+      "wall_s_note": "descriptive pilot wall clock, not throughput",
+      "windows": [
+        {
+          "index": 0,
+          "mean_nll": 16.13798832330178,
+          "nll_sum": 2049.524517059326,
+          "scored_tokens": 127,
+          "sha256": "91ae344eda8b4bba453109fec235e315a879e02fab1d08c47d5f5e61445203f3",
+          "wall_s": 0.18423091701697558
+        },
+        {
+          "index": 1,
+          "mean_nll": 16.860129514078455,
+          "nll_sum": 2141.236448287964,
+          "scored_tokens": 127,
+          "sha256": "01c8de1731633ffeffdc8e9fe920181d4f0fe4fe4eb9df5b97eb24cd92ed2ab8",
+          "wall_s": 0.1713791670044884
+        },
+        {
+          "index": 2,
+          "mean_nll": 16.33290621239369,
+          "nll_sum": 2074.279088973999,
+          "scored_tokens": 127,
+          "sha256": "2b0436717df85eaa0008fa98507a946a91f9958795fcfbf9da17425902bc23e2",
+          "wall_s": 0.18049316701944917
+        },
+        {
+          "index": 3,
+          "mean_nll": 15.656111048901176,
+          "nll_sum": 1988.3261032104492,
+          "scored_tokens": 127,
+          "sha256": "bbd097814ee8276fc1f0e9032937e8a569bd74c0283438c8a7ce51f277f1dfc3",
+          "wall_s": 0.16622479201760143
+        },
+        {
+          "index": 4,
+          "mean_nll": 16.282903506061224,
+          "nll_sum": 2067.9287452697754,
+          "scored_tokens": 127,
+          "sha256": "afcc2eeadf26eed0adf9be4a953220d0e3366bd3390ca84c9db3084e6873a0ad",
+          "wall_s": 0.1658036250155419
+        },
+        {
+          "index": 5,
+          "mean_nll": 16.687466230918105,
+          "nll_sum": 2119.308211326599,
+          "scored_tokens": 127,
+          "sha256": "d6be8ab73f07b38d7496320761d0d6a37ae52016294bcf46a2f03f886da1504c",
+          "wall_s": 0.16517558391205966
+        },
+        {
+          "index": 6,
+          "mean_nll": 16.980045686556597,
+          "nll_sum": 2156.465802192688,
+          "scored_tokens": 127,
+          "sha256": "6a390d16b3a01547146bbbb2e67996987de1529c851bee90d4aed43fe56d1ab8",
+          "wall_s": 0.1679260419914499
+        },
+        {
+          "index": 7,
+          "mean_nll": 16.442677708122673,
+          "nll_sum": 2088.2200689315796,
+          "scored_tokens": 127,
+          "sha256": "3fd6e1241a95a907bfd8062a9336a84edd5c8ca0e46c8f725257e976cc33360a",
+          "wall_s": 0.16835558391176164
+        }
+      ]
+    },
+    "tier": "UPSTREAM_DECODER_DEFECT_VARIANT"
+  },
+  "schema": "littlebit-quality-pilot/1",
+  "stage": "evaluate",
+  "started_unix": 1791470892.383113,
+  "status": "completed",
+  "tier": "UPSTREAM_IMPORT_REAL_MODEL_PILOT",
+  "training_record": {
+    "claims": {
+      "baselines": {
+        "practical_4bit": "MISSING: no validated 4-bit backend in this project yet",
+        "smaller_same_family_model": "MISSING: not part of this pilot"
+      },
+      "initialization_quality_is_separate_from_training": true,
+      "model_trained": true,
+      "model_trained_basis": "completed 16 of 16 logged steps; trained checkpoint saved",
+      "non_claims": [
+        "wiring and resource pilot only, not a statistical benchmark",
+        "not a replication of any published LittleBit result",
+        "no end-to-end throughput claim; operator microbenchmarks are not end-to-end",
+        "task accuracy not measured; generation outputs are shown, never judged",
+        "no validated 4-bit baseline exists in this project yet (MISSING)",
+        "a model is called trained only when a completed step log and a checkpoint with sha256 exist"
+      ],
+      "statistical_significance": "not assessed; pilot sizes are fixed and tiny",
+      "task_accuracy": "not measured",
+      "throughput": "not measured"
+    },
+    "completed_steps": 16,
+    "planned_steps": 16,
+    "status": "completed"
+  },
+  "upstream": {
+    "file_sha256": {
+      "LICENSE": "3711f963c05d0be80d53e5923308a6dee31b203da23435c9cfb7c7b6e4dd5e19",
+      "main.py": "3997fce424b7ee79c2c5ded6430d2e3d505c87b0deeb72efde8814f754ebb609",
+      "quantization/functions/binary.py": "293b5e2e4aa38d3b6682426c426153dad0572725e583cb3958ee9a0bba541539",
+      "quantization/modules/attention.py": "ab412695b4a400277ab5e340e86259d18996dcc7e7aeb66f301c6cffd64b964a",
+      "quantization/modules/littlebit.py": "fffd4ea61f03126551944831d1df15e85044ff388fecf4c41d8ac98956189e09",
+      "quantization/utils/binary_packer.py": "4dfb95ce4d1997c6e5cb4d278d6aa90f1ac73ad1383024225ec0b3bb0f96669b",
+      "quantization/utils/quant_util.py": "e6ee645c0815fdccfc16eb9107d3b4e832eb6217fc37b061e8894f08f21f8321"
+    },
+    "provenance": {
+      "checks": [
+        {
+          "contains_pinned_commit": true,
+          "file": ".git/packed-refs"
+        },
+        {
+          "contains_pinned_commit": true,
+          "file": ".git/shallow"
+        },
+        {
+          "contains_pinned_commit": true,
+          "file": ".git/refs/heads/main"
+        }
+      ],
+      "pinned_commit": "933857ed1443b53fc43a875c2cf64249e3c56f0c",
+      "url": "https://github.com/SamsungLabs/LittleBit",
+      "verified": true
+    }
+  }
+}

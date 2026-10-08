@@ -1,0 +1,612 @@
+{
+  "environment": {
+    "cpu_count": 10,
+    "implementation": "CPython",
+    "machine": "arm64",
+    "numpy": "2.2.4",
+    "platform": "macOS-26.0.1-arm64-arm-64bit",
+    "python": "3.12.14",
+    "torch": "2.6.0"
+  },
+  "isolation": {
+    "diff_lines_differing": 1,
+    "registered_in_sys_modules": false,
+    "upstream_sha256_after": "4dfb95ce4d1997c6e5cb4d278d6aa90f1ac73ad1383024225ec0b3bb0f96669b",
+    "upstream_sha256_before": "4dfb95ce4d1997c6e5cb4d278d6aa90f1ac73ad1383024225ec0b3bb0f96669b",
+    "upstream_unmodified": true,
+    "upstream_unmodified_after_all_runs": true
+  },
+  "layer_regressions": [
+    {
+      "config": [
+        96,
+        160,
+        1.0,
+        false,
+        0
+      ],
+      "patched": {
+        "factors": {
+          "U": {
+            "exact": true,
+            "negative_packed_words": 83,
+            "shape": [
+              160,
+              40
+            ],
+            "sign_agreement": 1.0
+          },
+          "V": {
+            "exact": true,
+            "negative_packed_words": 60,
+            "shape": [
+              40,
+              96
+            ],
+            "sign_agreement": 1.0
+          }
+        },
+        "in_features": 96,
+        "missing_keys": 0,
+        "out_bitwise_equal": true,
+        "out_features": 160,
+        "out_max_abs": 0.0,
+        "residual": false,
+        "seed": 0,
+        "split_dim": 40,
+        "target_bpw": 1.0,
+        "unexpected_keys": 0
+      },
+      "unpatched_control": {
+        "factors": {
+          "U": {
+            "exact": false,
+            "negative_packed_words": 83,
+            "shape": [
+              160,
+              40
+            ],
+            "sign_agreement": 0.52828125
+          },
+          "V": {
+            "exact": false,
+            "negative_packed_words": 60,
+            "shape": [
+              40,
+              96
+            ],
+            "sign_agreement": 0.5104166666666666
+          }
+        },
+        "in_features": 96,
+        "missing_keys": 0,
+        "out_bitwise_equal": false,
+        "out_features": 160,
+        "out_max_abs": 3.4416990280151367,
+        "residual": false,
+        "seed": 0,
+        "split_dim": 40,
+        "target_bpw": 1.0,
+        "unexpected_keys": 0
+      }
+    },
+    {
+      "config": [
+        96,
+        160,
+        1.0,
+        true,
+        0
+      ],
+      "patched": {
+        "factors": {
+          "U": {
+            "exact": true,
+            "negative_packed_words": 0,
+            "shape": [
+              160,
+              8
+            ],
+            "sign_agreement": 1.0
+          },
+          "U_R": {
+            "exact": true,
+            "negative_packed_words": 0,
+            "shape": [
+              160,
+              8
+            ],
+            "sign_agreement": 1.0
+          },
+          "V": {
+            "exact": true,
+            "negative_packed_words": 14,
+            "shape": [
+              8,
+              96
+            ],
+            "sign_agreement": 1.0
+          },
+          "V_R": {
+            "exact": true,
+            "negative_packed_words": 9,
+            "shape": [
+              8,
+              96
+            ],
+            "sign_agreement": 1.0
+          }
+        },
+        "in_features": 96,
+        "missing_keys": 0,
+        "out_bitwise_equal": true,
+        "out_features": 160,
+        "out_max_abs": 0.0,
+        "residual": true,
+        "seed": 0,
+        "split_dim": 8,
+        "target_bpw": 1.0,
+        "unexpected_keys": 0
+      },
+      "unpatched_control": {
+        "factors": {
+          "U": {
+            "exact": false,
+            "negative_packed_words": 0,
+            "shape": [
+              160,
+              8
+            ],
+            "sign_agreement": 0.53828125
+          },
+          "U_R": {
+            "exact": false,
+            "negative_packed_words": 0,
+            "shape": [
+              160,
+              8
+            ],
+            "sign_agreement": 0.55625
+          },
+          "V": {
+            "exact": false,
+            "negative_packed_words": 14,
+            "shape": [
+              8,
+              96
+            ],
+            "sign_agreement": 0.49609375
+          },
+          "V_R": {
+            "exact": false,
+            "negative_packed_words": 9,
+            "shape": [
+              8,
+              96
+            ],
+            "sign_agreement": 0.5234375
+          }
+        },
+        "in_features": 96,
+        "missing_keys": 0,
+        "out_bitwise_equal": false,
+        "out_features": 160,
+        "out_max_abs": 1.7753219604492188,
+        "residual": true,
+        "seed": 0,
+        "split_dim": 8,
+        "target_bpw": 1.0,
+        "unexpected_keys": 0
+      }
+    },
+    {
+      "config": [
+        256,
+        256,
+        1.0,
+        true,
+        1
+      ],
+      "patched": {
+        "factors": {
+          "U": {
+            "exact": true,
+            "negative_packed_words": 123,
+            "shape": [
+              256,
+              40
+            ],
+            "sign_agreement": 1.0
+          },
+          "U_R": {
+            "exact": true,
+            "negative_packed_words": 121,
+            "shape": [
+              256,
+              40
+            ],
+            "sign_agreement": 1.0
+          },
+          "V": {
+            "exact": true,
+            "negative_packed_words": 160,
+            "shape": [
+              40,
+              256
+            ],
+            "sign_agreement": 1.0
+          },
+          "V_R": {
+            "exact": true,
+            "negative_packed_words": 151,
+            "shape": [
+              40,
+              256
+            ],
+            "sign_agreement": 1.0
+          }
+        },
+        "in_features": 256,
+        "missing_keys": 0,
+        "out_bitwise_equal": true,
+        "out_features": 256,
+        "out_max_abs": 0.0,
+        "residual": true,
+        "seed": 1,
+        "split_dim": 40,
+        "target_bpw": 1.0,
+        "unexpected_keys": 0
+      },
+      "unpatched_control": {
+        "factors": {
+          "U": {
+            "exact": false,
+            "negative_packed_words": 123,
+            "shape": [
+              256,
+              40
+            ],
+            "sign_agreement": 0.53525390625
+          },
+          "U_R": {
+            "exact": false,
+            "negative_packed_words": 121,
+            "shape": [
+              256,
+              40
+            ],
+            "sign_agreement": 0.528125
+          },
+          "V": {
+            "exact": false,
+            "negative_packed_words": 160,
+            "shape": [
+              40,
+              256
+            ],
+            "sign_agreement": 0.51640625
+          },
+          "V_R": {
+            "exact": false,
+            "negative_packed_words": 151,
+            "shape": [
+              40,
+              256
+            ],
+            "sign_agreement": 0.50751953125
+          }
+        },
+        "in_features": 256,
+        "missing_keys": 0,
+        "out_bitwise_equal": false,
+        "out_features": 256,
+        "out_max_abs": 4.916784286499023,
+        "residual": true,
+        "seed": 1,
+        "split_dim": 40,
+        "target_bpw": 1.0,
+        "unexpected_keys": 0
+      }
+    },
+    {
+      "config": [
+        512,
+        1024,
+        0.1,
+        true,
+        2
+      ],
+      "patched": {
+        "factors": {
+          "U": {
+            "exact": true,
+            "negative_packed_words": 0,
+            "shape": [
+              1024,
+              8
+            ],
+            "sign_agreement": 1.0
+          },
+          "U_R": {
+            "exact": true,
+            "negative_packed_words": 0,
+            "shape": [
+              1024,
+              8
+            ],
+            "sign_agreement": 1.0
+          },
+          "V": {
+            "exact": true,
+            "negative_packed_words": 72,
+            "shape": [
+              8,
+              512
+            ],
+            "sign_agreement": 1.0
+          },
+          "V_R": {
+            "exact": true,
+            "negative_packed_words": 60,
+            "shape": [
+              8,
+              512
+            ],
+            "sign_agreement": 1.0
+          }
+        },
+        "in_features": 512,
+        "missing_keys": 0,
+        "out_bitwise_equal": true,
+        "out_features": 1024,
+        "out_max_abs": 0.0,
+        "residual": true,
+        "seed": 2,
+        "split_dim": 8,
+        "target_bpw": 0.1,
+        "unexpected_keys": 0
+      },
+      "unpatched_control": {
+        "factors": {
+          "U": {
+            "exact": false,
+            "negative_packed_words": 0,
+            "shape": [
+              1024,
+              8
+            ],
+            "sign_agreement": 0.560302734375
+          },
+          "U_R": {
+            "exact": false,
+            "negative_packed_words": 0,
+            "shape": [
+              1024,
+              8
+            ],
+            "sign_agreement": 0.568603515625
+          },
+          "V": {
+            "exact": false,
+            "negative_packed_words": 72,
+            "shape": [
+              8,
+              512
+            ],
+            "sign_agreement": 0.519775390625
+          },
+          "V_R": {
+            "exact": false,
+            "negative_packed_words": 60,
+            "shape": [
+              8,
+              512
+            ],
+            "sign_agreement": 0.524169921875
+          }
+        },
+        "in_features": 512,
+        "missing_keys": 0,
+        "out_bitwise_equal": false,
+        "out_features": 1024,
+        "out_max_abs": 1.530812382698059,
+        "residual": true,
+        "seed": 2,
+        "split_dim": 8,
+        "target_bpw": 0.1,
+        "unexpected_keys": 0
+      }
+    },
+    {
+      "config": [
+        1024,
+        512,
+        1.0,
+        true,
+        3
+      ],
+      "patched": {
+        "factors": {
+          "U": {
+            "exact": true,
+            "negative_packed_words": 1035,
+            "shape": [
+              512,
+              152
+            ],
+            "sign_agreement": 1.0
+          },
+          "U_R": {
+            "exact": true,
+            "negative_packed_words": 1007,
+            "shape": [
+              512,
+              152
+            ],
+            "sign_agreement": 1.0
+          },
+          "V": {
+            "exact": true,
+            "negative_packed_words": 2393,
+            "shape": [
+              152,
+              1024
+            ],
+            "sign_agreement": 1.0
+          },
+          "V_R": {
+            "exact": true,
+            "negative_packed_words": 2416,
+            "shape": [
+              152,
+              1024
+            ],
+            "sign_agreement": 1.0
+          }
+        },
+        "in_features": 1024,
+        "missing_keys": 0,
+        "out_bitwise_equal": true,
+        "out_features": 512,
+        "out_max_abs": 0.0,
+        "residual": true,
+        "seed": 3,
+        "split_dim": 152,
+        "target_bpw": 1.0,
+        "unexpected_keys": 0
+      },
+      "unpatched_control": {
+        "factors": {
+          "U": {
+            "exact": false,
+            "negative_packed_words": 1035,
+            "shape": [
+              512,
+              152
+            ],
+            "sign_agreement": 0.5173725328947368
+          },
+          "U_R": {
+            "exact": false,
+            "negative_packed_words": 1007,
+            "shape": [
+              512,
+              152
+            ],
+            "sign_agreement": 0.5152909128289473
+          },
+          "V": {
+            "exact": false,
+            "negative_packed_words": 2393,
+            "shape": [
+              152,
+              1024
+            ],
+            "sign_agreement": 0.5164345189144737
+          },
+          "V_R": {
+            "exact": false,
+            "negative_packed_words": 2416,
+            "shape": [
+              152,
+              1024
+            ],
+            "sign_agreement": 0.5154772306743421
+          }
+        },
+        "in_features": 1024,
+        "missing_keys": 0,
+        "out_bitwise_equal": false,
+        "out_features": 512,
+        "out_max_abs": 10.522323608398438,
+        "residual": true,
+        "seed": 3,
+        "split_dim": 152,
+        "target_bpw": 1.0,
+        "unexpected_keys": 0
+      }
+    }
+  ],
+  "load_path": "emulated: upstream state_dict packing, torch.save/torch.load in memory, unpack, cast to float32, load_state_dict(assign=True), _binarized=True",
+  "official_loader_ran": false,
+  "packer_regressions": {
+    "exhaustive_cases": 2010,
+    "first_patched_failure": null,
+    "patched_exact_cases": 2010,
+    "signed_multirow": {
+      "31": {
+        "negative_int32_words": 0,
+        "patched_equals_reference": true,
+        "patched_exact": true,
+        "rows": 10,
+        "unpatched_exact": false
+      },
+      "32": {
+        "negative_int32_words": 6,
+        "patched_equals_reference": true,
+        "patched_exact": true,
+        "rows": 11,
+        "unpatched_exact": false
+      },
+      "33": {
+        "negative_int32_words": 6,
+        "patched_equals_reference": true,
+        "patched_exact": true,
+        "rows": 12,
+        "unpatched_exact": false
+      },
+      "64": {
+        "negative_int32_words": 11,
+        "patched_equals_reference": true,
+        "patched_exact": true,
+        "rows": 12,
+        "unpatched_exact": false
+      }
+    },
+    "unpatched_exact_cases": 296
+  },
+  "patch": {
+    "added": [
+      "                bits = (word_data.unsqueeze(1) >> torch.arange(32, device=packed_tensor.device)) & 1"
+    ],
+    "applies_to_pinned_source": true,
+    "changed_characters": [
+      [
+        47,
+        "<",
+        ">"
+      ],
+      [
+        48,
+        "<",
+        ">"
+      ]
+    ],
+    "hunk": "@@ -85,7 +85,7 @@",
+    "path": "patches/binary_unpacker.patch",
+    "removed": [
+      "                bits = (word_data.unsqueeze(1) << torch.arange(32, device=packed_tensor.device)) & 1"
+    ]
+  },
+  "provenance": {
+    "checks": [
+      {
+        "contains_pinned_commit": true,
+        "file": ".git/packed-refs"
+      },
+      {
+        "contains_pinned_commit": true,
+        "file": ".git/shallow"
+      },
+      {
+        "contains_pinned_commit": true,
+        "file": ".git/refs/heads/main"
+      }
+    ],
+    "pinned_commit": "933857ed1443b53fc43a875c2cf64249e3c56f0c",
+    "url": "https://github.com/SamsungLabs/LittleBit",
+    "verified": true
+  },
+  "status": "ok",
+  "tier": "UPSTREAM_PATCHED_IMPORT"
+}

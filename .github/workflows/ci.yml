@@ -1,0 +1,59 @@
+# Continuous integration for the public audit repository.
+#
+# Scope: standard-library Python 3.12 only. torch, transformers and matplotlib are NOT installed,
+# so torch-dependent tests skip with an explicit reason, and tests that need the pinned upstream
+# checkout (not redistributed) or the private pilot checkpoints (not redistributed) skip too.
+# The job also runs the metadata-only replay of results/summary.json from tracked public files.
+#
+# Not done here: no secrets, read-only token, no write permissions, no deployment, no training,
+# no model, dataset or upstream downloads; pip installs nothing.
+#
+# Third-party actions are pinned to full commit SHAs, verified by the owner through the official
+# GitHub API; the version tag each SHA corresponds to is noted beside it.
+
+name: ci
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  stdlib:
+    name: "Python 3.12 stdlib tests (torch, upstream-checkout and private-checkpoint tests skip) and --metadata-only --no-figures replay"
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+      HF_HUB_OFFLINE: "1"
+      TRANSFORMERS_OFFLINE: "1"
+      HF_DATASETS_OFFLINE: "1"
+    steps:
+      - name: Check out (credentials not persisted)
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+
+      - name: Set up Python 3.12 (no packages installed)
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: "3.12"
+
+      - name: Confirm the standard-library-only environment
+        run: |
+          python --version
+          python -c "import importlib.util as u; assert u.find_spec('torch') is None, 'torch must be absent in this job'; print('torch absent: torch-dependent tests will skip'); print('matplotlib present:', u.find_spec('matplotlib') is not None)"
+
+      - name: Unit tests (standard library only; skips are expected and listed)
+        run: timeout 600 python -m unittest discover -s tests -v
+
+      - name: Metadata-only replay from tracked public files (no figures, written outside the checkout)
+        run: |
+          timeout 300 python src/report_results.py --metadata-only --no-figures --summary "$RUNNER_TEMP/summary.json"
+          python -c "import json, os; s = json.load(open(os.path.join(os.environ['RUNNER_TEMP'], 'summary.json'))); assert s['replay']['mode'] == 'metadata_replay', s['replay']['mode']; print(s['replay']['statement'])"

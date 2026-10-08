@@ -1,0 +1,879 @@
+{
+  "claims": {
+    "model_trained_basis": "completed 16 of 16 logged steps; trained checkpoint saved",
+    "negative_result": "at 0.52955 advertised BPW in the converted blocks, 16 QAT steps on 2048 input tokens left held-out perplexity 337.1 times the original model on 1016 scored tokens",
+    "no_further_training_planned": true,
+    "no_license_agreement_accepted_no_cloud_spend": true,
+    "not_claimed": [
+      "novelty",
+      "replication of any published LittleBit result",
+      "practical usefulness of the compressed model",
+      "statistical significance",
+      "anything about longer training, other models or other bit widths"
+    ],
+    "publication": "public GitHub repository with release v0.1.0 authorized by the owner; no Medium publication, no arXiv submission; no license granted (all rights reserved on original portions, CC BY-NC 4.0 on adapted portions)"
+  },
+  "figures": [
+    {
+      "bytes": 83882,
+      "path": "figures/paired_window_nll.png",
+      "sha256": "696a37f52084f9054ebba564e3ae232c747ae704e52c4f98507f4878f35b9f90"
+    },
+    {
+      "bytes": 80715,
+      "path": "figures/paired_window_nll.svg",
+      "sha256": "58a2be1d93efaeca12f94d490d46da2fedae482c44b133b070c7d20f1ebb03c0"
+    },
+    {
+      "bytes": 53007,
+      "path": "figures/heldout_ppl_log.png",
+      "sha256": "b6db9623f526c4116f65ec868da11a7d27e792798b12098547bf18b42cca376e"
+    },
+    {
+      "bytes": 69052,
+      "path": "figures/heldout_ppl_log.svg",
+      "sha256": "240247c326f30d185597351ec8789696349e1014587be3d74c046e6f18bbbc74"
+    },
+    {
+      "bytes": 80603,
+      "path": "figures/weight_bytes.png",
+      "sha256": "bcbd7fa38f2e98a81c70947095f2c24c59a1af8bc2c68d0e6044164493f4ad8a"
+    },
+    {
+      "bytes": 87071,
+      "path": "figures/weight_bytes.svg",
+      "sha256": "66e6533ef3a77282489f41df42ab9f1ecbbc090abf47c36d79cd4611508cbcac"
+    },
+    {
+      "bytes": 61124,
+      "path": "figures/train_ce_kl.png",
+      "sha256": "00fba416dd2dfe921a5ce058d51029ec25b04cfe137c8a289237ff474c3d6588"
+    },
+    {
+      "bytes": 55208,
+      "path": "figures/train_ce_kl.svg",
+      "sha256": "fa0e63b0cbf3dc2c93f1e70f95f68f31e5952671b58e27c03dd7914207379da5"
+    }
+  ],
+  "generated_by": "src/report_results.py (reads recorded JSON only; no model execution, network or subprocess)",
+  "heldout_test": {
+    "conditions": {
+      "initialized_no_qat": {
+        "label": "LittleBit initialized, no QAT",
+        "max_abs_dev_from_recorded_paired_diff": 0.0,
+        "mean_nll": 11.31966029110504,
+        "paired_diff_summary": {
+          "max": 8.714306935127393,
+          "mean": 7.956455784313674,
+          "median": 8.013102458458874,
+          "min": 7.227088248470441,
+          "n": 8
+        },
+        "paired_diff_vs_original": [
+          7.698936105137242,
+          8.714306935127393,
+          8.354016336507552,
+          7.227088248470441,
+          7.479382351045882,
+          8.327268811780506,
+          8.437270699233443,
+          7.413376787206934
+        ],
+        "per_window_mean_nll": [
+          10.430553890588715,
+          12.176492073404507,
+          11.571916707857387,
+          10.498697189364846,
+          10.720141204792684,
+          12.01805610567566,
+          11.960442995461891,
+          11.180982161694624
+        ],
+        "ppl": 82426.33720523083,
+        "ppl_ratio_vs_original": 2853.9400274643776,
+        "reload": {
+          "decoder": "corrected_reference_decoder",
+          "load_path": "safetensors load_file, decode packed signs, cast fp32, load_state_dict(assign=True), tie_weights, _binarized=True",
+          "missing_keys": [
+            "lm_head.weight"
+          ],
+          "official_loader_ran": false,
+          "rotary_inv_freq_equals_original": true,
+          "unexpected_keys": []
+        },
+        "scored_tokens": 1016,
+        "tier": "UPSTREAM_IMPORT_REAL_MODEL_PILOT",
+        "total_nll": 11500.77485576272,
+        "windows_worse_than_original": 8
+      },
+      "original": {
+        "label": "Original Qwen2.5-0.5B (FP32)",
+        "matches_baseline_stage": true,
+        "mean_nll": 3.363204506791365,
+        "per_window_mean_nll": [
+          2.7316177854514736,
+          3.4621851382771136,
+          3.2179003713498338,
+          3.271608940894405,
+          3.2407588537468017,
+          3.690787293895153,
+          3.523172296228448,
+          3.7676053744876907
+        ],
+        "ppl": 28.881594011091973,
+        "scored_tokens": 1016,
+        "tier": "UPSTREAM_IMPORT_REAL_MODEL_PILOT",
+        "total_nll": 3417.015778900027
+      },
+      "qat_trained": {
+        "label": "LittleBit after 16 QAT steps",
+        "max_abs_dev_from_recorded_paired_diff": 0.0,
+        "mean_nll": 9.183548143060188,
+        "paired_diff_summary": {
+          "max": 6.512778685497409,
+          "mean": 5.820343636268824,
+          "median": 5.836005948783533,
+          "min": 5.125488127001303,
+          "n": 8
+        },
+        "paired_diff_vs_original": [
+          5.753142819992646,
+          6.1916687174566825,
+          6.1151357660282875,
+          5.4178980066305,
+          5.527767889969341,
+          5.91886907757442,
+          6.512778685497409,
+          5.125488127001303
+        ],
+        "per_window_mean_nll": [
+          8.48476060544412,
+          9.653853855733797,
+          9.333036137378121,
+          8.689506947524904,
+          8.768526743716142,
+          9.609656371469573,
+          10.035950981725858,
+          8.893093501488993
+        ],
+        "ppl": 9735.634988555017,
+        "ppl_ratio_vs_original": 337.08786934737907,
+        "reload": {
+          "decoder": "corrected_reference_decoder",
+          "load_path": "safetensors load_file, decode packed signs, cast fp32, load_state_dict(assign=True), tie_weights, _binarized=True",
+          "missing_keys": [
+            "lm_head.weight"
+          ],
+          "official_loader_ran": false,
+          "rotary_inv_freq_equals_original": true,
+          "unexpected_keys": []
+        },
+        "scored_tokens": 1016,
+        "tier": "UPSTREAM_IMPORT_REAL_MODEL_PILOT",
+        "total_nll": 9330.484913349152,
+        "windows_worse_than_original": 8
+      },
+      "qat_trained_upstream_decoder": {
+        "label": "Same QAT weights, defective upstream decoder",
+        "max_abs_dev_from_recorded_paired_diff": 0.0,
+        "mean_nll": 16.422528528791712,
+        "note": "decoder defect variant, in memory only, never saved; not a quality result",
+        "paired_diff_summary": {
+          "max": 13.456873390328148,
+          "mean": 13.059324022000348,
+          "median": 13.07857524667914,
+          "min": 12.384502108006771,
+          "n": 8
+        },
+        "paired_diff_vs_original": [
+          13.406370537850307,
+          13.397944375801341,
+          13.115005841043857,
+          12.384502108006771,
+          13.042144652314423,
+          12.996678937022953,
+          13.456873390328148,
+          12.675072333634983
+        ],
+        "per_window_mean_nll": [
+          16.13798832330178,
+          16.860129514078455,
+          16.33290621239369,
+          15.656111048901176,
+          16.282903506061224,
+          16.687466230918105,
+          16.980045686556597,
+          16.442677708122673
+        ],
+        "ppl": 13558558.490179988,
+        "ppl_ratio_vs_original": 469453.2609582707,
+        "reload": {
+          "decoder": "upstream_binary_unpacker",
+          "load_path": "safetensors load_file, decode packed signs, cast fp32, load_state_dict(assign=True), tie_weights, _binarized=True",
+          "missing_keys": [
+            "lm_head.weight"
+          ],
+          "official_loader_ran": false,
+          "rotary_inv_freq_equals_original": true,
+          "unexpected_keys": []
+        },
+        "scored_tokens": 1016,
+        "tier": "UPSTREAM_DECODER_DEFECT_VARIANT",
+        "total_nll": 16685.28898525238,
+        "windows_worse_than_original": 8
+      }
+    },
+    "defect_minus_corrected_same_weights": {
+      "per_window": [
+        7.653227717857661,
+        7.2062756583446586,
+        6.99987007501557,
+        6.966604101376271,
+        7.514376762345082,
+        7.077809859448532,
+        6.944094704830739,
+        7.54958420663368
+      ],
+      "summary": {
+        "max": 7.653227717857661,
+        "mean": 7.238980385731525,
+        "median": 7.142042758896595,
+        "min": 6.944094704830739,
+        "n": 8
+      },
+      "windows_worse": 8
+    },
+    "qat_minus_initialized": {
+      "per_window": [
+        -1.945793285144596,
+        -2.5226382176707105,
+        -2.2388805704792656,
+        -1.809190241839941,
+        -1.9516144610765416,
+        -2.408399734206087,
+        -1.9244920137360335,
+        -2.287888660205631
+      ],
+      "summary": {
+        "max": -1.809190241839941,
+        "mean": -2.136112148044851,
+        "median": -2.0952475157779036,
+        "min": -2.5226382176707105,
+        "n": 8
+      },
+      "windows_improved": 8
+    },
+    "statistics": "descriptive only: 8 contiguous windows from one test-split prefix are not independent samples; no confidence intervals or hypothesis tests are reported",
+    "window_sha256": [
+      "91ae344eda8b4bba453109fec235e315a879e02fab1d08c47d5f5e61445203f3",
+      "01c8de1731633ffeffdc8e9fe920181d4f0fe4fe4eb9df5b97eb24cd92ed2ab8",
+      "2b0436717df85eaa0008fa98507a946a91f9958795fcfbf9da17425902bc23e2",
+      "bbd097814ee8276fc1f0e9032937e8a569bd74c0283438c8a7ce51f277f1dfc3",
+      "afcc2eeadf26eed0adf9be4a953220d0e3366bd3390ca84c9db3084e6873a0ad",
+      "d6be8ab73f07b38d7496320761d0d6a37ae52016294bcf46a2f03f886da1504c",
+      "6a390d16b3a01547146bbbb2e67996987de1529c851bee90d4aed43fe56d1ab8",
+      "3fd6e1241a95a907bfd8062a9336a84edd5c8ca0e46c8f725257e976cc33360a"
+    ]
+  },
+  "identity": {
+    "identity_init": {
+      "compared_inputs": "signs compared over every packed factor (all modules); logits and next-token loss compared on one 128-token validation window (validation window 0) per checkpoint, CPU float32, same process",
+      "decoder": "corrected_reference_decoder",
+      "device": "cpu",
+      "dtype": "float32",
+      "logits_bitwise_equal": true,
+      "logits_max_abs_diff": 0.0,
+      "loss_bitwise_equal": true,
+      "missing_keys": [
+        "lm_head.weight"
+      ],
+      "official_loader_ran": false,
+      "sign_agreement": 1.0,
+      "signs": 171294720
+    },
+    "identity_trained": {
+      "compared_inputs": "signs compared over every packed factor (all modules); logits and next-token loss compared on one 128-token validation window (validation window 0) per checkpoint, CPU float32, same process",
+      "decoder": "corrected_reference_decoder",
+      "device": "cpu",
+      "dtype": "float32",
+      "logits_bitwise_equal": true,
+      "logits_max_abs_diff": 0.0,
+      "loss_bitwise_equal": true,
+      "missing_keys": [
+        "lm_head.weight"
+      ],
+      "official_loader_ran": false,
+      "sign_agreement": 1.0,
+      "signs": 171294720
+    },
+    "official_state_dict_loader": {
+      "corrected_decoder_sign_agreement": {
+        "U": 1.0,
+        "U_R": 1.0,
+        "V": 1.0,
+        "V_R": 1.0
+      },
+      "corrected_output_bitwise_equal": true,
+      "full_model_loader": "quant_util.load_quantized_model not run; the full-model reload is an emulation of its packed path",
+      "original_decoder_sign_agreement": {
+        "U": 0.5520833134651184,
+        "U_R": 0.5859375,
+        "V": 0.55078125,
+        "V_R": 0.53125
+      },
+      "packed_detected": true,
+      "scope": "actual official state-dict loader on synthetic layer file, not full model loader"
+    }
+  },
+  "inputs": {
+    "baseline": {
+      "bytes": 11607,
+      "path": "results/quality-pilot/baseline.json",
+      "sha256": "77c3a7dac868a79ccc5e6bee0844e2cf7599b84527d2a552fdb06694f62facc6"
+    },
+    "evaluate": {
+      "bytes": 34155,
+      "path": "results/quality-pilot/evaluate.json",
+      "sha256": "dc67e51042e7201a548a295a5e079829fcbde791141c735baf1fa6af499ef63d"
+    },
+    "feasibility": {
+      "bytes": 56979,
+      "path": "results/quality-pilot/feasibility.json",
+      "sha256": "5aa7dc1a7102620d21e05697777b0ba3dde285e95b3d3b64799d26dfbf2728ae"
+    },
+    "manifest": {
+      "bytes": 14056,
+      "path": "results/quality-pilot/manifest.json",
+      "sha256": "6d3c4ddc1e38ed82055f38d6e84ddb9ca145136998e13248191913086502d73b"
+    },
+    "public_metadata": {
+      "bytes": 4547,
+      "path": "results/quality-pilot/public_metadata.json",
+      "sha256": "ec62b07120f75b3070514e243c64ad3c5492fe435bd2bf919b6346acaf8243c4"
+    },
+    "train": {
+      "bytes": 81613,
+      "path": "results/quality-pilot/train.json",
+      "sha256": "b1c942c3d8727b7895b9590b40990f9e610ba6a5a10041138d6db51c8164017b"
+    },
+    "train_steps_jsonl": {
+      "bytes": 6539,
+      "path": "results/quality-pilot/train_steps.jsonl",
+      "sha256": "2c726add6b1d76b86f20c8914fbf44026416cddf61c64771a29263e4663c9896"
+    }
+  },
+  "missing_baselines": [
+    "validated practical 4-bit quantization of the same model",
+    "smaller same-family model",
+    "task accuracy",
+    "statistical analysis (confidence intervals, multiple seeds, more windows)",
+    "end-to-end latency or throughput"
+  ],
+  "pilot": {
+    "dataset": {
+      "config": "wikitext-2-raw-v1",
+      "license_note": "card metadata cc-by-sa-3.0 and gfdl; card text says CC BY-SA 4.0",
+      "repo": "Salesforce/wikitext",
+      "revision": "b08601e04326c79dfdd32d625aee71d232d685c3"
+    },
+    "environment": {
+      "attn_implementation": "sdpa",
+      "conversion_device": "cpu",
+      "cpu_count": 10,
+      "cuda_available": false,
+      "device": "cpu",
+      "dtype": "float32",
+      "machine": "arm64",
+      "mps_available": false,
+      "offline_env": {
+        "HF_DATASETS_OFFLINE": "1",
+        "HF_HUB_OFFLINE": "1",
+        "TRANSFORMERS_OFFLINE": "1"
+      },
+      "packages": {
+        "datasets": "3.4.1",
+        "huggingface_hub": "0.36.2",
+        "numpy": "2.2.4",
+        "psutil": "7.0.0",
+        "pyarrow": "25.0.1",
+        "safetensors": "0.6.2",
+        "tokenizers": "0.21.4",
+        "torch": "2.6.0",
+        "transformers": "4.51.3"
+      },
+      "platform": "macOS-26.0.1-arm64-arm-64bit",
+      "python": "3.12.14",
+      "requested_threads": 2,
+      "torch_num_interop_threads": 1,
+      "torch_num_threads": 2
+    },
+    "littlebit_config": {
+      "eff_bit": 0.55,
+      "kv_factor": 1.0,
+      "min_split_dim": 8,
+      "quant_func": "SmoothSign",
+      "quant_mod": "LittleBitLinear",
+      "residual": true,
+      "seed": 42,
+      "seq_len": 128,
+      "split_dim_default": 1024,
+      "use_itq": false
+    },
+    "model": {
+      "license": "Apache-2.0, ungated (verified by the project owner before this pilot)",
+      "note": "Qwen2.5-0.5B is smaller than, and outside, the model table of the LittleBit papers",
+      "repo": "Qwen/Qwen2.5-0.5B",
+      "revision": "060db6499f32faf8b98477b0a26969ef7d8b9987"
+    },
+    "tier": "UPSTREAM_IMPORT_REAL_MODEL_PILOT",
+    "upstream": {
+      "commit": "933857ed1443b53fc43a875c2cf64249e3c56f0c",
+      "license": "CC BY-NC 4.0",
+      "url": "https://github.com/SamsungLabs/LittleBit"
+    },
+    "windows": {
+      "test": {
+        "n": 8,
+        "role": "frozen_heldout",
+        "scored_tokens": 1016,
+        "seq_len": 128,
+        "tokens": 1024
+      },
+      "train": {
+        "n": 16,
+        "role": "qat_training_only",
+        "scored_tokens": 2032,
+        "seq_len": 128,
+        "tokens": 2048
+      },
+      "validation": {
+        "n": 4,
+        "role": "development_only",
+        "scored_tokens": 508,
+        "seq_len": 128,
+        "tokens": 512
+      }
+    }
+  },
+  "preregistered_predictions": [
+    {
+      "held": true,
+      "id": "P1",
+      "observed": 28.881594011091973,
+      "prediction": "original test perplexity between 8 and 60"
+    },
+    {
+      "held": true,
+      "id": "P2",
+      "observed_ratio": 2853.9400274643776,
+      "prediction": "initialized student perplexity at least 10x original"
+    },
+    {
+      "held": true,
+      "id": "P3",
+      "observed_ratio": 337.08786934737907,
+      "prediction": "after 16 steps perplexity still at least 5x original"
+    },
+    {
+      "held": true,
+      "id": "P4",
+      "observed": "corrected: bitwise for both, on one 128-token validation window each; upstream variant: no identity check recorded, held-out NLL differs from the corrected reload of the same weights in 8 of 8 windows",
+      "prediction": "corrected reload reproduces logits bitwise for init and trained; the upstream decoder variant does not",
+      "scope_note": "logits compared on one validation window per checkpoint; second half of P4 not tested as a bitwise identity check"
+    },
+    {
+      "held": false,
+      "id": "P5",
+      "note": "memory part failed: OS peak RSS exceeded 6.0 GiB; time part held",
+      "observed_peak_rss_gib": 6.5296478271484375,
+      "observed_train_stage_s": 82.35694837500341,
+      "prediction": "train peak RSS between 4.5 and 6.0 GiB; 16 steps fit in 900 s"
+    },
+    {
+      "held": true,
+      "id": "P6",
+      "observed": [
+        0.6093964629120879,
+        0.5295501172542572
+      ],
+      "prediction": "BPW from file bytes exceeds the upstream formula value"
+    }
+  ],
+  "replay": {
+    "files_read": [
+      "results/quality-pilot/baseline.json",
+      "results/quality-pilot/evaluate.json",
+      "results/quality-pilot/feasibility.json",
+      "results/quality-pilot/manifest.json",
+      "results/quality-pilot/public_metadata.json",
+      "results/quality-pilot/train.json",
+      "results/quality-pilot/train_steps.jsonl"
+    ],
+    "mode": "metadata_replay",
+    "private_checks": [],
+    "private_files_read": [],
+    "public_metadata_sections_used": [
+      "model_config",
+      "original_weights_header",
+      "frozen_base_header",
+      "trained_compressed_layers",
+      "official_state_dict_loader",
+      "test_logs.host",
+      "test_logs.container",
+      "test_logs.container_image"
+    ],
+    "statement": "metadata replay: rebuilt from tracked public JSON and results/quality-pilot/public_metadata.json only. No checkpoint, model weight, tokenizer, checkpoint config or host log was read, so this run does not validate the private checkpoints. Checkpoint byte counts, safetensors header facts and test outcomes are copied from public_metadata.json, which records the owner's private validation run; every other number is recomputed and cross-checked across the public files."
+  },
+  "reproduce": {
+    "note": "rebuilt from the args recorded by each stage; flags whose values equal defaults are still spelled out. Paths are relative to the project root. Requires local model weights and dataset parquet files, which are not redistributed.",
+    "pilot": [
+      ".venv/bin/python src/quality_pilot.py prepare --out results/quality-pilot --data-dir <local HF cache datasets--Salesforce--wikitext/snapshots/b08601e04326c79dfdd32d625aee71d232d685c3>",
+      ".venv/bin/python src/quality_pilot.py baseline --out results/quality-pilot --max-new-tokens 8 --max-rss-gib 6.0 --max-seconds 120.0 --min-available-gib 2.0 --threads 2",
+      ".venv/bin/python src/quality_pilot.py feasibility --out results/quality-pilot --batch-size 1 --ce-weight 1.0 --eff-bit 0.55 --grad-clip 1.0 --kd-weight 1.0 --l2l-scale 0.0 --lr 4e-05 --max-new-tokens 20 --max-rss-gib 6.0 --max-seconds 300.0 --min-available-gib 2.0 --residual --steps 16 --threads 2",
+      ".venv/bin/python src/quality_pilot.py train --out results/quality-pilot --batch-size 1 --ce-weight 1.0 --eff-bit 0.55 --grad-clip 1.0 --kd-weight 1.0 --l2l-scale 0.0 --lr 4e-05 --max-new-tokens 8 --max-rss-gib 6.0 --max-seconds 300.0 --min-available-gib 2.0 --residual --steps 16 --threads 2",
+      ".venv/bin/python src/quality_pilot.py evaluate --out results/quality-pilot --batch-size 1 --ce-weight 1.0 --eff-bit 0.55 --grad-clip 1.0 --kd-weight 1.0 --l2l-scale 0.0 --lr 4e-05 --max-new-tokens 8 --max-rss-gib 6.0 --max-seconds 180.0 --min-available-gib 2.0 --residual --steps 16 --threads 2 --upstream-decoder-variant"
+    ],
+    "report": [
+      ".venv/bin/python src/report_results.py --metadata-only  # metadata replay, clean clone",
+      ".venv/bin/python src/report_results.py  # private validation, needs local checkpoints"
+    ],
+    "tests": [
+      ".venv/bin/python -m unittest discover -s tests -v"
+    ]
+  },
+  "resources": {
+    "baseline": {
+      "guard_checks": 14,
+      "guard_elapsed_s": 9.809560916968621,
+      "guard_peak_rss_seen_at_checks_bytes": 2204696576,
+      "guard_threshold_bytes": 6442450944,
+      "os_peak_exceeded_guard_threshold": false,
+      "peak_rss_os_bytes": 2307260416,
+      "peak_rss_os_gib": 2.1488037109375
+    },
+    "evaluate": {
+      "guard_checks": 36,
+      "guard_elapsed_s": 15.551485584001057,
+      "guard_peak_rss_seen_at_checks_bytes": 2926346240,
+      "guard_threshold_bytes": 6442450944,
+      "os_peak_exceeded_guard_threshold": false,
+      "peak_rss_os_bytes": 3328245760,
+      "peak_rss_os_gib": 3.09967041015625
+    },
+    "feasibility": {
+      "guard_checks": 174,
+      "guard_elapsed_s": 22.75464233395178,
+      "guard_peak_rss_seen_at_checks_bytes": 4201070592,
+      "guard_threshold_bytes": 6442450944,
+      "os_peak_exceeded_guard_threshold": false,
+      "peak_rss_os_bytes": 4205740032,
+      "peak_rss_os_gib": 3.916900634765625
+    },
+    "note": "guards sample RSS at checkpoints (per layer, per step, per window); they are not hard memory caps, so the OS peak can exceed the threshold between checks without stopping a run",
+    "train": {
+      "guard_checks": 212,
+      "guard_elapsed_s": 82.35694837500341,
+      "guard_peak_rss_seen_at_checks_bytes": 5734875136,
+      "guard_threshold_bytes": 6442450944,
+      "os_peak_exceeded_guard_threshold": true,
+      "peak_rss_os_bytes": 7011155968,
+      "peak_rss_os_gib": 6.5296478271484375
+    }
+  },
+  "schema": "littlebit-report-summary/2",
+  "storage": {
+    "bpw_converted_block_linears": {
+      "actual_checkpoint_file_fp32_scales": 0.6093964629120879,
+      "advertised_upstream_formula": 0.5295501172542572,
+      "converted_weight_count": 357826560,
+      "note": "converted block linears only; biases are in the frozen base file; scales are fp32 here, upstream main.py would cast them to bf16",
+      "packed_signs_only": 0.4967032967032967
+    },
+    "disk": {
+      "original": {
+        "bytes": 988097824,
+        "dtype": "BF16",
+        "embedding_bytes": 272269312,
+        "embedding_source": "safetensors header of models/qwen2.5-0.5b/model.safetensors",
+        "file": "models/qwen2.5-0.5b/model.safetensors",
+        "non_embedding_bytes": 715828512,
+        "note": "includes the safetensors header; lm_head is tied and not stored"
+      },
+      "student": {
+        "bytes": 299683600,
+        "compressed_layers_file_bytes": 27257280,
+        "compressed_layers_header_bytes": 330048,
+        "fp32_scale_tensor_bytes": 4697088,
+        "frozen_base_dtype": "BF16 (lossless per tensor, as recorded)",
+        "frozen_base_embedding_bytes": 272269312,
+        "frozen_base_file_bytes": 272426320,
+        "frozen_base_norms_biases_and_header_bytes": 157008,
+        "packed_sign_tensor_bytes": 22216704,
+        "shape_and_buffer_tensor_bytes": 13440
+      },
+      "student_over_original": 0.30329345204589786
+    },
+    "excluded": {
+      "kv_cache": "reported separately below; not weights",
+      "note": "tokenizer, vocab, merges and config files are excluded from every weight byte count",
+      "tokenizer_and_config_files": [
+        "added_tokens.json",
+        "config.json",
+        "littlebit_config.json",
+        "merges.txt",
+        "special_tokens_map.json",
+        "tokenizer.json",
+        "tokenizer_config.json",
+        "vocab.json"
+      ],
+      "tokenizer_and_config_files_bytes": 15879995
+    },
+    "kv_cache": {
+      "note": "FP32 KV cache, batch 1; LittleBit does not compress it",
+      "original_bytes": 3145728,
+      "student_bytes": 3145728,
+      "tokens": 128,
+      "unchanged": true
+    },
+    "resident_fp32_unique": {
+      "embedding_fp32_bytes_derived": 544538624,
+      "embedding_source": "derived: vocab_size 151936 x hidden_size 896 x 4 bytes; shared by tied lm_head",
+      "note": "resident tensors only; excludes KV cache, activations, allocator slack",
+      "original_bytes": 1976131200,
+      "original_non_embedding_bytes": 1431592576,
+      "student_bytes": 1234703616,
+      "student_littlebit_factor_scale_buffer_bytes": 689878656,
+      "student_other_bytes": 544824960,
+      "student_other_minus_embedding_bytes": 286336,
+      "student_over_original": 0.624808522834921
+    },
+    "rule": "disk bytes and resident bytes are reported separately and never summed or compared across"
+  },
+  "tests": {
+    "container": {
+      "failed_summary": null,
+      "ok": true,
+      "ran": 95,
+      "seconds": 2.908,
+      "source": "evidence/container-tests-quality.log"
+    },
+    "container_image": {
+      "arch": "arm64",
+      "id": "sha256:e2001739838437f9e33226e856b2dc4caa47aae1269791455b3699773c818588"
+    },
+    "devcontainer_json": "not present; write refused by the tool permission layer as a sensitive file, including one retry; not retried or bypassed",
+    "host": {
+      "failed_summary": null,
+      "ok": true,
+      "ran": 95,
+      "seconds": 2.338,
+      "source": "evidence/unit-tests-quality.log"
+    },
+    "scope": "test suite as it stood when the pilot finished (95 tests); later suites are reported in README"
+  },
+  "training": {
+    "batch_size": 1,
+    "completed_steps": 16,
+    "conversion_seconds": 8.984926625038497,
+    "dev_validation_ppl": {
+      "initialized_in_memory": 137466.25933797908,
+      "note": "validation windows are development only; reported, not used for decisions",
+      "original": 14.812968249407081,
+      "trained_in_memory": 17137.982829730343
+    },
+    "further_training_planned": false,
+    "input_tokens": 2048,
+    "objective": {
+      "batch_size": 1,
+      "ce_weight": 1.0,
+      "grad_clip": 1.0,
+      "kd": "KL(teacher || student), teacher logits detached, token mean",
+      "kd_weight": 1.0,
+      "l2l_scale": 0.0,
+      "lr": 4e-05,
+      "optimizer": "AdamW betas (0.9, 0.999) eps 1e-8 weight_decay 0",
+      "schedule": "cosine, no warmup",
+      "seq_len": 128,
+      "steps": 16
+    },
+    "planned_steps": 16,
+    "scale_relative_l2_change": 0.0012146171128037423,
+    "seq_len": 128,
+    "sign_flip_fraction": 0.002107070200412482,
+    "sign_flips_init_to_trained": 360930,
+    "step_seconds": {
+      "max": 5.319364166003652,
+      "mean": 3.689405372235342,
+      "median": 3.510380791965872,
+      "min": 2.5255175000056624,
+      "n": 16
+    },
+    "steps": [
+      {
+        "ce": 13.406782150268555,
+        "dt_s": 3.3379392080241814,
+        "grad_norm_pre_clip": 412.9295349121094,
+        "kl": 9.423295974731445,
+        "loss": 22.830078125,
+        "lr": 4e-05,
+        "rss_bytes": 5194235904,
+        "step": 0
+      },
+      {
+        "ce": 26.584611892700195,
+        "dt_s": 3.860318582970649,
+        "grad_norm_pre_clip": 723.564208984375,
+        "kl": 23.616863250732422,
+        "loss": 50.20147705078125,
+        "lr": 3.961570560806461e-05,
+        "rss_bytes": 4189929472,
+        "step": 1
+      },
+      {
+        "ce": 15.287808418273926,
+        "dt_s": 4.299197625019588,
+        "grad_norm_pre_clip": 334.2947692871094,
+        "kl": 11.883400917053223,
+        "loss": 27.17120933532715,
+        "lr": 3.8477590650225735e-05,
+        "rss_bytes": 3534340096,
+        "step": 2
+      },
+      {
+        "ce": 14.039432525634766,
+        "dt_s": 2.9625870829913765,
+        "grad_norm_pre_clip": 460.4360046386719,
+        "kl": 10.917869567871094,
+        "loss": 24.95730209350586,
+        "lr": 3.662939224605091e-05,
+        "rss_bytes": 5670567936,
+        "step": 3
+      },
+      {
+        "ce": 12.080697059631348,
+        "dt_s": 2.5862482079537585,
+        "grad_norm_pre_clip": 190.43997192382812,
+        "kl": 9.07408618927002,
+        "loss": 21.154783248901367,
+        "lr": 3.4142135623730954e-05,
+        "rss_bytes": 4284366848,
+        "step": 4
+      },
+      {
+        "ce": 10.955591201782227,
+        "dt_s": 2.618297957931645,
+        "grad_norm_pre_clip": 67.46129608154297,
+        "kl": 7.014652252197266,
+        "loss": 17.970243453979492,
+        "lr": 3.111140466039205e-05,
+        "rss_bytes": 5701369856,
+        "step": 5
+      },
+      {
+        "ce": 10.352173805236816,
+        "dt_s": 3.6513314589392394,
+        "grad_norm_pre_clip": 74.17799377441406,
+        "kl": 6.461698532104492,
+        "loss": 16.813873291015625,
+        "lr": 2.7653668647301797e-05,
+        "rss_bytes": 3317497856,
+        "step": 6
+      },
+      {
+        "ce": 9.222725868225098,
+        "dt_s": 5.254948416957632,
+        "grad_norm_pre_clip": 50.28642272949219,
+        "kl": 6.065028190612793,
+        "loss": 15.28775405883789,
+        "lr": 2.390180644032257e-05,
+        "rss_bytes": 4230479872,
+        "step": 7
+      },
+      {
+        "ce": 9.63915729522705,
+        "dt_s": 2.5255175000056624,
+        "grad_norm_pre_clip": 83.85462188720703,
+        "kl": 6.419632434844971,
+        "loss": 16.05879020690918,
+        "lr": 2e-05,
+        "rss_bytes": 5739773952,
+        "step": 8
+      },
+      {
+        "ce": 9.549310684204102,
+        "dt_s": 3.3694301249925047,
+        "grad_norm_pre_clip": 49.34682083129883,
+        "kl": 6.592911720275879,
+        "loss": 16.142223358154297,
+        "lr": 1.609819355967744e-05,
+        "rss_bytes": 4255055872,
+        "step": 9
+      },
+      {
+        "ce": 9.581897735595703,
+        "dt_s": 5.319364166003652,
+        "grad_norm_pre_clip": 38.387367248535156,
+        "kl": 5.512641906738281,
+        "loss": 15.094539642333984,
+        "lr": 1.2346331352698206e-05,
+        "rss_bytes": 2801434624,
+        "step": 10
+      },
+      {
+        "ce": 8.540027618408203,
+        "dt_s": 4.59362699999474,
+        "grad_norm_pre_clip": 50.97374725341797,
+        "kl": 5.4892258644104,
+        "loss": 14.029253005981445,
+        "lr": 8.888595339607961e-06,
+        "rss_bytes": 4243832832,
+        "step": 11
+      },
+      {
+        "ce": 8.640493392944336,
+        "dt_s": 3.7999455000972375,
+        "grad_norm_pre_clip": 48.14252853393555,
+        "kl": 5.540511131286621,
+        "loss": 14.181004524230957,
+        "lr": 5.857864376269051e-06,
+        "rss_bytes": 4251942912,
+        "step": 12
+      },
+      {
+        "ce": 9.118407249450684,
+        "dt_s": 2.6814904579659924,
+        "grad_norm_pre_clip": 30.878211975097656,
+        "kl": 5.43253231048584,
+        "loss": 14.550939559936523,
+        "lr": 3.3706077539490933e-06,
+        "rss_bytes": 5685051392,
+        "step": 13
+      },
+      {
+        "ce": 9.219719886779785,
+        "dt_s": 4.906242499942891,
+        "grad_norm_pre_clip": 47.65196228027344,
+        "kl": 6.911820411682129,
+        "loss": 16.131540298461914,
+        "lr": 1.5224093497742654e-06,
+        "rss_bytes": 3504963584,
+        "step": 14
+      },
+      {
+        "ce": 9.45191478729248,
+        "dt_s": 3.2640001659747213,
+        "grad_norm_pre_clip": 40.143211364746094,
+        "kl": 6.032992839813232,
+        "loss": 15.484907150268555,
+        "lr": 3.842943919353914e-07,
+        "rss_bytes": 5679661056,
+        "step": 15
+      }
+    ],
+    "supervised_next_token_targets": 2032,
+    "teacher_fingerprint_before_equals_after": true,
+    "teacher_preserved": true,
+    "train_stage_guard_elapsed_s": 82.35694837500341,
+    "train_steps_jsonl_matches_step_log": true
+  }
+}

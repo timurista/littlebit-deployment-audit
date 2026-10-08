@@ -1,0 +1,372 @@
+{
+  "args": {
+    "device": "cpu",
+    "max_new_tokens": 8,
+    "max_rss_gib": 6.0,
+    "max_seconds": 120.0,
+    "min_available_gib": 2.0,
+    "model_dir": "models/qwen2.5-0.5b",
+    "out": "results/quality-pilot",
+    "seed": 42,
+    "stage": "baseline",
+    "threads": 2
+  },
+  "claims": {
+    "baselines": {
+      "practical_4bit": "MISSING: no validated 4-bit backend in this project yet",
+      "smaller_same_family_model": "MISSING: not part of this pilot"
+    },
+    "initialization_quality_is_separate_from_training": true,
+    "model_trained": false,
+    "model_trained_basis": "baseline stage trains nothing",
+    "non_claims": [
+      "wiring and resource pilot only, not a statistical benchmark",
+      "not a replication of any published LittleBit result",
+      "no end-to-end throughput claim; operator microbenchmarks are not end-to-end",
+      "task accuracy not measured; generation outputs are shown, never judged",
+      "no validated 4-bit baseline exists in this project yet (MISSING)",
+      "a model is called trained only when a completed step log and a checkpoint with sha256 exist"
+    ],
+    "statistical_significance": "not assessed; pilot sizes are fixed and tiny",
+    "task_accuracy": "not measured",
+    "throughput": "not measured"
+  },
+  "environment": {
+    "attn_implementation": "sdpa",
+    "conversion_device": "cpu",
+    "cpu_count": 10,
+    "cuda_available": false,
+    "device": "cpu",
+    "dtype": "float32",
+    "machine": "arm64",
+    "mps_available": false,
+    "offline_env": {
+      "HF_DATASETS_OFFLINE": "1",
+      "HF_HUB_OFFLINE": "1",
+      "TRANSFORMERS_OFFLINE": "1"
+    },
+    "packages": {
+      "datasets": "3.4.1",
+      "huggingface_hub": "0.36.2",
+      "numpy": "2.2.4",
+      "psutil": "7.0.0",
+      "pyarrow": "25.0.1",
+      "safetensors": "0.6.2",
+      "tokenizers": "0.21.4",
+      "torch": "2.6.0",
+      "transformers": "4.51.3"
+    },
+    "platform": "macOS-26.0.1-arm64-arm-64bit",
+    "python": "3.12.14",
+    "requested_threads": 2,
+    "torch_num_interop_threads": 1,
+    "torch_num_threads": 2
+  },
+  "finished_unix": 1791470706.070844,
+  "generation": [
+    {
+      "continuation": " Paris. It is the largest city in",
+      "decoding": "greedy",
+      "judged": false,
+      "max_new_tokens": 8,
+      "output_token_ids": [
+        12095,
+        13,
+        1084,
+        374,
+        279,
+        7772,
+        3283,
+        304
+      ],
+      "prompt": "The capital of France is",
+      "prompt_token_ids": [
+        785,
+        6722,
+        315,
+        9625,
+        374
+      ]
+    },
+    {
+      "continuation": " 1,000,0",
+      "decoding": "greedy",
+      "judged": false,
+      "max_new_tokens": 8,
+      "output_token_ids": [
+        220,
+        16,
+        11,
+        15,
+        15,
+        15,
+        11,
+        15
+      ],
+      "prompt": "In 1990 , the population of the city was",
+      "prompt_token_ids": [
+        641,
+        220,
+        16,
+        24,
+        24,
+        15,
+        1154,
+        279,
+        7042,
+        315,
+        279,
+        3283,
+        572
+      ]
+    },
+    {
+      "continuation": " 212 \u00b0F or ",
+      "decoding": "greedy",
+      "judged": false,
+      "max_new_tokens": 8,
+      "output_token_ids": [
+        220,
+        17,
+        16,
+        17,
+        36286,
+        37,
+        476,
+        220
+      ],
+      "prompt": "Water boils at a temperature of",
+      "prompt_token_ids": [
+        28253,
+        88955,
+        518,
+        264,
+        9315,
+        315
+      ]
+    }
+  ],
+  "guard": {
+    "checks": 14,
+    "elapsed_s": 9.809560916968621,
+    "max_rss_bytes": 6442450944,
+    "max_seconds": 120.0,
+    "min_available_bytes": 2147483648,
+    "min_available_seen_at_checks": 2654453760,
+    "peak_rss_seen_at_checks": 2204696576
+  },
+  "kv_cache": {
+    "batch": 1,
+    "formula_bytes_fp32": 3145728,
+    "measured_bytes": 3145728,
+    "note": "KV cache is separate from weights; LittleBit does not compress it",
+    "tokens": 128
+  },
+  "load_seconds": 4.633728791959584,
+  "manifest_sha256": "6d3c4ddc1e38ed82055f38d6e84ddb9ca145136998e13248191913086502d73b",
+  "model": {
+    "files": {
+      "LICENSE": {
+        "bytes": 11343,
+        "path": "models/qwen2.5-0.5b/LICENSE",
+        "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e"
+      },
+      "config.json": {
+        "bytes": 681,
+        "path": "models/qwen2.5-0.5b/config.json",
+        "sha256": "479dcf0c5286339e41ad3992cd08ae88a467c4187587936248e2b7c96283484b"
+      },
+      "generation_config.json": {
+        "bytes": 138,
+        "path": "models/qwen2.5-0.5b/generation_config.json",
+        "sha256": "8c970692323e3ea0e9b8b0a4dca79388d31226e41f83c9fd6014804280ebf6e8"
+      },
+      "merges.txt": {
+        "bytes": 1671839,
+        "path": "models/qwen2.5-0.5b/merges.txt",
+        "sha256": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3"
+      },
+      "model.safetensors": {
+        "bytes": 988097824,
+        "hub_lfs_sha256": "88c142557820ccad55bb59756bfcfcf891de9cc6202816bd346445188a0ed342",
+        "matches_hub_lfs_sha256": true,
+        "path": "models/qwen2.5-0.5b/model.safetensors",
+        "sha256": "88c142557820ccad55bb59756bfcfcf891de9cc6202816bd346445188a0ed342"
+      },
+      "tokenizer.json": {
+        "bytes": 7031645,
+        "path": "models/qwen2.5-0.5b/tokenizer.json",
+        "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"
+      },
+      "tokenizer_config.json": {
+        "bytes": 7228,
+        "path": "models/qwen2.5-0.5b/tokenizer_config.json",
+        "sha256": "c91efca15ceff6e9ee9424db58a6f59cd41294e550a86cbd07e3c1fb500b34f9"
+      },
+      "vocab.json": {
+        "bytes": 2776833,
+        "path": "models/qwen2.5-0.5b/vocab.json",
+        "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+      }
+    },
+    "license": "Apache-2.0, ungated (verified by the project owner before this pilot)",
+    "model_dir": "models/qwen2.5-0.5b",
+    "repo": "Qwen/Qwen2.5-0.5B",
+    "revision": {
+      "consistent": true,
+      "etags": {
+        "LICENSE": "6634c8cc3133b3848ec74b9f275acaaa1ea618ab",
+        "README.md": "2d22b523f8968e42fc6b805e656133fa83f771ab",
+        "config.json": "141506237b9022c4ab3e01734cfafb9310b57d2d",
+        "generation_config.json": "cbbb3133034e192527e5321b4c679154e4819ab8",
+        "merges.txt": "20024bfe7c83998e9aeaf98a0cd6a2ce6306c2f0",
+        "model.safetensors": "88c142557820ccad55bb59756bfcfcf891de9cc6202816bd346445188a0ed342",
+        "tokenizer.json": "443909a61d429dff23010e5bddd28ff530edda00",
+        "tokenizer_config.json": "ba7e4c5637b9732dadcd66286ce48334e8b31e9e",
+        "vocab.json": "4783fe10ac3adce15ac8f358ef5462739852c569"
+      },
+      "matches_pinned": true,
+      "per_file": {
+        "LICENSE": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+        "README.md": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+        "config.json": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+        "generation_config.json": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+        "merges.txt": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+        "model.safetensors": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+        "tokenizer.json": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+        "tokenizer_config.json": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+        "vocab.json": "060db6499f32faf8b98477b0a26969ef7d8b9987"
+      },
+      "pinned": "060db6499f32faf8b98477b0a26969ef7d8b9987"
+    }
+  },
+  "peak_rss_os": {
+    "bytes": 2307260416,
+    "ru_maxrss_raw": 2307260416,
+    "unit": "bytes"
+  },
+  "resident_storage": {
+    "total_unique_bytes": 1976131200
+  },
+  "schema": "littlebit-quality-pilot/1",
+  "stage": "baseline",
+  "started_unix": 1791470696.263204,
+  "status": "completed",
+  "test": {
+    "label": "test",
+    "mean_nll": 3.363204506791365,
+    "ppl": 28.881594011091973,
+    "scored_tokens": 1016,
+    "total_nll": 3417.015778900027,
+    "wall_s_note": "descriptive pilot wall clock, not throughput",
+    "windows": [
+      {
+        "index": 0,
+        "mean_nll": 2.7316177854514736,
+        "nll_sum": 346.91545875233714,
+        "scored_tokens": 127,
+        "sha256": "91ae344eda8b4bba453109fec235e315a879e02fab1d08c47d5f5e61445203f3",
+        "wall_s": 0.21164287510327995
+      },
+      {
+        "index": 1,
+        "mean_nll": 3.4621851382771136,
+        "nll_sum": 439.69751256119343,
+        "scored_tokens": 127,
+        "sha256": "01c8de1731633ffeffdc8e9fe920181d4f0fe4fe4eb9df5b97eb24cd92ed2ab8",
+        "wall_s": 0.19942120800260454
+      },
+      {
+        "index": 2,
+        "mean_nll": 3.2179003713498338,
+        "nll_sum": 408.67334716142886,
+        "scored_tokens": 127,
+        "sha256": "2b0436717df85eaa0008fa98507a946a91f9958795fcfbf9da17425902bc23e2",
+        "wall_s": 0.20038925006520003
+      },
+      {
+        "index": 3,
+        "mean_nll": 3.271608940894405,
+        "nll_sum": 415.49433549358946,
+        "scored_tokens": 127,
+        "sha256": "bbd097814ee8276fc1f0e9032937e8a569bd74c0283438c8a7ce51f277f1dfc3",
+        "wall_s": 0.1959145839791745
+      },
+      {
+        "index": 4,
+        "mean_nll": 3.2407588537468017,
+        "nll_sum": 411.5763744258438,
+        "scored_tokens": 127,
+        "sha256": "afcc2eeadf26eed0adf9be4a953220d0e3366bd3390ca84c9db3084e6873a0ad",
+        "wall_s": 0.2012362499954179
+      },
+      {
+        "index": 5,
+        "mean_nll": 3.690787293895153,
+        "nll_sum": 468.72998632468443,
+        "scored_tokens": 127,
+        "sha256": "d6be8ab73f07b38d7496320761d0d6a37ae52016294bcf46a2f03f886da1504c",
+        "wall_s": 0.19636525004170835
+      },
+      {
+        "index": 6,
+        "mean_nll": 3.523172296228448,
+        "nll_sum": 447.44288162101293,
+        "scored_tokens": 127,
+        "sha256": "6a390d16b3a01547146bbbb2e67996987de1529c851bee90d4aed43fe56d1ab8",
+        "wall_s": 0.19391545793041587
+      },
+      {
+        "index": 7,
+        "mean_nll": 3.7676053744876907,
+        "nll_sum": 478.4858825599367,
+        "scored_tokens": 127,
+        "sha256": "3fd6e1241a95a907bfd8062a9336a84edd5c8ca0e46c8f725257e976cc33360a",
+        "wall_s": 0.19547366700135171
+      }
+    ]
+  },
+  "tier": "UPSTREAM_IMPORT_REAL_MODEL_PILOT",
+  "validation": {
+    "label": "validation",
+    "mean_nll": 2.695503030170026,
+    "ppl": 14.812968249407081,
+    "scored_tokens": 508,
+    "total_nll": 1369.3155393263733,
+    "wall_s_note": "descriptive pilot wall clock, not throughput",
+    "windows": [
+      {
+        "index": 0,
+        "mean_nll": 2.4239291837461856,
+        "nll_sum": 307.8390063357656,
+        "scored_tokens": 127,
+        "sha256": "dec1fb801b0464a2ef0b27e83a46646eb9a2a9b83b96a658f3e1fd90a7e1b4d9",
+        "wall_s": 0.7187904580496252
+      },
+      {
+        "index": 1,
+        "mean_nll": 2.185586774474703,
+        "nll_sum": 277.56952035828726,
+        "scored_tokens": 127,
+        "sha256": "34a12ba21d0b3559033ce5cb8fca3049f8bc3c3187ac5fd3b644f84650a7f339",
+        "wall_s": 0.2108406670158729
+      },
+      {
+        "index": 2,
+        "mean_nll": 2.746379704652565,
+        "nll_sum": 348.79022249087575,
+        "scored_tokens": 127,
+        "sha256": "b7d3c04e0c085d7824dae8ec4e199939f9aabb5eb7db46727a2d610bdbbddd23",
+        "wall_s": 0.24773029191419482
+      },
+      {
+        "index": 3,
+        "mean_nll": 3.4261164578066508,
+        "nll_sum": 435.11679014144465,
+        "scored_tokens": 127,
+        "sha256": "ba545a870319509b52b898fb793ef5c9ba463ad3cdd53802657f42c33a02e734",
+        "wall_s": 0.20371066592633724
+      }
+    ]
+  }
+}
