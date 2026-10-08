@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="350" viewBox="0 0 720 350" role="img" aria-labelledby="quality-log10-ppl-title quality-log10-ppl-desc" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" data-chart="quality-log10-ppl">
+<title id="quality-log10-ppl-title">Held-out perplexity on a log10 scale</title>
+<desc id="quality-log10-ppl-desc">Horizontal bars of log10 perplexity on the same 8 held-out windows (1,016 scored tokens): Original model 28.8816; LittleBit, initialized 82,426.3372; LittleBit, 16 QAT steps 9,735.6350; Same QAT weights, defective decoder 13,558,558.4902.</desc>
+<rect width="720" height="350" fill="#FBF8F1"/>
+<defs><pattern id="defect-hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#FBF8F1"/><line x1="0" y1="0" x2="0" y2="7" stroke="#9C4A1A" stroke-width="3"/></pattern></defs>
+<text x="16" y="28" font-size="16" text-anchor="start" font-weight="700" fill="#14213D">Held-out perplexity, log10 scale</text>
+<text x="16" y="48" font-size="12" text-anchor="start" font-weight="400" fill="#555B69">Same 8 WikiText-2 test windows, 1,016 scored tokens. Lower is better. Tiny pilot, one seed, one run.</text>
+<line x1="16" y1="58" x2="704" y2="58" stroke="#D8D1C1" stroke-width="1"/>
+<line x1="260" y1="70" x2="260" y2="278" stroke="#D8D1C1" stroke-width="1"/>
+<text x="260" y="294" font-size="11" text-anchor="middle" fill="#555B69">10<tspan dy="-5" font-size="8">0</tspan></text>
+<line x1="303.75" y1="70" x2="303.75" y2="278" stroke="#D8D1C1" stroke-width="1"/>
+<text x="303.75" y="294" font-size="11" text-anchor="middle" fill="#555B69">10<tspan dy="-5" font-size="8">1</tspan></text>
+<line x1="347.5" y1="70" x2="347.5" y2="278" stroke="#D8D1C1" stroke-width="1"/>
+<text x="347.5" y="294" font-size="11" text-anchor="middle" fill="#555B69">10<tspan dy="-5" font-size="8">2</tspan></text>
+<line x1="391.25" y1="70" x2="391.25" y2="278" stroke="#D8D1C1" stroke-width="1"/>
+<text x="391.25" y="294" font-size="11" text-anchor="middle" fill="#555B69">10<tspan dy="-5" font-size="8">3</tspan></text>
+<line x1="435" y1="70" x2="435" y2="278" stroke="#D8D1C1" stroke-width="1"/>
+<text x="435" y="294" font-size="11" text-anchor="middle" fill="#555B69">10<tspan dy="-5" font-size="8">4</tspan></text>
+<line x1="478.75" y1="70" x2="478.75" y2="278" stroke="#D8D1C1" stroke-width="1"/>
+<text x="478.75" y="294" font-size="11" text-anchor="middle" fill="#555B69">10<tspan dy="-5" font-size="8">5</tspan></text>
+<line x1="522.5" y1="70" x2="522.5" y2="278" stroke="#D8D1C1" stroke-width="1"/>
+<text x="522.5" y="294" font-size="11" text-anchor="middle" fill="#555B69">10<tspan dy="-5" font-size="8">6</tspan></text>
+<line x1="566.25" y1="70" x2="566.25" y2="278" stroke="#D8D1C1" stroke-width="1"/>
+<text x="566.25" y="294" font-size="11" text-anchor="middle" fill="#555B69">10<tspan dy="-5" font-size="8">7</tspan></text>
+<line x1="610" y1="70" x2="610" y2="278" stroke="#D8D1C1" stroke-width="1"/>
+<text x="610" y="294" font-size="11" text-anchor="middle" fill="#555B69">10<tspan dy="-5" font-size="8">8</tspan></text>
+<text x="435" y="312" font-size="11" text-anchor="middle" font-weight="400" fill="#555B69">perplexity (log10 axis; each gridline is 10 times the previous)</text>
+<text x="16" y="90" font-size="13" text-anchor="start" font-weight="600" fill="#14213D">Original model</text>
+<text x="16" y="106" font-size="11" text-anchor="start" font-weight="400" fill="#555B69">reference, FP32</text>
+<rect x="260" y="78" width="63.9" height="22" fill="#14213D" data-key="ppl.original" data-value="28.881594011091973" data-log10="1.460621"/>
+<text x="331.9" y="94" font-size="12" text-anchor="start" font-weight="600" fill="#14213D">28.8816</text>
+<text x="16" y="140" font-size="13" text-anchor="start" font-weight="600" fill="#14213D">LittleBit, initialized</text>
+<text x="16" y="156" font-size="11" text-anchor="start" font-weight="400" fill="#555B69">converted, no QAT</text>
+<rect x="260" y="128" width="215.08" height="22" fill="#7C88A8" data-key="ppl.initialized_no_qat" data-value="82426.33720523083" data-log10="4.916066"/>
+<text x="483.08" y="144" font-size="12" text-anchor="start" font-weight="600" fill="#14213D">82,426.3372</text>
+<text x="16" y="190" font-size="13" text-anchor="start" font-weight="600" fill="#14213D">LittleBit, 16 QAT steps</text>
+<text x="16" y="206" font-size="11" text-anchor="start" font-weight="400" fill="#555B69">converted, then trained</text>
+<rect x="260" y="178" width="174.49" height="22" fill="#2747B8" data-key="ppl.qat_trained" data-value="9735.634988555017" data-log10="3.988364"/>
+<text x="442.49" y="194" font-size="12" text-anchor="start" font-weight="600" fill="#14213D">9,735.6350</text>
+<text x="16" y="240" font-size="13" text-anchor="start" font-weight="600" fill="#14213D">Same QAT weights, defective decoder</text>
+<text x="16" y="256" font-size="11" text-anchor="start" font-weight="400" fill="#9C4A1A">decoder defect condition, not a quality result</text>
+<rect x="260" y="228" width="312.03" height="22" fill="url(#defect-hatch)" stroke="#9C4A1A" stroke-width="1.5" stroke-dasharray="5 3" data-key="ppl.qat_trained_upstream_decoder" data-value="13558558.490179988" data-log10="7.132214"/>
+<text x="580.03" y="244" font-size="12" text-anchor="start" font-weight="600" fill="#14213D">13,558,558.4902</text>
+<line x1="260" y1="70" x2="260" y2="278" stroke="#14213D" stroke-width="1.2"/>
+<text x="16" y="338" font-size="11" text-anchor="start" font-weight="400" fill="#555B69">Source: results/summary.json (heldout_test). The hatched bar reloads the same QAT weights with the shipped unpacker.</text>
+</svg>

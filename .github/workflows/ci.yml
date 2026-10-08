@@ -3,7 +3,8 @@
 # Scope: standard-library Python 3.12 only. torch, transformers and matplotlib are NOT installed,
 # so torch-dependent tests skip with an explicit reason, and tests that need the pinned upstream
 # checkout (not redistributed) or the private pilot checkpoints (not redistributed) skip too.
-# The job also runs the metadata-only replay of results/summary.json from tracked public files.
+# The job also runs the metadata-only replay of results/summary.json from tracked public files,
+# and checks that the companion outputs in docs/ match src/build_companion.py (read-only check).
 #
 # Not done here: no secrets, read-only token, no write permissions, no deployment, no training,
 # no model, dataset or upstream downloads; pip installs nothing.
@@ -52,6 +53,9 @@ jobs:
 
       - name: Unit tests (standard library only; skips are expected and listed)
         run: timeout 600 python -m unittest discover -s tests -v
+
+      - name: Companion outputs are current (writes nothing; fails if any generated file is stale)
+        run: timeout 300 python src/build_companion.py --check
 
       - name: Metadata-only replay from tracked public files (no figures, written outside the checkout)
         run: |

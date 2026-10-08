@@ -74,7 +74,12 @@ other license is granted for them by Part 1. Recorded results describe runs of
 NonCommercial upstream code on third-party model weights and data; see
 LICENSE_NOTES.md.
 
-Third-party material (terms unchanged, not relicensed, not redistributed)
+This includes the GitHub Pages companion added after release v0.1.0:
+src/build_companion.py, src/companion/, tests/test_companion.py, docs/index.html,
+docs/.nojekyll and everything under docs/site/ except docs/site/vendor/. Part 1
+is not extended to them; the owner may choose other terms later.
+
+Third-party material (terms unchanged, not relicensed)
 
 * Upstream LittleBit source code (CC BY-NC 4.0): not included; users need their
   own checkout. Its file quantization/modules/attention.py carries an Apache-2.0
@@ -88,5 +93,10 @@ Third-party material (terms unchanged, not relicensed, not redistributed)
   checkpoints derived from them, must include the Apache-2.0 license text and
   any NOTICE shipped with the model.
 * WikiText-2 (CC BY-SA): no dataset text is included.
+* Three.js 0.186.1 (MIT License, Copyright the three.js authors): the files in
+  docs/site/vendor/ are redistributed unmodified under their own MIT License,
+  with its full notice in docs/site/vendor/THREE-LICENSE.txt and
+  THIRD_PARTY_NOTICES.md.
+  They are not covered by Parts 1 to 3.
 
 See LICENSE_NOTES.md for attribution details and obligations. Not legal advice.

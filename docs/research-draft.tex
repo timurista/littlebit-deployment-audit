@@ -2,11 +2,18 @@
 % real-model pilot with a negative quality result. Not for submission or publication.
 % Figures are read from ../figures relative to this file; regenerate them from public files with
 %   .venv/bin/python src/report_results.py --metadata-only
-% and compile from the docs/ directory (pdflatex research-draft.tex).
+% and compile from the docs/ directory (pdflatex research-draft.tex, or tectonic research-draft.tex).
+% Figures 1 and 2 are static TikZ explanation figures drawn from recorded facts; they need no file.
 \documentclass[11pt]{article}
 \usepackage[margin=1in]{geometry}
 \usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{url}
+\usepackage{needspace}
 \usepackage{hyperref}
+% Long hexadecimal commit ids: typewriter, breakable after any hex digit, characters unchanged.
+\DeclareUrlCommand\hashpath{\urlstyle{tt}\def\UrlBreaks{\do0\do1\do2\do3\do4\do5\do6\do7\do8\do9%
+  \do a\do b\do c\do d\do e\do f}}
 
 \title{Packed Sign Serialization in a Sub-1-Bit Factorized Quantizer:\\
 A Component Audit and a Tiny Negative Real-Model Pilot (Review Draft)}
@@ -52,6 +59,60 @@ stopping rules and predictions. An official upstream state-dict loading path was
 synthetic single-layer file only; the full-model loader was emulated, not run.
 
 \section{Method}
+\subsection{Layer structure}
+For an input $x$, the upstream \texttt{LittleBitLinear} module computes
+\[
+y = \Big(\big(\big((x \odot v_2)\, V_q^{\top}\big) \odot (v_1 \odot u_2)\big)\, U_q^{\top}\Big) \odot u_1
+\]
+on its main path, adds the same expression with residual factors $U_{q,R}$, $V_{q,R}$ and scales
+$u_{1,R}$, $u_{2,R}$, $v_{1,R}$, $v_{2,R}$, and then adds the bias (Figure~\ref{fig:structure}). $U_q$ and
+$V_q$ hold signs in $\{-1,+1\}$; a saved checkpoint packs them into 32-bit words, least significant
+bit first, with a set bit meaning $-1$. The serialization defect studied here concerns only how
+those words are read back.
+
+\begin{figure}[h]
+\centering
+\resizebox{\linewidth}{!}{%
+\begin{tikzpicture}[font=\footnotesize, >=stealth,
+  box/.style={draw, rounded corners=2pt, minimum height=0.75cm, minimum width=2.0cm, align=center},
+  bin/.style={box, line width=0.9pt, draw=blue!60!black},
+  scl/.style={box, draw=teal!60!black}]
+  \node[box] (x) at (0,0) {\texttt{x}};
+  \node[scl] (m1) at (3.0,1.2) {\texttt{* v2}};
+  \node[bin] (m2) at (6.1,1.2) {\texttt{@ Vq.T}};
+  \node[scl] (m3) at (9.2,1.2) {\texttt{* (v1 * u2)}};
+  \node[bin] (m4) at (12.3,1.2) {\texttt{@ Uq.T}};
+  \node[scl] (m5) at (15.4,1.2) {\texttt{* u1}};
+  \node[scl] (r1) at (3.0,-1.2) {\texttt{* v2\_R}};
+  \node[bin] (r2) at (6.1,-1.2) {\texttt{@ Vq\_R.T}};
+  \node[scl] (r3) at (9.2,-1.2) {\texttt{* (v1\_R * u2\_R)}};
+  \node[bin] (r4) at (12.3,-1.2) {\texttt{@ Uq\_R.T}};
+  \node[scl] (r5) at (15.4,-1.2) {\texttt{* u1\_R}};
+  \node[draw, circle, inner sep=1.5pt] (sum) at (17.6,0) {$+$};
+  \node[box, minimum width=1.0cm] (y) at (19.4,0) {\texttt{y}};
+  \draw[->] (x) |- (m1);
+  \draw[->] (x) |- (r1);
+  \draw[->] (m1) -- (m2);
+  \draw[->] (m2) -- (m3);
+  \draw[->] (m3) -- (m4);
+  \draw[->] (m4) -- (m5);
+  \draw[->] (r1) -- (r2);
+  \draw[->] (r2) -- (r3);
+  \draw[->] (r3) -- (r4);
+  \draw[->] (r4) -- (r5);
+  \draw[->] (m5) -| (sum);
+  \draw[->] (r5) -| (sum);
+  \draw[->] (sum) -- node[above] {\texttt{+ bias}} (y);
+  \node[anchor=west, text=gray] at (1.9,2.0) {main path};
+  \node[anchor=west, text=gray] at (1.9,-2.0) {residual path};
+\end{tikzpicture}}
+\caption{Structure of one converted layer (upstream \texttt{LittleBitLinear}, commit
+\texttt{933857e}). Thick blue boxes multiply by binary sign matrices stored packed; thin teal
+boxes multiply elementwise by scale vectors. Structure only: no size or value in this figure is
+measured. The companion site shows the same structure with illustrative sizes.}
+\label{fig:structure}
+\end{figure}
+
 \subsection{Component audit}
 Two evidence tiers are kept separate. \emph{Algorithm audit}: a standard-library mirror of the
 upstream arithmetic. \emph{Upstream import}: the unmodified upstream \texttt{binary\_packer},
@@ -100,6 +161,43 @@ sign errors & 0 & 786 & 917 & 3930 & 4062 & 4062 & 8124 \\
 \hline
 \end{tabular}
 \end{center}
+
+Figure~\ref{fig:shift} traces one recorded case through both expressions.
+
+\begin{figure}[h]
+\centering
+\resizebox{\linewidth}{!}{%
+\begin{tikzpicture}[x=0.42cm, y=0.62cm, font=\scriptsize]
+  \foreach \k in {0,...,31} {
+    \node[font=\tiny, text=gray] at (\k+0.5,0.8) {\k};
+    \foreach \r in {0,1,2} {
+      \draw[gray!50] (\k,-\r-0.4) rectangle (\k+1,-\r+0.4);
+      \node at (\k+0.5,-\r) {$+$};
+    }
+  }
+  \foreach \k in {0,7,8,15,16,23,24,31} {
+    \fill[black] (\k,-0.4) rectangle (\k+1,0.4);
+    \node[text=white] at (\k+0.5,0) {$-$};
+    \fill[black] (\k,-2.4) rectangle (\k+1,-1.6);
+    \node[text=white] at (\k+0.5,-2) {$-$};
+  }
+  \fill[black] (0,-1.4) rectangle (1,-0.6);
+  \node[text=white] at (0.5,-1) {$-$};
+  \foreach \k in {7,8,15,16,23,24,31} {
+    \draw[red!70!black, line width=1pt] (\k+0.07,-1.33) rectangle (\k+0.93,-0.67);
+  }
+  \node[anchor=east] at (-0.2,0.8) {in-word bit $k$};
+  \node[anchor=east] at (-0.2,0) {recorded sign};
+  \node[anchor=east] at (-0.2,-1) {shipped \texttt{(w << k) \& 1}};
+  \node[anchor=east] at (-0.2,-2) {fixed \texttt{(w >> k) \& 1}};
+\end{tikzpicture}}
+\caption{One recorded case, \texttt{byte\_w32\_b129}: byte 129 tiled across a 32-column row, packed
+word \texttt{0x81818181}, with $-1$ at columns 0, 7, 8, 15, 16, 23, 24 and 31. Reading bit $k$ with a
+right shift (on the unsigned word) recovers every sign. The shipped left shift clears bit 0 for
+every $k \ge 1$, so only column 0 returns $-1$; the 7 outlined cells are the 7 sign errors recorded
+for this case in \texttt{results/unpack\_cases\_upstream\_import.csv}.}
+\label{fig:shift}
+\end{figure}
 
 \subsection{Layer round trip and patch}
 Across 72 seeded configurations the upstream decoder kept 0.514 to 0.553 of the signs and changed
@@ -222,17 +320,40 @@ same-family model, no task accuracy, no end-to-end latency or throughput. Float3
 with declared departures from the upstream recipe. Full-model loading emulated. The memory guard
 is sampled rather than enforced. Component layers in the sweep and layer tests use random weights.
 
-\section*{Data and code availability}
+% End matter: one small (10pt) block with run-in headings instead of four starred sections, so
+% that it fits on the last substantive page. Main text stays at 11pt; no content is removed.
+\begingroup
+\small
+\setlength{\parskip}{0.4\baselineskip}
+% Within the end matter only: let \url break after any letter or digit as well as the usual
+% punctuation, and let the space between URL characters stretch slightly. Link targets and the
+% printed characters are unchanged. \hashpath keeps its own break set.
+\def\UrlBreaks{\do\.\do\/\do\-\do\_\do\:\do\?\do\=\do\&\do\#%
+  \do a\do b\do c\do d\do e\do f\do g\do h\do i\do j\do k\do l\do m%
+  \do n\do o\do p\do q\do r\do s\do t\do u\do v\do w\do x\do y\do z%
+  \do 0\do 1\do 2\do 3\do 4\do 5\do 6\do 7\do 8\do 9}
+\Urlmuskip=0mu plus 1mu
+\vspace{0.5\baselineskip}
+\noindent\textbf{Data and code availability.}
 Code, raw stage outputs, preregistrations, figures and a summary are released as version v0.1.0
 at \url{https://github.com/timurista/littlebit-deployment-audit/releases/tag/v0.1.0}. The release
-carries a build manifest recording the exact commit and SHA-256 checksums of its files. No DOI has
+carries a build manifest recording the exact commit and SHA-256 checksums of its files. Every
+measured number in this draft comes from the files of v0.1.0 at commit
+\hashpath{97f075cd1f995e66b693b3c1657fcc2f1a43ed0c}, which remains unchanged. Release v0.2.0
+adds a companion site that presents the same recorded data, without new experiments, at
+\url{https://timurista.github.io/littlebit-deployment-audit/};
+its charts and data files are generated by \texttt{src/build\_companion.py} from the v0.1.0 result
+files, whose SHA-256 values it records. Figures~\ref{fig:structure} and~\ref{fig:shift} were added
+for v0.2.0 as static explanations; they report no new measurement. No DOI has
 been assigned. Figures and summary are regenerated from
 tracked public files with \texttt{python src/report\_results.py --metadata-only}, without running
 a model; that replay does not validate the pilot checkpoints, which were validated privately on
 the author's host and are not redistributed. Model weights, derived checkpoints, dataset files and
 the upstream checkout are not redistributed.
 
-\section*{Licensing}
+% Keep the Licensing heading with at least three lines of its paragraph (no lone opening line).
+\needspace{4\baselineskip}
+\noindent\textbf{Licensing.}
 Licensing is scoped per file; there is no repository-wide license (\texttt{LICENSE}). The original
 harness code (\texttt{quality\_pilot.py}, \texttt{report\_results.py}, their tests, the Dockerfile
 and the requirements file) is MIT. Files that adapt or quote upstream code (\texttt{audit.py},
@@ -242,14 +363,16 @@ figures, including this manuscript, are all rights reserved. Upstream code is CC
 Qwen2.5-0.5B is Apache-2.0 and is not redistributed or relicensed; WikiText-2 is distributed under
 CC BY-SA terms. No license agreement was accepted and no cloud resources were used.
 
-\section*{AI assistance}
+\noindent\textbf{AI assistance.}
 The code, tests and text of this draft were written with an AI coding assistant (Claude,
 Anthropic). The experiments were executed by an automated AI coding workflow on the author's Mac,
 not run by hand; the author's review of the outputs is pending. All reported numbers are taken
 from recorded output files.
 
-\section*{Attribution}
+\noindent\textbf{Attribution.}
 LittleBit and LittleBit-2 by B.~Lee, D.~Kim, Y.~You and Y.~Kim. Code under CC BY-NC 4.0. This
 audit is not affiliated with or endorsed by the authors or Samsung.
+\par
+\endgroup
 
 \end{document}

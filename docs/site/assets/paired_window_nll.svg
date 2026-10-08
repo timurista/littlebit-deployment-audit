@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="400" viewBox="0 0 720 400" role="img" aria-labelledby="paired-window-nll-title paired-window-nll-desc" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" data-chart="paired-window-nll">
+<title id="paired-window-nll-title">Per-window mean NLL, paired by window</title>
+<desc id="paired-window-nll-desc">Mean negative log-likelihood in nats for each of 8 held-out windows under four conditions; the windows are contiguous segments of one test prefix, not independent draws.</desc>
+<rect width="720" height="400" fill="#FBF8F1"/>
+<text x="16" y="28" font-size="16" text-anchor="start" font-weight="700" fill="#14213D">Per-window mean NLL (nats), paired by window</text>
+<text x="16" y="48" font-size="12" text-anchor="start" font-weight="400" fill="#555B69">8 contiguous test windows from one prefix: paired, not independent draws. Lower is better.</text>
+<line x1="16" y1="58" x2="704" y2="58" stroke="#D8D1C1" stroke-width="1"/>
+<line x1="70" y1="330" x2="520" y2="330" stroke="#D8D1C1" stroke-width="1"/>
+<text x="62" y="334" font-size="11" text-anchor="end" font-weight="400" fill="#555B69">0</text>
+<line x1="70" y1="288" x2="520" y2="288" stroke="#D8D1C1" stroke-width="1"/>
+<text x="62" y="292" font-size="11" text-anchor="end" font-weight="400" fill="#555B69">3</text>
+<line x1="70" y1="246" x2="520" y2="246" stroke="#D8D1C1" stroke-width="1"/>
+<text x="62" y="250" font-size="11" text-anchor="end" font-weight="400" fill="#555B69">6</text>
+<line x1="70" y1="204" x2="520" y2="204" stroke="#D8D1C1" stroke-width="1"/>
+<text x="62" y="208" font-size="11" text-anchor="end" font-weight="400" fill="#555B69">9</text>
+<line x1="70" y1="162" x2="520" y2="162" stroke="#D8D1C1" stroke-width="1"/>
+<text x="62" y="166" font-size="11" text-anchor="end" font-weight="400" fill="#555B69">12</text>
+<line x1="70" y1="120" x2="520" y2="120" stroke="#D8D1C1" stroke-width="1"/>
+<text x="62" y="124" font-size="11" text-anchor="end" font-weight="400" fill="#555B69">15</text>
+<line x1="70" y1="78" x2="520" y2="78" stroke="#D8D1C1" stroke-width="1"/>
+<text x="62" y="82" font-size="11" text-anchor="end" font-weight="400" fill="#555B69">18</text>
+<text x="70" y="348" font-size="11" text-anchor="middle" font-weight="400" fill="#555B69">w0</text>
+<text x="134.29" y="348" font-size="11" text-anchor="middle" font-weight="400" fill="#555B69">w1</text>
+<text x="198.57" y="348" font-size="11" text-anchor="middle" font-weight="400" fill="#555B69">w2</text>
+<text x="262.86" y="348" font-size="11" text-anchor="middle" font-weight="400" fill="#555B69">w3</text>
+<text x="327.14" y="348" font-size="11" text-anchor="middle" font-weight="400" fill="#555B69">w4</text>
+<text x="391.43" y="348" font-size="11" text-anchor="middle" font-weight="400" fill="#555B69">w5</text>
+<text x="455.71" y="348" font-size="11" text-anchor="middle" font-weight="400" fill="#555B69">w6</text>
+<text x="520" y="348" font-size="11" text-anchor="middle" font-weight="400" fill="#555B69">w7</text>
+<text x="295" y="368" font-size="11" text-anchor="middle" font-weight="400" fill="#555B69">test window (identified by SHA-256 of its token ids)</text>
+<text x="22" y="204" font-size="11" text-anchor="middle" fill="#555B69" transform="rotate(-90 22 204)">mean NLL, nats</text>
+<polyline points="70,291.76 134.29,281.53 198.57,284.95 262.86,284.2 327.14,284.63 391.43,278.33 455.71,280.68 520,277.25" fill="none" stroke="#14213D" stroke-width="1.6"/>
+<circle cx="70" cy="291.76" r="4.5" fill="#14213D" data-key="nll.original" data-window="0" data-value="2.7316177854514736"/>
+<circle cx="134.29" cy="281.53" r="4.5" fill="#14213D" data-key="nll.original" data-window="1" data-value="3.4621851382771136"/>
+<circle cx="198.57" cy="284.95" r="4.5" fill="#14213D" data-key="nll.original" data-window="2" data-value="3.2179003713498338"/>
+<circle cx="262.86" cy="284.2" r="4.5" fill="#14213D" data-key="nll.original" data-window="3" data-value="3.271608940894405"/>
+<circle cx="327.14" cy="284.63" r="4.5" fill="#14213D" data-key="nll.original" data-window="4" data-value="3.2407588537468017"/>
+<circle cx="391.43" cy="278.33" r="4.5" fill="#14213D" data-key="nll.original" data-window="5" data-value="3.690787293895153"/>
+<circle cx="455.71" cy="280.68" r="4.5" fill="#14213D" data-key="nll.original" data-window="6" data-value="3.523172296228448"/>
+<circle cx="520" cy="277.25" r="4.5" fill="#14213D" data-key="nll.original" data-window="7" data-value="3.7676053744876907"/>
+<polyline points="70,183.97 134.29,159.53 198.57,167.99 262.86,183.02 327.14,179.92 391.43,161.75 455.71,162.55 520,173.47" fill="none" stroke="#7C88A8" stroke-width="1.6"/>
+<polygon points="70,177.97 75.5,188.47 64.5,188.47" fill="#7C88A8" data-key="nll.initialized_no_qat" data-window="0" data-value="10.430553890588715"/>
+<polygon points="134.29,153.53 139.79,164.03 128.79,164.03" fill="#7C88A8" data-key="nll.initialized_no_qat" data-window="1" data-value="12.176492073404507"/>
+<polygon points="198.57,161.99 204.07,172.49 193.07,172.49" fill="#7C88A8" data-key="nll.initialized_no_qat" data-window="2" data-value="11.571916707857387"/>
+<polygon points="262.86,177.02 268.36,187.52 257.36,187.52" fill="#7C88A8" data-key="nll.initialized_no_qat" data-window="3" data-value="10.498697189364846"/>
+<polygon points="327.14,173.92 332.64,184.42 321.64,184.42" fill="#7C88A8" data-key="nll.initialized_no_qat" data-window="4" data-value="10.720141204792684"/>
+<polygon points="391.43,155.75 396.93,166.25 385.93,166.25" fill="#7C88A8" data-key="nll.initialized_no_qat" data-window="5" data-value="12.01805610567566"/>
+<polygon points="455.71,156.55 461.21,167.05 450.21,167.05" fill="#7C88A8" data-key="nll.initialized_no_qat" data-window="6" data-value="11.960442995461891"/>
+<polygon points="520,167.47 525.5,177.97 514.5,177.97" fill="#7C88A8" data-key="nll.initialized_no_qat" data-window="7" data-value="11.180982161694624"/>
+<polyline points="70,211.21 134.29,194.85 198.57,199.34 262.86,208.35 327.14,207.24 391.43,195.46 455.71,189.5 520,205.5" fill="none" stroke="#2747B8" stroke-width="1.6"/>
+<polygon points="70,205.21 76,211.21 70,217.21 64,211.21" fill="#2747B8" data-key="nll.qat_trained" data-window="0" data-value="8.48476060544412"/>
+<polygon points="134.29,188.85 140.29,194.85 134.29,200.85 128.29,194.85" fill="#2747B8" data-key="nll.qat_trained" data-window="1" data-value="9.653853855733797"/>
+<polygon points="198.57,193.34 204.57,199.34 198.57,205.34 192.57,199.34" fill="#2747B8" data-key="nll.qat_trained" data-window="2" data-value="9.333036137378121"/>
+<polygon points="262.86,202.35 268.86,208.35 262.86,214.35 256.86,208.35" fill="#2747B8" data-key="nll.qat_trained" data-window="3" data-value="8.689506947524904"/>
+<polygon points="327.14,201.24 333.14,207.24 327.14,213.24 321.14,207.24" fill="#2747B8" data-key="nll.qat_trained" data-window="4" data-value="8.768526743716142"/>
+<polygon points="391.43,189.46 397.43,195.46 391.43,201.46 385.43,195.46" fill="#2747B8" data-key="nll.qat_trained" data-window="5" data-value="9.609656371469573"/>
+<polygon points="455.71,183.5 461.71,189.5 455.71,195.5 449.71,189.5" fill="#2747B8" data-key="nll.qat_trained" data-window="6" data-value="10.035950981725858"/>
+<polygon points="520,199.5 526,205.5 520,211.5 514,205.5" fill="#2747B8" data-key="nll.qat_trained" data-window="7" data-value="8.893093501488993"/>
+<polyline points="70,104.07 134.29,93.96 198.57,101.34 262.86,110.81 327.14,102.04 391.43,96.38 455.71,92.28 520,99.8" fill="none" stroke="#9C4A1A" stroke-width="1.6" stroke-dasharray="6 4"/>
+<rect x="65.5" y="99.57" width="9" height="9" fill="#FBF8F1" stroke="#9C4A1A" data-key="nll.qat_trained_upstream_decoder" data-window="0" data-value="16.13798832330178"/>
+<rect x="129.79" y="89.46" width="9" height="9" fill="#FBF8F1" stroke="#9C4A1A" data-key="nll.qat_trained_upstream_decoder" data-window="1" data-value="16.860129514078455"/>
+<rect x="194.07" y="96.84" width="9" height="9" fill="#FBF8F1" stroke="#9C4A1A" data-key="nll.qat_trained_upstream_decoder" data-window="2" data-value="16.33290621239369"/>
+<rect x="258.36" y="106.31" width="9" height="9" fill="#FBF8F1" stroke="#9C4A1A" data-key="nll.qat_trained_upstream_decoder" data-window="3" data-value="15.656111048901176"/>
+<rect x="322.64" y="97.54" width="9" height="9" fill="#FBF8F1" stroke="#9C4A1A" data-key="nll.qat_trained_upstream_decoder" data-window="4" data-value="16.282903506061224"/>
+<rect x="386.93" y="91.88" width="9" height="9" fill="#FBF8F1" stroke="#9C4A1A" data-key="nll.qat_trained_upstream_decoder" data-window="5" data-value="16.687466230918105"/>
+<rect x="451.21" y="87.78" width="9" height="9" fill="#FBF8F1" stroke="#9C4A1A" data-key="nll.qat_trained_upstream_decoder" data-window="6" data-value="16.980045686556597"/>
+<rect x="515.5" y="95.3" width="9" height="9" fill="#FBF8F1" stroke="#9C4A1A" data-key="nll.qat_trained_upstream_decoder" data-window="7" data-value="16.442677708122673"/>
+<line x1="540" y1="96" x2="566" y2="96" stroke="#14213D" stroke-width="1.6"/>
+<circle cx="553" cy="96" r="4.5" fill="#14213D"/>
+<text x="574" y="100" font-size="11" text-anchor="start" font-weight="600" fill="#14213D">Original model</text>
+<text x="574" y="115" font-size="10" text-anchor="start" font-weight="400" fill="#555B69">reference, FP32</text>
+<line x1="540" y1="142" x2="566" y2="142" stroke="#7C88A8" stroke-width="1.6"/>
+<polygon points="553,136 558.5,146.5 547.5,146.5" fill="#7C88A8"/>
+<text x="574" y="146" font-size="11" text-anchor="start" font-weight="600" fill="#14213D">LittleBit, initialized</text>
+<text x="574" y="161" font-size="10" text-anchor="start" font-weight="400" fill="#555B69">converted, no QAT</text>
+<line x1="540" y1="188" x2="566" y2="188" stroke="#2747B8" stroke-width="1.6"/>
+<polygon points="553,182 559,188 553,194 547,188" fill="#2747B8"/>
+<text x="574" y="192" font-size="11" text-anchor="start" font-weight="600" fill="#14213D">LittleBit, 16 QAT steps</text>
+<text x="574" y="207" font-size="10" text-anchor="start" font-weight="400" fill="#555B69">converted, then trained</text>
+<line x1="540" y1="234" x2="566" y2="234" stroke="#9C4A1A" stroke-width="1.6" stroke-dasharray="6 4"/>
+<rect x="548.5" y="229.5" width="9" height="9" fill="#FBF8F1" stroke="#9C4A1A"/>
+<text x="574" y="238" font-size="11" text-anchor="start" font-weight="600" fill="#14213D">Same QAT weights,</text>
+<text x="574" y="253" font-size="10" text-anchor="start" font-weight="400" fill="#9C4A1A">defective decoder</text>
+<text x="16" y="388" font-size="11" text-anchor="start" font-weight="400" fill="#555B69">Source: results/summary.json, per_window_mean_nll. Dashed series: decoder defect condition, not a quality result.</text>
+</svg>

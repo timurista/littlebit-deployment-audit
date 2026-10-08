@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="250" viewBox="0 0 720 250" role="img" aria-labelledby="bpw-title bpw-desc" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" data-chart="bpw">
+<title id="bpw-title">Bits per weight for the converted block linears</title>
+<desc id="bpw-desc">Bits per weight over 357,826,560 converted weights: Packed signs only 0.4967; Advertised upstream formula 0.52955; Actual checkpoint file 0.6094.</desc>
+<rect width="720" height="250" fill="#FBF8F1"/>
+<text x="16" y="28" font-size="16" text-anchor="start" font-weight="700" fill="#14213D">Bits per weight, converted block linears only</text>
+<text x="16" y="48" font-size="12" text-anchor="start" font-weight="400" fill="#555B69">357,826,560 weights in 168 modules. The frozen BF16 base file is excluded here.</text>
+<line x1="16" y1="58" x2="704" y2="58" stroke="#D8D1C1" stroke-width="1"/>
+<line x1="250" y1="72" x2="250" y2="210" stroke="#D8D1C1" stroke-width="1"/>
+<text x="250" y="226" font-size="11" text-anchor="middle" font-weight="400" fill="#555B69">0.0</text>
+<line x1="308.57" y1="72" x2="308.57" y2="210" stroke="#D8D1C1" stroke-width="1"/>
+<text x="308.57" y="226" font-size="11" text-anchor="middle" font-weight="400" fill="#555B69">0.1</text>
+<line x1="367.14" y1="72" x2="367.14" y2="210" stroke="#D8D1C1" stroke-width="1"/>
+<text x="367.14" y="226" font-size="11" text-anchor="middle" font-weight="400" fill="#555B69">0.2</text>
+<line x1="425.71" y1="72" x2="425.71" y2="210" stroke="#D8D1C1" stroke-width="1"/>
+<text x="425.71" y="226" font-size="11" text-anchor="middle" font-weight="400" fill="#555B69">0.3</text>
+<line x1="484.29" y1="72" x2="484.29" y2="210" stroke="#D8D1C1" stroke-width="1"/>
+<text x="484.29" y="226" font-size="11" text-anchor="middle" font-weight="400" fill="#555B69">0.4</text>
+<line x1="542.86" y1="72" x2="542.86" y2="210" stroke="#D8D1C1" stroke-width="1"/>
+<text x="542.86" y="226" font-size="11" text-anchor="middle" font-weight="400" fill="#555B69">0.5</text>
+<line x1="601.43" y1="72" x2="601.43" y2="210" stroke="#D8D1C1" stroke-width="1"/>
+<text x="601.43" y="226" font-size="11" text-anchor="middle" font-weight="400" fill="#555B69">0.6</text>
+<line x1="660" y1="72" x2="660" y2="210" stroke="#D8D1C1" stroke-width="1"/>
+<text x="660" y="226" font-size="11" text-anchor="middle" font-weight="400" fill="#555B69">0.7</text>
+<text x="16" y="90" font-size="13" text-anchor="start" font-weight="600" fill="#14213D">Packed signs only</text>
+<text x="16" y="105" font-size="11" text-anchor="start" font-weight="400" fill="#555B69">sign bits, no scales</text>
+<rect x="250" y="80" width="290.93" height="20" fill="#0F7C7A" data-key="bpw.packed_signs_only" data-value="0.4967032967032967"/>
+<text x="548.93" y="95" font-size="12" text-anchor="start" font-weight="600" fill="#14213D">0.4967</text>
+<text x="16" y="134" font-size="13" text-anchor="start" font-weight="600" fill="#14213D">Advertised upstream formula</text>
+<text x="16" y="149" font-size="11" text-anchor="start" font-weight="400" fill="#555B69">what the config targets</text>
+<rect x="250" y="124" width="310.17" height="20" fill="#14213D" data-key="bpw.advertised_upstream_formula" data-value="0.5295501172542572"/>
+<text x="568.17" y="139" font-size="12" text-anchor="start" font-weight="600" fill="#14213D">0.52955</text>
+<text x="16" y="178" font-size="13" text-anchor="start" font-weight="600" fill="#14213D">Actual checkpoint file</text>
+<text x="16" y="193" font-size="11" text-anchor="start" font-weight="400" fill="#555B69">packed signs + FP32 scales + header</text>
+<rect x="250" y="168" width="356.93" height="20" fill="#2747B8" data-key="bpw.actual_checkpoint_file_fp32_scales" data-value="0.6093964629120879"/>
+<text x="614.93" y="183" font-size="12" text-anchor="start" font-weight="600" fill="#14213D">0.6094</text>
+<line x1="250" y1="72" x2="250" y2="210" stroke="#14213D" stroke-width="1.2"/>
+<text x="16" y="238" font-size="11" text-anchor="start" font-weight="400" fill="#555B69">Source: results/summary.json, storage.bpw_converted_block_linears. Upstream main.py would cast scales to BF16.</text>
+</svg>

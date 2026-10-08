@@ -1,5 +1,7 @@
-# Citation metadata for release v0.1.0. No DOI has been assigned; none is listed. The release
-# commit is recorded in the release build manifest, not in this file.
+# Citation metadata for release v0.2.0. No DOI has been assigned; none is listed. The release
+# commit is recorded in the release build manifest, not in this file. v0.2.0 adds a companion
+# site and explanation figures; its measured data are those of release v0.1.0 (commit
+# 97f075cd1f995e66b693b3c1657fcc2f1a43ed0c), unchanged.
 # No license field: there is no repository-wide license. Licensing is scoped per file (LICENSE):
 # MIT only for seven original harness files, CC BY-NC 4.0 for five files adapted from
 # SamsungLabs/LittleBit, all rights reserved for everything else (documentation, results, data).
@@ -12,13 +14,13 @@ type: software
 title: >-
   LittleBit deployment audit: packed sign serialization, storage accounting and a tiny
   real-model wiring pilot
-version: 0.1.0
+version: 0.2.0
 date-released: "2026-10-08"
 authors:
   - family-names: Urista
     given-names: Tim
 repository-code: "https://github.com/timurista/littlebit-deployment-audit"
-url: "https://github.com/timurista/littlebit-deployment-audit/releases/tag/v0.1.0"
+url: "https://github.com/timurista/littlebit-deployment-audit/releases/tag/v0.2.0"
 abstract: >-
   An audit of the packed serialization path and storage accounting of SamsungLabs/LittleBit at
   commit 933857ed1443b53fc43a875c2cf64249e3c56f0c. The shipped unpacker decodes a -1 sign only at

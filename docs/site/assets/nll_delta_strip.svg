@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="230" viewBox="0 0 720 230" role="img" aria-labelledby="nll-delta-strip-title nll-delta-strip-desc" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" data-chart="nll-delta-strip">
+<title id="nll-delta-strip-title">Paired NLL increase of the QAT student over the original, all 8 windows</title>
+<desc id="nll-delta-strip-desc">Dot plot of the 8 recorded per-window differences in mean NLL, QAT student minus original: window 0 5.753, window 1 6.192, window 2 6.115, window 3 5.418, window 4 5.528, window 5 5.919, window 6 6.513, window 7 5.125 nats.</desc>
+<rect width="720" height="230" fill="#FBF8F1"/>
+<text x="16" y="28" font-size="16" text-anchor="start" font-weight="700" fill="#14213D">QAT student minus original: all 8 paired window differences</text>
+<text x="16" y="48" font-size="12" text-anchor="start" font-weight="400" fill="#555B69">Each dot is one recorded window (nats). Descriptive only: windows are contiguous, one seed, one run.</text>
+<line x1="16" y1="58" x2="704" y2="58" stroke="#D8D1C1" stroke-width="1"/>
+<line x1="60" y1="128" x2="660" y2="128" stroke="#14213D" stroke-width="1.2"/>
+<line x1="60" y1="124" x2="60" y2="132" stroke="#14213D" stroke-width="1"/>
+<text x="60" y="190" font-size="11" text-anchor="middle" font-weight="400" fill="#555B69">5.0</text>
+<line x1="135" y1="124" x2="135" y2="132" stroke="#14213D" stroke-width="1"/>
+<text x="135" y="190" font-size="11" text-anchor="middle" font-weight="400" fill="#555B69">5.2</text>
+<line x1="210" y1="124" x2="210" y2="132" stroke="#14213D" stroke-width="1"/>
+<text x="210" y="190" font-size="11" text-anchor="middle" font-weight="400" fill="#555B69">5.4</text>
+<line x1="285" y1="124" x2="285" y2="132" stroke="#14213D" stroke-width="1"/>
+<text x="285" y="190" font-size="11" text-anchor="middle" font-weight="400" fill="#555B69">5.6</text>
+<line x1="360" y1="124" x2="360" y2="132" stroke="#14213D" stroke-width="1"/>
+<text x="360" y="190" font-size="11" text-anchor="middle" font-weight="400" fill="#555B69">5.8</text>
+<line x1="435" y1="124" x2="435" y2="132" stroke="#14213D" stroke-width="1"/>
+<text x="435" y="190" font-size="11" text-anchor="middle" font-weight="400" fill="#555B69">6.0</text>
+<line x1="510" y1="124" x2="510" y2="132" stroke="#14213D" stroke-width="1"/>
+<text x="510" y="190" font-size="11" text-anchor="middle" font-weight="400" fill="#555B69">6.2</text>
+<line x1="585" y1="124" x2="585" y2="132" stroke="#14213D" stroke-width="1"/>
+<text x="585" y="190" font-size="11" text-anchor="middle" font-weight="400" fill="#555B69">6.4</text>
+<line x1="660" y1="124" x2="660" y2="132" stroke="#14213D" stroke-width="1"/>
+<text x="660" y="190" font-size="11" text-anchor="middle" font-weight="400" fill="#555B69">6.6</text>
+<text x="360" y="208" font-size="11" text-anchor="middle" font-weight="400" fill="#555B69">NLL increase over the original model, nats per token</text>
+<line x1="107.06" y1="128" x2="107.06" y2="112" stroke="#D8D1C1" stroke-width="1"/>
+<circle cx="107.06" cy="128" r="6" fill="#2747B8" stroke="#FBF8F1" stroke-width="1.5" data-key="delta.qat_minus_original" data-window="7" data-value="5.125488127001303"/>
+<text x="107.06" y="106" font-size="11" text-anchor="middle" font-weight="600" fill="#14213D">w7  5.125</text>
+<line x1="216.71" y1="128" x2="216.71" y2="148" stroke="#D8D1C1" stroke-width="1"/>
+<circle cx="216.71" cy="128" r="6" fill="#2747B8" stroke="#FBF8F1" stroke-width="1.5" data-key="delta.qat_minus_original" data-window="3" data-value="5.4178980066305"/>
+<text x="216.71" y="162" font-size="11" text-anchor="middle" font-weight="600" fill="#14213D">w3  5.418</text>
+<line x1="257.91" y1="128" x2="257.91" y2="112" stroke="#D8D1C1" stroke-width="1"/>
+<circle cx="257.91" cy="128" r="6" fill="#2747B8" stroke="#FBF8F1" stroke-width="1.5" data-key="delta.qat_minus_original" data-window="4" data-value="5.527767889969341"/>
+<text x="257.91" y="106" font-size="11" text-anchor="middle" font-weight="600" fill="#14213D">w4  5.528</text>
+<line x1="342.43" y1="128" x2="342.43" y2="148" stroke="#D8D1C1" stroke-width="1"/>
+<circle cx="342.43" cy="128" r="6" fill="#2747B8" stroke="#FBF8F1" stroke-width="1.5" data-key="delta.qat_minus_original" data-window="0" data-value="5.753142819992646"/>
+<text x="342.43" y="162" font-size="11" text-anchor="middle" font-weight="600" fill="#14213D">w0  5.753</text>
+<line x1="404.58" y1="128" x2="404.58" y2="112" stroke="#D8D1C1" stroke-width="1"/>
+<circle cx="404.58" cy="128" r="6" fill="#2747B8" stroke="#FBF8F1" stroke-width="1.5" data-key="delta.qat_minus_original" data-window="5" data-value="5.91886907757442"/>
+<text x="404.58" y="106" font-size="11" text-anchor="middle" font-weight="600" fill="#14213D">w5  5.919</text>
+<line x1="478.18" y1="128" x2="478.18" y2="148" stroke="#D8D1C1" stroke-width="1"/>
+<circle cx="478.18" cy="128" r="6" fill="#2747B8" stroke="#FBF8F1" stroke-width="1.5" data-key="delta.qat_minus_original" data-window="2" data-value="6.1151357660282875"/>
+<text x="478.18" y="162" font-size="11" text-anchor="middle" font-weight="600" fill="#14213D">w2  6.115</text>
+<line x1="506.88" y1="128" x2="506.88" y2="112" stroke="#D8D1C1" stroke-width="1"/>
+<circle cx="506.88" cy="128" r="6" fill="#2747B8" stroke="#FBF8F1" stroke-width="1.5" data-key="delta.qat_minus_original" data-window="1" data-value="6.1916687174566825"/>
+<text x="506.88" y="106" font-size="11" text-anchor="middle" font-weight="600" fill="#14213D">w1  6.192</text>
+<line x1="627.29" y1="128" x2="627.29" y2="148" stroke="#D8D1C1" stroke-width="1"/>
+<circle cx="627.29" cy="128" r="6" fill="#2747B8" stroke="#FBF8F1" stroke-width="1.5" data-key="delta.qat_minus_original" data-window="6" data-value="6.512778685497409"/>
+<text x="627.29" y="162" font-size="11" text-anchor="middle" font-weight="600" fill="#14213D">w6  6.513</text>
+<text x="16" y="218" font-size="11" text-anchor="start" font-weight="400" fill="#555B69">Source: results/summary.json, heldout_test.conditions.qat_trained.paired_diff_vs_original (n = 8).</text>
+</svg>

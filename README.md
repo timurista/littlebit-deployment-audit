@@ -35,13 +35,82 @@ local pilot on a real pretrained model show (section 5)?
     `patches/binary_unpacker.patch` adapt or quote upstream LittleBit code. They are CC BY-NC 4.0
     (attribution, NonCommercial only; LICENSES/CC-BY-NC-4.0.txt).
   * Everything else, including this README, the other documentation, results, figures and
-    evidence, is all rights reserved; publication on GitHub does not license it.
+    evidence, is all rights reserved; publication on GitHub does not license it. That includes
+    the companion site and its build code added after v0.1.0 (`docs/index.html`, `docs/site/`
+    except `docs/site/vendor/`, `src/build_companion.py`, `src/companion/`,
+    `tests/test_companion.py`); the MIT list above is not extended to them.
+  * `docs/site/vendor/` holds unmodified Three.js 0.186.1 files under their own MIT License
+    (THIRD_PARTY_NOTICES.md).
 * Upstream code is CC BY-NC 4.0, Qwen2.5-0.5B is Apache-2.0, WikiText-2 is CC BY-SA; model
   weights and dataset files are not redistributed. See LICENSE_NOTES.md.
 * AI assistance: the code, tests and drafts in this repository were written with an AI coding
   assistant (Claude, Anthropic). The pilot stages and test suites were executed by an automated AI
   coding workflow on the author's Mac, not run by hand; the author's review of the outputs is
   pending. Numbers in this README come from the recorded JSON and logs listed below.
+
+## Companion site (v0.2.0)
+
+Public page: **https://timurista.github.io/littlebit-deployment-audit/** (GitHub Pages, branch
+`main`, folder `/docs`; it resolves once Pages is enabled for that source).
+
+Manuscript PDF (7 pages, compiled from `docs/research-draft.tex`):
+https://github.com/timurista/littlebit-deployment-audit/releases/download/v0.2.0/littlebit-v0.2.0-manuscript.pdf
+(an asset of release v0.2.0).
+
+The companion adds presentation only. It runs no new experiment and edits no measured file: every
+number on the page and in the charts below is read by `src/build_companion.py` (standard library)
+from the files recorded at release v0.1.0, commit `97f075cd1f995e66b693b3c1657fcc2f1a43ed0c`. The
+build writes `docs/site/data/companion.json` with the SHA-256 of each source file. v0.1.0 stays
+as released and immutable; release v0.2.0 adds this companion on top of it.
+
+The page has a decoder explorer (any of the 2,010 recorded cases, decoded in the browser with the
+shipped `<<` expression and the fixed `>>>` one, checked against the recorded row), a structural
+3D view of the dual-path layer drawn with a local copy of Three.js (illustrative sizes; a static
+SVG diagram is always present and is shown whenever JavaScript or WebGL is unavailable), and the
+2D charts below. No external fonts, scripts, trackers or analytics are loaded.
+
+![Histogram of sign errors per case over all 2,010 recorded unpack cases through the shipped binary_unpacker; bin counts are printed on the bars.](docs/site/assets/unpack_error_histogram.svg)
+
+*Sign errors per recorded case through the actual upstream `binary_unpacker`. Bin counts sum to
+2,010. Data: [results/unpack_cases_upstream_import.csv](results/unpack_cases_upstream_import.csv).*
+
+![Held-out perplexity on a log10 axis for the original model, the initialized and the 16-step QAT LittleBit students, and the same QAT weights through the defective decoder.](docs/site/assets/quality_log10_ppl.svg)
+
+*Held-out perplexity, log10 axis, same 8 windows (1,016 scored tokens). The hatched bar is the
+decoder defect condition, not a quality result. Data: [results/summary.json](results/summary.json),
+`heldout_test`.*
+
+![Dot plot of all 8 paired per-window NLL increases of the QAT student over the original model, from 5.13 to 6.51 nats.](docs/site/assets/nll_delta_strip.svg)
+
+*All 8 paired per-window NLL differences, QAT student minus original. The windows are contiguous
+and not independent draws. Data: [results/summary.json](results/summary.json),
+`heldout_test.conditions.qat_trained.paired_diff_vs_original`.*
+
+![Checkpoint bytes on disk: original 988,097,824 bytes in one BF16 file; pilot student 299,683,600 bytes including the frozen embedding table and head.](docs/site/assets/storage_disk.svg)
+
+![Resident unique FP32 tensor bytes after loading: original 1,976,131,200 bytes; pilot student 1,234,703,616 bytes.](docs/site/assets/storage_resident.svg)
+
+*Disk bytes (stored dtypes) and resident FP32 tensor bytes are separate panels and are never
+compared across. The KV cache (128 tokens, FP32, 3,145,728 bytes) is unchanged and not a weight.
+Data: [results/summary.json](results/summary.json), `storage`.*
+
+![Bits per weight for the converted block linears: packed signs only 0.4967, advertised upstream formula 0.52955, actual checkpoint file with FP32 scales 0.6094.](docs/site/assets/bpw.svg)
+
+*Converted block linears only. Data: [results/summary.json](results/summary.json),
+`storage.bpw_converted_block_linears`.*
+
+![Structural diagram of the dual-path binary low-rank layer: x feeds a main path and a residual path, each scaling, multiplying by a packed binary matrix, scaling, multiplying by a second packed binary matrix and scaling; the paths are summed with the bias.](docs/site/assets/diagram_dual_path.svg)
+
+*Structure only, no measured sizes: `y = ((((x * v2) @ Vq.T) * (v1 * u2)) @ Uq.T) * u1`, plus the
+same with the residual factors, plus the bias (upstream `LittleBitLinear` at `933857e`).*
+
+Rebuild and check (standard library only, no network):
+
+```
+python src/build_companion.py            # regenerate docs/index.html, data and SVGs
+python src/build_companion.py --check    # exit 1 if any generated file is out of date
+python -m unittest tests.test_companion -v
+```
 
 ## Measured results
 
@@ -305,6 +374,7 @@ registered in `sys.modules`):
 | 4 | Patch regression | done, post hoc: 2,010 of 2,010 patched vs 296 of 2,010 original |
 | 5 | Real pretrained model pilot | done, negative result (section 5); no further training planned |
 | 6 | Report figures and summary | regenerated from public files with `--metadata-only`; recorded values preserved (see "Public release") |
+| 7 | Companion site, v0.2.0 | verified: 171 tests run, 0 failures (32 skips standard library only; 26 skips in the torch venv); 12 deterministic outputs current; 7-page manuscript compiled without warnings and inspected; independent scientific QA passed; desktop and 390 px mobile layouts rechecked. GitHub Pages records the deployed commit in its build history |
 
 Authorized by the owner: this repository as a public GitHub repository
 (timurista/littlebit-deployment-audit) with release v0.1.0 (RELEASE_NOTES.md). Not done and not
@@ -391,9 +461,9 @@ and the 2026-10-08 adoption.
 
 **Release, CI and citation.**
 
-* Release v0.1.0: RELEASE_NOTES.md. Release URL, prospective until the tag and release are
-  created: https://github.com/timurista/littlebit-deployment-audit/releases/tag/v0.1.0. The
-  release commit is recorded in the build manifest attached to the release. No DOI.
+* Release v0.1.0 (published, immutable): RELEASE_NOTES.md,
+  https://github.com/timurista/littlebit-deployment-audit/releases/tag/v0.1.0. The release commit
+  is recorded in the build manifest attached to the release. No DOI.
 * CI: `.github/workflows/ci.yml`, one job on Python 3.12 with the standard library only. It runs
   the unit tests, where torch-dependent tests, tests that need the upstream checkout and tests that
   need the private checkpoints skip with a stated reason, and then the `--metadata-only
@@ -403,5 +473,12 @@ and the 2026-10-08 adoption.
 * License: MIT only for the seven original harness files listed in LICENSE. The five adapted files
   are CC BY-NC 4.0. Everything else is all rights reserved. There is no repository-wide license.
 
+* Release v0.2.0: the companion site above, two static explanation figures in
+  docs/research-draft.tex, THIRD_PARTY_NOTICES.md and this README section. Measured data are
+  unchanged from v0.1.0; see RELEASE_NOTES.md. Release URL:
+  https://github.com/timurista/littlebit-deployment-audit/releases/tag/v0.2.0. Citation metadata
+  (CITATION.cff) is at version 0.2.0.
+
 Drafts: docs/medium-draft.md, docs/research-draft.tex (review-ready pilot write-up, not a
-submission).
+submission). With Pages serving `/docs`, these drafts are also reachable on the Pages site as
+plain files; they were already public in the repository.

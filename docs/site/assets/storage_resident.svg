@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="315" viewBox="0 0 720 315" role="img" aria-labelledby="storage-resident-title storage-resident-desc" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" data-chart="storage-resident">
+<title id="storage-resident-title">Resident unique tensor bytes after loading (FP32)</title>
+<desc id="storage-resident-desc">Stacked bars of resident unique FP32 tensor bytes: original 1,976,131,200 bytes, pilot student 1,234,703,616 bytes.</desc>
+<rect width="720" height="315" fill="#FBF8F1"/>
+<text x="16" y="28" font-size="16" text-anchor="start" font-weight="700" fill="#14213D">Resident unique tensor bytes after loading (FP32)</text>
+<text x="16" y="48" font-size="12" text-anchor="start" font-weight="400" fill="#555B69">Tensors only: no KV cache, activations or allocator slack. Latent factors are resident as FP32, not packed bits.</text>
+<line x1="16" y1="58" x2="704" y2="58" stroke="#D8D1C1" stroke-width="1"/>
+<text x="16" y="84" font-size="13" text-anchor="start" font-weight="600" fill="#14213D">Original, resident FP32: 1,976,131,200 bytes</text>
+<rect x="16" y="92" width="189.58" height="26" fill="#BFDCD9" stroke="#FBF8F1" stroke-width="0.5" data-key="resident.original.embedding" data-value="544538624"><title>Embedding table, FP32 (derived from shape): 544,538,624 bytes</title></rect>
+<rect x="205.58" y="92" width="498.42" height="26" fill="#14213D" stroke="#FBF8F1" stroke-width="0.5" data-key="resident.original.other" data-value="1431592576"><title>Other original weights, FP32: 1,431,592,576 bytes</title></rect>
+<text x="16" y="154" font-size="13" text-anchor="start" font-weight="600" fill="#14213D">Pilot student after load, resident FP32: 1,234,703,616 bytes</text>
+<rect x="16" y="162" width="189.58" height="26" fill="#BFDCD9" stroke="#FBF8F1" stroke-width="0.5" data-key="resident.student.embedding" data-value="544538624"><title>Embedding table, FP32 (derived from shape): 544,538,624 bytes</title></rect>
+<rect x="205.58" y="162" width="240.18" height="26" fill="#2747B8" stroke="#FBF8F1" stroke-width="0.5" data-key="resident.student.factors" data-value="689878656"><title>LittleBit factors, scales and buffers held as FP32: 689,878,656 bytes</title></rect>
+<rect x="445.77" y="162" width="0.1" height="26" fill="#7C88A8" stroke="#FBF8F1" stroke-width="0.5" data-key="resident.student.other" data-value="286336"><title>Other student tensors: 286,336 bytes</title></rect>
+<rect x="16" y="210" width="12" height="12" fill="#BFDCD9" stroke="#14213D"/>
+<text x="34" y="220" font-size="11" text-anchor="start" font-weight="400" fill="#14213D">Embedding table, FP32 (derived from shape)</text>
+<rect x="360" y="210" width="12" height="12" fill="#14213D" stroke="#14213D"/>
+<text x="378" y="220" font-size="11" text-anchor="start" font-weight="400" fill="#14213D">Other original weights, FP32</text>
+<rect x="16" y="230" width="12" height="12" fill="#2747B8" stroke="#14213D"/>
+<text x="34" y="240" font-size="11" text-anchor="start" font-weight="400" fill="#14213D">LittleBit factors, scales and buffers held as FP32</text>
+<rect x="360" y="230" width="12" height="12" fill="#7C88A8" stroke="#14213D"/>
+<text x="378" y="240" font-size="11" text-anchor="start" font-weight="400" fill="#14213D">Other student tensors</text>
+<text x="16" y="288" font-size="11" text-anchor="start" font-weight="400" fill="#555B69">Source: results/summary.json, storage.resident_fp32_unique.</text>
+<text x="16" y="303" font-size="11" text-anchor="start" font-weight="400" fill="#555B69">KV cache (128 tokens, FP32): 3,145,728 bytes in both, unchanged, not shown.</text>
+</svg>

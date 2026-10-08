@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="300" viewBox="0 0 720 300" role="img" aria-labelledby="storage-disk-title storage-disk-desc" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" data-chart="storage-disk">
+<title id="storage-disk-title">Checkpoint bytes on disk (stored dtypes)</title>
+<desc id="storage-disk-desc">Stacked bars of checkpoint bytes on disk: original 988,097,824 bytes, pilot student 299,683,600 bytes, of which the embedding table is 272,269,312 bytes in both.</desc>
+<rect width="720" height="300" fill="#FBF8F1"/>
+<text x="16" y="28" font-size="16" text-anchor="start" font-weight="700" fill="#14213D">Checkpoint bytes on disk (stored dtypes)</text>
+<text x="16" y="48" font-size="12" text-anchor="start" font-weight="400" fill="#555B69">Weights only. Tokenizer and config files excluded. Not comparable with the resident FP32 panel.</text>
+<line x1="16" y1="58" x2="704" y2="58" stroke="#D8D1C1" stroke-width="1"/>
+<text x="16" y="84" font-size="13" text-anchor="start" font-weight="600" fill="#14213D">Original, one BF16 file: 988,097,824 bytes</text>
+<rect x="16" y="92" width="189.58" height="26" fill="#BFDCD9" stroke="#FBF8F1" stroke-width="0.5" data-key="disk.original.embedding" data-value="272269312"><title>Embedding table (frozen, tied head): 272,269,312 bytes</title></rect>
+<rect x="205.58" y="92" width="498.42" height="26" fill="#14213D" stroke="#FBF8F1" stroke-width="0.5" data-key="disk.original.other" data-value="715828512"><title>Other original weights: 715,828,512 bytes</title></rect>
+<text x="16" y="154" font-size="13" text-anchor="start" font-weight="600" fill="#14213D">Pilot student, frozen BF16 base + compressed layers: 299,683,600 bytes</text>
+<rect x="16" y="162" width="189.58" height="26" fill="#BFDCD9" stroke="#FBF8F1" stroke-width="0.5" data-key="disk.student.embedding" data-value="272269312"><title>Embedding table (frozen, tied head): 272,269,312 bytes</title></rect>
+<rect x="205.58" y="162" width="0.11" height="26" fill="#7C88A8" stroke="#FBF8F1" stroke-width="0.5" data-key="disk.student.norms" data-value="157008"><title>Norms, biases and header of the frozen base: 157,008 bytes</title></rect>
+<rect x="205.69" y="162" width="18.98" height="26" fill="#2747B8" stroke="#FBF8F1" stroke-width="0.5" data-key="disk.student.compressed" data-value="27257280"><title>Compressed LittleBit layers (packed signs, FP32 scales): 27,257,280 bytes</title></rect>
+<rect x="16" y="210" width="12" height="12" fill="#BFDCD9" stroke="#14213D"/>
+<text x="34" y="220" font-size="11" text-anchor="start" font-weight="400" fill="#14213D">Embedding table (frozen, tied head)</text>
+<rect x="360" y="210" width="12" height="12" fill="#14213D" stroke="#14213D"/>
+<text x="378" y="220" font-size="11" text-anchor="start" font-weight="400" fill="#14213D">Other original weights</text>
+<rect x="16" y="230" width="12" height="12" fill="#7C88A8" stroke="#14213D"/>
+<text x="34" y="240" font-size="11" text-anchor="start" font-weight="400" fill="#14213D">Norms, biases and header of the frozen base</text>
+<rect x="360" y="230" width="12" height="12" fill="#2747B8" stroke="#14213D"/>
+<text x="378" y="240" font-size="11" text-anchor="start" font-weight="400" fill="#14213D">Compressed LittleBit layers (packed signs, FP32 scales)</text>
+<text x="16" y="288" font-size="11" text-anchor="start" font-weight="400" fill="#555B69">Source: results/summary.json, storage.disk. The 157,008-byte norms, biases and header segment is too thin to see.</text>
+</svg>

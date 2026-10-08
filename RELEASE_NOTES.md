@@ -1,10 +1,60 @@
 # Release notes
 
+## v0.2.0
+
+* Release: https://github.com/timurista/littlebit-deployment-audit/releases/tag/v0.2.0
+* Release commit: recorded in the build manifest attached to the release.
+* Review: an independent QA review cleared the scientific data and the 7-page PDF of
+  `docs/research-draft.tex`, subject to two presentation fixes that are included in this release
+  (an unclipped resident-storage chart footer, and wrapping of full commit and SHA-256 values so
+  that the page stays within a 390 px mobile viewport).
+* GitHub Pages: the page is served from branch `main`, folder `/docs`, once Pages is enabled for
+  that source; these notes do not record a deployment.
+* Release v0.1.0 is unchanged and stays immutable. Its measured data, at commit
+  `97f075cd1f995e66b693b3c1657fcc2f1a43ed0c`, are the only data v0.2.0 presents.
+* No new experiment, no change to any file under `results/`, `figures/` or `evidence/`.
+
+### What v0.2.0 adds
+
+* GitHub Pages companion at https://timurista.github.io/littlebit-deployment-audit/ (source:
+  branch `main`, folder `/docs`; no deploy workflow, no credentials). Static, buildless HTML, CSS
+  and ES modules: a decoder explorer over the 2,010 recorded unpack cases, 2D SVG charts of the
+  recorded results, and a structural 3D view of the dual-path layer (illustrative sizes) with an
+  always-present static SVG fallback. No external fonts, scripts, trackers or analytics.
+* `src/build_companion.py` (standard library): reads `results/summary.json`,
+  `results/unpack_cases_upstream_import.csv`, `results/patched_regression.json` and
+  `results/quality-pilot/train.json`, re-derives every CSV row from its packed words, and writes
+  `docs/index.html`, `docs/site/data/*.json` (with source SHA-256 values) and
+  `docs/site/assets/*.svg` deterministically. `--check` fails on any stale output.
+* `tests/test_companion.py`: histogram bins total 2,010, the eight paired NLL deltas match the
+  recorded values exactly, chart values match the recorded files, source hashes match, every
+  local link resolves under the project base path, no external resources, vendored Three.js
+  present with its license.
+* `docs/research-draft.tex`: two static explanation figures (TikZ): the left-shift failure on one
+  recorded 32-bit word, and the structure of the dual-path layer. No measured claim changed.
+* `THIRD_PARTY_NOTICES.md` for the vendored Three.js 0.186.1 files (MIT License).
+
+### Licensing in v0.2.0
+
+* The seven MIT files are unchanged; the MIT grant is not extended. New companion files (page,
+  site CSS and JavaScript, data and charts, build script, template, tests) are all rights
+  reserved under LICENSE, Part 3, unless the owner chooses other terms.
+* `docs/site/vendor/` holds unmodified Three.js 0.186.1 files under their own MIT License, with
+  the full notice in `docs/site/vendor/THREE-LICENSE.txt` and THIRD_PARTY_NOTICES.md.
+
+### Release checks
+
+* `python src/build_companion.py`, then `python src/build_companion.py --check`, and the full
+  unit suite, after the two presentation fixes above.
+* Browser screenshots at desktop and 390 px mobile widths, including the static fallback.
+* `docs/research-draft.tex` compiled to 7 pages and cleared in review.
+* `CITATION.cff` is at version 0.2.0.
+
 ## v0.1.0
 
 * Repository: https://github.com/timurista/littlebit-deployment-audit
-* Release: https://github.com/timurista/littlebit-deployment-audit/releases/tag/v0.1.0 (prospective:
-  this URL resolves only once the v0.1.0 tag and release are created)
+* Release: https://github.com/timurista/littlebit-deployment-audit/releases/tag/v0.1.0
+  (published; immutable)
 * Release commit: recorded in the build manifest attached to the release.
 * DOI: none assigned.
 * Execution: the code, tests and drafts were written with an AI coding assistant (Claude,
